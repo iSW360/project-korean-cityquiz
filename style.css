@@ -1,1 +1,24 @@
-/* Add styles here */
+body {
+    font-family: 'Inter', sans-serif;
+}
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #e5e7eb; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #f9fafb; /* 지도 로딩 중 배경색 */
+}
+.option-button {
+    min-height: 2.5rem; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; /* 줄바꿈 방지 추가 */
+}
+.leaflet-marker-icon {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+}
