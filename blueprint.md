@@ -11,6 +11,7 @@
 - **퀴즈 시스템:** 무작위로 10개의 도시가 선택되며, 보기를 통해 정답을 선택합니다.
 - **피드백 및 결과:** 각 문제마다 정답 여부를 즉시 피드백하며, 최종 점수를 보여줍니다.
 - **반응형 디자인:** 모바일과 웹 모두에서 잘 작동하도록 Tailwind CSS를 활용한 반응형 레이아웃을 제공합니다.
+- **분석 도구:** Google Analytics (gtag.js)를 통합하여 사용자 활동을 추적합니다.
 
 ### 2.2 Style & Design
 - **색상 팔레트:** 파란색, 보라색, 인디고색을 기반으로 한 그라데이션 배경을 사용합니다.
@@ -20,23 +21,20 @@
 ### 2.3 Technical Details
 - **Framework:** Framework-less (Pure HTML, CSS, JS)
 - **Libraries:** Tailwind CSS (via CDN), Leaflet.js (Map library)
+- **Analytics:** Google Analytics (gtag.js)
 - **Modularization:** HTML, CSS, JS 파일을 분리하여 코드의 가독성과 유지보수성을 높였습니다.
 
-## 3. Current Task: HTML, JS, CSS Separation and Git Deployment
+## 3. Current Task: Google Analytics Integration
 
 ### 3.1 Plan
-- `index.html`에 포함된 인라인 CSS와 JavaScript를 각각 `style.css`와 `main.js`로 분리합니다.
-- `index.html`에서 외부 리소스 및 분리된 파일들을 올바르게 링크합니다.
-- 변경 사항을 Git 저장소에 커밋하고 원격 저장소(`origin main`)로 푸시합니다.
+- Google Analytics (gtag.js) 추적 코드를 `index.html`의 `<head>` 섹션에 추가합니다.
+- 변경 사항을 `blueprint.md`에 기록합니다.
+- Git을 통해 변경 사항을 커밋하고 푸시합니다.
 
 ### 3.2 Steps
-1. `index.html`의 `<script>` 내용을 `main.js`로 이동.
-2. `index.html`의 `<style>` 내용을 `style.css`로 이동 (기존 내용 유지/보완).
-3. `index.html` 수정:
-    - `<link rel="stylesheet" href="style.css">` 추가.
-    - `<script src="main.js"></script>` 추가.
-    - 인라인 `<style>` 및 `<script>` 블록 제거.
-4. Git 작업:
-    - `git add index.html main.js style.css`
-    - `git commit -m "Separate HTML into HTML, JS, and CSS files"`
+1. `index.html`에 Google Analytics 스크립트 추가.
+2. `blueprint.md` 업데이트.
+3. Git 작업:
+    - `git add index.html blueprint.md`
+    - `git commit -m "Add Google Analytics tag"`
     - `git push origin main`
