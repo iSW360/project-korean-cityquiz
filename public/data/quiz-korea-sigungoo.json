@@ -1,0 +1,1882 @@
+{
+  "meta": {
+    "id": "korea-sigungoo",
+    "mapSvg": "/maps/korea/sigungoo.svg",
+    "defaultLang": "ko",
+    "totalRegions": 104
+  },
+  "regions": [
+    {
+      "id": "11110",
+      "svgPathId": "r11110",
+      "names": {
+        "ko": "종로구",
+        "en": "Jongno-gu"
+      },
+      "hints": {
+        "ko": "경복궁과 북촌한옥마을",
+        "en": "Jongno-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        126.979,
+        37.594
+      ]
+    },
+    {
+      "id": "11140",
+      "svgPathId": "r11140",
+      "names": {
+        "ko": "중구",
+        "en": "Jung-gu"
+      },
+      "hints": {
+        "ko": "명동과 남대문시장",
+        "en": "Jung-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        126.998,
+        37.563
+      ]
+    },
+    {
+      "id": "11170",
+      "svgPathId": "r11170",
+      "names": {
+        "ko": "용산구",
+        "en": "Yongsan-gu"
+      },
+      "hints": {
+        "ko": "이태원과 용산기지",
+        "en": "Yongsan-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        126.99,
+        37.532
+      ]
+    },
+    {
+      "id": "11200",
+      "svgPathId": "r11200",
+      "names": {
+        "ko": "성동구",
+        "en": "Seongdong-gu"
+      },
+      "hints": {
+        "ko": "성수동 카페거리",
+        "en": "Seongdong-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.037,
+        37.563
+      ]
+    },
+    {
+      "id": "11215",
+      "svgPathId": "r11215",
+      "names": {
+        "ko": "광진구",
+        "en": "Gwangjin-gu"
+      },
+      "hints": {
+        "ko": "건국대학교와 어린이대공원",
+        "en": "Gwangjin-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.082,
+        37.538
+      ]
+    },
+    {
+      "id": "11230",
+      "svgPathId": "r11230",
+      "names": {
+        "ko": "동대문구",
+        "en": "Dongdaemun-gu"
+      },
+      "hints": {
+        "ko": "청량리 쇼핑가",
+        "en": "Dongdaemun-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.047,
+        37.584
+      ]
+    },
+    {
+      "id": "11260",
+      "svgPathId": "r11260",
+      "names": {
+        "ko": "중랑구",
+        "en": "Jungnang-gu"
+      },
+      "hints": {
+        "ko": "중랑천이 흐르는 동쪽 자치구",
+        "en": "Jungnang-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.093,
+        37.606
+      ]
+    },
+    {
+      "id": "11290",
+      "svgPathId": "r11290",
+      "names": {
+        "ko": "성북구",
+        "en": "Seongbuk-gu"
+      },
+      "hints": {
+        "ko": "북한산 자락의 주거지",
+        "en": "Seongbuk-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.017,
+        37.606
+      ]
+    },
+    {
+      "id": "11305",
+      "svgPathId": "r11305",
+      "names": {
+        "ko": "강북구",
+        "en": "Gangbuk-gu"
+      },
+      "hints": {
+        "ko": "북서울 꿈의숲",
+        "en": "Gangbuk-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.027,
+        37.64
+      ]
+    },
+    {
+      "id": "11320",
+      "svgPathId": "r11320",
+      "names": {
+        "ko": "도봉구",
+        "en": "Dobong-gu"
+      },
+      "hints": {
+        "ko": "도봉산이 있는 북쪽 끝",
+        "en": "Dobong-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.047,
+        37.669
+      ]
+    },
+    {
+      "id": "11350",
+      "svgPathId": "r11350",
+      "names": {
+        "ko": "노원구",
+        "en": "Nowon-gu"
+      },
+      "hints": {
+        "ko": "노원구 학원가",
+        "en": "Nowon-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.076,
+        37.654
+      ]
+    },
+    {
+      "id": "11380",
+      "svgPathId": "r11380",
+      "names": {
+        "ko": "은평구",
+        "en": "Eunpyeong-gu"
+      },
+      "hints": {
+        "ko": "북한산과 접한 서북쪽",
+        "en": "Eunpyeong-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.929,
+        37.603
+      ]
+    },
+    {
+      "id": "11410",
+      "svgPathId": "r11410",
+      "names": {
+        "ko": "서대문구",
+        "en": "Seodaemun-gu"
+      },
+      "hints": {
+        "ko": "연세대·이화여대 인근",
+        "en": "Seodaemun-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.937,
+        37.579
+      ]
+    },
+    {
+      "id": "11440",
+      "svgPathId": "r11440",
+      "names": {
+        "ko": "마포구",
+        "en": "Mapo-gu"
+      },
+      "hints": {
+        "ko": "홍대·합정·마포대교",
+        "en": "Mapo-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        126.91,
+        37.556
+      ]
+    },
+    {
+      "id": "11470",
+      "svgPathId": "r11470",
+      "names": {
+        "ko": "양천구",
+        "en": "Yangcheon-gu"
+      },
+      "hints": {
+        "ko": "목동 아파트 단지",
+        "en": "Yangcheon-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.869,
+        37.524
+      ]
+    },
+    {
+      "id": "11500",
+      "svgPathId": "r11500",
+      "names": {
+        "ko": "강서구",
+        "en": "Gangseo-gu"
+      },
+      "hints": {
+        "ko": "김포공항 인근",
+        "en": "Gangseo-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.85,
+        37.55
+      ]
+    },
+    {
+      "id": "11530",
+      "svgPathId": "r11530",
+      "names": {
+        "ko": "구로구",
+        "en": "Guro-gu"
+      },
+      "hints": {
+        "ko": "가산디지털단지",
+        "en": "Guro-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.888,
+        37.495
+      ]
+    },
+    {
+      "id": "11545",
+      "svgPathId": "r11545",
+      "names": {
+        "ko": "금천구",
+        "en": "Geumcheon-gu"
+      },
+      "hints": {
+        "ko": "서울 남서쪽 끝자락",
+        "en": "Geumcheon-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        126.896,
+        37.457
+      ]
+    },
+    {
+      "id": "11560",
+      "svgPathId": "r11560",
+      "names": {
+        "ko": "영등포구",
+        "en": "Yeongdeungpo-gu"
+      },
+      "hints": {
+        "ko": "여의도 국회의사당",
+        "en": "Yeongdeungpo-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.896,
+        37.526
+      ]
+    },
+    {
+      "id": "11590",
+      "svgPathId": "r11590",
+      "names": {
+        "ko": "동작구",
+        "en": "Dongjak-gu"
+      },
+      "hints": {
+        "ko": "국립현충원",
+        "en": "Dongjak-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.94,
+        37.512
+      ]
+    },
+    {
+      "id": "11620",
+      "svgPathId": "r11620",
+      "names": {
+        "ko": "관악구",
+        "en": "Gwanak-gu"
+      },
+      "hints": {
+        "ko": "서울대학교",
+        "en": "Gwanak-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.952,
+        37.478
+      ]
+    },
+    {
+      "id": "11650",
+      "svgPathId": "r11650",
+      "names": {
+        "ko": "서초구",
+        "en": "Seocho-gu"
+      },
+      "hints": {
+        "ko": "예술의전당·대법원",
+        "en": "Seocho-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        127.033,
+        37.483
+      ]
+    },
+    {
+      "id": "11680",
+      "svgPathId": "r11680",
+      "names": {
+        "ko": "강남구",
+        "en": "Gangnam-gu"
+      },
+      "hints": {
+        "ko": "강남스타일의 고장",
+        "en": "Gangnam-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        127.047,
+        37.517
+      ]
+    },
+    {
+      "id": "11710",
+      "svgPathId": "r11710",
+      "names": {
+        "ko": "송파구",
+        "en": "Songpa-gu"
+      },
+      "hints": {
+        "ko": "롯데월드·잠실운동장",
+        "en": "Songpa-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        127.105,
+        37.514
+      ]
+    },
+    {
+      "id": "11740",
+      "svgPathId": "r11740",
+      "names": {
+        "ko": "강동구",
+        "en": "Gangdong-gu"
+      },
+      "hints": {
+        "ko": "서울 동쪽 끝, 암사동",
+        "en": "Gangdong-gu in 서울"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.147,
+        37.53
+      ]
+    },
+    {
+      "id": "41110",
+      "svgPathId": "r41110",
+      "names": {
+        "ko": "수원시",
+        "en": "Suwon-si"
+      },
+      "hints": {
+        "ko": "삼성전자 수원캠퍼스",
+        "en": "Suwon-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 1,
+      "center": [
+        127.009,
+        37.263
+      ]
+    },
+    {
+      "id": "41130",
+      "svgPathId": "r41130",
+      "names": {
+        "ko": "성남시",
+        "en": "Seongnam-si"
+      },
+      "hints": {
+        "ko": "판교 테크노밸리",
+        "en": "Seongnam-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 1,
+      "center": [
+        127.137,
+        37.42
+      ]
+    },
+    {
+      "id": "41150",
+      "svgPathId": "r41150",
+      "names": {
+        "ko": "의정부시",
+        "en": "Uijeongbu-si"
+      },
+      "hints": {
+        "ko": "서울 북쪽 위성도시",
+        "en": "Uijeongbu-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        127.034,
+        37.738
+      ]
+    },
+    {
+      "id": "41170",
+      "svgPathId": "r41170",
+      "names": {
+        "ko": "안양시",
+        "en": "Anyang-si"
+      },
+      "hints": {
+        "ko": "평촌 신도시",
+        "en": "Anyang-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        126.972,
+        37.394
+      ]
+    },
+    {
+      "id": "41190",
+      "svgPathId": "r41190",
+      "names": {
+        "ko": "부천시",
+        "en": "Bucheon-si"
+      },
+      "hints": {
+        "ko": "소사·중동 신도시",
+        "en": "Bucheon-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        126.783,
+        37.503
+      ]
+    },
+    {
+      "id": "41270",
+      "svgPathId": "r41270",
+      "names": {
+        "ko": "안산시",
+        "en": "Ansan-si"
+      },
+      "hints": {
+        "ko": "시화방조제",
+        "en": "Ansan-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        126.822,
+        37.322
+      ]
+    },
+    {
+      "id": "41280",
+      "svgPathId": "r41280",
+      "names": {
+        "ko": "고양시",
+        "en": "Goyang-si"
+      },
+      "hints": {
+        "ko": "일산 신도시",
+        "en": "Goyang-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 1,
+      "center": [
+        126.852,
+        37.658
+      ]
+    },
+    {
+      "id": "41360",
+      "svgPathId": "r41360",
+      "names": {
+        "ko": "남양주시",
+        "en": "Namyangju-si"
+      },
+      "hints": {
+        "ko": "다산·별내 신도시",
+        "en": "Namyangju-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        127.215,
+        37.636
+      ]
+    },
+    {
+      "id": "41460",
+      "svgPathId": "r41460",
+      "names": {
+        "ko": "용인시",
+        "en": "Yongin-si"
+      },
+      "hints": {
+        "ko": "에버랜드·수지",
+        "en": "Yongin-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 1,
+      "center": [
+        127.157,
+        37.241
+      ]
+    },
+    {
+      "id": "41480",
+      "svgPathId": "r41480",
+      "names": {
+        "ko": "파주시",
+        "en": "Paju-si"
+      },
+      "hints": {
+        "ko": "출판도시·통일동산",
+        "en": "Paju-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        126.78,
+        37.76
+      ]
+    },
+    {
+      "id": "41570",
+      "svgPathId": "r41570",
+      "names": {
+        "ko": "김포시",
+        "en": "Gimpo-si"
+      },
+      "hints": {
+        "ko": "한강하구 도시",
+        "en": "Gimpo-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        126.715,
+        37.615
+      ]
+    },
+    {
+      "id": "41590",
+      "svgPathId": "r41590",
+      "names": {
+        "ko": "화성시",
+        "en": "Hwaseong-si"
+      },
+      "hints": {
+        "ko": "동탄 신도시",
+        "en": "Hwaseong-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        126.832,
+        37.2
+      ]
+    },
+    {
+      "id": "41610",
+      "svgPathId": "r41610",
+      "names": {
+        "ko": "광주시",
+        "en": "Gwangju-si"
+      },
+      "hints": {
+        "ko": "남한산성 인근",
+        "en": "Gwangju-si in 경기"
+      },
+      "group": "경기",
+      "difficulty": 2,
+      "center": [
+        127.254,
+        37.43
+      ]
+    },
+    {
+      "id": "28110",
+      "svgPathId": "r28110",
+      "names": {
+        "ko": "중구",
+        "en": "Jung-gu(인천)"
+      },
+      "hints": {
+        "ko": "인천 차이나타운",
+        "en": "Jung-gu(인천) in 인천"
+      },
+      "group": "인천",
+      "difficulty": 2,
+      "center": [
+        126.617,
+        37.474
+      ]
+    },
+    {
+      "id": "28185",
+      "svgPathId": "r28185",
+      "names": {
+        "ko": "연수구",
+        "en": "Yeonsu-gu"
+      },
+      "hints": {
+        "ko": "송도국제도시",
+        "en": "Yeonsu-gu in 인천"
+      },
+      "group": "인천",
+      "difficulty": 2,
+      "center": [
+        126.678,
+        37.41
+      ]
+    },
+    {
+      "id": "28200",
+      "svgPathId": "r28200",
+      "names": {
+        "ko": "남동구",
+        "en": "Namdong-gu"
+      },
+      "hints": {
+        "ko": "인천 테크노파크",
+        "en": "Namdong-gu in 인천"
+      },
+      "group": "인천",
+      "difficulty": 2,
+      "center": [
+        126.731,
+        37.447
+      ]
+    },
+    {
+      "id": "28237",
+      "svgPathId": "r28237",
+      "names": {
+        "ko": "부평구",
+        "en": "Bupyeong-gu"
+      },
+      "hints": {
+        "ko": "부평 미군기지",
+        "en": "Bupyeong-gu in 인천"
+      },
+      "group": "인천",
+      "difficulty": 2,
+      "center": [
+        126.722,
+        37.508
+      ]
+    },
+    {
+      "id": "28260",
+      "svgPathId": "r28260",
+      "names": {
+        "ko": "서구",
+        "en": "Seo-gu(인천)"
+      },
+      "hints": {
+        "ko": "인천 루원시티",
+        "en": "Seo-gu(인천) in 인천"
+      },
+      "group": "인천",
+      "difficulty": 2,
+      "center": [
+        126.676,
+        37.546
+      ]
+    },
+    {
+      "id": "28710",
+      "svgPathId": "r28710",
+      "names": {
+        "ko": "강화군",
+        "en": "Ganghwa-gun"
+      },
+      "hints": {
+        "ko": "고려궁지와 강화산성",
+        "en": "Ganghwa-gun in 인천"
+      },
+      "group": "인천",
+      "difficulty": 2,
+      "center": [
+        126.48,
+        37.745
+      ]
+    },
+    {
+      "id": "26110",
+      "svgPathId": "r26110",
+      "names": {
+        "ko": "중구",
+        "en": "Jung-gu(부산)"
+      },
+      "hints": {
+        "ko": "부산 중심가·자갈치시장",
+        "en": "Jung-gu(부산) in 부산"
+      },
+      "group": "부산",
+      "difficulty": 2,
+      "center": [
+        129.03,
+        35.106
+      ]
+    },
+    {
+      "id": "26230",
+      "svgPathId": "r26230",
+      "names": {
+        "ko": "부산진구",
+        "en": "Busanjin-gu"
+      },
+      "hints": {
+        "ko": "부산시청 소재지",
+        "en": "Busanjin-gu in 부산"
+      },
+      "group": "부산",
+      "difficulty": 2,
+      "center": [
+        129.053,
+        35.161
+      ]
+    },
+    {
+      "id": "26260",
+      "svgPathId": "r26260",
+      "names": {
+        "ko": "동래구",
+        "en": "Dongnae-gu"
+      },
+      "hints": {
+        "ko": "온천장·사직야구장",
+        "en": "Dongnae-gu in 부산"
+      },
+      "group": "부산",
+      "difficulty": 2,
+      "center": [
+        129.084,
+        35.198
+      ]
+    },
+    {
+      "id": "26290",
+      "svgPathId": "r26290",
+      "names": {
+        "ko": "남구",
+        "en": "Nam-gu(부산)"
+      },
+      "hints": {
+        "ko": "UN기념공원",
+        "en": "Nam-gu(부산) in 부산"
+      },
+      "group": "부산",
+      "difficulty": 2,
+      "center": [
+        129.084,
+        35.136
+      ]
+    },
+    {
+      "id": "26350",
+      "svgPathId": "r26350",
+      "names": {
+        "ko": "해운대구",
+        "en": "Haeundae-gu"
+      },
+      "hints": {
+        "ko": "해운대 해수욕장",
+        "en": "Haeundae-gu in 부산"
+      },
+      "group": "부산",
+      "difficulty": 1,
+      "center": [
+        129.163,
+        35.163
+      ]
+    },
+    {
+      "id": "26410",
+      "svgPathId": "r26410",
+      "names": {
+        "ko": "금정구",
+        "en": "Geumjeong-gu"
+      },
+      "hints": {
+        "ko": "범어사",
+        "en": "Geumjeong-gu in 부산"
+      },
+      "group": "부산",
+      "difficulty": 3,
+      "center": [
+        129.092,
+        35.24
+      ]
+    },
+    {
+      "id": "26710",
+      "svgPathId": "r26710",
+      "names": {
+        "ko": "기장군",
+        "en": "Gijang-gun"
+      },
+      "hints": {
+        "ko": "기장 멸치·해안도로",
+        "en": "Gijang-gun in 부산"
+      },
+      "group": "부산",
+      "difficulty": 3,
+      "center": [
+        129.213,
+        35.244
+      ]
+    },
+    {
+      "id": "27110",
+      "svgPathId": "r27110",
+      "names": {
+        "ko": "중구",
+        "en": "Jung-gu(대구)"
+      },
+      "hints": {
+        "ko": "서문시장·대구백화점",
+        "en": "Jung-gu(대구) in 대구"
+      },
+      "group": "대구",
+      "difficulty": 2,
+      "center": [
+        128.601,
+        35.869
+      ]
+    },
+    {
+      "id": "27230",
+      "svgPathId": "r27230",
+      "names": {
+        "ko": "북구",
+        "en": "Buk-gu(대구)"
+      },
+      "hints": {
+        "ko": "경북대학교",
+        "en": "Buk-gu(대구) in 대구"
+      },
+      "group": "대구",
+      "difficulty": 2,
+      "center": [
+        128.583,
+        35.885
+      ]
+    },
+    {
+      "id": "27260",
+      "svgPathId": "r27260",
+      "names": {
+        "ko": "수성구",
+        "en": "Suseong-gu"
+      },
+      "hints": {
+        "ko": "범어동 고급주거지",
+        "en": "Suseong-gu in 대구"
+      },
+      "group": "대구",
+      "difficulty": 2,
+      "center": [
+        128.631,
+        35.858
+      ]
+    },
+    {
+      "id": "27290",
+      "svgPathId": "r27290",
+      "names": {
+        "ko": "달서구",
+        "en": "Dalseo-gu"
+      },
+      "hints": {
+        "ko": "성서공단·두류공원",
+        "en": "Dalseo-gu in 대구"
+      },
+      "group": "대구",
+      "difficulty": 2,
+      "center": [
+        128.532,
+        35.83
+      ]
+    },
+    {
+      "id": "27710",
+      "svgPathId": "r27710",
+      "names": {
+        "ko": "달성군",
+        "en": "Dalseong-gun"
+      },
+      "hints": {
+        "ko": "비슬산",
+        "en": "Dalseong-gun in 대구"
+      },
+      "group": "대구",
+      "difficulty": 3,
+      "center": [
+        128.431,
+        35.775
+      ]
+    },
+    {
+      "id": "29110",
+      "svgPathId": "r29110",
+      "names": {
+        "ko": "동구",
+        "en": "Dong-gu(광주)"
+      },
+      "hints": {
+        "ko": "무등산 입구·충장로",
+        "en": "Dong-gu(광주) in 광주"
+      },
+      "group": "광주",
+      "difficulty": 2,
+      "center": [
+        126.923,
+        35.146
+      ]
+    },
+    {
+      "id": "29140",
+      "svgPathId": "r29140",
+      "names": {
+        "ko": "서구",
+        "en": "Seo-gu(광주)"
+      },
+      "hints": {
+        "ko": "상무지구",
+        "en": "Seo-gu(광주) in 광주"
+      },
+      "group": "광주",
+      "difficulty": 2,
+      "center": [
+        126.884,
+        35.152
+      ]
+    },
+    {
+      "id": "29170",
+      "svgPathId": "r29170",
+      "names": {
+        "ko": "북구",
+        "en": "Buk-gu(광주)"
+      },
+      "hints": {
+        "ko": "광주역·전남대",
+        "en": "Buk-gu(광주) in 광주"
+      },
+      "group": "광주",
+      "difficulty": 2,
+      "center": [
+        126.912,
+        35.175
+      ]
+    },
+    {
+      "id": "29200",
+      "svgPathId": "r29200",
+      "names": {
+        "ko": "광산구",
+        "en": "Gwangsan-gu"
+      },
+      "hints": {
+        "ko": "광주공항",
+        "en": "Gwangsan-gu in 광주"
+      },
+      "group": "광주",
+      "difficulty": 2,
+      "center": [
+        126.794,
+        35.185
+      ]
+    },
+    {
+      "id": "30110",
+      "svgPathId": "r30110",
+      "names": {
+        "ko": "동구",
+        "en": "Dong-gu(대전)"
+      },
+      "hints": {
+        "ko": "대전역·중앙시장",
+        "en": "Dong-gu(대전) in 대전"
+      },
+      "group": "대전",
+      "difficulty": 2,
+      "center": [
+        127.459,
+        36.314
+      ]
+    },
+    {
+      "id": "30140",
+      "svgPathId": "r30140",
+      "names": {
+        "ko": "중구",
+        "en": "Jung-gu(대전)"
+      },
+      "hints": {
+        "ko": "으능정이 문화의거리",
+        "en": "Jung-gu(대전) in 대전"
+      },
+      "group": "대전",
+      "difficulty": 2,
+      "center": [
+        127.414,
+        36.325
+      ]
+    },
+    {
+      "id": "30170",
+      "svgPathId": "r30170",
+      "names": {
+        "ko": "서구",
+        "en": "Seo-gu(대전)"
+      },
+      "hints": {
+        "ko": "갤러리아타임월드",
+        "en": "Seo-gu(대전) in 대전"
+      },
+      "group": "대전",
+      "difficulty": 2,
+      "center": [
+        127.384,
+        36.355
+      ]
+    },
+    {
+      "id": "30200",
+      "svgPathId": "r30200",
+      "names": {
+        "ko": "유성구",
+        "en": "Yuseong-gu"
+      },
+      "hints": {
+        "ko": "KAIST·엑스포공원",
+        "en": "Yuseong-gu in 대전"
+      },
+      "group": "대전",
+      "difficulty": 2,
+      "center": [
+        127.357,
+        36.362
+      ]
+    },
+    {
+      "id": "31110",
+      "svgPathId": "r31110",
+      "names": {
+        "ko": "중구",
+        "en": "Jung-gu(울산)"
+      },
+      "hints": {
+        "ko": "울산 성남동",
+        "en": "Jung-gu(울산) in 울산"
+      },
+      "group": "울산",
+      "difficulty": 2,
+      "center": [
+        129.315,
+        35.569
+      ]
+    },
+    {
+      "id": "31140",
+      "svgPathId": "r31140",
+      "names": {
+        "ko": "남구",
+        "en": "Nam-gu(울산)"
+      },
+      "hints": {
+        "ko": "현대자동차 울산공장",
+        "en": "Nam-gu(울산) in 울산"
+      },
+      "group": "울산",
+      "difficulty": 2,
+      "center": [
+        129.331,
+        35.539
+      ]
+    },
+    {
+      "id": "31710",
+      "svgPathId": "r31710",
+      "names": {
+        "ko": "울주군",
+        "en": "Ulju-gun"
+      },
+      "hints": {
+        "ko": "간절곶 해맞이",
+        "en": "Ulju-gun in 울산"
+      },
+      "group": "울산",
+      "difficulty": 3,
+      "center": [
+        129.243,
+        35.521
+      ]
+    },
+    {
+      "id": "36110",
+      "svgPathId": "r36110",
+      "names": {
+        "ko": "세종시",
+        "en": "Sejong-si"
+      },
+      "hints": {
+        "ko": "정부세종청사",
+        "en": "Sejong-si in 세종"
+      },
+      "group": "세종",
+      "difficulty": 1,
+      "center": [
+        127.291,
+        36.48
+      ]
+    },
+    {
+      "id": "51110",
+      "svgPathId": "r51110",
+      "names": {
+        "ko": "춘천시",
+        "en": "Chuncheon-si"
+      },
+      "hints": {
+        "ko": "소양강댐·닭갈비",
+        "en": "Chuncheon-si in 강원"
+      },
+      "group": "강원",
+      "difficulty": 1,
+      "center": [
+        127.735,
+        37.881
+      ]
+    },
+    {
+      "id": "51130",
+      "svgPathId": "r51130",
+      "names": {
+        "ko": "원주시",
+        "en": "Wonju-si"
+      },
+      "hints": {
+        "ko": "치악산",
+        "en": "Wonju-si in 강원"
+      },
+      "group": "강원",
+      "difficulty": 1,
+      "center": [
+        127.92,
+        37.342
+      ]
+    },
+    {
+      "id": "51150",
+      "svgPathId": "r51150",
+      "names": {
+        "ko": "강릉시",
+        "en": "Gangneung-si"
+      },
+      "hints": {
+        "ko": "경포해수욕장",
+        "en": "Gangneung-si in 강원"
+      },
+      "group": "강원",
+      "difficulty": 1,
+      "center": [
+        128.876,
+        37.751
+      ]
+    },
+    {
+      "id": "51210",
+      "svgPathId": "r51210",
+      "names": {
+        "ko": "속초시",
+        "en": "Sokcho-si"
+      },
+      "hints": {
+        "ko": "설악산 입구",
+        "en": "Sokcho-si in 강원"
+      },
+      "group": "강원",
+      "difficulty": 2,
+      "center": [
+        128.592,
+        38.207
+      ]
+    },
+    {
+      "id": "51760",
+      "svgPathId": "r51760",
+      "names": {
+        "ko": "평창군",
+        "en": "Pyeongchang-gun"
+      },
+      "hints": {
+        "ko": "평창동계올림픽",
+        "en": "Pyeongchang-gun in 강원"
+      },
+      "group": "강원",
+      "difficulty": 2,
+      "center": [
+        128.393,
+        37.371
+      ]
+    },
+    {
+      "id": "43110",
+      "svgPathId": "r43110",
+      "names": {
+        "ko": "청주시",
+        "en": "Cheongju-si"
+      },
+      "hints": {
+        "ko": "청남대·직지사",
+        "en": "Cheongju-si in 충북"
+      },
+      "group": "충북",
+      "difficulty": 1,
+      "center": [
+        127.491,
+        36.642
+      ]
+    },
+    {
+      "id": "43130",
+      "svgPathId": "r43130",
+      "names": {
+        "ko": "충주시",
+        "en": "Chungju-si"
+      },
+      "hints": {
+        "ko": "탄금대·충주호",
+        "en": "Chungju-si in 충북"
+      },
+      "group": "충북",
+      "difficulty": 2,
+      "center": [
+        127.926,
+        36.991
+      ]
+    },
+    {
+      "id": "43150",
+      "svgPathId": "r43150",
+      "names": {
+        "ko": "제천시",
+        "en": "Jecheon-si"
+      },
+      "hints": {
+        "ko": "청풍호·의림지",
+        "en": "Jecheon-si in 충북"
+      },
+      "group": "충북",
+      "difficulty": 2,
+      "center": [
+        128.215,
+        37.132
+      ]
+    },
+    {
+      "id": "44130",
+      "svgPathId": "r44130",
+      "names": {
+        "ko": "천안시",
+        "en": "Cheonan-si"
+      },
+      "hints": {
+        "ko": "독립기념관",
+        "en": "Cheonan-si in 충남"
+      },
+      "group": "충남",
+      "difficulty": 1,
+      "center": [
+        127.153,
+        36.806
+      ]
+    },
+    {
+      "id": "44150",
+      "svgPathId": "r44150",
+      "names": {
+        "ko": "공주시",
+        "en": "Gongju-si"
+      },
+      "hints": {
+        "ko": "공주 무령왕릉",
+        "en": "Gongju-si in 충남"
+      },
+      "group": "충남",
+      "difficulty": 2,
+      "center": [
+        127.115,
+        36.446
+      ]
+    },
+    {
+      "id": "44200",
+      "svgPathId": "r44200",
+      "names": {
+        "ko": "아산시",
+        "en": "Asan-si"
+      },
+      "hints": {
+        "ko": "온양온천",
+        "en": "Asan-si in 충남"
+      },
+      "group": "충남",
+      "difficulty": 2,
+      "center": [
+        127.004,
+        36.789
+      ]
+    },
+    {
+      "id": "44210",
+      "svgPathId": "r44210",
+      "names": {
+        "ko": "서산시",
+        "en": "Seosan-si"
+      },
+      "hints": {
+        "ko": "서산마애삼존불",
+        "en": "Seosan-si in 충남"
+      },
+      "group": "충남",
+      "difficulty": 2,
+      "center": [
+        126.452,
+        36.785
+      ]
+    },
+    {
+      "id": "44270",
+      "svgPathId": "r44270",
+      "names": {
+        "ko": "당진시",
+        "en": "Dangjin-si"
+      },
+      "hints": {
+        "ko": "아미산·당진항",
+        "en": "Dangjin-si in 충남"
+      },
+      "group": "충남",
+      "difficulty": 2,
+      "center": [
+        126.628,
+        36.892
+      ]
+    },
+    {
+      "id": "45110",
+      "svgPathId": "r45110",
+      "names": {
+        "ko": "전주시",
+        "en": "Jeonju-si"
+      },
+      "hints": {
+        "ko": "한옥마을·전동성당",
+        "en": "Jeonju-si in 전북"
+      },
+      "group": "전북",
+      "difficulty": 1,
+      "center": [
+        127.148,
+        35.824
+      ]
+    },
+    {
+      "id": "45130",
+      "svgPathId": "r45130",
+      "names": {
+        "ko": "군산시",
+        "en": "Gunsan-si"
+      },
+      "hints": {
+        "ko": "새만금방조제",
+        "en": "Gunsan-si in 전북"
+      },
+      "group": "전북",
+      "difficulty": 2,
+      "center": [
+        126.736,
+        35.967
+      ]
+    },
+    {
+      "id": "45140",
+      "svgPathId": "r45140",
+      "names": {
+        "ko": "익산시",
+        "en": "Iksan-si"
+      },
+      "hints": {
+        "ko": "원광대학교",
+        "en": "Iksan-si in 전북"
+      },
+      "group": "전북",
+      "difficulty": 2,
+      "center": [
+        126.954,
+        35.948
+      ]
+    },
+    {
+      "id": "45180",
+      "svgPathId": "r45180",
+      "names": {
+        "ko": "정읍시",
+        "en": "Jeongeup-si"
+      },
+      "hints": {
+        "ko": "내장산",
+        "en": "Jeongeup-si in 전북"
+      },
+      "group": "전북",
+      "difficulty": 2,
+      "center": [
+        126.856,
+        35.57
+      ]
+    },
+    {
+      "id": "45190",
+      "svgPathId": "r45190",
+      "names": {
+        "ko": "남원시",
+        "en": "Namwon-si"
+      },
+      "hints": {
+        "ko": "춘향전의 고장",
+        "en": "Namwon-si in 전북"
+      },
+      "group": "전북",
+      "difficulty": 2,
+      "center": [
+        127.39,
+        35.414
+      ]
+    },
+    {
+      "id": "46110",
+      "svgPathId": "r46110",
+      "names": {
+        "ko": "목포시",
+        "en": "Mokpo-si"
+      },
+      "hints": {
+        "ko": "유달산·목포항",
+        "en": "Mokpo-si in 전남"
+      },
+      "group": "전남",
+      "difficulty": 1,
+      "center": [
+        126.391,
+        34.812
+      ]
+    },
+    {
+      "id": "46130",
+      "svgPathId": "r46130",
+      "names": {
+        "ko": "여수시",
+        "en": "Yeosu-si"
+      },
+      "hints": {
+        "ko": "오동도·돌산도",
+        "en": "Yeosu-si in 전남"
+      },
+      "group": "전남",
+      "difficulty": 1,
+      "center": [
+        127.663,
+        34.761
+      ]
+    },
+    {
+      "id": "46150",
+      "svgPathId": "r46150",
+      "names": {
+        "ko": "순천시",
+        "en": "Suncheon-si"
+      },
+      "hints": {
+        "ko": "순천만 국가정원",
+        "en": "Suncheon-si in 전남"
+      },
+      "group": "전남",
+      "difficulty": 2,
+      "center": [
+        127.487,
+        34.95
+      ]
+    },
+    {
+      "id": "46170",
+      "svgPathId": "r46170",
+      "names": {
+        "ko": "나주시",
+        "en": "Naju-si"
+      },
+      "hints": {
+        "ko": "영산강 유역",
+        "en": "Naju-si in 전남"
+      },
+      "group": "전남",
+      "difficulty": 2,
+      "center": [
+        126.711,
+        35.016
+      ]
+    },
+    {
+      "id": "46820",
+      "svgPathId": "r46820",
+      "names": {
+        "ko": "해남군",
+        "en": "Haenam-gun"
+      },
+      "hints": {
+        "ko": "땅끝마을",
+        "en": "Haenam-gun in 전남"
+      },
+      "group": "전남",
+      "difficulty": 3,
+      "center": [
+        126.599,
+        34.572
+      ]
+    },
+    {
+      "id": "47110",
+      "svgPathId": "r47110",
+      "names": {
+        "ko": "포항시",
+        "en": "Pohang-si"
+      },
+      "hints": {
+        "ko": "포스코 제철소",
+        "en": "Pohang-si in 경북"
+      },
+      "group": "경북",
+      "difficulty": 1,
+      "center": [
+        129.343,
+        36.019
+      ]
+    },
+    {
+      "id": "47130",
+      "svgPathId": "r47130",
+      "names": {
+        "ko": "경주시",
+        "en": "Gyeongju-si"
+      },
+      "hints": {
+        "ko": "불국사·석굴암",
+        "en": "Gyeongju-si in 경북"
+      },
+      "group": "경북",
+      "difficulty": 1,
+      "center": [
+        129.211,
+        35.856
+      ]
+    },
+    {
+      "id": "47170",
+      "svgPathId": "r47170",
+      "names": {
+        "ko": "안동시",
+        "en": "Andong-si"
+      },
+      "hints": {
+        "ko": "하회마을",
+        "en": "Andong-si in 경북"
+      },
+      "group": "경북",
+      "difficulty": 1,
+      "center": [
+        128.724,
+        36.566
+      ]
+    },
+    {
+      "id": "47190",
+      "svgPathId": "r47190",
+      "names": {
+        "ko": "구미시",
+        "en": "Gumi-si"
+      },
+      "hints": {
+        "ko": "구미 국가산업단지",
+        "en": "Gumi-si in 경북"
+      },
+      "group": "경북",
+      "difficulty": 2,
+      "center": [
+        128.341,
+        36.119
+      ]
+    },
+    {
+      "id": "47280",
+      "svgPathId": "r47280",
+      "names": {
+        "ko": "경산시",
+        "en": "Gyeongsan-si"
+      },
+      "hints": {
+        "ko": "대구 위성도시",
+        "en": "Gyeongsan-si in 경북"
+      },
+      "group": "경북",
+      "difficulty": 2,
+      "center": [
+        128.741,
+        35.825
+      ]
+    },
+    {
+      "id": "48120",
+      "svgPathId": "r48120",
+      "names": {
+        "ko": "창원시",
+        "en": "Changwon-si"
+      },
+      "hints": {
+        "ko": "창원 국가산업단지",
+        "en": "Changwon-si in 경남"
+      },
+      "group": "경남",
+      "difficulty": 1,
+      "center": [
+        128.682,
+        35.228
+      ]
+    },
+    {
+      "id": "48170",
+      "svgPathId": "r48170",
+      "names": {
+        "ko": "진주시",
+        "en": "Jinju-si"
+      },
+      "hints": {
+        "ko": "진주성·남강유등축제",
+        "en": "Jinju-si in 경남"
+      },
+      "group": "경남",
+      "difficulty": 1,
+      "center": [
+        128.107,
+        35.18
+      ]
+    },
+    {
+      "id": "48220",
+      "svgPathId": "r48220",
+      "names": {
+        "ko": "통영시",
+        "en": "Tongyeong-si"
+      },
+      "hints": {
+        "ko": "한려수도 케이블카",
+        "en": "Tongyeong-si in 경남"
+      },
+      "group": "경남",
+      "difficulty": 2,
+      "center": [
+        128.433,
+        34.854
+      ]
+    },
+    {
+      "id": "48250",
+      "svgPathId": "r48250",
+      "names": {
+        "ko": "김해시",
+        "en": "Gimhae-si"
+      },
+      "hints": {
+        "ko": "가야문화·수로왕릉",
+        "en": "Gimhae-si in 경남"
+      },
+      "group": "경남",
+      "difficulty": 2,
+      "center": [
+        128.889,
+        35.234
+      ]
+    },
+    {
+      "id": "48310",
+      "svgPathId": "r48310",
+      "names": {
+        "ko": "거제시",
+        "en": "Geoje-si"
+      },
+      "hints": {
+        "ko": "거가대교·옥포조선소",
+        "en": "Geoje-si in 경남"
+      },
+      "group": "경남",
+      "difficulty": 2,
+      "center": [
+        128.621,
+        34.88
+      ]
+    },
+    {
+      "id": "48330",
+      "svgPathId": "r48330",
+      "names": {
+        "ko": "양산시",
+        "en": "Yangsan-si"
+      },
+      "hints": {
+        "ko": "양산 통도사",
+        "en": "Yangsan-si in 경남"
+      },
+      "group": "경남",
+      "difficulty": 2,
+      "center": [
+        129.037,
+        35.335
+      ]
+    },
+    {
+      "id": "50110",
+      "svgPathId": "r50110",
+      "names": {
+        "ko": "제주시",
+        "en": "Jeju-si"
+      },
+      "hints": {
+        "ko": "한라산·제주공항",
+        "en": "Jeju-si in 제주"
+      },
+      "group": "제주",
+      "difficulty": 1,
+      "center": [
+        126.552,
+        33.499
+      ]
+    },
+    {
+      "id": "50130",
+      "svgPathId": "r50130",
+      "names": {
+        "ko": "서귀포시",
+        "en": "Seogwipo-si"
+      },
+      "hints": {
+        "ko": "천지연폭포·마라도",
+        "en": "Seogwipo-si in 제주"
+      },
+      "group": "제주",
+      "difficulty": 1,
+      "center": [
+        126.56,
+        33.254
+      ]
+    }
+  ]
+}

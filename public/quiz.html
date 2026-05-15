@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>퀴즈 — GeoQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="quiz-page">
+
+<!-- 헤더 -->
+<header class="quiz-header">
+  <div class="quiz-header__row1">
+    <a href="/index.html" class="back-btn">‹</a>
+    <div class="quiz-header__info">
+      <div class="quiz-header__map" id="hd-map">전국 시군구</div>
+      <div class="quiz-header__lv"  id="hd-lv">Level 1 · 4지선다</div>
+    </div>
+    <div class="lang-toggle">
+      <button id="btn-ko" onclick="QE.switchLang('ko')">KO</button>
+      <button id="btn-en" onclick="QE.switchLang('en')">EN</button>
+    </div>
+  </div>
+
+  <!-- 레벨 탭 -->
+  <div class="level-tabs">
+    <button class="level-tab" data-lv="1">LV.1<span>4지선다</span></button>
+    <button class="level-tab" data-lv="2">LV.2<span>15초 제한</span></button>
+    <button class="level-tab" data-lv="3">LV.3<span>지도 클릭</span></button>
+  </div>
+
+  <!-- 진행 + 타이머 -->
+  <div class="progress-area">
+    <span class="progress-label" id="prog-label">1 / 104</span>
+    <div class="progress-bar">
+      <div class="progress-fill" id="prog-fill" style="width:0%"></div>
+    </div>
+    <span class="score-display" id="score-display">0점</span>
+    <!-- 타이머 (Lv2) -->
+    <div class="timer-wrap" id="timer-wrap">
+      <svg width="46" height="46" viewBox="0 0 46 46">
+        <circle class="timer-bg"  cx="23" cy="23" r="20"/>
+        <circle class="timer-arc" cx="23" cy="23" r="20" id="timer-arc"
+          style="stroke-dasharray:125.66;stroke-dashoffset:0;"/>
+      </svg>
+      <div class="timer-num" id="timer-num">15</div>
+    </div>
+  </div>
+</header>
+
+<!-- 지도 -->
+<div class="map-wrap">
+  <div id="map-container">
+    <div id="map-skeleton" class="skeleton" style="position:absolute;inset:0;z-index:2;"></div>
+  </div>
+  <div class="map-tip" id="map-tip"></div>
+</div>
+
+<!-- 퀴즈 패널 -->
+<div class="quiz-panel" id="quiz-panel">
+
+  <!-- Level 3 안내 -->
+  <div class="lv3-guide" id="lv3-guide">
+    👆 지역 이름을 보고 지도에서 찾아 클릭하세요
+  </div>
+
+  <!-- 문제 -->
+  <div class="question-text" id="question-text">
+    강조된 지역의 이름은?
+  </div>
+
+  <!-- 힌트 (Lv1, Lv2) -->
+  <div id="hint-area">
+    <div class="hint-row">
+      <button class="hint-btn" id="hint-btn" onclick="QE.showHint()">
+        💡 힌트
+        <span class="hint-cost" id="hint-cost">(선택)</span>
+        <span class="hint-count" id="hint-count"></span>
+      </button>
+    </div>
+    <div class="hint-box" id="hint-box"></div>
+  </div>
+
+  <!-- 선택지 -->
+  <div class="choices" id="choices"></div>
+
+  <!-- 피드백 -->
+  <div class="feedback" id="feedback"></div>
+
+  <!-- 네비 -->
+  <div class="quiz-nav">
+    <button class="btn btn-ghost" onclick="QE.restart()">↺</button>
+    <button class="btn btn-primary" id="btn-next" onclick="QE.nextQ()" style="display:none;">
+      다음 →
+    </button>
+  </div>
+
+</div>
+</div><!-- .quiz-page -->
+
+<div class="toast" id="toast"></div>
+
+<script src="/js/i18n.js"></script>
+<script src="/js/engine.js"></script>
+<script>
+(async()=>{
+  const p=new URLSearchParams(location.search);
+  const lang=p.get('lang')||localStorage.getItem('qlang')||(navigator.language?.startsWith('ko')?'ko':'en');
+  await I18n.init(lang);
+
+  // 탭 레이블 언어 처리
+  const isKo=lang==='ko';
+  document.querySelectorAll('.level-tab').forEach(t=>{
+    const lv=t.dataset.lv;
+    const descs={ko:{1:'4지선다',2:'15초 제한',3:'지도 클릭'},en:{1:'4 choices',2:'15s limit',3:'click map'}};
+    t.querySelector('span').textContent=isKo?descs.ko[lv]:descs.en[lv];
+  });
+  document.querySelector('.btn-ghost').textContent='↺ '+(isKo?'처음':'Reset');
+  const lg=$=>document.getElementById($);
+  if(!isKo){
+    lg('lv3-guide').textContent='👆 Find the named region on the map';
+    lg('question-text').textContent='What is the highlighted region?';
+  }
+
+  // 누적 카운트
+  const plays=(parseInt(localStorage.getItem('total_plays')||'0'))+1;
+  localStorage.setItem('total_plays',plays);
+
+  await QE.init();
+})();
+</script>
+</body>
+</html>
