@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 858 494" id="kmap">
+<defs>
+<style>
+.st-lbl{font-size:11px;font-family:inherit;text-anchor:middle;dominant-baseline:middle;fill:rgba(255,255,255,0.9);font-weight:700;pointer-events:none;}
+.st-sub{font-size:7px;font-family:inherit;text-anchor:middle;dominant-baseline:middle;fill:rgba(255,255,255,0.6);pointer-events:none;}
+</style>
+</defs>
+<g id="regions">
+<!-- Row 0 -->
+<path id="rWA" data-id="WA" data-ko="워싱턴" data-en="Washington" d="M3,3L75,3L75,67L3,67Z"/>
+<text class="st-lbl" x="39" y="31">WA</text><text class="st-sub" x="39" y="47">워싱턴</text>
+<path id="rMT" data-id="MT" data-ko="몬태나" data-en="Montana" d="M81,3L153,3L153,67L81,67Z"/>
+<text class="st-lbl" x="117" y="31">MT</text><text class="st-sub" x="117" y="47">몬태나</text>
+<path id="rND" data-id="ND" data-ko="노스다코타" data-en="North Dakota" d="M159,3L231,3L231,67L159,67Z"/>
+<text class="st-lbl" x="195" y="31">ND</text><text class="st-sub" x="195" y="47">노스다코타</text>
+<path id="rMN" data-id="MN" data-ko="미네소타" data-en="Minnesota" d="M237,3L309,3L309,67L237,67Z"/>
+<text class="st-lbl" x="273" y="31">MN</text><text class="st-sub" x="273" y="47">미네소타</text>
+<path id="rVT" data-id="VT" data-ko="버몬트" data-en="Vermont" d="M705,3L777,3L777,67L705,67Z"/>
+<text class="st-lbl" x="741" y="31">VT</text><text class="st-sub" x="741" y="47">버몬트</text>
+<path id="rME" data-id="ME" data-ko="메인" data-en="Maine" d="M783,3L855,3L855,67L783,67Z"/>
+<text class="st-lbl" x="819" y="31">ME</text><text class="st-sub" x="819" y="47">메인</text>
+<!-- Row 1 -->
+<path id="rOR" data-id="OR" data-ko="오리건" data-en="Oregon" d="M3,73L75,73L75,137L3,137Z"/>
+<text class="st-lbl" x="39" y="101">OR</text><text class="st-sub" x="39" y="117">오리건</text>
+<path id="rID" data-id="ID" data-ko="아이다호" data-en="Idaho" d="M81,73L153,73L153,137L81,137Z"/>
+<text class="st-lbl" x="117" y="101">ID</text><text class="st-sub" x="117" y="117">아이다호</text>
+<path id="rWY" data-id="WY" data-ko="와이오밍" data-en="Wyoming" d="M159,73L231,73L231,137L159,137Z"/>
+<text class="st-lbl" x="195" y="101">WY</text><text class="st-sub" x="195" y="117">와이오밍</text>
+<path id="rSD" data-id="SD" data-ko="사우스다코타" data-en="South Dakota" d="M237,73L309,73L309,137L237,137Z"/>
+<text class="st-lbl" x="273" y="101">SD</text><text class="st-sub" x="273" y="117">사우스다코타</text>
+<path id="rWI" data-id="WI" data-ko="위스콘신" data-en="Wisconsin" d="M315,73L387,73L387,137L315,137Z"/>
+<text class="st-lbl" x="351" y="101">WI</text><text class="st-sub" x="351" y="117">위스콘신</text>
+<path id="rMI" data-id="MI" data-ko="미시건" data-en="Michigan" d="M471,73L543,73L543,137L471,137Z"/>
+<text class="st-lbl" x="507" y="101">MI</text><text class="st-sub" x="507" y="117">미시건</text>
+<path id="rNY" data-id="NY" data-ko="뉴욕" data-en="New York" d="M705,73L777,73L777,137L705,137Z"/>
+<text class="st-lbl" x="741" y="101">NY</text><text class="st-sub" x="741" y="117">뉴욕</text>
+<path id="rNH" data-id="NH" data-ko="뉴햄프셔" data-en="New Hampshire" d="M783,73L855,73L855,137L783,137Z"/>
+<text class="st-lbl" x="819" y="101">NH</text><text class="st-sub" x="819" y="117">뉴햄프셔</text>
+<!-- Row 2 -->
+<path id="rCA" data-id="CA" data-ko="캘리포니아" data-en="California" d="M3,143L75,143L75,207L3,207Z"/>
+<text class="st-lbl" x="39" y="171">CA</text><text class="st-sub" x="39" y="187">캘리포니아</text>
+<path id="rNV" data-id="NV" data-ko="네바다" data-en="Nevada" d="M81,143L153,143L153,207L81,207Z"/>
+<text class="st-lbl" x="117" y="171">NV</text><text class="st-sub" x="117" y="187">네바다</text>
+<path id="rUT" data-id="UT" data-ko="유타" data-en="Utah" d="M159,143L231,143L231,207L159,207Z"/>
+<text class="st-lbl" x="195" y="171">UT</text><text class="st-sub" x="195" y="187">유타</text>
+<path id="rCO" data-id="CO" data-ko="콜로라도" data-en="Colorado" d="M237,143L309,143L309,207L237,207Z"/>
+<text class="st-lbl" x="273" y="171">CO</text><text class="st-sub" x="273" y="187">콜로라도</text>
+<path id="rNE" data-id="NE" data-ko="네브래스카" data-en="Nebraska" d="M315,143L387,143L387,207L315,207Z"/>
+<text class="st-lbl" x="351" y="171">NE</text><text class="st-sub" x="351" y="187">네브래스카</text>
+<path id="rIA" data-id="IA" data-ko="아이오와" data-en="Iowa" d="M393,143L465,143L465,207L393,207Z"/>
+<text class="st-lbl" x="429" y="171">IA</text><text class="st-sub" x="429" y="187">아이오와</text>
+<path id="rIL" data-id="IL" data-ko="일리노이" data-en="Illinois" d="M471,143L543,143L543,207L471,207Z"/>
+<text class="st-lbl" x="507" y="171">IL</text><text class="st-sub" x="507" y="187">일리노이</text>
+<path id="rIN" data-id="IN" data-ko="인디애나" data-en="Indiana" d="M549,143L621,143L621,207L549,207Z"/>
+<text class="st-lbl" x="585" y="171">IN</text><text class="st-sub" x="585" y="187">인디애나</text>
+<path id="rOH" data-id="OH" data-ko="오하이오" data-en="Ohio" d="M627,143L699,143L699,207L627,207Z"/>
+<text class="st-lbl" x="663" y="171">OH</text><text class="st-sub" x="663" y="187">오하이오</text>
+<path id="rPA" data-id="PA" data-ko="펜실베이니아" data-en="Pennsylvania" d="M705,143L777,143L777,207L705,207Z"/>
+<text class="st-lbl" x="741" y="171">PA</text><text class="st-sub" x="741" y="187">펜실베이니아</text>
+<path id="rMA" data-id="MA" data-ko="매사추세츠" data-en="Massachusetts" d="M783,143L855,143L855,207L783,207Z"/>
+<text class="st-lbl" x="819" y="171">MA</text><text class="st-sub" x="819" y="187">매사추세츠</text>
+<!-- Row 3 -->
+<path id="rAZ" data-id="AZ" data-ko="애리조나" data-en="Arizona" d="M81,213L153,213L153,277L81,277Z"/>
+<text class="st-lbl" x="117" y="241">AZ</text><text class="st-sub" x="117" y="257">애리조나</text>
+<path id="rNM" data-id="NM" data-ko="뉴멕시코" data-en="New Mexico" d="M159,213L231,213L231,277L159,277Z"/>
+<text class="st-lbl" x="195" y="241">NM</text><text class="st-sub" x="195" y="257">뉴멕시코</text>
+<path id="rKS" data-id="KS" data-ko="캔자스" data-en="Kansas" d="M237,213L309,213L309,277L237,277Z"/>
+<text class="st-lbl" x="273" y="241">KS</text><text class="st-sub" x="273" y="257">캔자스</text>
+<path id="rMO" data-id="MO" data-ko="미주리" data-en="Missouri" d="M315,213L387,213L387,277L315,277Z"/>
+<text class="st-lbl" x="351" y="241">MO</text><text class="st-sub" x="351" y="257">미주리</text>
+<path id="rKY" data-id="KY" data-ko="켄터키" data-en="Kentucky" d="M393,213L465,213L465,277L393,277Z"/>
+<text class="st-lbl" x="429" y="241">KY</text><text class="st-sub" x="429" y="257">켄터키</text>
+<path id="rWV" data-id="WV" data-ko="웨스트버지니아" data-en="West Virginia" d="M471,213L543,213L543,277L471,277Z"/>
+<text class="st-lbl" x="507" y="241">WV</text><text class="st-sub" x="507" y="257">웨스트버지니아</text>
+<path id="rVA" data-id="VA" data-ko="버지니아" data-en="Virginia" d="M549,213L621,213L621,277L549,277Z"/>
+<text class="st-lbl" x="585" y="241">VA</text><text class="st-sub" x="585" y="257">버지니아</text>
+<path id="rMD" data-id="MD" data-ko="메릴랜드" data-en="Maryland" d="M627,213L699,213L699,277L627,277Z"/>
+<text class="st-lbl" x="663" y="241">MD</text><text class="st-sub" x="663" y="257">메릴랜드</text>
+<path id="rNJ" data-id="NJ" data-ko="뉴저지" data-en="New Jersey" d="M705,213L777,213L777,277L705,277Z"/>
+<text class="st-lbl" x="741" y="241">NJ</text><text class="st-sub" x="741" y="257">뉴저지</text>
+<path id="rCT" data-id="CT" data-ko="코네티컷" data-en="Connecticut" d="M783,213L855,213L855,277L783,277Z"/>
+<text class="st-lbl" x="819" y="241">CT</text><text class="st-sub" x="819" y="257">코네티컷</text>
+<!-- Row 4 -->
+<path id="rTX" data-id="TX" data-ko="텍사스" data-en="Texas" d="M159,283L231,283L231,347L159,347Z"/>
+<text class="st-lbl" x="195" y="311">TX</text><text class="st-sub" x="195" y="327">텍사스</text>
+<path id="rOK" data-id="OK" data-ko="오클라호마" data-en="Oklahoma" d="M237,283L309,283L309,347L237,347Z"/>
+<text class="st-lbl" x="273" y="311">OK</text><text class="st-sub" x="273" y="327">오클라호마</text>
+<path id="rAR" data-id="AR" data-ko="아칸소" data-en="Arkansas" d="M315,283L387,283L387,347L315,347Z"/>
+<text class="st-lbl" x="351" y="311">AR</text><text class="st-sub" x="351" y="327">아칸소</text>
+<path id="rTN" data-id="TN" data-ko="테네시" data-en="Tennessee" d="M393,283L465,283L465,347L393,347Z"/>
+<text class="st-lbl" x="429" y="311">TN</text><text class="st-sub" x="429" y="327">테네시</text>
+<path id="rNC" data-id="NC" data-ko="노스캐롤라이나" data-en="North Carolina" d="M471,283L543,283L543,347L471,347Z"/>
+<text class="st-lbl" x="507" y="311">NC</text><text class="st-sub" x="507" y="327">노스캐롤라이나</text>
+<path id="rSC" data-id="SC" data-ko="사우스캐롤라이나" data-en="South Carolina" d="M549,283L621,283L621,347L549,347Z"/>
+<text class="st-lbl" x="585" y="311">SC</text><text class="st-sub" x="585" y="327">사우스캐롤라이나</text>
+<path id="rDE" data-id="DE" data-ko="델라웨어" data-en="Delaware" d="M627,283L699,283L699,347L627,347Z"/>
+<text class="st-lbl" x="663" y="311">DE</text><text class="st-sub" x="663" y="327">델라웨어</text>
+<path id="rRI" data-id="RI" data-ko="로드아일랜드" data-en="Rhode Island" d="M705,283L777,283L777,347L705,347Z"/>
+<text class="st-lbl" x="741" y="311">RI</text><text class="st-sub" x="741" y="327">로드아일랜드</text>
+<!-- Row 5 -->
+<path id="rLA" data-id="LA" data-ko="루이지애나" data-en="Louisiana" d="M237,353L309,353L309,417L237,417Z"/>
+<text class="st-lbl" x="273" y="381">LA</text><text class="st-sub" x="273" y="397">루이지애나</text>
+<path id="rMS" data-id="MS" data-ko="미시시피" data-en="Mississippi" d="M315,353L387,353L387,417L315,417Z"/>
+<text class="st-lbl" x="351" y="381">MS</text><text class="st-sub" x="351" y="397">미시시피</text>
+<path id="rAL" data-id="AL" data-ko="앨라배마" data-en="Alabama" d="M393,353L465,353L465,417L393,417Z"/>
+<text class="st-lbl" x="429" y="381">AL</text><text class="st-sub" x="429" y="397">앨라배마</text>
+<path id="rGA" data-id="GA" data-ko="조지아" data-en="Georgia" d="M471,353L543,353L543,417L471,417Z"/>
+<text class="st-lbl" x="507" y="381">GA</text><text class="st-sub" x="507" y="397">조지아</text>
+<path id="rFL" data-id="FL" data-ko="플로리다" data-en="Florida" d="M549,353L621,353L621,417L549,417Z"/>
+<text class="st-lbl" x="585" y="381">FL</text><text class="st-sub" x="585" y="397">플로리다</text>
+<!-- Row 6: Insets -->
+<path id="rHI" data-id="HI" data-ko="하와이" data-en="Hawaii" d="M3,423L75,423L75,487L3,487Z"/>
+<text class="st-lbl" x="39" y="451">HI</text><text class="st-sub" x="39" y="467">하와이</text>
+<path id="rAK" data-id="AK" data-ko="알래스카" data-en="Alaska" d="M81,423L153,423L153,487L81,487Z"/>
+<text class="st-lbl" x="117" y="451">AK</text><text class="st-sub" x="117" y="467">알래스카</text>
+</g>
+</svg>

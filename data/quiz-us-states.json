@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "id": "us-states",
+    "mapSvg": "/maps/world/us-states.svg",
+    "defaultLang": "en",
+    "totalRegions": 50
+  },
+  "regions": [
+    {
+      "id": "AL", "svgPathId": "rAL",
+      "names": {"ko": "앨라배마", "en": "Alabama"},
+      "hints": {"ko": "시민권 운동의 발상지·목화의 주", "en": "Birthplace of the civil rights movement"},
+      "group": "South", "difficulty": 2, "center": [-86.8, 32.8]
+    },
+    {
+      "id": "AK", "svgPathId": "rAK",
+      "names": {"ko": "알래스카", "en": "Alaska"},
+      "hints": {"ko": "미국에서 가장 큰 주·오로라 명소", "en": "Largest US state by area; northern lights"},
+      "group": "West", "difficulty": 1, "center": [-153.4, 64.2]
+    },
+    {
+      "id": "AZ", "svgPathId": "rAZ",
+      "names": {"ko": "애리조나", "en": "Arizona"},
+      "hints": {"ko": "그랜드캐니언이 있는 주·사막 기후", "en": "Home of the Grand Canyon"},
+      "group": "West", "difficulty": 2, "center": [-111.1, 34.0]
+    },
+    {
+      "id": "AR", "svgPathId": "rAR",
+      "names": {"ko": "아칸소", "en": "Arkansas"},
+      "hints": {"ko": "오자크 산맥·월마트 본사가 있는 주", "en": "Ozark Mountains; birthplace of Walmart"},
+      "group": "South", "difficulty": 3, "center": [-92.4, 34.9]
+    },
+    {
+      "id": "CA", "svgPathId": "rCA",
+      "names": {"ko": "캘리포니아", "en": "California"},
+      "hints": {"ko": "미국 최다 인구·실리콘밸리·할리우드", "en": "Most populous state; Silicon Valley and Hollywood"},
+      "group": "West", "difficulty": 1, "center": [-119.4, 37.2]
+    },
+    {
+      "id": "CO", "svgPathId": "rCO",
+      "names": {"ko": "콜로라도", "en": "Colorado"},
+      "hints": {"ko": "로키산맥·스키 리조트·덴버", "en": "Rocky Mountains; Denver; skiing capital"},
+      "group": "West", "difficulty": 2, "center": [-105.5, 39.1]
+    },
+    {
+      "id": "CT", "svgPathId": "rCT",
+      "names": {"ko": "코네티컷", "en": "Connecticut"},
+      "hints": {"ko": "뉴잉글랜드 부유한 소주·예일대학교", "en": "Yale University; Constitution State"},
+      "group": "Northeast", "difficulty": 3, "center": [-72.7, 41.6]
+    },
+    {
+      "id": "DE", "svgPathId": "rDE",
+      "names": {"ko": "델라웨어", "en": "Delaware"},
+      "hints": {"ko": "미국 헌법을 최초로 비준한 주", "en": "First state to ratify the US Constitution"},
+      "group": "Northeast", "difficulty": 3, "center": [-75.5, 39.0]
+    },
+    {
+      "id": "FL", "svgPathId": "rFL",
+      "names": {"ko": "플로리다", "en": "Florida"},
+      "hints": {"ko": "선샤인 스테이트·디즈니월드·마이애미", "en": "Sunshine State; Disney World; Miami Beach"},
+      "group": "South", "difficulty": 1, "center": [-81.5, 27.8]
+    },
+    {
+      "id": "GA", "svgPathId": "rGA",
+      "names": {"ko": "조지아", "en": "Georgia"},
+      "hints": {"ko": "복숭아의 주·애틀랜타·코카콜라 본사", "en": "Peach State; Atlanta; Coca-Cola headquarters"},
+      "group": "South", "difficulty": 2, "center": [-83.4, 33.2]
+    },
+    {
+      "id": "HI", "svgPathId": "rHI",
+      "names": {"ko": "하와이", "en": "Hawaii"},
+      "hints": {"ko": "미국 유일 섬 주·태평양 화산 군도", "en": "Only US island state; Pacific volcanic archipelago"},
+      "group": "West", "difficulty": 1, "center": [-157.7, 20.8]
+    },
+    {
+      "id": "ID", "svgPathId": "rID",
+      "names": {"ko": "아이다호", "en": "Idaho"},
+      "hints": {"ko": "감자로 유명한 주·옐로스톤 인접", "en": "Famous for potatoes; near Yellowstone"},
+      "group": "West", "difficulty": 3, "center": [-114.5, 44.0]
+    },
+    {
+      "id": "IL", "svgPathId": "rIL",
+      "names": {"ko": "일리노이", "en": "Illinois"},
+      "hints": {"ko": "시카고가 있는 주·에이브러햄 링컨의 주", "en": "Home of Chicago; Land of Lincoln"},
+      "group": "Midwest", "difficulty": 1, "center": [-89.0, 40.1]
+    },
+    {
+      "id": "IN", "svgPathId": "rIN",
+      "names": {"ko": "인디애나", "en": "Indiana"},
+      "hints": {"ko": "인디애나폴리스 500 자동차 경주", "en": "Indianapolis 500 auto race; Crossroads of America"},
+      "group": "Midwest", "difficulty": 2, "center": [-86.1, 40.3]
+    },
+    {
+      "id": "IA", "svgPathId": "rIA",
+      "names": {"ko": "아이오와", "en": "Iowa"},
+      "hints": {"ko": "옥수수 밭·미국 대선 첫 코커스", "en": "Corn fields; first-in-nation caucuses"},
+      "group": "Midwest", "difficulty": 3, "center": [-93.2, 42.1]
+    },
+    {
+      "id": "KS", "svgPathId": "rKS",
+      "names": {"ko": "캔자스", "en": "Kansas"},
+      "hints": {"ko": "대평원의 중심·해바라기의 주", "en": "Heart of the Great Plains; Sunflower State"},
+      "group": "Midwest", "difficulty": 2, "center": [-98.4, 38.5]
+    },
+    {
+      "id": "KY", "svgPathId": "rKY",
+      "names": {"ko": "켄터키", "en": "Kentucky"},
+      "hints": {"ko": "버번 위스키·켄터키 더비 경마", "en": "Bourbon whiskey; Kentucky Derby horse race"},
+      "group": "South", "difficulty": 2, "center": [-84.3, 37.8]
+    },
+    {
+      "id": "LA", "svgPathId": "rLA",
+      "names": {"ko": "루이지애나", "en": "Louisiana"},
+      "hints": {"ko": "재즈·마디 그라·케이준 요리·뉴올리언스", "en": "Jazz music; Mardi Gras; Cajun cuisine; New Orleans"},
+      "group": "South", "difficulty": 2, "center": [-91.8, 31.1]
+    },
+    {
+      "id": "ME", "svgPathId": "rME",
+      "names": {"ko": "메인", "en": "Maine"},
+      "hints": {"ko": "랍스터·소나무 숲·미국 최북동단", "en": "Lobster; pine forests; northeasternmost US state"},
+      "group": "Northeast", "difficulty": 2, "center": [-69.4, 44.7]
+    },
+    {
+      "id": "MD", "svgPathId": "rMD",
+      "names": {"ko": "메릴랜드", "en": "Maryland"},
+      "hints": {"ko": "체사피크만·볼티모어·워싱턴DC 인접", "en": "Chesapeake Bay; Baltimore; surrounds Washington D.C."},
+      "group": "Northeast", "difficulty": 3, "center": [-76.5, 39.1]
+    },
+    {
+      "id": "MA", "svgPathId": "rMA",
+      "names": {"ko": "매사추세츠", "en": "Massachusetts"},
+      "hints": {"ko": "보스턴·하버드·MIT·미국 독립혁명 발원지", "en": "Boston; Harvard; MIT; birthplace of American Revolution"},
+      "group": "Northeast", "difficulty": 2, "center": [-71.9, 42.3]
+    },
+    {
+      "id": "MI", "svgPathId": "rMI",
+      "names": {"ko": "미시건", "en": "Michigan"},
+      "hints": {"ko": "자동차 산업 중심·디트로이트·오대호", "en": "Motor City Detroit; auto industry; Great Lakes"},
+      "group": "Midwest", "difficulty": 2, "center": [-85.6, 44.3]
+    },
+    {
+      "id": "MN", "svgPathId": "rMN",
+      "names": {"ko": "미네소타", "en": "Minnesota"},
+      "hints": {"ko": "만 개의 호수·미니애폴리스", "en": "Land of 10,000 Lakes; Minneapolis"},
+      "group": "Midwest", "difficulty": 2, "center": [-94.2, 46.4]
+    },
+    {
+      "id": "MS", "svgPathId": "rMS",
+      "names": {"ko": "미시시피", "en": "Mississippi"},
+      "hints": {"ko": "미시시피 강·블루스 음악 발상지", "en": "Along the Mississippi River; birthplace of blues music"},
+      "group": "South", "difficulty": 3, "center": [-89.7, 32.7]
+    },
+    {
+      "id": "MO", "svgPathId": "rMO",
+      "names": {"ko": "미주리", "en": "Missouri"},
+      "hints": {"ko": "세인트루이스 게이트웨이 아치·미주리 강", "en": "Gateway Arch in St. Louis; Show Me State"},
+      "group": "Midwest", "difficulty": 2, "center": [-92.5, 38.5]
+    },
+    {
+      "id": "MT", "svgPathId": "rMT",
+      "names": {"ko": "몬태나", "en": "Montana"},
+      "hints": {"ko": "광활한 하늘·글레이셔 국립공원", "en": "Big Sky Country; Glacier National Park"},
+      "group": "West", "difficulty": 2, "center": [-110.3, 47.0]
+    },
+    {
+      "id": "NE", "svgPathId": "rNE",
+      "names": {"ko": "네브래스카", "en": "Nebraska"},
+      "hints": {"ko": "옥수수 경작지·워런 버핏의 고향 오마하", "en": "Cornhusker State; Warren Buffett's home Omaha"},
+      "group": "Midwest", "difficulty": 3, "center": [-99.9, 41.5]
+    },
+    {
+      "id": "NV", "svgPathId": "rNV",
+      "names": {"ko": "네바다", "en": "Nevada"},
+      "hints": {"ko": "라스베이거스·카지노·실버 스테이트", "en": "Las Vegas; gambling; Silver State"},
+      "group": "West", "difficulty": 1, "center": [-116.7, 38.4]
+    },
+    {
+      "id": "NH", "svgPathId": "rNH",
+      "names": {"ko": "뉴햄프셔", "en": "New Hampshire"},
+      "hints": {"ko": "미국 대통령 선거 첫 번째 예비선거", "en": "First-in-the-Nation primary; Live Free or Die"},
+      "group": "Northeast", "difficulty": 3, "center": [-71.6, 43.5]
+    },
+    {
+      "id": "NJ", "svgPathId": "rNJ",
+      "names": {"ko": "뉴저지", "en": "New Jersey"},
+      "hints": {"ko": "가든 스테이트·뉴욕시 맞은편", "en": "Garden State; across from New York City"},
+      "group": "Northeast", "difficulty": 2, "center": [-74.5, 40.0]
+    },
+    {
+      "id": "NM", "svgPathId": "rNM",
+      "names": {"ko": "뉴멕시코", "en": "New Mexico"},
+      "hints": {"ko": "마법의 땅·어도비 건축·앨버커키", "en": "Land of Enchantment; adobe architecture; Albuquerque"},
+      "group": "West", "difficulty": 2, "center": [-106.1, 34.3]
+    },
+    {
+      "id": "NY", "svgPathId": "rNY",
+      "names": {"ko": "뉴욕", "en": "New York"},
+      "hints": {"ko": "자유의 여신상·뉴욕시·엠파이어 스테이트", "en": "Statue of Liberty; New York City; Empire State"},
+      "group": "Northeast", "difficulty": 1, "center": [-75.0, 43.0]
+    },
+    {
+      "id": "NC", "svgPathId": "rNC",
+      "names": {"ko": "노스캐롤라이나", "en": "North Carolina"},
+      "hints": {"ko": "라이트 형제 첫 비행지·타 힐 스테이트", "en": "Wright Brothers' first flight; Tar Heel State"},
+      "group": "South", "difficulty": 2, "center": [-79.4, 35.5]
+    },
+    {
+      "id": "ND", "svgPathId": "rND",
+      "names": {"ko": "노스다코타", "en": "North Dakota"},
+      "hints": {"ko": "평화 정원의 주·석유 붐·드넓은 평원", "en": "Peace Garden State; oil boom; vast prairies"},
+      "group": "Midwest", "difficulty": 3, "center": [-100.5, 47.5]
+    },
+    {
+      "id": "OH", "svgPathId": "rOH",
+      "names": {"ko": "오하이오", "en": "Ohio"},
+      "hints": {"ko": "우주비행사 가장 많이 배출·버크아이 스테이트", "en": "Buckeye State; most US astronauts born here"},
+      "group": "Midwest", "difficulty": 2, "center": [-82.8, 40.4]
+    },
+    {
+      "id": "OK", "svgPathId": "rOK",
+      "names": {"ko": "오클라호마", "en": "Oklahoma"},
+      "hints": {"ko": "수너 스테이트·토네이도 빈발 지역", "en": "Sooner State; Tornado Alley"},
+      "group": "South", "difficulty": 2, "center": [-97.5, 35.5]
+    },
+    {
+      "id": "OR", "svgPathId": "rOR",
+      "names": {"ko": "오리건", "en": "Oregon"},
+      "hints": {"ko": "포틀랜드·비버 스테이트·태평양 연안 숲", "en": "Beaver State; Portland; Pacific Northwest forests"},
+      "group": "West", "difficulty": 2, "center": [-120.5, 44.0]
+    },
+    {
+      "id": "PA", "svgPathId": "rPA",
+      "names": {"ko": "펜실베이니아", "en": "Pennsylvania"},
+      "hints": {"ko": "자유의 종·필라델피아·키스톤 스테이트", "en": "Liberty Bell; Philadelphia; Keystone State"},
+      "group": "Northeast", "difficulty": 2, "center": [-77.2, 41.2]
+    },
+    {
+      "id": "RI", "svgPathId": "rRI",
+      "names": {"ko": "로드아일랜드", "en": "Rhode Island"},
+      "hints": {"ko": "미국에서 가장 작은 주·뉴포트 항구", "en": "Smallest US state; Newport harbor"},
+      "group": "Northeast", "difficulty": 3, "center": [-71.5, 41.6]
+    },
+    {
+      "id": "SC", "svgPathId": "rSC",
+      "names": {"ko": "사우스캐롤라이나", "en": "South Carolina"},
+      "hints": {"ko": "팜메토 주·남북전쟁 첫 전투 포트 섬터", "en": "Palmetto State; Fort Sumter first Civil War battle"},
+      "group": "South", "difficulty": 3, "center": [-81.0, 33.8]
+    },
+    {
+      "id": "SD", "svgPathId": "rSD",
+      "names": {"ko": "사우스다코타", "en": "South Dakota"},
+      "hints": {"ko": "러시모어 산·마운트 러시모어 대통령 조각", "en": "Mount Rushmore presidential sculpture"},
+      "group": "Midwest", "difficulty": 2, "center": [-100.2, 44.3]
+    },
+    {
+      "id": "TN", "svgPathId": "rTN",
+      "names": {"ko": "테네시", "en": "Tennessee"},
+      "hints": {"ko": "내슈빌 컨트리 음악·엘비스 프레슬리", "en": "Nashville country music capital; Elvis Presley's Memphis"},
+      "group": "South", "difficulty": 2, "center": [-86.6, 35.8]
+    },
+    {
+      "id": "TX", "svgPathId": "rTX",
+      "names": {"ko": "텍사스", "en": "Texas"},
+      "hints": {"ko": "론스타 스테이트·미국 본토 최대 주", "en": "Lone Star State; largest contiguous US state"},
+      "group": "South", "difficulty": 1, "center": [-99.3, 31.2]
+    },
+    {
+      "id": "UT", "svgPathId": "rUT",
+      "names": {"ko": "유타", "en": "Utah"},
+      "hints": {"ko": "비하이브 스테이트·솔트레이크시티·모르몬교", "en": "Beehive State; Salt Lake City; Mormon heritage"},
+      "group": "West", "difficulty": 2, "center": [-111.1, 39.2]
+    },
+    {
+      "id": "VT", "svgPathId": "rVT",
+      "names": {"ko": "버몬트", "en": "Vermont"},
+      "hints": {"ko": "단풍 시럽·그린 마운틴·스키 리조트", "en": "Maple syrup; Green Mountain State; skiing"},
+      "group": "Northeast", "difficulty": 3, "center": [-72.7, 44.0]
+    },
+    {
+      "id": "VA", "svgPathId": "rVA",
+      "names": {"ko": "버지니아", "en": "Virginia"},
+      "hints": {"ko": "대통령의 어머니 주·8명의 대통령 배출", "en": "Mother of Presidents; birthplace of 8 US presidents"},
+      "group": "South", "difficulty": 2, "center": [-78.7, 37.5]
+    },
+    {
+      "id": "WA", "svgPathId": "rWA",
+      "names": {"ko": "워싱턴", "en": "Washington"},
+      "hints": {"ko": "에버그린 스테이트·시애틀·마이크로소프트·아마존", "en": "Evergreen State; Seattle; Microsoft and Amazon HQ"},
+      "group": "West", "difficulty": 1, "center": [-120.7, 47.4]
+    },
+    {
+      "id": "WV", "svgPathId": "rWV",
+      "names": {"ko": "웨스트버지니아", "en": "West Virginia"},
+      "hints": {"ko": "산의 주·남북전쟁 중 버지니아에서 분리", "en": "Mountain State; separated from Virginia during Civil War"},
+      "group": "South", "difficulty": 3, "center": [-80.6, 38.6]
+    },
+    {
+      "id": "WI", "svgPathId": "rWI",
+      "names": {"ko": "위스콘신", "en": "Wisconsin"},
+      "hints": {"ko": "아메리카 유제품·치즈·밀워키 맥주", "en": "America's Dairyland; cheese; Milwaukee beer"},
+      "group": "Midwest", "difficulty": 2, "center": [-89.8, 44.5]
+    },
+    {
+      "id": "WY", "svgPathId": "rWY",
+      "names": {"ko": "와이오밍", "en": "Wyoming"},
+      "hints": {"ko": "옐로스톤 국립공원·이퀄리티 스테이트", "en": "Yellowstone National Park; Equality State"},
+      "group": "West", "difficulty": 2, "center": [-107.3, 43.1]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="300 371 58 57" id="kmap">
+<defs><style>.gu-lbl{font-size:2px;font-family:inherit;text-anchor:middle;dominant-baseline:middle;fill:rgba(255,255,255,0.8);pointer-events:none;}</style></defs>
+<g id="regions">
+<path id="r11110" data-id="11110" data-ko="종로구" data-en="Jongno-gu" data-grp="서울" d="M338.3,389.6L327.3,383.6L316.3,389.6L316.3,401.6L327.3,407.6L338.3,401.6Z"/>
+<text class="gu-lbl" x="327.3" y="395.6">종로</text>
+<path id="r11140" data-id="11140" data-ko="중구" data-en="Jung-gu" data-grp="서울" d="M340.1,393.1L329.1,387.1L318.1,393.1L318.1,405.2L329.1,411.2L340.1,405.2Z"/>
+<text class="gu-lbl" x="329.1" y="399.2">중구</text>
+<path id="r11170" data-id="11170" data-ko="용산구" data-en="Yongsan-gu" data-grp="서울" d="M339.3,396.7L328.3,390.7L317.3,396.7L317.3,408.7L328.3,414.7L339.3,408.7Z"/>
+<text class="gu-lbl" x="328.3" y="402.7">용산</text>
+<path id="r11200" data-id="11200" data-ko="성동구" data-en="Seongdong-gu" data-grp="서울" d="M343.6,393.1L332.6,387.1L321.6,393.1L321.6,405.2L332.6,411.2L343.6,405.2Z"/>
+<text class="gu-lbl" x="332.6" y="399.2">성동</text>
+<path id="r11215" data-id="11215" data-ko="광진구" data-en="Gwangjin-gu" data-grp="서울" d="M347.7,396.0L336.7,390.0L325.7,396.0L325.7,408.0L336.7,414.0L347.7,408.0Z"/>
+<text class="gu-lbl" x="336.7" y="402.0">광진</text>
+<path id="r11230" data-id="11230" data-ko="동대문구" data-en="Dongdaemun-gu" data-grp="서울" d="M344.5,390.7L333.5,384.7L322.5,390.7L322.5,402.8L333.5,408.8L344.5,402.8Z"/>
+<text class="gu-lbl" x="333.5" y="396.8">동대문</text>
+<path id="r11260" data-id="11260" data-ko="중랑구" data-en="Jungnang-gu" data-grp="서울" d="M348.7,388.2L337.7,382.2L326.7,388.2L326.7,400.2L337.7,406.2L348.7,400.2Z"/>
+<text class="gu-lbl" x="337.7" y="394.2">중랑</text>
+<path id="r11290" data-id="11290" data-ko="성북구" data-en="Seongbuk-gu" data-grp="서울" d="M341.8,388.2L330.8,382.2L319.8,388.2L319.8,400.2L330.8,406.2L341.8,400.2Z"/>
+<text class="gu-lbl" x="330.8" y="394.2">성북</text>
+<path id="r11305" data-id="11305" data-ko="강북구" data-en="Gangbuk-gu" data-grp="서울" d="M342.7,384.3L331.7,378.3L320.7,384.3L320.7,396.3L331.7,402.4L342.7,396.3Z"/>
+<text class="gu-lbl" x="331.7" y="390.4">강북</text>
+<path id="r11320" data-id="11320" data-ko="도봉구" data-en="Dobong-gu" data-grp="서울" d="M344.5,381.0L333.5,375.0L322.5,381.0L322.5,393.0L333.5,399.0L344.5,393.0Z"/>
+<text class="gu-lbl" x="333.5" y="387.0">도봉</text>
+<path id="r11350" data-id="11350" data-ko="노원구" data-en="Nowon-gu" data-grp="서울" d="M347.1,382.7L336.1,376.7L325.1,382.7L325.1,394.7L336.1,400.7L347.1,394.7Z"/>
+<text class="gu-lbl" x="336.1" y="388.7">노원</text>
+<path id="r11380" data-id="11380" data-ko="은평구" data-en="Eunpyeong-gu" data-grp="서울" d="M333.8,388.5L322.8,382.5L311.8,388.5L311.8,400.6L322.8,406.6L333.8,400.6Z"/>
+<text class="gu-lbl" x="322.8" y="394.6">은평</text>
+<path id="r11410" data-id="11410" data-ko="서대문구" data-en="Seodaemun-gu" data-grp="서울" d="M334.5,391.3L323.5,385.3L312.5,391.3L312.5,403.3L323.5,409.3L334.5,403.3Z"/>
+<text class="gu-lbl" x="323.5" y="397.3">서대문</text>
+<path id="r11440" data-id="11440" data-ko="마포구" data-en="Mapo-gu" data-grp="서울" d="M332.1,393.9L321.1,387.9L310.1,393.9L310.1,406.0L321.1,412.0L332.1,406.0Z"/>
+<text class="gu-lbl" x="321.1" y="400.0">마포</text>
+<path id="r11470" data-id="11470" data-ko="양천구" data-en="Yangcheon-gu" data-grp="서울" d="M328.4,397.6L317.4,391.6L306.3,397.6L306.3,409.6L317.4,415.6L328.4,409.6Z"/>
+<text class="gu-lbl" x="317.4" y="403.6">양천</text>
+<path id="r11500" data-id="11500" data-ko="강서구" data-en="Gangseo-gu" data-grp="서울" d="M326.6,394.6L315.6,388.6L304.6,394.6L304.6,406.6L315.6,412.6L326.6,406.6Z"/>
+<text class="gu-lbl" x="315.6" y="400.6">강서</text>
+<path id="r11530" data-id="11530" data-ko="구로구" data-en="Guro-gu" data-grp="서울" d="M330.1,400.9L319.1,394.9L308.1,400.9L308.1,412.9L319.1,418.9L330.1,412.9Z"/>
+<text class="gu-lbl" x="319.1" y="406.9">구로</text>
+<path id="r11545" data-id="11545" data-ko="금천구" data-en="Geumcheon-gu" data-grp="서울" d="M330.8,405.3L319.8,399.3L308.8,405.3L308.8,417.3L319.8,423.3L330.8,417.3Z"/>
+<text class="gu-lbl" x="319.8" y="411.3">금천</text>
+<path id="r11560" data-id="11560" data-ko="영등포구" data-en="Yeongdeungpo-gu" data-grp="서울" d="M330.8,397.4L319.8,391.4L308.8,397.4L308.8,409.4L319.8,415.4L330.8,409.4Z"/>
+<text class="gu-lbl" x="319.8" y="403.4">영등포</text>
+<path id="r11590" data-id="11590" data-ko="동작구" data-en="Dongjak-gu" data-grp="서울" d="M334.8,399.0L323.8,393.0L312.8,399.0L312.8,411.0L323.8,417.0L334.8,411.0Z"/>
+<text class="gu-lbl" x="323.8" y="405.0">동작</text>
+<path id="r11620" data-id="11620" data-ko="관악구" data-en="Gwanak-gu" data-grp="서울" d="M335.9,402.9L324.9,396.9L313.9,402.9L313.9,414.9L324.9,420.9L335.9,414.9Z"/>
+<text class="gu-lbl" x="324.9" y="408.9">관악</text>
+<path id="r11650" data-id="11650" data-ko="서초구" data-en="Seocho-gu" data-grp="서울" d="M343.2,402.3L332.2,396.3L321.2,402.3L321.2,414.3L332.2,420.3L343.2,414.3Z"/>
+<text class="gu-lbl" x="332.2" y="408.3">서초</text>
+<path id="r11680" data-id="11680" data-ko="강남구" data-en="Gangnam-gu" data-grp="서울" d="M344.5,398.4L333.5,392.4L322.5,398.4L322.5,410.4L333.5,416.4L344.5,410.4Z"/>
+<text class="gu-lbl" x="333.5" y="404.4">강남</text>
+<path id="r11710" data-id="11710" data-ko="송파구" data-en="Songpa-gu" data-grp="서울" d="M349.8,398.7L338.8,392.7L327.8,398.7L327.8,410.8L338.8,416.8L349.8,410.8Z"/>
+<text class="gu-lbl" x="338.8" y="404.8">송파</text>
+<path id="r11740" data-id="11740" data-ko="강동구" data-en="Gangdong-gu" data-grp="서울" d="M353.6,396.9L342.6,390.9L331.6,396.9L331.6,408.9L342.6,414.9L353.6,408.9Z"/>
+<text class="gu-lbl" x="342.6" y="402.9">강동</text>
+</g>
+</svg>
