@@ -171,8 +171,8 @@ function showToast(msg,ms=2200){const el=document.getElementById('toast');el.tex
   window.doShare=async()=>{
     const mn=mapNames[mapId]||mapId;
     const txt=isKo
-      ?`🗺️ GeoQ ${mn} Level${level}\n${score}/${total}점 (${Math.round(pct*100)}%)\nhttps://geoq.web.app`
-      :`🗺️ GeoQ ${mn} Level${level}\n${score}/${total} pts (${Math.round(pct*100)}%)\nhttps://geoq.web.app`;
+      ?`🗺️ GeoQ ${mn} Level${level}\n${score}/${total}점 (${Math.round(pct*100)}%)\nhttps://korean-cityquiz01.pages.dev`
+      :`🗺️ GeoQ ${mn} Level${level}\n${score}/${total} pts (${Math.round(pct*100)}%)\nhttps://korean-cityquiz01.pages.dev`;
     if(navigator.share){try{await navigator.share({text:txt});return;}catch{}}
     try{await navigator.clipboard.writeText(txt);showToast(isKo?'📋 복사됐어요!':'📋 Copied!');}
     catch{showToast(isKo?'공유 실패':'Share failed');}
