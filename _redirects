@@ -1,2 +1,2 @@
-/quiz    /quiz.html    200
-/result  /result.html  200
+# Cloudflare Pages handles .html → clean URL automatically
+# No custom rules needed

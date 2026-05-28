@@ -302,7 +302,7 @@ const QE = (() => {
   function _goResult(){
     _stopTimer();
     const p=new URLSearchParams({map:S.mapId,lang:S.lang,level:S.level,score:S.score,total:S.queue.length,correct:S.correct,wrong:S.wrong,hints:S.hintUsed});
-    location.href=`/result.html?${p}`;
+    location.href=`/result?${p}`;
   }
 
   return{init,nextQ,showHint,switchLevel,switchLang,restart};
