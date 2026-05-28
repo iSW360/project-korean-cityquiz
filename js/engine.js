@@ -1,6 +1,7 @@
 /* quiz-engine.js — GeoQ 통합 엔진 */
 const QE = (() => {
-  const QUIZ_N = 10; // 한 세션당 문제 수
+  const QUIZ_N = 10;   // 한 세션당 문제 수
+  const CACHE_VER = 3; // 올리면 SVG·JSON 캐시 전체 무효화
   let S = {
     mapId:'korea-sigungoo', lang:'ko', level:1,
     regions:[], queue:[], idx:0,
@@ -66,7 +67,7 @@ const QE = (() => {
   }
 
   async function _loadData(){
-    const key=`qd_${S.mapId}`;
+    const key=`qd_${S.mapId}_v${CACHE_VER}`;
     try{const c=sessionStorage.getItem(key);if(c){S.regions=JSON.parse(c).regions;return;}}catch{}
     const d=await fetch(`/data/quiz-${S.mapId}.json`).then(r=>r.json());
     S.regions=d.regions;
@@ -76,7 +77,7 @@ const QE = (() => {
   async function _loadMap(){
     const cont=$('map-container'), sk=$('map-skeleton');
     if(sk) sk.style.display='block';
-    const key=`sv_${S.mapId}`;
+    const key=`sv_${S.mapId}_v${CACHE_VER}`;
     let svg=sessionStorage.getItem(key);
     if(!svg){
       const meta=await fetch(`/data/quiz-${S.mapId}.json`).then(r=>r.json()).catch(()=>null);
