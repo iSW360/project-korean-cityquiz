@@ -102,25 +102,25 @@ input{font-family:inherit;}
 .lang-toggle button.active{background:var(--gold);color:var(--ink);font-weight:700;}
 
 /* 레벨 카드 row */
-.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:20px 20px 0;}
+.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:16px 20px 0;}
 .level-card{
   background:var(--ink2);border:1px solid var(--border);border-radius:var(--r-md);
-  padding:14px 10px;text-align:center;cursor:pointer;
+  padding:9px 8px;text-align:center;cursor:pointer;
   transition:all .22s var(--ease);text-decoration:none;color:inherit;
   position:relative;overflow:hidden;
 }
 .level-card:hover{border-color:var(--border2);transform:translateY(-2px);}
 .level-card.hot{border-color:rgba(232,184,75,.35);}
 .level-card.hot::after{
-  content:'HOT';position:absolute;top:7px;right:7px;
-  font-size:8px;font-weight:700;letter-spacing:.06em;
+  content:'HOT';position:absolute;top:5px;right:5px;
+  font-size:7px;font-weight:700;letter-spacing:.06em;
   background:var(--gold);color:var(--ink);
-  padding:1px 5px;border-radius:4px;
+  padding:1px 4px;border-radius:3px;
 }
-.level-card__num{font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:.05em;margin-bottom:6px;}
-.level-card__icon{font-size:22px;margin-bottom:6px;display:block;}
-.level-card__name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px;}
-.level-card__desc{font-size:10px;color:var(--muted);line-height:1.4;}
+.level-card__num{font-family:var(--mono);font-size:9px;color:var(--gold);letter-spacing:.05em;margin-bottom:3px;}
+.level-card__icon{font-size:18px;margin-bottom:2px;display:block;}
+.level-card__name{font-size:11px;font-weight:700;color:var(--text);}
+.level-card__desc{display:none;}
 
 /* 섹션 */
 .home-section{padding:24px 20px 0;}
@@ -221,6 +221,8 @@ input{font-family:inherit;}
 .level-tab.active{background:var(--gold);color:var(--ink);border-color:var(--gold);}
 .level-tab.active span{color:rgba(12,18,32,.65);}
 .level-tab:hover:not(.active){background:rgba(255,255,255,.08);color:var(--text);}
+.level-tab.quiz-locked{opacity:.4;cursor:not-allowed;}
+.level-tab.quiz-locked:hover{background:rgba(255,255,255,.04)!important;color:var(--muted)!important;}
 
 /* 진행바 */
 .progress-area{display:flex;align-items:center;gap:10px;}

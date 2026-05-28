@@ -1,11 +1,13 @@
 /* quiz-engine.js — GeoQ 통합 엔진 */
 const QE = (() => {
+  const QUIZ_N = 10; // 한 세션당 문제 수
   let S = {
     mapId:'korea-sigungoo', lang:'ko', level:1,
     regions:[], queue:[], idx:0,
     score:0, correct:0, wrong:0, hintUsed:0,
     hintThis:false, answered:false,
     timer:null, timeLeft:15,
+    levelLocked:false,
   };
   const $=id=>document.getElementById(id);
   const qs=sel=>document.querySelector(sel);
@@ -41,6 +43,7 @@ const QE = (() => {
     await _loadData();
     await _loadMap();
     _buildQueue();
+    _lockLevelTabs(true);
     _showQ();
   }
 
@@ -111,8 +114,14 @@ const QE = (() => {
   function _buildQueue(){
     const a=[...S.regions];
     for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
-    S.queue=a;S.idx=0;S.score=0;S.correct=0;S.wrong=0;S.hintUsed=0;
+    S.queue=a.slice(0, Math.min(QUIZ_N, a.length));
+    S.idx=0;S.score=0;S.correct=0;S.wrong=0;S.hintUsed=0;
     _updateScore();_updateProg();
+  }
+
+  function _lockLevelTabs(lock){
+    S.levelLocked=lock;
+    document.querySelectorAll('.level-tab').forEach(t=>t.classList.toggle('quiz-locked',lock));
   }
 
   function _showQ(){
@@ -295,7 +304,13 @@ const QE = (() => {
     if(el) el.textContent=`${S.score%1===0?S.score:S.score.toFixed(1)}${S.lang==='ko'?'점':' pts'}`;
   }
 
-  function switchLevel(lv){_stopTimer();const p=new URLSearchParams(location.search);p.set('level',lv);location.search=p.toString();}
+  function switchLevel(lv){
+    if(S.levelLocked){
+      showToast(S.lang==='ko'?'🔒 퀴즈 중 레벨 변경 불가':'🔒 Level locked during quiz');
+      return;
+    }
+    _stopTimer();const p=new URLSearchParams(location.search);p.set('level',lv);location.search=p.toString();
+  }
   function switchLang(lang){_stopTimer();localStorage.setItem('qlang',lang);const p=new URLSearchParams(location.search);p.set('lang',lang);location.search=p.toString();}
   function restart(){_stopTimer();_clearMap();_buildQueue();_showQ();}
 

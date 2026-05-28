@@ -34,19 +34,16 @@
     <div class="level-card__num">LV.01</div>
     <span class="level-card__icon">🔤</span>
     <div class="level-card__name" id="lv1n">4지선다</div>
-    <div class="level-card__desc" id="lv1d">힌트 자유 사용<br>시간 제한 없음</div>
   </a>
   <a href="/quiz?map=korea-sigungoo&level=2" class="level-card">
     <div class="level-card__num">LV.02</div>
     <span class="level-card__icon">⏱️</span>
     <div class="level-card__name" id="lv2n">8지선다</div>
-    <div class="level-card__desc" id="lv2d">힌트 시 0.5점<br>문제당 15초</div>
   </a>
   <a href="/quiz?map=korea-sigungoo&level=3" class="level-card">
     <div class="level-card__num">LV.03</div>
     <span class="level-card__icon">🗺️</span>
     <div class="level-card__name" id="lv3n">지도 클릭</div>
-    <div class="level-card__desc" id="lv3d">지역명 보고<br>지도에서 직접</div>
   </a>
 </div>
 
@@ -65,13 +62,23 @@
   <div class="home-section-label">🇰🇷 <span id="sec-ko">한국</span></div>
   <div class="map-grid">
     <a href="/quiz?map=korea-sigungoo&level=1" class="map-card">
-      <div class="map-card__icon">🗾</div>
+      <div class="map-card__icon" style="padding:5px;">
+        <!-- 한국(남한) 실루엣 SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 56" style="width:100%;height:100%;">
+          <path fill="#3ECFB2" opacity="0.9" d="M5,2L18,0L38,2L48,8L46,26L41,45L33,51L24,52L9,48L5,40L4,28L7,16Z"/>
+        </svg>
+      </div>
       <div class="map-card__name" id="mn-ks">전국 시군구</div>
       <div class="map-card__meta" id="mc-ks">104개 지역 · 3레벨</div>
       <span class="map-card__badge badge-gold" id="mb-ks">인기</span>
     </a>
     <a href="/quiz?map=korea-seoul&level=1" class="map-card">
-      <div class="map-card__icon">🏙️</div>
+      <div class="map-card__icon" style="padding:5px;">
+        <!-- 서울 행정구역 실루엣 SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 48" style="width:100%;height:100%;">
+          <path fill="#60B4FF" opacity="0.9" d="M8,6L22,2L38,4L50,14L50,28L42,45L28,48L12,45L2,35L0,22Z"/>
+        </svg>
+      </div>
       <div class="map-card__name" id="mn-se">서울 구</div>
       <div class="map-card__meta" id="mc-se">25개 지역 · 3레벨</div>
       <span class="map-card__badge badge-new" id="mb-se">NEW</span>
@@ -135,11 +142,8 @@ function setLang(l){localStorage.setItem('qlang',l);location.reload();}
     document.getElementById('ht').innerHTML='Geography Quiz<br>on the Map';
     document.getElementById('hs').innerHTML='Korea · Seoul · US States<br>3 difficulty levels';
     document.getElementById('lv1n').textContent='4 Choices';
-    document.getElementById('lv1d').innerHTML='Free hints<br>No time limit';
     document.getElementById('lv2n').textContent='8 Choices';
-    document.getElementById('lv2d').innerHTML='Hint = −0.5pts<br>15 sec per Q';
     document.getElementById('lv3n').textContent='Click Map';
-    document.getElementById('lv3d').innerHTML='See name, find<br>region on map';
     document.getElementById('ch-title').textContent="Today's Challenge";
     document.getElementById('ch-sub').textContent='Korea Districts · Start at Level 1!';
     document.getElementById('sec-ko').textContent='Korea';
