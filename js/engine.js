@@ -8,7 +8,6 @@ const QE = (() => {
     score:0, correct:0, wrong:0, hintUsed:0,
     hintThis:false, answered:false,
     timer:null, timeLeft:15,
-    levelLocked:false,
   };
   const $=id=>document.getElementById(id);
   const qs=sel=>document.querySelector(sel);
@@ -30,12 +29,6 @@ const QE = (() => {
       lvEl.textContent=S.lang==='ko'?lnames[S.level]:lnames_en[S.level];
     }
 
-    // 탭
-    document.querySelectorAll('.level-tab').forEach(t=>{
-      t.classList.toggle('active',parseInt(t.dataset.lv)===S.level);
-      t.addEventListener('click',()=>switchLevel(parseInt(t.dataset.lv)));
-    });
-
     // 언어 버튼
     $('btn-ko')?.classList.toggle('active',S.lang==='ko');
     $('btn-en')?.classList.toggle('active',S.lang==='en');
@@ -44,7 +37,6 @@ const QE = (() => {
     await _loadData();
     await _loadMap();
     _buildQueue();
-    _lockLevelTabs(true);
     _showQ();
   }
 
@@ -120,10 +112,6 @@ const QE = (() => {
     _updateScore();_updateProg();
   }
 
-  function _lockLevelTabs(lock){
-    S.levelLocked=lock;
-    document.querySelectorAll('.level-tab').forEach(t=>t.classList.toggle('quiz-locked',lock));
-  }
 
   function _showQ(){
     if(S.idx>=S.queue.length){_goResult();return;}
@@ -305,13 +293,7 @@ const QE = (() => {
     if(el) el.textContent=`${S.score%1===0?S.score:S.score.toFixed(1)}${S.lang==='ko'?'점':' pts'}`;
   }
 
-  function switchLevel(lv){
-    if(S.levelLocked){
-      showToast(S.lang==='ko'?'🔒 퀴즈 중 레벨 변경 불가':'🔒 Level locked during quiz');
-      return;
-    }
-    _stopTimer();const p=new URLSearchParams(location.search);p.set('level',lv);location.search=p.toString();
-  }
+  function switchLevel(lv){_stopTimer();const p=new URLSearchParams(location.search);p.set('level',lv);location.search=p.toString();}
   function switchLang(lang){_stopTimer();localStorage.setItem('qlang',lang);const p=new URLSearchParams(location.search);p.set('lang',lang);location.search=p.toString();}
   function restart(){_stopTimer();_clearMap();_buildQueue();_showQ();}
 
