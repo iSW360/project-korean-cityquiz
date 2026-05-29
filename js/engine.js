@@ -123,7 +123,7 @@ const QE = (() => {
     const r=S.queue[S.idx];
 
     _clearMap();
-    document.getElementById(r.svgPathId)?.classList.add('active');
+    if(S.level!==3) document.getElementById(r.svgPathId)?.classList.add('active');
     _zoomMap(r.svgPathId);
 
     // 문제 텍스트
