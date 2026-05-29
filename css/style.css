@@ -242,11 +242,32 @@ input{font-family:inherit;}
 }
 #map-skeleton{position:absolute;inset:0;z-index:2;}
 #map-container svg{width:100%;height:100%;display:block;opacity:0;transition:opacity .4s;}
+/* viewBox animated via JS requestAnimationFrame */
 #map-container svg.loaded{opacity:1;}
 /* 지도 path */
 #map-container path{
-  fill:rgba(255,255,255,.04);stroke:rgba(96,180,255,.25);stroke-width:.6;
-  transition:fill .2s,stroke .15s;vector-effect:non-scaling-stroke;
+  fill:rgba(255,255,255,.04);stroke:rgba(255,255,255,.12);stroke-width:.5;
+  transition:fill .25s,stroke .15s;vector-effect:non-scaling-stroke;
+}
+/* ── 도별 배경색 (data-grp = GeoJSON code prefix) ── */
+#map-container path[data-grp="31"]{fill:rgba(74,144,217,.28);}   /* 경기도 */
+#map-container path[data-grp="32"]{fill:rgba(87,168,107,.30);}   /* 강원도 */
+#map-container path[data-grp="33"]{fill:rgba(157,120,212,.28);}  /* 충청북도 */
+#map-container path[data-grp="34"]{fill:rgba(212,160,48,.28);}   /* 충청남도 */
+#map-container path[data-grp="35"]{fill:rgba(217,110,58,.28);}   /* 전라북도 */
+#map-container path[data-grp="36"]{fill:rgba(62,189,189,.28);}   /* 전라남도 */
+#map-container path[data-grp="37"]{fill:rgba(176,120,64,.30);}   /* 경상북도 */
+#map-container path[data-grp="38"]{fill:rgba(123,176,80,.28);}   /* 경상남도 */
+#map-container path[data-grp="39"]{fill:rgba(96,180,255,.32);}   /* 제주도 */
+#map-container path[data-grp="21"]{fill:rgba(224,96,144,.30);}   /* 부산 군 */
+#map-container path[data-grp="22"]{fill:rgba(144,96,200,.30);}   /* 대구 군 */
+#map-container path[data-grp="23"]{fill:rgba(112,168,216,.28);}  /* 인천 군 */
+#map-container path[data-grp="26"]{fill:rgba(216,128,80,.30);}   /* 울산 군 */
+#map-container path[data-grp="29"]{fill:rgba(168,200,56,.30);}   /* 세종 */
+/* ── 도 경계선 오버레이 ── */
+#prov-borders path{
+  fill:none;stroke:rgba(255,255,255,.55);stroke-width:1.6;
+  stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:none;
 }
 #map-container path.active{
   fill:var(--gold);stroke:var(--gold2);stroke-width:1.5;

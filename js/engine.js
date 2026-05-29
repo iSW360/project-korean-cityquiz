@@ -1,7 +1,7 @@
 /* quiz-engine.js — GeoQ 통합 엔진 */
 const QE = (() => {
   const QUIZ_N = 10;   // 한 세션당 문제 수
-  const CACHE_VER = 4; // 올리면 SVG·JSON 캐시 전체 무효화
+  const CACHE_VER = 5; // 올리면 SVG·JSON 캐시 전체 무효화
   let S = {
     mapId:'korea-sigungoo', lang:'ko', level:1,
     regions:[], queue:[], idx:0,
@@ -120,6 +120,7 @@ const QE = (() => {
 
     _clearMap();
     document.getElementById(r.svgPathId)?.classList.add('active');
+    _zoomMap(r.svgPathId);
 
     // 문제 텍스트
     const qt=$('question-text');
@@ -252,6 +253,48 @@ const QE = (() => {
   function nextQ(){
     const nb=$('btn-next');if(nb) nb.dataset.clicked='1';
     _stopTimer();S.idx++;_showQ();
+  }
+
+  /* ── 지도 줌 ── */
+  let _vbRaf=null;
+  function _animateViewBox(svg,target,dur=320){
+    if(_vbRaf){cancelAnimationFrame(_vbRaf);_vbRaf=null;}
+    const vb=svg.viewBox.baseVal;
+    const s={x:vb.x,y:vb.y,w:vb.width,h:vb.height};
+    const [tx,ty,tw,th]=target.split(' ').map(Number);
+    const d={x:tx-s.x,y:ty-s.y,w:tw-s.w,h:th-s.h};
+    const t0=performance.now();
+    function step(t){
+      const p=Math.min((t-t0)/dur,1);
+      const e=p<.5?2*p*p:-1+(4-2*p)*p;
+      svg.setAttribute('viewBox',[s.x+d.x*e,s.y+d.y*e,s.w+d.w*e,s.h+d.h*e].map(v=>v.toFixed(1)).join(' '));
+      if(p<1)_vbRaf=requestAnimationFrame(step);
+    }
+    _vbRaf=requestAnimationFrame(step);
+  }
+  function _resetMapZoom(){
+    const svg=qs('#map-container svg');
+    if(svg) _animateViewBox(svg,'0 0 680 800',280);
+  }
+  function _zoomMap(pathId){
+    const svg=qs('#map-container svg');
+    if(!svg)return;
+    if(S.level===3){_resetMapZoom();return;} // 레벨3: 전체지도 유지
+    requestAnimationFrame(()=>{
+      const path=document.getElementById(pathId);
+      if(!path)return;
+      const bb=path.getBBox();
+      if(!bb.width&&!bb.height){_resetMapZoom();return;} // 렌더 전 bBox
+      const maxDim=Math.max(bb.width,bb.height);
+      if(maxDim>=130){_resetMapZoom();return;} // 충분히 큰 지역 → 줌 불필요
+      // 작은 지역: 지역 크기에 맞게 viewBox 계산
+      const target=Math.max(maxDim/0.28, 220);
+      const VW=Math.min(target,560), VH=Math.min(target*(800/680),660);
+      const cx=bb.x+bb.width/2, cy=bb.y+bb.height/2;
+      const vx=Math.max(0,Math.min(cx-VW/2,680-VW));
+      const vy=Math.max(0,Math.min(cy-VH/2,800-VH));
+      _animateViewBox(svg,`${vx.toFixed(0)} ${vy.toFixed(0)} ${VW.toFixed(0)} ${VH.toFixed(0)}`);
+    });
   }
 
   function _clearMap(){
