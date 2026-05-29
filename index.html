@@ -28,55 +28,49 @@
   </div>
 </div>
 
-<!-- 레벨 소개 -->
+<!-- ① 레벨 선택 (클릭만, 이동 없음) -->
+<div class="level-section-label" id="lv-guide">① 레벨 선택</div>
 <div class="level-row">
-  <a href="/quiz?map=korea-sigungoo&level=1" class="level-card hot">
+  <div class="level-card hot selected" id="lc1" onclick="selectLevel(1)">
     <div class="level-card__num">LV.01</div>
     <span class="level-card__icon">🔤</span>
     <div class="level-card__name" id="lv1n">보기 4개</div>
-  </a>
-  <a href="/quiz?map=korea-sigungoo&level=2" class="level-card">
+  </div>
+  <div class="level-card" id="lc2" onclick="selectLevel(2)">
     <div class="level-card__num">LV.02</div>
     <span class="level-card__icon">⏱️</span>
     <div class="level-card__name" id="lv2n">보기 8개</div>
-  </a>
-  <a href="/quiz?map=korea-sigungoo&level=3" class="level-card">
+  </div>
+  <div class="level-card" id="lc3" onclick="selectLevel(3)">
     <div class="level-card__num">LV.03</div>
     <span class="level-card__icon">🗺️</span>
     <div class="level-card__name" id="lv3n">지도 클릭</div>
-  </a>
+  </div>
 </div>
 
-<!-- 오늘의 챌린지 -->
-<a href="/quiz?map=korea-sigungoo&level=1" class="challenge-banner">
-  <span class="challenge-banner__icon">🏆</span>
-  <div>
-    <div class="challenge-banner__title" id="ch-title">오늘의 챌린지</div>
-    <div class="challenge-banner__sub" id="ch-sub">전국 시군 · Level 1부터 도전!</div>
-  </div>
-  <span class="challenge-banner__arrow">›</span>
-</a>
+<!-- ② 지도 선택 → 바로 시작 -->
+<div class="level-section-label" id="map-guide">② 지도 선택 후 시작</div>
 
 <!-- 한국 -->
 <div class="home-section">
   <div class="home-section-label">🇰🇷 <span id="sec-ko">한국</span></div>
   <div class="map-grid">
-    <a href="/quiz?map=korea-sigungoo&level=1" class="map-card">
+    <div class="map-card" onclick="goQuiz('korea-sigungoo')">
       <div class="map-card__icon" style="padding:3px;">
         <img src="/img/icon-korea.svg" alt="한국 지도" style="width:100%;height:100%;object-fit:contain;">
       </div>
       <div class="map-card__name" id="mn-ks">전국 시군</div>
       <div class="map-card__meta" id="mc-ks">161개 지역 · 3레벨</div>
       <span class="map-card__badge badge-gold" id="mb-ks">인기</span>
-    </a>
-    <a href="/quiz?map=korea-seoul&level=1" class="map-card">
+    </div>
+    <div class="map-card" onclick="goQuiz('korea-seoul')">
       <div class="map-card__icon" style="padding:3px;">
         <img src="/img/icon-seoul.svg" alt="서울 지도" style="width:100%;height:100%;object-fit:contain;">
       </div>
       <div class="map-card__name" id="mn-se">서울 구</div>
       <div class="map-card__meta" id="mc-se">25개 지역 · 3레벨</div>
       <span class="map-card__badge badge-new" id="mb-se">NEW</span>
-    </a>
+    </div>
   </div>
 </div>
 
@@ -84,11 +78,11 @@
 <div class="home-section" style="padding-bottom:32px;">
   <div class="home-section-label">🌍 <span id="sec-wl">세계</span></div>
   <div class="map-grid">
-    <a href="/quiz?map=us-states&level=1" class="map-card">
+    <div class="map-card" onclick="goQuiz('us-states')">
       <div class="map-card__icon">🇺🇸</div>
       <div class="map-card__name" id="mn-us">미국 주</div>
       <div class="map-card__meta" id="mc-us">50개 지역 · 3레벨</div>
-    </a>
+    </div>
     <div class="map-card disabled">
       <div class="map-card__icon">🇪🇺</div>
       <div class="map-card__name" id="mn-eu">유럽 국가</div>
@@ -120,7 +114,24 @@
 <script>
 function setLang(l){localStorage.setItem('qlang',l);location.reload();}
 
+/* ── 레벨 선택 ── */
+let _lv = parseInt(localStorage.getItem('home_lv') || '1');
+
+function selectLevel(lv){
+  _lv = lv;
+  localStorage.setItem('home_lv', lv);
+  [1,2,3].forEach(n => document.getElementById('lc'+n).classList.toggle('selected', n===lv));
+}
+
+function goQuiz(mapId){
+  location.href = `/quiz?map=${mapId}&level=${_lv}`;
+}
+
+/* ── 초기화 ── */
 (async()=>{
+  // 선택된 레벨 복원
+  selectLevel(_lv);
+
   const lang=localStorage.getItem('qlang')||(navigator.language?.startsWith('ko')?'ko':'en');
   const isKo=lang==='ko';
   document.getElementById('btn-ko').classList.toggle('active',isKo);
@@ -135,11 +146,11 @@ function setLang(l){localStorage.setItem('qlang',l);location.reload();}
   if(!isKo){
     document.getElementById('ht').innerHTML='Geography Quiz<br>on the Map';
     document.getElementById('hs').innerHTML='Korea · Seoul · US States<br>3 difficulty levels';
+    document.getElementById('lv-guide').textContent='① Select Level';
+    document.getElementById('map-guide').textContent='② Select Map to Start';
     document.getElementById('lv1n').textContent='4 Choices';
     document.getElementById('lv2n').textContent='8 Choices';
     document.getElementById('lv3n').textContent='Click Map';
-    document.getElementById('ch-title').textContent="Today's Challenge";
-    document.getElementById('ch-sub').textContent='Korea Districts · Start at Level 1!';
     document.getElementById('sec-ko').textContent='Korea';
     document.getElementById('sec-wl').textContent='World';
     document.getElementById('mn-ks').textContent='Korea Si/Gun';
@@ -152,8 +163,7 @@ function setLang(l){localStorage.setItem('qlang',l);location.reload();}
     document.getElementById('mn-eu').textContent='European Countries';
     document.getElementById('mn-af').textContent='African Countries';
     document.getElementById('mn-wl').textContent='World Countries';
-    document.getElementById('mb-soon').textContent='Coming Soon';
-    document.querySelectorAll('[id^="mb-soon"],.badge-soon').forEach(e=>e.textContent='Soon');
+    document.querySelectorAll('.badge-soon').forEach(e=>e.textContent='Soon');
   }
 })();
 </script>

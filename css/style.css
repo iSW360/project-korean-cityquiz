@@ -101,8 +101,14 @@ input{font-family:inherit;}
 }
 .lang-toggle button.active{background:var(--gold);color:var(--ink);font-weight:700;}
 
+/* 레벨·지도 선택 안내 레이블 */
+.level-section-label{
+  font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--muted);padding:14px 20px 4px;
+}
+
 /* 레벨 카드 row */
-.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:16px 20px 0;}
+.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:4px 20px 0;}
 .level-card{
   background:var(--ink2);border:1px solid var(--border);border-radius:var(--r-md);
   padding:9px 8px;text-align:center;cursor:pointer;
@@ -110,13 +116,23 @@ input{font-family:inherit;}
   position:relative;overflow:hidden;
 }
 .level-card:hover{border-color:var(--border2);transform:translateY(-2px);}
-.level-card.hot{border-color:rgba(232,184,75,.35);}
+.level-card.hot{border-color:rgba(232,184,75,.2);}
 .level-card.hot::after{
   content:'HOT';position:absolute;top:5px;right:5px;
   font-size:7px;font-weight:700;letter-spacing:.06em;
   background:var(--gold);color:var(--ink);
   padding:1px 4px;border-radius:3px;
 }
+/* 선택된 레벨 */
+.level-card.selected{
+  border-color:var(--gold)!important;
+  background:rgba(232,184,75,.12);
+  transform:translateY(-2px);
+  box-shadow:0 4px 16px rgba(232,184,75,.2);
+}
+.level-card.selected .level-card__name{color:var(--gold);}
+.level-card.selected .level-card__num{color:var(--gold2);}
+
 .level-card__num{font-family:var(--mono);font-size:9px;color:var(--gold);letter-spacing:.05em;margin-bottom:3px;}
 .level-card__icon{font-size:18px;margin-bottom:2px;display:block;}
 .level-card__name{font-size:11px;font-weight:700;color:var(--text);}
