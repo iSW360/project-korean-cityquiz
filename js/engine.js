@@ -1,7 +1,7 @@
 /* quiz-engine.js — GeoQ 통합 엔진 */
 const QE = (() => {
   const QUIZ_N = 10;   // 한 세션당 문제 수
-  const CACHE_VER = 5; // 올리면 SVG·JSON 캐시 전체 무효화
+  const CACHE_VER = 6; // 올리면 SVG·JSON 캐시 전체 무효화
   let S = {
     mapId:'korea-sigungoo', lang:'ko', level:1,
     regions:[], queue:[], idx:0,
@@ -24,7 +24,7 @@ const QE = (() => {
     // 헤더
     const mapEl=$('hd-map'); if(mapEl) mapEl.textContent=I18n.get(`maps.${S.mapId}`);
     const lvEl=$('hd-lv'); if(lvEl){
-      const lnames={1:'Level 1 · 4지선다',2:'Level 2 · 8지선다 · 15초',3:'Level 3 · 지도 클릭'};
+      const lnames={1:'Level 1 · 보기 4개',2:'Level 2 · 보기 8개 · 15초',3:'Level 3 · 지도 클릭'};
       const lnames_en={1:'Level 1 · 4 choices',2:'Level 2 · 8 choices · 15s',3:'Level 3 · Click map'};
       lvEl.textContent=S.lang==='ko'?lnames[S.level]:lnames_en[S.level];
     }
@@ -86,8 +86,11 @@ const QE = (() => {
   function _bindMapClicks(){
     $('map-container').querySelectorAll('path[data-id]').forEach(p=>{
       p.addEventListener('click',()=>{if(!S.answered)_onMapClick(p.getAttribute('data-id'));});
-      p.addEventListener('mouseenter',()=>_showTip(p));
-      p.addEventListener('mouseleave',()=>_hideTip());
+      // Level 3: 툴팁 비활성화 (지명 노출 방지)
+      if(S.level!==3){
+        p.addEventListener('mouseenter',()=>_showTip(p));
+        p.addEventListener('mouseleave',()=>_hideTip());
+      }
     });
   }
 
@@ -99,9 +102,10 @@ const QE = (() => {
     if(!ok) document.getElementById(`r${cid}`)?.classList.add('wrong');
     if(ok){S.score+=S.hintThis?.5:1;S.correct++;}else S.wrong++;
     _feedback(ok,correct);
+    _showInfoHint(correct);
     _showNext();
     _updateScore();
-    setTimeout(()=>{if(!$('btn-next')?.dataset.clicked) nextQ();},2800);
+    setTimeout(()=>{if(!$('btn-next')?.dataset.clicked) nextQ();},3000);
   }
 
   function _buildQueue(){
@@ -165,7 +169,8 @@ const QE = (() => {
     const cont=$('choices');
     if(!cont) return;
     cont.innerHTML='';
-    cont.style.gridTemplateColumns=n>4?'1fr 1fr':'1fr 1fr';
+    cont.style.gridTemplateColumns=n>4?'repeat(4,1fr)':'1fr 1fr';
+    cont.dataset.count=String(n);
     list.forEach(r=>{
       const b=document.createElement('button');
       b.className='choice';b.textContent=_name(r);b.dataset.id=r.id;
@@ -186,8 +191,10 @@ const QE = (() => {
     _markMap(correct.svgPathId,ok);
     if(ok){S.score+=S.hintThis?.5:1;S.correct++;}else S.wrong++;
     _feedback(ok,correct);
+    _showInfoHint(correct);
     _showNext();
     _updateScore();
+    setTimeout(()=>{if(!$('btn-next')?.dataset.clicked) nextQ();},3000);
   }
 
   function _startTimer(){
@@ -205,7 +212,9 @@ const QE = (() => {
     document.querySelectorAll('.choice').forEach(b=>{b.disabled=true;if(b.dataset.id===c.id)b.classList.add('correct');});
     _markMap(c.svgPathId,false);
     _feedback(false,c,true);
+    _showInfoHint(c);
     _showNext();_updateScore();
+    setTimeout(()=>{if(!$('btn-next')?.dataset.clicked) nextQ();},3000);
   }
 
   function _updateTimer(t){
@@ -224,6 +233,20 @@ const QE = (() => {
     if(btn) btn.disabled=true;
     if(cnt) cnt.textContent=`(${S.hintUsed}회)`;
     if(S.level===2) showToast(S.lang==='ko'?'💡 정답 시 0.5점':'💡 +0.5 pts if correct');
+  }
+
+  /* 답 공개 후 지역 정보 힌트 표시 (점수에 무관) */
+  function _showInfoHint(r){
+    const h=_hint(r);if(!h) return;
+    const box=$('hint-box'),btn=$('hint-btn');
+    if(!box) return;
+    if(!S.hintThis){              // 아직 힌트를 쓰지 않은 경우
+      box.textContent=h;box.classList.add('show');
+      if(btn) btn.disabled=true; // 점수 차감 없이 표시
+    }
+    // 힌트 영역 표시 (Level3 포함)
+    const ha=$('hint-area');
+    if(ha) ha.style.display='block';
   }
 
   function _feedback(ok,correct,timeout=false){
@@ -279,15 +302,24 @@ const QE = (() => {
   function _zoomMap(pathId){
     const svg=qs('#map-container svg');
     if(!svg)return;
-    if(S.level===3){_resetMapZoom();return;} // 레벨3: 전체지도 유지
     requestAnimationFrame(()=>{
       const path=document.getElementById(pathId);
       if(!path)return;
       const bb=path.getBBox();
-      if(!bb.width&&!bb.height){_resetMapZoom();return;} // 렌더 전 bBox
+      if(!bb.width&&!bb.height){_resetMapZoom();return;}
       const maxDim=Math.max(bb.width,bb.height);
-      if(maxDim>=130){_resetMapZoom();return;} // 충분히 큰 지역 → 줌 불필요
-      // 작은 지역: 지역 크기에 맞게 viewBox 계산
+      if(S.level===3){
+        // 레벨3: 아주 작은 지역만 약하게 줌 (클릭할 수 있도록 넓은 시야 유지)
+        if(maxDim>=70){_resetMapZoom();return;}
+        const VW=Math.min(maxDim/0.12,600), VH=Math.min(VW*(800/680),700);
+        const cx=bb.x+bb.width/2, cy=bb.y+bb.height/2;
+        const vx=Math.max(0,Math.min(cx-VW/2,680-VW));
+        const vy=Math.max(0,Math.min(cy-VH/2,800-VH));
+        _animateViewBox(svg,`${vx.toFixed(0)} ${vy.toFixed(0)} ${VW.toFixed(0)} ${VH.toFixed(0)}`);
+        return;
+      }
+      // 레벨1·2: 지역 크기에 맞게 줌
+      if(maxDim>=130){_resetMapZoom();return;}
       const target=Math.max(maxDim/0.28, 220);
       const VW=Math.min(target,560), VH=Math.min(target*(800/680),660);
       const cx=bb.x+bb.width/2, cy=bb.y+bb.height/2;

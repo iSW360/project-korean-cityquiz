@@ -7,304 +7,904 @@
   },
   "regions": [
     {
-      "id": "AL", "svgPathId": "rAL",
-      "names": {"ko": "앨라배마", "en": "Alabama"},
-      "hints": {"ko": "시민권 운동의 발상지·목화의 주", "en": "Birthplace of the civil rights movement"},
-      "group": "South", "difficulty": 2, "center": [-86.8, 32.8]
+      "id": "AL",
+      "svgPathId": "rAL",
+      "names": {
+        "ko": "앨라배마",
+        "en": "Alabama"
+      },
+      "hints": {
+        "ko": "나사(NASA) 마샬 우주비행센터 소재. 시민권 운동 역사(몽고메리 버스 보이콧). 철강 산업",
+        "en": "Marshall Space Flight Center (NASA); birthplace of the Civil Rights Movement (Montgomery Bus Boycott); steel industry"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -86.8,
+        32.8
+      ]
     },
     {
-      "id": "AK", "svgPathId": "rAK",
-      "names": {"ko": "알래스카", "en": "Alaska"},
-      "hints": {"ko": "미국에서 가장 큰 주·오로라 명소", "en": "Largest US state by area; northern lights"},
-      "group": "West", "difficulty": 1, "center": [-153.4, 64.2]
+      "id": "AK",
+      "svgPathId": "rAK",
+      "names": {
+        "ko": "알래스카",
+        "en": "Alaska"
+      },
+      "hints": {
+        "ko": "미국 최대 주(면적). 데날리(북미 최고봉). 북극광 관측 명소. 러시아에서 매입(1867)",
+        "en": "Largest US state by area; Denali (highest peak in North America); northern lights; purchased from Russia in 1867"
+      },
+      "group": "West",
+      "difficulty": 1,
+      "center": [
+        -153.4,
+        64.2
+      ]
     },
     {
-      "id": "AZ", "svgPathId": "rAZ",
-      "names": {"ko": "애리조나", "en": "Arizona"},
-      "hints": {"ko": "그랜드캐니언이 있는 주·사막 기후", "en": "Home of the Grand Canyon"},
-      "group": "West", "difficulty": 2, "center": [-111.1, 34.0]
+      "id": "AZ",
+      "svgPathId": "rAZ",
+      "names": {
+        "ko": "애리조나",
+        "en": "Arizona"
+      },
+      "hints": {
+        "ko": "그랜드 캐니언. 선인장 국립공원. 피닉스(대도시). 미국 남서부 사막 문화",
+        "en": "Grand Canyon; Saguaro National Park; Phoenix metro area; Navajo Nation lands; southwestern desert culture"
+      },
+      "group": "West",
+      "difficulty": 2,
+      "center": [
+        -111.1,
+        34.0
+      ]
     },
     {
-      "id": "AR", "svgPathId": "rAR",
-      "names": {"ko": "아칸소", "en": "Arkansas"},
-      "hints": {"ko": "오자크 산맥·월마트 본사가 있는 주", "en": "Ozark Mountains; birthplace of Walmart"},
-      "group": "South", "difficulty": 3, "center": [-92.4, 34.9]
+      "id": "AR",
+      "svgPathId": "rAR",
+      "names": {
+        "ko": "아칸소",
+        "en": "Arkansas"
+      },
+      "hints": {
+        "ko": "캐딜락 마운틴. 세계 최대 다이아몬드 광산(크레이터 오브 다이아몬즈). 월마트 본사",
+        "en": "Crater of Diamonds State Park (world's only public diamond mine); Walmart headquarters in Bentonville"
+      },
+      "group": "South",
+      "difficulty": 3,
+      "center": [
+        -92.4,
+        34.9
+      ]
     },
     {
-      "id": "CA", "svgPathId": "rCA",
-      "names": {"ko": "캘리포니아", "en": "California"},
-      "hints": {"ko": "미국 최다 인구·실리콘밸리·할리우드", "en": "Most populous state; Silicon Valley and Hollywood"},
-      "group": "West", "difficulty": 1, "center": [-119.4, 37.2]
+      "id": "CA",
+      "svgPathId": "rCA",
+      "names": {
+        "ko": "캘리포니아",
+        "en": "California"
+      },
+      "hints": {
+        "ko": "미국에서 가장 인구 많은 주. 할리우드·실리콘밸리. 나파밸리 와인. 국내총생산(GDP) 세계 5위권",
+        "en": "Most populous US state; Hollywood, Silicon Valley, Napa Valley wine; economy rivaling world's top 5 nations"
+      },
+      "group": "West",
+      "difficulty": 1,
+      "center": [
+        -119.4,
+        37.2
+      ]
     },
     {
-      "id": "CO", "svgPathId": "rCO",
-      "names": {"ko": "콜로라도", "en": "Colorado"},
-      "hints": {"ko": "로키산맥·스키 리조트·덴버", "en": "Rocky Mountains; Denver; skiing capital"},
-      "group": "West", "difficulty": 2, "center": [-105.5, 39.1]
+      "id": "CO",
+      "svgPathId": "rCO",
+      "names": {
+        "ko": "콜로라도",
+        "en": "Colorado"
+      },
+      "hints": {
+        "ko": "로키산맥. 스키 리조트(아스펜, 베일). 덴버 마일하이시티. 대마초 합법화 선도",
+        "en": "Rocky Mountain ski resorts (Aspen, Vail); Denver 'Mile High City'; first state to legalize recreational marijuana"
+      },
+      "group": "West",
+      "difficulty": 2,
+      "center": [
+        -105.5,
+        39.1
+      ]
     },
     {
-      "id": "CT", "svgPathId": "rCT",
-      "names": {"ko": "코네티컷", "en": "Connecticut"},
-      "hints": {"ko": "뉴잉글랜드 부유한 소주·예일대학교", "en": "Yale University; Constitution State"},
-      "group": "Northeast", "difficulty": 3, "center": [-72.7, 41.6]
+      "id": "CT",
+      "svgPathId": "rCT",
+      "names": {
+        "ko": "코네티컷",
+        "en": "Connecticut"
+      },
+      "hints": {
+        "ko": "미국 최초 헌법 비준 주. 이비성(보험 산업 수도). 예일 대학교",
+        "en": "Yale University; first state to ratify the Constitution; Hartford known as 'Insurance Capital of the World'"
+      },
+      "group": "Northeast",
+      "difficulty": 3,
+      "center": [
+        -72.7,
+        41.6
+      ]
     },
     {
-      "id": "DE", "svgPathId": "rDE",
-      "names": {"ko": "델라웨어", "en": "Delaware"},
-      "hints": {"ko": "미국 헌법을 최초로 비준한 주", "en": "First state to ratify the US Constitution"},
-      "group": "Northeast", "difficulty": 3, "center": [-75.5, 39.0]
+      "id": "DE",
+      "svgPathId": "rDE",
+      "names": {
+        "ko": "델라웨어",
+        "en": "Delaware"
+      },
+      "hints": {
+        "ko": "미국 최초로 헌법 비준한 주(원조 주). 기업 등록지로 유명(포춘 500 기업 60% 등록)",
+        "en": "First state to ratify the US Constitution; nearly 60% of Fortune 500 companies incorporated here for tax benefits"
+      },
+      "group": "Northeast",
+      "difficulty": 3,
+      "center": [
+        -75.5,
+        39.0
+      ]
     },
     {
-      "id": "FL", "svgPathId": "rFL",
-      "names": {"ko": "플로리다", "en": "Florida"},
-      "hints": {"ko": "선샤인 스테이트·디즈니월드·마이애미", "en": "Sunshine State; Disney World; Miami Beach"},
-      "group": "South", "difficulty": 1, "center": [-81.5, 27.8]
+      "id": "FL",
+      "svgPathId": "rFL",
+      "names": {
+        "ko": "플로리다",
+        "en": "Florida"
+      },
+      "hints": {
+        "ko": "디즈니월드(세계 최대 테마파크). 케네디 우주센터. 마이애미 라틴 문화. 은퇴자 천국",
+        "en": "Walt Disney World (world's largest theme park); Kennedy Space Center; Miami's Latin culture; retirement destination"
+      },
+      "group": "South",
+      "difficulty": 1,
+      "center": [
+        -81.5,
+        27.8
+      ]
     },
     {
-      "id": "GA", "svgPathId": "rGA",
-      "names": {"ko": "조지아", "en": "Georgia"},
-      "hints": {"ko": "복숭아의 주·애틀랜타·코카콜라 본사", "en": "Peach State; Atlanta; Coca-Cola headquarters"},
-      "group": "South", "difficulty": 2, "center": [-83.4, 33.2]
+      "id": "GA",
+      "svgPathId": "rGA",
+      "names": {
+        "ko": "조지아",
+        "en": "Georgia"
+      },
+      "hints": {
+        "ko": "마틴 루터 킹 주니어 생가(애틀랜타). 코카콜라 본사. 복숭아 주(피치 스테이트)",
+        "en": "Atlanta: birthplace of MLK Jr.; Coca-Cola headquarters; known as the 'Peach State'; CNN headquarters"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -83.4,
+        33.2
+      ]
     },
     {
-      "id": "HI", "svgPathId": "rHI",
-      "names": {"ko": "하와이", "en": "Hawaii"},
-      "hints": {"ko": "미국 유일 섬 주·태평양 화산 군도", "en": "Only US island state; Pacific volcanic archipelago"},
-      "group": "West", "difficulty": 1, "center": [-157.7, 20.8]
+      "id": "HI",
+      "svgPathId": "rHI",
+      "names": {
+        "ko": "하와이",
+        "en": "Hawaii"
+      },
+      "hints": {
+        "ko": "50번째 주(1959년 편입). 진주만 공격 역사(1941). 화산 국립공원. 서핑 발상지",
+        "en": "50th and most recent state (1959); Pearl Harbor attack (1941); Hawaii Volcanoes National Park; birthplace of surfing"
+      },
+      "group": "West",
+      "difficulty": 1,
+      "center": [
+        -157.7,
+        20.8
+      ]
     },
     {
-      "id": "ID", "svgPathId": "rID",
-      "names": {"ko": "아이다호", "en": "Idaho"},
-      "hints": {"ko": "감자로 유명한 주·옐로스톤 인접", "en": "Famous for potatoes; near Yellowstone"},
-      "group": "West", "difficulty": 3, "center": [-114.5, 44.0]
+      "id": "ID",
+      "svgPathId": "rID",
+      "names": {
+        "ko": "아이다호",
+        "en": "Idaho"
+      },
+      "hints": {
+        "ko": "미국 최대 감자 생산지(아이다호 감자). 썬밸리 스키 리조트. 크레이터 오브 더 문 국립기념물",
+        "en": "America's potato capital (Idaho potatoes); Sun Valley ski resort; Craters of the Moon National Monument"
+      },
+      "group": "West",
+      "difficulty": 3,
+      "center": [
+        -114.5,
+        44.0
+      ]
     },
     {
-      "id": "IL", "svgPathId": "rIL",
-      "names": {"ko": "일리노이", "en": "Illinois"},
-      "hints": {"ko": "시카고가 있는 주·에이브러햄 링컨의 주", "en": "Home of Chicago; Land of Lincoln"},
-      "group": "Midwest", "difficulty": 1, "center": [-89.0, 40.1]
+      "id": "IL",
+      "svgPathId": "rIL",
+      "names": {
+        "ko": "일리노이",
+        "en": "Illinois"
+      },
+      "hints": {
+        "ko": "시카고(미국 2위 도시). 미국 대통령 다수 배출(링컨·오바마). 딥디쉬 피자 발상지",
+        "en": "Chicago (America's 'Second City'); birthplace of Abraham Lincoln; Deep Dish pizza; Barack Obama's political base"
+      },
+      "group": "Midwest",
+      "difficulty": 1,
+      "center": [
+        -89.0,
+        40.1
+      ]
     },
     {
-      "id": "IN", "svgPathId": "rIN",
-      "names": {"ko": "인디애나", "en": "Indiana"},
-      "hints": {"ko": "인디애나폴리스 500 자동차 경주", "en": "Indianapolis 500 auto race; Crossroads of America"},
-      "group": "Midwest", "difficulty": 2, "center": [-86.1, 40.3]
+      "id": "IN",
+      "svgPathId": "rIN",
+      "names": {
+        "ko": "인디애나",
+        "en": "Indiana"
+      },
+      "hints": {
+        "ko": "인디애나폴리스 500 마일 레이스. 노터데임 대학교. 자동차 부품 산업의 중심",
+        "en": "Indianapolis 500 Mile Race; University of Notre Dame; major auto parts manufacturing hub"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -86.1,
+        40.3
+      ]
     },
     {
-      "id": "IA", "svgPathId": "rIA",
-      "names": {"ko": "아이오와", "en": "Iowa"},
-      "hints": {"ko": "옥수수 밭·미국 대선 첫 코커스", "en": "Corn fields; first-in-nation caucuses"},
-      "group": "Midwest", "difficulty": 3, "center": [-93.2, 42.1]
+      "id": "IA",
+      "svgPathId": "rIA",
+      "names": {
+        "ko": "아이오와",
+        "en": "Iowa"
+      },
+      "hints": {
+        "ko": "미국 최대 옥수수·대두 생산지. 대선 코커스 선두주자. 아이오와 대학",
+        "en": "America's largest corn and soybean producer; Iowa Caucuses kick off presidential primaries; University of Iowa"
+      },
+      "group": "Midwest",
+      "difficulty": 3,
+      "center": [
+        -93.2,
+        42.1
+      ]
     },
     {
-      "id": "KS", "svgPathId": "rKS",
-      "names": {"ko": "캔자스", "en": "Kansas"},
-      "hints": {"ko": "대평원의 중심·해바라기의 주", "en": "Heart of the Great Plains; Sunflower State"},
-      "group": "Midwest", "difficulty": 2, "center": [-98.4, 38.5]
+      "id": "KS",
+      "svgPathId": "rKS",
+      "names": {
+        "ko": "캔자스",
+        "en": "Kansas"
+      },
+      "hints": {
+        "ko": "미국 지리적 중심부. 밀 생산량 전국 1위. 도로시와 오즈의 마법사 배경",
+        "en": "Geographic center of the contiguous US; top wheat producing state; setting of 'The Wizard of Oz' (Dorothy's Kansas)"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -98.4,
+        38.5
+      ]
     },
     {
-      "id": "KY", "svgPathId": "rKY",
-      "names": {"ko": "켄터키", "en": "Kentucky"},
-      "hints": {"ko": "버번 위스키·켄터키 더비 경마", "en": "Bourbon whiskey; Kentucky Derby horse race"},
-      "group": "South", "difficulty": 2, "center": [-84.3, 37.8]
+      "id": "KY",
+      "svgPathId": "rKY",
+      "names": {
+        "ko": "켄터키",
+        "en": "Kentucky"
+      },
+      "hints": {
+        "ko": "켄터키 더비(세계 최대 경마 대회). 버번 위스키 생산의 중심(전 세계 95% 생산). 루이빌 슬러거 야구 배트",
+        "en": "Kentucky Derby (world's oldest major horse race); produces 95% of world's bourbon whiskey; Louisville Slugger baseball bats"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -84.3,
+        37.8
+      ]
     },
     {
-      "id": "LA", "svgPathId": "rLA",
-      "names": {"ko": "루이지애나", "en": "Louisiana"},
-      "hints": {"ko": "재즈·마디 그라·케이준 요리·뉴올리언스", "en": "Jazz music; Mardi Gras; Cajun cuisine; New Orleans"},
-      "group": "South", "difficulty": 2, "center": [-91.8, 31.1]
+      "id": "LA",
+      "svgPathId": "rLA",
+      "names": {
+        "ko": "루이지애나",
+        "en": "Louisiana"
+      },
+      "hints": {
+        "ko": "뉴올리언스 재즈·크레올 문화. 마디그라 축제. 미시시피강 삼각주. 케이준 음식 문화",
+        "en": "New Orleans jazz and Creole culture; Mardi Gras festival; Mississippi River delta; Cajun cuisine heritage"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -91.8,
+        31.1
+      ]
     },
     {
-      "id": "ME", "svgPathId": "rME",
-      "names": {"ko": "메인", "en": "Maine"},
-      "hints": {"ko": "랍스터·소나무 숲·미국 최북동단", "en": "Lobster; pine forests; northeasternmost US state"},
-      "group": "Northeast", "difficulty": 2, "center": [-69.4, 44.7]
+      "id": "ME",
+      "svgPathId": "rME",
+      "names": {
+        "ko": "메인",
+        "en": "Maine"
+      },
+      "hints": {
+        "ko": "동북쪽 최동단 주. 바닷가재(메인 랍스터) 최대 산지. 아카디아 국립공원. 스티븐 킹 출신지",
+        "en": "Easternmost US state; Maine lobster capital; Acadia National Park; birthplace of author Stephen King"
+      },
+      "group": "Northeast",
+      "difficulty": 2,
+      "center": [
+        -69.4,
+        44.7
+      ]
     },
     {
-      "id": "MD", "svgPathId": "rMD",
-      "names": {"ko": "메릴랜드", "en": "Maryland"},
-      "hints": {"ko": "체사피크만·볼티모어·워싱턴DC 인접", "en": "Chesapeake Bay; Baltimore; surrounds Washington D.C."},
-      "group": "Northeast", "difficulty": 3, "center": [-76.5, 39.1]
+      "id": "MD",
+      "svgPathId": "rMD",
+      "names": {
+        "ko": "메릴랜드",
+        "en": "Maryland"
+      },
+      "hints": {
+        "ko": "볼티모어 항구 도시. 국립해양박물관. 체사피크만 블루크랩. 국립항공우주박물관",
+        "en": "Baltimore Inner Harbor; Chesapeake Bay blue crab specialty; Johns Hopkins University; adjacent to DC"
+      },
+      "group": "Northeast",
+      "difficulty": 3,
+      "center": [
+        -76.5,
+        39.1
+      ]
     },
     {
-      "id": "MA", "svgPathId": "rMA",
-      "names": {"ko": "매사추세츠", "en": "Massachusetts"},
-      "hints": {"ko": "보스턴·하버드·MIT·미국 독립혁명 발원지", "en": "Boston; Harvard; MIT; birthplace of American Revolution"},
-      "group": "Northeast", "difficulty": 2, "center": [-71.9, 42.3]
+      "id": "MA",
+      "svgPathId": "rMA",
+      "names": {
+        "ko": "매사추세츠",
+        "en": "Massachusetts"
+      },
+      "hints": {
+        "ko": "미국 독립 발상지(보스턴 티 파티). 하버드·MIT. 메이플라워 청교도 역사",
+        "en": "Birthplace of American Revolution (Boston Tea Party); Harvard, MIT; Mayflower Pilgrims; Boston Red Sox and Celtics"
+      },
+      "group": "Northeast",
+      "difficulty": 2,
+      "center": [
+        -71.9,
+        42.3
+      ]
     },
     {
-      "id": "MI", "svgPathId": "rMI",
-      "names": {"ko": "미시건", "en": "Michigan"},
-      "hints": {"ko": "자동차 산업 중심·디트로이트·오대호", "en": "Motor City Detroit; auto industry; Great Lakes"},
-      "group": "Midwest", "difficulty": 2, "center": [-85.6, 44.3]
+      "id": "MI",
+      "svgPathId": "rMI",
+      "names": {
+        "ko": "미시건",
+        "en": "Michigan"
+      },
+      "hints": {
+        "ko": "디트로이트(미국 자동차 산업의 수도). GM·포드·크라이슬러 본사. 오대호 접경 주",
+        "en": "Detroit 'Motor City' (GM, Ford, Chrysler headquarters); Great Lakes shoreline; Motown music birthplace"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -85.6,
+        44.3
+      ]
     },
     {
-      "id": "MN", "svgPathId": "rMN",
-      "names": {"ko": "미네소타", "en": "Minnesota"},
-      "hints": {"ko": "만 개의 호수·미니애폴리스", "en": "Land of 10,000 Lakes; Minneapolis"},
-      "group": "Midwest", "difficulty": 2, "center": [-94.2, 46.4]
+      "id": "MN",
+      "svgPathId": "rMN",
+      "names": {
+        "ko": "미네소타",
+        "en": "Minnesota"
+      },
+      "hints": {
+        "ko": "미국 최대 스칸디나비아계 이민자. 미니애폴리스 아트신. 미시시피강 발원지. 3M 본사",
+        "en": "Mississippi River headwaters; Minneapolis arts scene; 3M and Target headquarters; large Scandinavian heritage"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -94.2,
+        46.4
+      ]
     },
     {
-      "id": "MS", "svgPathId": "rMS",
-      "names": {"ko": "미시시피", "en": "Mississippi"},
-      "hints": {"ko": "미시시피 강·블루스 음악 발상지", "en": "Along the Mississippi River; birthplace of blues music"},
-      "group": "South", "difficulty": 3, "center": [-89.7, 32.7]
+      "id": "MS",
+      "svgPathId": "rMS",
+      "names": {
+        "ko": "미시시피",
+        "en": "Mississippi"
+      },
+      "hints": {
+        "ko": "미국 가장 가난한 주. 블루스 음악의 고향. 미시시피강 접경. 목화 역사",
+        "en": "Birthplace of blues music; Mississippi Delta cotton farming history; William Faulkner's literary home"
+      },
+      "group": "South",
+      "difficulty": 3,
+      "center": [
+        -89.7,
+        32.7
+      ]
     },
     {
-      "id": "MO", "svgPathId": "rMO",
-      "names": {"ko": "미주리", "en": "Missouri"},
-      "hints": {"ko": "세인트루이스 게이트웨이 아치·미주리 강", "en": "Gateway Arch in St. Louis; Show Me State"},
-      "group": "Midwest", "difficulty": 2, "center": [-92.5, 38.5]
+      "id": "MO",
+      "svgPathId": "rMO",
+      "names": {
+        "ko": "미주리",
+        "en": "Missouri"
+      },
+      "hints": {
+        "ko": "미시시피강·미주리강 합류지. 세인트루이스 아치(서부 개척 기념). 캔자스시티 바비큐",
+        "en": "Gateway Arch in St. Louis (symbol of westward expansion); Kansas City BBQ; birthplace of Mark Twain"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -92.5,
+        38.5
+      ]
     },
     {
-      "id": "MT", "svgPathId": "rMT",
-      "names": {"ko": "몬태나", "en": "Montana"},
-      "hints": {"ko": "광활한 하늘·글레이셔 국립공원", "en": "Big Sky Country; Glacier National Park"},
-      "group": "West", "difficulty": 2, "center": [-110.3, 47.0]
+      "id": "MT",
+      "svgPathId": "rMT",
+      "names": {
+        "ko": "몬태나",
+        "en": "Montana"
+      },
+      "hints": {
+        "ko": "옐로스톤 국립공원 북쪽. 빙하 국립공원. 광활한 목장 지대. 구리 광업 역사",
+        "en": "Glacier National Park; northern Yellowstone; vast ranch lands; historic copper mining; 'Big Sky Country'"
+      },
+      "group": "West",
+      "difficulty": 2,
+      "center": [
+        -110.3,
+        47.0
+      ]
     },
     {
-      "id": "NE", "svgPathId": "rNE",
-      "names": {"ko": "네브래스카", "en": "Nebraska"},
-      "hints": {"ko": "옥수수 경작지·워런 버핏의 고향 오마하", "en": "Cornhusker State; Warren Buffett's home Omaha"},
-      "group": "Midwest", "difficulty": 3, "center": [-99.9, 41.5]
+      "id": "NE",
+      "svgPathId": "rNE",
+      "names": {
+        "ko": "네브래스카",
+        "en": "Nebraska"
+      },
+      "hints": {
+        "ko": "미국 최대 옥수수 생산지. 플래트강. 오마하(워런 버핏 거주지). 소 생산량 전국 2위",
+        "en": "Major corn producer; Omaha (Warren Buffett's hometown); Platte River flyway for migrating cranes"
+      },
+      "group": "Midwest",
+      "difficulty": 3,
+      "center": [
+        -99.9,
+        41.5
+      ]
     },
     {
-      "id": "NV", "svgPathId": "rNV",
-      "names": {"ko": "네바다", "en": "Nevada"},
-      "hints": {"ko": "라스베이거스·카지노·실버 스테이트", "en": "Las Vegas; gambling; Silver State"},
-      "group": "West", "difficulty": 1, "center": [-116.7, 38.4]
+      "id": "NV",
+      "svgPathId": "rNV",
+      "names": {
+        "ko": "네바다",
+        "en": "Nevada"
+      },
+      "hints": {
+        "ko": "라스베이거스(세계 최대 카지노·엔터테인먼트). 후버 댐. 미국 가장 건조한 주",
+        "en": "Las Vegas (world's entertainment and casino capital); Hoover Dam; driest US state; Area 51 conspiracy lore"
+      },
+      "group": "West",
+      "difficulty": 1,
+      "center": [
+        -116.7,
+        38.4
+      ]
     },
     {
-      "id": "NH", "svgPathId": "rNH",
-      "names": {"ko": "뉴햄프셔", "en": "New Hampshire"},
-      "hints": {"ko": "미국 대통령 선거 첫 번째 예비선거", "en": "First-in-the-Nation primary; Live Free or Die"},
-      "group": "Northeast", "difficulty": 3, "center": [-71.6, 43.5]
+      "id": "NH",
+      "svgPathId": "rNH",
+      "names": {
+        "ko": "뉴햄프셔",
+        "en": "New Hampshire"
+      },
+      "hints": {
+        "ko": "미국 대선 첫 프라이머리 주. 뉴잉글랜드 단풍. 화이트마운틴 국립숲. 세금 없는 주",
+        "en": "First state to hold presidential primary elections; White Mountains; no state income or sales tax"
+      },
+      "group": "Northeast",
+      "difficulty": 3,
+      "center": [
+        -71.6,
+        43.5
+      ]
     },
     {
-      "id": "NJ", "svgPathId": "rNJ",
-      "names": {"ko": "뉴저지", "en": "New Jersey"},
-      "hints": {"ko": "가든 스테이트·뉴욕시 맞은편", "en": "Garden State; across from New York City"},
-      "group": "Northeast", "difficulty": 2, "center": [-74.5, 40.0]
+      "id": "NJ",
+      "svgPathId": "rNJ",
+      "names": {
+        "ko": "뉴저지",
+        "en": "New Jersey"
+      },
+      "hints": {
+        "ko": "뉴욕 근교 위성주. 애틀랜틱시티(카지노). 에디슨(전구 발명)과 아인슈타인 거주지",
+        "en": "Adjacent to NYC; Atlantic City casino resort; Thomas Edison's laboratory; Princeton University; dense population"
+      },
+      "group": "Northeast",
+      "difficulty": 2,
+      "center": [
+        -74.5,
+        40.0
+      ]
     },
     {
-      "id": "NM", "svgPathId": "rNM",
-      "names": {"ko": "뉴멕시코", "en": "New Mexico"},
-      "hints": {"ko": "마법의 땅·어도비 건축·앨버커키", "en": "Land of Enchantment; adobe architecture; Albuquerque"},
-      "group": "West", "difficulty": 2, "center": [-106.1, 34.3]
+      "id": "NM",
+      "svgPathId": "rNM",
+      "names": {
+        "ko": "뉴멕시코",
+        "en": "New Mexico"
+      },
+      "hints": {
+        "ko": "치리카와·앨버커키. 로스웰 UFO 사건(1947). 멕시코 문화 영향. 핵폭탄 로스앨러모스 연구소",
+        "en": "Roswell UFO incident (1947); Los Alamos National Laboratory (birthplace of atomic bomb); Georgia O'Keeffe arts heritage"
+      },
+      "group": "West",
+      "difficulty": 2,
+      "center": [
+        -106.1,
+        34.3
+      ]
     },
     {
-      "id": "NY", "svgPathId": "rNY",
-      "names": {"ko": "뉴욕", "en": "New York"},
-      "hints": {"ko": "자유의 여신상·뉴욕시·엠파이어 스테이트", "en": "Statue of Liberty; New York City; Empire State"},
-      "group": "Northeast", "difficulty": 1, "center": [-75.0, 43.0]
+      "id": "NY",
+      "svgPathId": "rNY",
+      "names": {
+        "ko": "뉴욕",
+        "en": "New York"
+      },
+      "hints": {
+        "ko": "뉴욕시(세계 금융·문화 수도). 자유의 여신상. 브로드웨이. 월스트리트",
+        "en": "New York City (world's finance and culture capital); Statue of Liberty; Broadway theater; Wall Street"
+      },
+      "group": "Northeast",
+      "difficulty": 1,
+      "center": [
+        -75.0,
+        43.0
+      ]
     },
     {
-      "id": "NC", "svgPathId": "rNC",
-      "names": {"ko": "노스캐롤라이나", "en": "North Carolina"},
-      "hints": {"ko": "라이트 형제 첫 비행지·타 힐 스테이트", "en": "Wright Brothers' first flight; Tar Heel State"},
-      "group": "South", "difficulty": 2, "center": [-79.4, 35.5]
+      "id": "NC",
+      "svgPathId": "rNC",
+      "names": {
+        "ko": "노스캐롤라이나",
+        "en": "North Carolina"
+      },
+      "hints": {
+        "ko": "리서치 트라이앵글(듀크·UNC·NC주립대). 최초 동력 비행(키티호크). 스모키마운틴",
+        "en": "Research Triangle (Duke, UNC, NC State); first powered flight at Kitty Hawk (Wright Brothers); Smoky Mountains"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -79.4,
+        35.5
+      ]
     },
     {
-      "id": "ND", "svgPathId": "rND",
-      "names": {"ko": "노스다코타", "en": "North Dakota"},
-      "hints": {"ko": "평화 정원의 주·석유 붐·드넓은 평원", "en": "Peace Garden State; oil boom; vast prairies"},
-      "group": "Midwest", "difficulty": 3, "center": [-100.5, 47.5]
+      "id": "ND",
+      "svgPathId": "rND",
+      "names": {
+        "ko": "노스다코타",
+        "en": "North Dakota"
+      },
+      "hints": {
+        "ko": "미국 최대 해바라기·밀 산지. 퍼거스폴스 형성. 시팅불 인디언 부족의 땅",
+        "en": "America's top sunflower and wheat producer; Theodore Roosevelt National Park; Sitting Bull's homeland"
+      },
+      "group": "Midwest",
+      "difficulty": 3,
+      "center": [
+        -100.5,
+        47.5
+      ]
     },
     {
-      "id": "OH", "svgPathId": "rOH",
-      "names": {"ko": "오하이오", "en": "Ohio"},
-      "hints": {"ko": "우주비행사 가장 많이 배출·버크아이 스테이트", "en": "Buckeye State; most US astronauts born here"},
-      "group": "Midwest", "difficulty": 2, "center": [-82.8, 40.4]
+      "id": "OH",
+      "svgPathId": "rOH",
+      "names": {
+        "ko": "오하이오",
+        "en": "Ohio"
+      },
+      "hints": {
+        "ko": "미국 대통령 최다 배출 주(8명). 에어로스페이스 허브(닐 암스트롱·존 글렌 출신). 클리블랜드 록음악명예의전당",
+        "en": "Birthplace of 8 US presidents; Neil Armstrong and John Glenn born here; Rock and Roll Hall of Fame in Cleveland"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -82.8,
+        40.4
+      ]
     },
     {
-      "id": "OK", "svgPathId": "rOK",
-      "names": {"ko": "오클라호마", "en": "Oklahoma"},
-      "hints": {"ko": "수너 스테이트·토네이도 빈발 지역", "en": "Sooner State; Tornado Alley"},
-      "group": "South", "difficulty": 2, "center": [-97.5, 35.5]
+      "id": "OK",
+      "svgPathId": "rOK",
+      "names": {
+        "ko": "오클라호마",
+        "en": "Oklahoma"
+      },
+      "hints": {
+        "ko": "체로키·크리크 등 아메리카 원주민 영토 역사. 오클라호마 시티 폭탄 테러(1995). 오클라호마 뮤지컬",
+        "en": "Native American territory history (Five Civilized Tribes); Oklahoma City bombing memorial (1995); oil industry"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -97.5,
+        35.5
+      ]
     },
     {
-      "id": "OR", "svgPathId": "rOR",
-      "names": {"ko": "오리건", "en": "Oregon"},
-      "hints": {"ko": "포틀랜드·비버 스테이트·태평양 연안 숲", "en": "Beaver State; Portland; Pacific Northwest forests"},
-      "group": "West", "difficulty": 2, "center": [-120.5, 44.0]
+      "id": "OR",
+      "svgPathId": "rOR",
+      "names": {
+        "ko": "오리건",
+        "en": "Oregon"
+      },
+      "hints": {
+        "ko": "포틀랜드 마이크로브루어리 수도. 오리건 트레일(개척자 이주 역사). 크레이터호 국립공원",
+        "en": "Portland craft beer capital; Oregon Trail historic route; Crater Lake National Park; Silicon Forest tech hub"
+      },
+      "group": "West",
+      "difficulty": 2,
+      "center": [
+        -120.5,
+        44.0
+      ]
     },
     {
-      "id": "PA", "svgPathId": "rPA",
-      "names": {"ko": "펜실베이니아", "en": "Pennsylvania"},
-      "hints": {"ko": "자유의 종·필라델피아·키스톤 스테이트", "en": "Liberty Bell; Philadelphia; Keystone State"},
-      "group": "Northeast", "difficulty": 2, "center": [-77.2, 41.2]
+      "id": "PA",
+      "svgPathId": "rPA",
+      "names": {
+        "ko": "펜실베이니아",
+        "en": "Pennsylvania"
+      },
+      "hints": {
+        "ko": "미국 독립선언서 서명지(필라델피아). 게티즈버그 남북전쟁. 아미시 공동체. 필리 치즈스테이크",
+        "en": "Philadelphia: birthplace of US independence (Liberty Bell, Declaration of Independence); Gettysburg; Amish communities"
+      },
+      "group": "Northeast",
+      "difficulty": 2,
+      "center": [
+        -77.2,
+        41.2
+      ]
     },
     {
-      "id": "RI", "svgPathId": "rRI",
-      "names": {"ko": "로드아일랜드", "en": "Rhode Island"},
-      "hints": {"ko": "미국에서 가장 작은 주·뉴포트 항구", "en": "Smallest US state; Newport harbor"},
-      "group": "Northeast", "difficulty": 3, "center": [-71.5, 41.6]
+      "id": "RI",
+      "svgPathId": "rRI",
+      "names": {
+        "ko": "로드아일랜드",
+        "en": "Rhode Island"
+      },
+      "hints": {
+        "ko": "미국 최소 주(면적). 로드아일랜드 레드(닭 품종 유래). 뉴포트 브레이커스(도금시대 대저택)",
+        "en": "Smallest US state; Newport's Gilded Age mansions; first US colony to declare independence from Britain"
+      },
+      "group": "Northeast",
+      "difficulty": 3,
+      "center": [
+        -71.5,
+        41.6
+      ]
     },
     {
-      "id": "SC", "svgPathId": "rSC",
-      "names": {"ko": "사우스캐롤라이나", "en": "South Carolina"},
-      "hints": {"ko": "팜메토 주·남북전쟁 첫 전투 포트 섬터", "en": "Palmetto State; Fort Sumter first Civil War battle"},
-      "group": "South", "difficulty": 3, "center": [-81.0, 33.8]
+      "id": "SC",
+      "svgPathId": "rSC",
+      "names": {
+        "ko": "사우스캐롤라이나",
+        "en": "South Carolina"
+      },
+      "hints": {
+        "ko": "포트섬터(남북전쟁 시작지). 찰스턴 역사 도심. 마스터스 골프 토너먼트 근처. 복숭아 생산",
+        "en": "Fort Sumter (start of Civil War); historic Charleston; Masters Golf Tournament nearby (Augusta); peach production"
+      },
+      "group": "South",
+      "difficulty": 3,
+      "center": [
+        -81.0,
+        33.8
+      ]
     },
     {
-      "id": "SD", "svgPathId": "rSD",
-      "names": {"ko": "사우스다코타", "en": "South Dakota"},
-      "hints": {"ko": "러시모어 산·마운트 러시모어 대통령 조각", "en": "Mount Rushmore presidential sculpture"},
-      "group": "Midwest", "difficulty": 2, "center": [-100.2, 44.3]
+      "id": "SD",
+      "svgPathId": "rSD",
+      "names": {
+        "ko": "사우스다코타",
+        "en": "South Dakota"
+      },
+      "hints": {
+        "ko": "마운트 러시모어(미국 4대 대통령 조각). 배드랜즈 국립공원. 블랙힐스 금광",
+        "en": "Mount Rushmore (carved faces of 4 presidents); Badlands National Park; Black Hills gold rush history"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -100.2,
+        44.3
+      ]
     },
     {
-      "id": "TN", "svgPathId": "rTN",
-      "names": {"ko": "테네시", "en": "Tennessee"},
-      "hints": {"ko": "내슈빌 컨트리 음악·엘비스 프레슬리", "en": "Nashville country music capital; Elvis Presley's Memphis"},
-      "group": "South", "difficulty": 2, "center": [-86.6, 35.8]
+      "id": "TN",
+      "svgPathId": "rTN",
+      "names": {
+        "ko": "테네시",
+        "en": "Tennessee"
+      },
+      "hints": {
+        "ko": "멤피스 블루스·소울 음악. 내슈빌 컨트리 뮤직 수도. 엘비스 프레슬리 그레이슬랜드",
+        "en": "Nashville: country music capital; Memphis: birthplace of blues and rock 'n' roll; Elvis Presley's Graceland"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -86.6,
+        35.8
+      ]
     },
     {
-      "id": "TX", "svgPathId": "rTX",
-      "names": {"ko": "텍사스", "en": "Texas"},
-      "hints": {"ko": "론스타 스테이트·미국 본토 최대 주", "en": "Lone Star State; largest contiguous US state"},
-      "group": "South", "difficulty": 1, "center": [-99.3, 31.2]
+      "id": "TX",
+      "svgPathId": "rTX",
+      "names": {
+        "ko": "텍사스",
+        "en": "Texas"
+      },
+      "hints": {
+        "ko": "미국 대륙 최대 주. 석유 산업. 텍스 멕스 음식. 미항공우주국(NASA) 존슨 우주센터. 미국에서 두 번째로 큰 경제",
+        "en": "Largest US state in lower 48; oil industry capital; NASA Johnson Space Center; second largest economy in the US"
+      },
+      "group": "South",
+      "difficulty": 1,
+      "center": [
+        -99.3,
+        31.2
+      ]
     },
     {
-      "id": "UT", "svgPathId": "rUT",
-      "names": {"ko": "유타", "en": "Utah"},
-      "hints": {"ko": "비하이브 스테이트·솔트레이크시티·모르몬교", "en": "Beehive State; Salt Lake City; Mormon heritage"},
-      "group": "West", "difficulty": 2, "center": [-111.1, 39.2]
+      "id": "UT",
+      "svgPathId": "rUT",
+      "names": {
+        "ko": "유타",
+        "en": "Utah"
+      },
+      "hints": {
+        "ko": "모르몬교(LDS 교회) 본거지. 아치스·자이온·브라이스 캐니언 국립공원. 솔트레이크 도시",
+        "en": "LDS Church (Mormon) headquarters in Salt Lake City; five national parks (Arches, Zion, Bryce, Canyonlands, Capitol Reef)"
+      },
+      "group": "West",
+      "difficulty": 2,
+      "center": [
+        -111.1,
+        39.2
+      ]
     },
     {
-      "id": "VT", "svgPathId": "rVT",
-      "names": {"ko": "버몬트", "en": "Vermont"},
-      "hints": {"ko": "단풍 시럽·그린 마운틴·스키 리조트", "en": "Maple syrup; Green Mountain State; skiing"},
-      "group": "Northeast", "difficulty": 3, "center": [-72.7, 44.0]
+      "id": "VT",
+      "svgPathId": "rVT",
+      "names": {
+        "ko": "버몬트",
+        "en": "Vermont"
+      },
+      "hints": {
+        "ko": "단풍 시럽 생산 1위(미국 전체의 35%). 스키 리조트. 벤앤제리스 아이스크림 본사",
+        "en": "America's top maple syrup producer (35% of US total); ski resorts; Ben & Jerry's ice cream birthplace"
+      },
+      "group": "Northeast",
+      "difficulty": 3,
+      "center": [
+        -72.7,
+        44.0
+      ]
     },
     {
-      "id": "VA", "svgPathId": "rVA",
-      "names": {"ko": "버지니아", "en": "Virginia"},
-      "hints": {"ko": "대통령의 어머니 주·8명의 대통령 배출", "en": "Mother of Presidents; birthplace of 8 US presidents"},
-      "group": "South", "difficulty": 2, "center": [-78.7, 37.5]
+      "id": "VA",
+      "svgPathId": "rVA",
+      "names": {
+        "ko": "버지니아",
+        "en": "Virginia"
+      },
+      "hints": {
+        "ko": "식민지 시대 최초 영구 영국 정착지(제임스타운). 조지 워싱턴·토머스 제퍼슨 생가. 펜타곤",
+        "en": "First permanent English settlement (Jamestown 1607); birthplace of Washington and Jefferson; Pentagon; Civil War history"
+      },
+      "group": "South",
+      "difficulty": 2,
+      "center": [
+        -78.7,
+        37.5
+      ]
     },
     {
-      "id": "WA", "svgPathId": "rWA",
-      "names": {"ko": "워싱턴", "en": "Washington"},
-      "hints": {"ko": "에버그린 스테이트·시애틀·마이크로소프트·아마존", "en": "Evergreen State; Seattle; Microsoft and Amazon HQ"},
-      "group": "West", "difficulty": 1, "center": [-120.7, 47.4]
+      "id": "WA",
+      "svgPathId": "rWA",
+      "names": {
+        "ko": "워싱턴",
+        "en": "Washington"
+      },
+      "hints": {
+        "ko": "마이크로소프트·아마존·보잉 본사. 스타벅스 발상지. 레이니어 산. 시애틀",
+        "en": "Microsoft, Amazon, Boeing headquarters; Starbucks birthplace (Seattle); Mount Rainier; Columbia River gorge"
+      },
+      "group": "West",
+      "difficulty": 1,
+      "center": [
+        -120.7,
+        47.4
+      ]
     },
     {
-      "id": "WV", "svgPathId": "rWV",
-      "names": {"ko": "웨스트버지니아", "en": "West Virginia"},
-      "hints": {"ko": "산의 주·남북전쟁 중 버지니아에서 분리", "en": "Mountain State; separated from Virginia during Civil War"},
-      "group": "South", "difficulty": 3, "center": [-80.6, 38.6]
+      "id": "WV",
+      "svgPathId": "rWV",
+      "names": {
+        "ko": "웨스트버지니아",
+        "en": "West Virginia"
+      },
+      "hints": {
+        "ko": "석탄 광업의 역사. 새넌도어 국립공원. 찰스턴(주도). 미국 남북전쟁 분리 배경",
+        "en": "Coal mining heritage; Shenandoah National Park; split from Virginia during Civil War; New River Gorge"
+      },
+      "group": "South",
+      "difficulty": 3,
+      "center": [
+        -80.6,
+        38.6
+      ]
     },
     {
-      "id": "WI", "svgPathId": "rWI",
-      "names": {"ko": "위스콘신", "en": "Wisconsin"},
-      "hints": {"ko": "아메리카 유제품·치즈·밀워키 맥주", "en": "America's Dairyland; cheese; Milwaukee beer"},
-      "group": "Midwest", "difficulty": 2, "center": [-89.8, 44.5]
+      "id": "WI",
+      "svgPathId": "rWI",
+      "names": {
+        "ko": "위스콘신",
+        "en": "Wisconsin"
+      },
+      "hints": {
+        "ko": "치즈 생산량 미국 최대(치즈스테이트). 밀워키 할리데이비슨 본사. 그린베이 패커스 NFL",
+        "en": "America's top cheese producer ('Cheese State'); Harley-Davidson Museum in Milwaukee; Green Bay Packers NFL team"
+      },
+      "group": "Midwest",
+      "difficulty": 2,
+      "center": [
+        -89.8,
+        44.5
+      ]
     },
     {
-      "id": "WY", "svgPathId": "rWY",
-      "names": {"ko": "와이오밍", "en": "Wyoming"},
-      "hints": {"ko": "옐로스톤 국립공원·이퀄리티 스테이트", "en": "Yellowstone National Park; Equality State"},
-      "group": "West", "difficulty": 2, "center": [-107.3, 43.1]
+      "id": "WY",
+      "svgPathId": "rWY",
+      "names": {
+        "ko": "와이오밍",
+        "en": "Wyoming"
+      },
+      "hints": {
+        "ko": "옐로스톤 국립공원(미국 최초 국립공원). 그랜드 티턴. 미국 인구 최소 주. 카우보이 문화",
+        "en": "Yellowstone (first US national park); Grand Teton National Park; least populous US state; cowboy and ranching culture"
+      },
+      "group": "West",
+      "difficulty": 2,
+      "center": [
+        -107.3,
+        43.1
+      ]
     }
   ]
 }

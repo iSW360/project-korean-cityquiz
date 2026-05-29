@@ -7,154 +7,454 @@
   },
   "regions": [
     {
-      "id": "11110", "svgPathId": "r11110",
-      "names": {"ko": "종로구", "en": "Jongno-gu"},
-      "hints": {"ko": "경복궁·북촌한옥마을·인사동", "en": "Home of Gyeongbokgung Palace and Bukchon Hanok Village"},
-      "group": "서울", "difficulty": 1, "center": [126.979, 37.594]
+      "id": "11110",
+      "svgPathId": "r11110",
+      "names": {
+        "ko": "종로구",
+        "en": "Jongno-gu"
+      },
+      "hints": {
+        "ko": "경복궁·창덕궁·광화문. 조선왕조 500년 정치의 중심. 인사동·북촌 한옥마을",
+        "en": "Gyeongbokgung Palace, Gwanghwamun Gate; center of Joseon Dynasty politics; Insadong and Bukchon Hanok Village"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        126.979,
+        37.594
+      ]
     },
     {
-      "id": "11140", "svgPathId": "r11140",
-      "names": {"ko": "중구", "en": "Jung-gu"},
-      "hints": {"ko": "명동·남대문시장·서울시청", "en": "Myeongdong shopping street and Namdaemun Market"},
-      "group": "서울", "difficulty": 2, "center": [126.998, 37.563]
+      "id": "11140",
+      "svgPathId": "r11140",
+      "names": {
+        "ko": "중구",
+        "en": "Jung-gu"
+      },
+      "hints": {
+        "ko": "명동(한국 최대 쇼핑 거리). 남대문시장(600년 역사). 덕수궁·서울역",
+        "en": "Myeongdong (Korea's largest shopping district); Namdaemun Market (600-year history); Deoksugung Palace"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.998,
+        37.563
+      ]
     },
     {
-      "id": "11170", "svgPathId": "r11170",
-      "names": {"ko": "용산구", "en": "Yongsan-gu"},
-      "hints": {"ko": "이태원·국립중앙박물관·용산공원", "en": "Itaewon international district and National Museum"},
-      "group": "서울", "difficulty": 2, "center": [126.990, 37.532]
+      "id": "11170",
+      "svgPathId": "r11170",
+      "names": {
+        "ko": "용산구",
+        "en": "Yongsan-gu"
+      },
+      "hints": {
+        "ko": "국립중앙박물관. 용산공원(미군기지 반환). 이태원 국제문화거리",
+        "en": "National Museum of Korea; Yongsan Park (former US military base); Itaewon international culture district"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.99,
+        37.532
+      ]
     },
     {
-      "id": "11200", "svgPathId": "r11200",
-      "names": {"ko": "성동구", "en": "Seongdong-gu"},
-      "hints": {"ko": "성수동 카페거리·뚝섬한강공원", "en": "Seongsu-dong cafe street, Seoul's Brooklyn"},
-      "group": "서울", "difficulty": 2, "center": [127.037, 37.563]
+      "id": "11200",
+      "svgPathId": "r11200",
+      "names": {
+        "ko": "성동구",
+        "en": "Seongdong-gu"
+      },
+      "hints": {
+        "ko": "성수동 서울 숲 카페거리(젊음의 성지). 서울숲. 한양대학교",
+        "en": "Seongsu-dong cafe street (Seoul's trendiest neighborhood); Seoul Forest; Hanyang University"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.037,
+        37.563
+      ]
     },
     {
-      "id": "11215", "svgPathId": "r11215",
-      "names": {"ko": "광진구", "en": "Gwangjin-gu"},
-      "hints": {"ko": "건대입구·어린이대공원·한양대", "en": "Konkuk University area and Children's Grand Park"},
-      "group": "서울", "difficulty": 3, "center": [127.086, 37.547]
+      "id": "11215",
+      "svgPathId": "r11215",
+      "names": {
+        "ko": "광진구",
+        "en": "Gwangjin-gu"
+      },
+      "hints": {
+        "ko": "건국대학교. 어린이대공원. 광나루 한강공원",
+        "en": "Konkuk University; Children's Grand Park; Gwangnaru Han River Park"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        127.086,
+        37.547
+      ]
     },
     {
-      "id": "11230", "svgPathId": "r11230",
-      "names": {"ko": "동대문구", "en": "Dongdaemun-gu"},
-      "hints": {"ko": "청량리·동대문디자인플라자·경동시장", "en": "Dongdaemun Design Plaza (DDP) and fashion markets"},
-      "group": "서울", "difficulty": 3, "center": [127.058, 37.581]
+      "id": "11230",
+      "svgPathId": "r11230",
+      "names": {
+        "ko": "동대문구",
+        "en": "Dongdaemun-gu"
+      },
+      "hints": {
+        "ko": "동대문디자인플라자(DDP, 자하 하디드 설계). 경희대·한국외대. 청량리 약령시",
+        "en": "DDP (Dongdaemun Design Plaza, designed by Zaha Hadid); major university district"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        127.058,
+        37.581
+      ]
     },
     {
-      "id": "11260", "svgPathId": "r11260",
-      "names": {"ko": "중랑구", "en": "Jungnang-gu"},
-      "hints": {"ko": "장미축제·봉화산·면목동", "en": "Famous for the annual Rose Festival"},
-      "group": "서울", "difficulty": 3, "center": [127.093, 37.600]
+      "id": "11260",
+      "svgPathId": "r11260",
+      "names": {
+        "ko": "중랑구",
+        "en": "Jungnang-gu"
+      },
+      "hints": {
+        "ko": "중랑 장미원(서울 최대 장미 공원). 망우리 공원(독립운동가 묘역)",
+        "en": "Jungnang Rose Garden (Seoul's largest); Manguri Cemetery (graves of independence movement heroes)"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        127.093,
+        37.6
+      ]
     },
     {
-      "id": "11290", "svgPathId": "r11290",
-      "names": {"ko": "성북구", "en": "Seongbuk-gu"},
-      "hints": {"ko": "성신여대·정릉·길상사", "en": "Sungkyunkwan University area and traditional temples"},
-      "group": "서울", "difficulty": 2, "center": [127.016, 37.606]
+      "id": "11290",
+      "svgPathId": "r11290",
+      "names": {
+        "ko": "성북구",
+        "en": "Seongbuk-gu"
+      },
+      "hints": {
+        "ko": "북한산국립공원 접경. 간송미술관(한국 최초 사립 미술관). 성균관대",
+        "en": "Adjacent to Bukhansan National Park; Gansong Art Museum (Korea's first private museum); Sungkyunkwan University"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        127.016,
+        37.606
+      ]
     },
     {
-      "id": "11305", "svgPathId": "r11305",
-      "names": {"ko": "강북구", "en": "Gangbuk-gu"},
-      "hints": {"ko": "우이동 계곡·북서울꿈의숲·4.19묘지", "en": "Ui Valley hiking trails and Dream Forest"},
-      "group": "서울", "difficulty": 3, "center": [127.028, 37.639]
+      "id": "11305",
+      "svgPathId": "r11305",
+      "names": {
+        "ko": "강북구",
+        "en": "Gangbuk-gu"
+      },
+      "hints": {
+        "ko": "우이동 계곡. 수유리 4·19혁명 기념관. 북한산 둘레길",
+        "en": "Ui-dong valley; April 19th Revolution Memorial; Bukhansan둘레길 trail"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        127.028,
+        37.639
+      ]
     },
     {
-      "id": "11320", "svgPathId": "r11320",
-      "names": {"ko": "도봉구", "en": "Dobong-gu"},
-      "hints": {"ko": "도봉산 등산 출발지·방학동", "en": "Gateway to Dobongsan mountain hiking"},
-      "group": "서울", "difficulty": 3, "center": [127.047, 37.669]
+      "id": "11320",
+      "svgPathId": "r11320",
+      "names": {
+        "ko": "도봉구",
+        "en": "Dobong-gu"
+      },
+      "hints": {
+        "ko": "도봉산 등산 명소. 연산군 묘역. 창동 문화예술 클러스터",
+        "en": "Dobongsan mountain hiking; tomb of King Yeonsangun; Changdong cultural arts cluster"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        127.047,
+        37.669
+      ]
     },
     {
-      "id": "11350", "svgPathId": "r11350",
-      "names": {"ko": "노원구", "en": "Nowon-gu"},
-      "hints": {"ko": "불암산·공릉동·서울과학기술대", "en": "Bulam Mountain and large residential area in northeast Seoul"},
-      "group": "서울", "difficulty": 3, "center": [127.073, 37.655]
+      "id": "11350",
+      "svgPathId": "r11350",
+      "names": {
+        "ko": "노원구",
+        "en": "Nowon-gu"
+      },
+      "hints": {
+        "ko": "서울 과학기술대·육군사관학교. 화랑대 철도공원. 도봉산·수락산",
+        "en": "Seoul National University of Science and Technology; Korea Military Academy; Hwangrangdae Railroad Park"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        127.073,
+        37.655
+      ]
     },
     {
-      "id": "11380", "svgPathId": "r11380",
-      "names": {"ko": "은평구", "en": "Eunpyeong-gu"},
-      "hints": {"ko": "은평뉴타운·진관사·북한산 서쪽", "en": "Eunpyeong Hanok Village and Jingwansa Temple"},
-      "group": "서울", "difficulty": 3, "center": [126.935, 37.617]
+      "id": "11380",
+      "svgPathId": "r11380",
+      "names": {
+        "ko": "은평구",
+        "en": "Eunpyeong-gu"
+      },
+      "hints": {
+        "ko": "은평 뉴타운. 진관사(한국전쟁 위문 불화 발견). 봉산 탈춤 발원지",
+        "en": "Eunpyeong New Town development; Jingwansa Temple (WWII comfort women Buddhist paintings discovered); Bongsan mask dance"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        126.935,
+        37.617
+      ]
     },
     {
-      "id": "11410", "svgPathId": "r11410",
-      "names": {"ko": "서대문구", "en": "Seodaemun-gu"},
-      "hints": {"ko": "연세대학교·서대문형무소·이화여대", "en": "Yonsei University and Seodaemun Prison History Hall"},
-      "group": "서울", "difficulty": 2, "center": [126.938, 37.579]
+      "id": "11410",
+      "svgPathId": "r11410",
+      "names": {
+        "ko": "서대문구",
+        "en": "Seodaemun-gu"
+      },
+      "hints": {
+        "ko": "서대문형무소(일제 독립운동 탄압 역사). 연세대·이화여대",
+        "en": "Seodaemun Prison (colonial-era independence movement suppression); Yonsei University and Ewha Womans University"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.938,
+        37.579
+      ]
     },
     {
-      "id": "11440", "svgPathId": "r11440",
-      "names": {"ko": "마포구", "en": "Mapo-gu"},
-      "hints": {"ko": "홍대·합정·상수동 카페거리", "en": "Hongdae nightlife and youth culture hub"},
-      "group": "서울", "difficulty": 1, "center": [126.907, 37.561]
+      "id": "11440",
+      "svgPathId": "r11440",
+      "names": {
+        "ko": "마포구",
+        "en": "Mapo-gu"
+      },
+      "hints": {
+        "ko": "홍대 대학 문화 거리. 디지털미디어시티. 공덕 출판 단지",
+        "en": "Hongdae university culture and nightlife; Digital Media City; major publishing and media hub"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        126.907,
+        37.561
+      ]
     },
     {
-      "id": "11470", "svgPathId": "r11470",
-      "names": {"ko": "양천구", "en": "Yangcheon-gu"},
-      "hints": {"ko": "목동아파트단지·신트리공원", "en": "Mok-dong apartment complexes in southwest Seoul"},
-      "group": "서울", "difficulty": 3, "center": [126.856, 37.527]
+      "id": "11470",
+      "svgPathId": "r11470",
+      "names": {
+        "ko": "양천구",
+        "en": "Yangcheon-gu"
+      },
+      "hints": {
+        "ko": "목동 학원가(사교육 중심). 서울 방송 클러스터(MBC·KBS)",
+        "en": "Mokdong private education hub; major broadcasting cluster with MBC and KBS headquarters"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        126.856,
+        37.527
+      ]
     },
     {
-      "id": "11500", "svgPathId": "r11500",
-      "names": {"ko": "강서구", "en": "Gangseo-gu"},
-      "hints": {"ko": "김포국제공항·마곡지구·발산역", "en": "Gimpo Airport and Magok tech district"},
-      "group": "서울", "difficulty": 2, "center": [126.850, 37.551]
+      "id": "11500",
+      "svgPathId": "r11500",
+      "names": {
+        "ko": "강서구",
+        "en": "Gangseo-gu"
+      },
+      "hints": {
+        "ko": "김포국제공항. 허준 박물관(동의보감 저자). 마곡 LG사이언스파크",
+        "en": "Gimpo International Airport; Heo Jun Museum (author of Dongibogam medical encyclopedia); LG Science Park in Magok"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.85,
+        37.551
+      ]
     },
     {
-      "id": "11530", "svgPathId": "r11530",
-      "names": {"ko": "구로구", "en": "Guro-gu"},
-      "hints": {"ko": "구로디지털단지·구로시장·신도림", "en": "Guro Digital Complex IT hub"},
-      "group": "서울", "difficulty": 2, "center": [126.888, 37.495]
+      "id": "11530",
+      "svgPathId": "r11530",
+      "names": {
+        "ko": "구로구",
+        "en": "Guro-gu"
+      },
+      "hints": {
+        "ko": "구로공단(한국 산업화 상징). 가리봉동 중국 동포 차이나타운",
+        "en": "Guro Industrial Complex (symbol of Korea's industrialization era); Garibong-dong Korean-Chinese community"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.888,
+        37.495
+      ]
     },
     {
-      "id": "11545", "svgPathId": "r11545",
-      "names": {"ko": "금천구", "en": "Geumcheon-gu"},
-      "hints": {"ko": "독산동·시흥동·가산디지털단지", "en": "Gasan Digital Complex in southwest Seoul"},
-      "group": "서울", "difficulty": 3, "center": [126.896, 37.456]
+      "id": "11545",
+      "svgPathId": "r11545",
+      "names": {
+        "ko": "금천구",
+        "en": "Geumcheon-gu"
+      },
+      "hints": {
+        "ko": "서울 디지털 산업단지(옛 구로공단). 호암산 도립공원",
+        "en": "Seoul Digital Industrial Complex (redeveloped from Guro Industrial Complex); Hoamsan Provincial Park"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        126.896,
+        37.456
+      ]
     },
     {
-      "id": "11560", "svgPathId": "r11560",
-      "names": {"ko": "영등포구", "en": "Yeongdeungpo-gu"},
-      "hints": {"ko": "여의도 국회의사당·타임스퀘어", "en": "Yeouido financial district and National Assembly"},
-      "group": "서울", "difficulty": 1, "center": [126.907, 37.527]
+      "id": "11560",
+      "svgPathId": "r11560",
+      "names": {
+        "ko": "영등포구",
+        "en": "Yeongdeungpo-gu"
+      },
+      "hints": {
+        "ko": "여의도 금융 중심지(증권거래소·KB·신한은행). 타임스퀘어 쇼핑몰",
+        "en": "Yeouido financial hub (Korea Stock Exchange, major banks); Times Square mall; LG and Hyundai Twin Towers"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        126.907,
+        37.527
+      ]
     },
     {
-      "id": "11590", "svgPathId": "r11590",
-      "names": {"ko": "동작구", "en": "Dongjak-gu"},
-      "hints": {"ko": "국립현충원·사당동·노량진 고시촌", "en": "National Cemetery and Noryangjin exam-prep village"},
-      "group": "서울", "difficulty": 3, "center": [126.940, 37.512]
+      "id": "11590",
+      "svgPathId": "r11590",
+      "names": {
+        "ko": "동작구",
+        "en": "Dongjak-gu"
+      },
+      "hints": {
+        "ko": "국립서울현충원(현충사·국가유공자 묘역). 사당동·노량진 학원가",
+        "en": "Seoul National Cemetery (national war memorial); Noryangjin major exam prep district"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        126.94,
+        37.512
+      ]
     },
     {
-      "id": "11620", "svgPathId": "r11620",
-      "names": {"ko": "관악구", "en": "Gwanak-gu"},
-      "hints": {"ko": "서울대학교·관악산·신림동", "en": "Seoul National University and Gwanaksan mountain"},
-      "group": "서울", "difficulty": 2, "center": [126.952, 37.478]
+      "id": "11620",
+      "svgPathId": "r11620",
+      "names": {
+        "ko": "관악구",
+        "en": "Gwanak-gu"
+      },
+      "hints": {
+        "ko": "서울대학교. 관악산 등산로. 신림동 순대타운",
+        "en": "Seoul National University; Gwanaksan mountain trails; Sillim-dong sundae soup village"
+      },
+      "group": "서울",
+      "difficulty": 2,
+      "center": [
+        126.952,
+        37.478
+      ]
     },
     {
-      "id": "11650", "svgPathId": "r11650",
-      "names": {"ko": "서초구", "en": "Seocho-gu"},
-      "hints": {"ko": "강남역·예술의전당·반포한강공원", "en": "Gangnam Station area and Seoul Arts Center"},
-      "group": "서울", "difficulty": 1, "center": [127.033, 37.484]
+      "id": "11650",
+      "svgPathId": "r11650",
+      "names": {
+        "ko": "서초구",
+        "en": "Seocho-gu"
+      },
+      "hints": {
+        "ko": "삼성전자 서초사옥. 예술의 전당. 국립중앙도서관. 강남 법조타운",
+        "en": "Samsung Electronics Seocho HQ; Seoul Arts Center; National Library; major legal and judicial district"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        127.033,
+        37.484
+      ]
     },
     {
-      "id": "11680", "svgPathId": "r11680",
-      "names": {"ko": "강남구", "en": "Gangnam-gu"},
-      "hints": {"ko": "삼성동 코엑스·압구정·청담동", "en": "COEX, Apgujeong, and Korea's most affluent district"},
-      "group": "서울", "difficulty": 1, "center": [127.047, 37.517]
+      "id": "11680",
+      "svgPathId": "r11680",
+      "names": {
+        "ko": "강남구",
+        "en": "Gangnam-gu"
+      },
+      "hints": {
+        "ko": "코엑스(전시 컨벤션). 강남역(서울 최대 유동인구). 압구정·청담 패션·명품거리. 한류 문화",
+        "en": "COEX exhibition center; Gangnam Station (highest foot traffic in Seoul); Apgujeong and Cheongdam luxury fashion streets; K-pop hub"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        127.047,
+        37.517
+      ]
     },
     {
-      "id": "11710", "svgPathId": "r11710",
-      "names": {"ko": "송파구", "en": "Songpa-gu"},
-      "hints": {"ko": "롯데월드타워·올림픽공원·잠실", "en": "Lotte World Tower and Olympic Park"},
-      "group": "서울", "difficulty": 1, "center": [127.117, 37.514]
+      "id": "11710",
+      "svgPathId": "r11710",
+      "names": {
+        "ko": "송파구",
+        "en": "Songpa-gu"
+      },
+      "hints": {
+        "ko": "롯데월드(세계 최대 실내 테마파크). 몽촌토성·석촌호수(백제 문화). 올림픽 주경기장(1988)",
+        "en": "Lotte World (world's largest indoor theme park); Mongchontoseong fortress; 1988 Summer Olympics Stadium"
+      },
+      "group": "서울",
+      "difficulty": 1,
+      "center": [
+        127.117,
+        37.514
+      ]
     },
     {
-      "id": "11740", "svgPathId": "r11740",
-      "names": {"ko": "강동구", "en": "Gangdong-gu"},
-      "hints": {"ko": "올림픽대교·고덕동·천호동", "en": "Eastern Seoul; Godeok and Cheonho districts"},
-      "group": "서울", "difficulty": 3, "center": [127.147, 37.549]
+      "id": "11740",
+      "svgPathId": "r11740",
+      "names": {
+        "ko": "강동구",
+        "en": "Gangdong-gu"
+      },
+      "hints": {
+        "ko": "암사동 선사유적지(신석기 마을 유적). 고덕강일 공공주택지구",
+        "en": "Amsa-dong Prehistoric Settlement Site (Neolithic village ruins); major new housing development area"
+      },
+      "group": "서울",
+      "difficulty": 3,
+      "center": [
+        127.147,
+        37.549
+      ]
     }
   ]
 }
