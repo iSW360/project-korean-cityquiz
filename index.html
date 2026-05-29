@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>GeoQ — 지도로 배우는 지리 퀴즈</title>
-<meta name="description" content="전국 시군구·서울·미국 3가지 레벨 지리 퀴즈. 지도를 보며 직접 맞혀보세요!">
+<meta name="description" content="전국 시군·서울·미국 3가지 레벨 지리 퀴즈. 지도를 보며 직접 맞혀보세요!">
 <meta property="og:title" content="GeoQ — 지도 지리 퀴즈">
-<meta property="og:description" content="전국 시군구·서울·미국 지도 퀴즈. Level 3는 지도를 직접 클릭!">
+<meta property="og:description" content="전국 시군·서울·미국 지도 퀴즈. Level 3는 지도를 직접 클릭!">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
@@ -18,7 +18,7 @@
 <div class="home-hero">
   <div class="home-hero__eyebrow">Geography Quiz</div>
   <h1 class="home-hero__title" id="ht">지도로 배우는<br>지리 퀴즈</h1>
-  <p class="home-hero__sub" id="hs">전국 시군구 · 서울 구 · 미국 주<br>3가지 레벨로 도전하세요</p>
+  <p class="home-hero__sub" id="hs">전국 시군 · 서울 구 · 미국 주<br>3가지 레벨로 도전하세요</p>
   <div class="lang-row">
     <span style="font-size:12px;color:var(--hint);" id="total-plays"></span>
     <div class="lang-toggle">
@@ -52,7 +52,7 @@
   <span class="challenge-banner__icon">🏆</span>
   <div>
     <div class="challenge-banner__title" id="ch-title">오늘의 챌린지</div>
-    <div class="challenge-banner__sub" id="ch-sub">전국 시군구 · Level 1부터 도전!</div>
+    <div class="challenge-banner__sub" id="ch-sub">전국 시군 · Level 1부터 도전!</div>
   </div>
   <span class="challenge-banner__arrow">›</span>
 </a>
@@ -65,8 +65,8 @@
       <div class="map-card__icon" style="padding:3px;">
         <img src="/img/icon-korea.svg" alt="한국 지도" style="width:100%;height:100%;object-fit:contain;">
       </div>
-      <div class="map-card__name" id="mn-ks">전국 시군구</div>
-      <div class="map-card__meta" id="mc-ks">104개 지역 · 3레벨</div>
+      <div class="map-card__name" id="mn-ks">전국 시군</div>
+      <div class="map-card__meta" id="mc-ks">149개 지역 · 3레벨</div>
       <span class="map-card__badge badge-gold" id="mb-ks">인기</span>
     </a>
     <a href="/quiz?map=korea-seoul&level=1" class="map-card">
@@ -142,8 +142,8 @@ function setLang(l){localStorage.setItem('qlang',l);location.reload();}
     document.getElementById('ch-sub').textContent='Korea Districts · Start at Level 1!';
     document.getElementById('sec-ko').textContent='Korea';
     document.getElementById('sec-wl').textContent='World';
-    document.getElementById('mn-ks').textContent='Korea Districts';
-    document.getElementById('mc-ks').textContent='104 regions · 3 levels';
+    document.getElementById('mn-ks').textContent='Korea Si/Gun';
+    document.getElementById('mc-ks').textContent='149 regions · 3 levels';
     document.getElementById('mb-ks').textContent='Popular';
     document.getElementById('mn-se').textContent='Seoul Wards';
     document.getElementById('mc-se').textContent='25 regions · 3 levels';

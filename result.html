@@ -70,8 +70,8 @@
   <div class="next-grid">
     <button class="next-card" onclick="go('korea-sigungoo')">
       <span class="next-card__icon">🗾</span>
-      <span class="next-card__name" id="nc-ks">전국 시군구</span>
-      <span class="next-card__sub">104개 지역</span>
+      <span class="next-card__name" id="nc-ks">전국 시군</span>
+      <span class="next-card__sub">149개 지역</span>
     </button>
     <button class="next-card" onclick="go('korea-seoul')">
       <span class="next-card__icon">🏙️</span>
@@ -125,7 +125,7 @@ function showToast(msg,ms=2200){const el=document.getElementById('toast');el.tex
 
   // 지도명 + 등급
   const mapNames={
-    'korea-sigungoo':isKo?'전국 시군구':'Korea Districts',
+    'korea-sigungoo':isKo?'전국 시군':'Korea Si/Gun',
     'korea-seoul':isKo?'서울 구':'Seoul Wards',
     'us-states':isKo?'미국 주':'US States',
   };
@@ -156,7 +156,7 @@ function showToast(msg,ms=2200){const el=document.getElementById('toast');el.tex
     document.getElementById('share-lbl').textContent='Share';
     document.getElementById('home-lbl').textContent='Home';
     document.getElementById('next-lbl').textContent='Try Another Quiz';
-    document.getElementById('nc-ks').textContent='Korea Districts';
+    document.getElementById('nc-ks').textContent='Korea Si/Gun';
     document.getElementById('nc-se').textContent='Seoul Wards';
     document.getElementById('nc-us').textContent='US States';
     document.getElementById('nc-eu').textContent='Europe';

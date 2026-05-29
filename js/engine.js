@@ -1,7 +1,7 @@
 /* quiz-engine.js — GeoQ 통합 엔진 */
 const QE = (() => {
   const QUIZ_N = 10;   // 한 세션당 문제 수
-  const CACHE_VER = 3; // 올리면 SVG·JSON 캐시 전체 무효화
+  const CACHE_VER = 4; // 올리면 SVG·JSON 캐시 전체 무효화
   let S = {
     mapId:'korea-sigungoo', lang:'ko', level:1,
     regions:[], queue:[], idx:0,
