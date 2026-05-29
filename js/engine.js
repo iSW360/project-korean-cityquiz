@@ -8,6 +8,7 @@ const QE = (() => {
     score:0, correct:0, wrong:0, hintUsed:0,
     hintThis:false, answered:false,
     timer:null, timeLeft:15,
+    autoNext:null, countInterval:null,
   };
   const $=id=>document.getElementById(id);
   const qs=sel=>document.querySelector(sel);
@@ -105,7 +106,6 @@ const QE = (() => {
     _showInfoHint(correct);
     _showNext();
     _updateScore();
-    setTimeout(()=>{if(!$('btn-next')?.dataset.clicked) nextQ();},3000);
   }
 
   function _buildQueue(){
@@ -152,7 +152,7 @@ const QE = (() => {
     if(fb){fb.className='feedback';fb.textContent='';}
 
     const nb=$('btn-next');
-    if(nb){nb.style.display='none';delete nb.dataset.clicked;}
+    if(nb) nb.style.display='none';
 
     if(S.level===2) _startTimer();
 
@@ -194,7 +194,6 @@ const QE = (() => {
     _showInfoHint(correct);
     _showNext();
     _updateScore();
-    setTimeout(()=>{if(!$('btn-next')?.dataset.clicked) nextQ();},3000);
   }
 
   function _startTimer(){
@@ -214,7 +213,6 @@ const QE = (() => {
     _feedback(false,c,true);
     _showInfoHint(c);
     _showNext();_updateScore();
-    setTimeout(()=>{if(!$('btn-next')?.dataset.clicked) nextQ();},3000);
   }
 
   function _updateTimer(t){
@@ -270,11 +268,26 @@ const QE = (() => {
     if(!nb) return;
     nb.style.display='flex';
     const last=S.idx>=S.queue.length-1;
-    nb.textContent=last?(S.lang==='ko'?'결과 보기 →':'See Result →'):(S.lang==='ko'?'다음 →':'Next →');
+    const base=last?(S.lang==='ko'?'결과 보기':'See Result'):(S.lang==='ko'?'다음':'Next');
+    // 카운트다운 초기화
+    if(S.autoNext){clearTimeout(S.autoNext);S.autoNext=null;}
+    if(S.countInterval){clearInterval(S.countInterval);S.countInterval=null;}
+    let cd=3;
+    nb.textContent=`${base} (${cd}) →`;
+    S.countInterval=setInterval(()=>{
+      cd--;
+      if(cd>0){nb.textContent=`${base} (${cd}) →`;}
+      else{clearInterval(S.countInterval);S.countInterval=null;}
+    },1000);
+    S.autoNext=setTimeout(()=>{
+      if(S.countInterval){clearInterval(S.countInterval);S.countInterval=null;}
+      nextQ();
+    },3000);
   }
 
   function nextQ(){
-    const nb=$('btn-next');if(nb) nb.dataset.clicked='1';
+    if(S.autoNext){clearTimeout(S.autoNext);S.autoNext=null;}
+    if(S.countInterval){clearInterval(S.countInterval);S.countInterval=null;}
     _stopTimer();S.idx++;_showQ();
   }
 
