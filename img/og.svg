@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C1220"/>
+      <stop offset="60%" stop-color="#152035"/>
+      <stop offset="100%" stop-color="#0D2040"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F5D078"/>
+      <stop offset="100%" stop-color="#E8B84B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Decorative circles -->
+  <circle cx="120" cy="315" r="220" fill="rgba(62,207,178,0.04)"/>
+  <circle cx="1080" cy="315" r="220" fill="rgba(232,184,75,0.05)"/>
+  <circle cx="600" cy="80" r="300" fill="rgba(96,180,255,0.03)"/>
+  <!-- GeoQ wordmark -->
+  <text x="600" y="255" font-family="Georgia,'Times New Roman',serif"
+        font-size="148" font-weight="bold" text-anchor="middle"
+        fill="url(#gold)">GeoQ</text>
+  <!-- Tagline KO -->
+  <text x="600" y="335" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif"
+        font-size="38" text-anchor="middle" fill="#EDF2F7" opacity="0.9">
+    지도로 배우는 지리 퀴즈
+  </text>
+  <!-- Maps list -->
+  <text x="600" y="400" font-family="Arial,sans-serif"
+        font-size="26" text-anchor="middle" fill="#EDF2F7" opacity="0.5">
+    전국 시군 · 서울 · 미국 · 유럽 · 아프리카
+  </text>
+  <!-- Badge -->
+  <rect x="440" y="442" width="320" height="46" rx="23" fill="rgba(232,184,75,0.15)"/>
+  <rect x="440" y="442" width="320" height="46" rx="23"
+        fill="none" stroke="rgba(232,184,75,0.4)" stroke-width="1.5"/>
+  <text x="600" y="472" font-family="Arial,sans-serif"
+        font-size="20" text-anchor="middle" fill="#E8B84B" font-weight="bold">
+    3가지 레벨 · 무료 · 한국어/영어
+  </text>
+  <!-- URL -->
+  <text x="600" y="560" font-family="'DM Mono',monospace,sans-serif"
+        font-size="18" text-anchor="middle" fill="#EDF2F7" opacity="0.3">
+    korean-cityquiz01.pages.dev
+  </text>
+</svg>

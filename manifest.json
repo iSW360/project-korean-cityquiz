@@ -1,0 +1,55 @@
+{
+  "name": "GeoQ — 지도로 배우는 지리 퀴즈",
+  "short_name": "GeoQ",
+  "description": "지도를 보며 배우는 무료 지리 퀴즈. 전국 시군·서울·미국·유럽·아프리카를 3가지 레벨로 도전하세요.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0C1220",
+  "theme_color": "#E8B84B",
+  "lang": "ko",
+  "categories": ["education", "games"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/img/og.svg",
+      "sizes": "1200x630",
+      "type": "image/svg+xml",
+      "label": "GeoQ 지리 퀴즈 홈 화면"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "전국 시군 퀴즈",
+      "short_name": "전국 시군",
+      "url": "/quiz?map=korea-sigungoo&level=1",
+      "description": "한국 161개 시군구 퀴즈"
+    },
+    {
+      "name": "미국 주 퀴즈",
+      "short_name": "미국 주",
+      "url": "/quiz?map=us-states&level=1",
+      "description": "미국 50개 주 퀴즈"
+    }
+  ]
+}
