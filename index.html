@@ -142,21 +142,25 @@
   <div class="home-section-label">🌍 <span id="sec-wl">세계</span></div>
   <div class="map-grid">
     <div class="map-card" onclick="goQuiz('us-states')">
-      <div class="map-card__icon">🇺🇸</div>
+      <div class="map-card__icon" style="padding:3px;">
+        <img src="/img/icon-us.svg" alt="미국 지도" style="width:100%;height:100%;object-fit:contain;">
+      </div>
       <div class="map-card__name" id="mn-us">미국 주</div>
       <div class="map-card__meta" id="mc-us">50개 지역 · 3레벨</div>
     </div>
     <div class="map-card" onclick="goQuiz('europe')">
-      <div class="map-card__icon">🇪🇺</div>
+      <div class="map-card__icon" style="padding:3px;">
+        <img src="/img/icon-europe.svg" alt="유럽 지도" style="width:100%;height:100%;object-fit:contain;">
+      </div>
       <div class="map-card__name" id="mn-eu">유럽 나라</div>
       <div class="map-card__meta" id="mc-eu">47개 지역 · 3레벨</div>
-      <span class="map-card__badge badge-new">NEW</span>
     </div>
     <div class="map-card" onclick="goQuiz('africa')">
-      <div class="map-card__icon">🌍</div>
+      <div class="map-card__icon" style="padding:3px;">
+        <img src="/img/icon-africa.svg" alt="아프리카 지도" style="width:100%;height:100%;object-fit:contain;">
+      </div>
       <div class="map-card__name" id="mn-af">아프리카 나라</div>
       <div class="map-card__meta" id="mc-af">54개 지역 · 3레벨</div>
-      <span class="map-card__badge badge-new">NEW</span>
     </div>
     <div class="map-card" onclick="goQuiz('worldcup2026')">
       <div class="map-card__icon">🏆</div>
@@ -181,18 +185,6 @@
       <div class="map-card__icon">🏛️</div>
       <div class="map-card__name" id="mn-su2">조선 팔도</div>
       <div class="map-card__meta">8개 지역 · 한국사</div>
-      <span class="map-card__badge badge-soon">준비 중</span>
-    </div>
-    <div class="map-card disabled">
-      <div class="map-card__icon">⚗️</div>
-      <div class="map-card__name" id="mn-su3">주기율표</div>
-      <div class="map-card__meta">118개 원소 · 화학</div>
-      <span class="map-card__badge badge-soon">준비 중</span>
-    </div>
-    <div class="map-card disabled">
-      <div class="map-card__icon">🗾</div>
-      <div class="map-card__name" id="mn-su4">삼국 판도</div>
-      <div class="map-card__meta">5개 국가 · 한국사</div>
       <span class="map-card__badge badge-soon">준비 중</span>
     </div>
   </div>
