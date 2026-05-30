@@ -294,6 +294,19 @@ input{font-family:inherit;}
 /* 세계 지도 path — 기본 fill을 살짝 더 밝게 */
 #map-container svg:not([viewBox="0 0 680 800"]) path{fill:rgba(255,255,255,.07);}
 
+/* ── 월드컵 지도 ── */
+/* 배경 국가 (비출전국) */
+#map-container #bg-countries path{
+  fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.07);stroke-width:.4;
+}
+/* 대륙별 출전국 색상 */
+#map-container path[data-grp="UEFA"]    {fill:rgba(96,180,255,.22);}   /* 유럽 */
+#map-container path[data-grp="CONMEBOL"]{fill:rgba(62,189,189,.24);}   /* 남미 */
+#map-container path[data-grp="CONCACAF"]{fill:rgba(123,176,80,.24);}   /* 북중미 */
+#map-container path[data-grp="CAF"]     {fill:rgba(217,110,58,.24);}   /* 아프리카 */
+#map-container path[data-grp="AFC"]     {fill:rgba(212,160,48,.26);}   /* 아시아 */
+#map-container path[data-grp="OFC"]     {fill:rgba(157,120,212,.24);}  /* 오세아니아 */
+
 /* Level3 */
 body.lv3 #map-container path{cursor:crosshair;}
 body.lv3 #map-container path:hover{fill:rgba(232,184,75,.18);stroke:var(--gold);}

@@ -1,0 +1,586 @@
+{
+  "meta": {
+    "id": "worldcup2026",
+    "mapSvg": "/maps/world/worldcup2026.svg",
+    "defaultLang": "ko",
+    "totalRegions": 48
+  },
+  "regions": [
+    {
+      "id": "SCO",
+      "svgPathId": "rSCO",
+      "names": {
+        "ko": "스코틀랜드",
+        "en": "Scotland"
+      },
+      "hints": {
+        "ko": "1872년 잉글랜드와 세계 최초 국제경기 상대. 셀틱·레인저스 올드펌 라이벌. 맥토미니·로버트슨",
+        "en": "Played in world's first international (1872 vs England); Old Firm Celtic-Rangers rivalry; McTominay"
+      }
+    },
+    {
+      "id": "ENG",
+      "svgPathId": "rENG",
+      "names": {
+        "ko": "잉글랜드",
+        "en": "England"
+      },
+      "hints": {
+        "ko": "1966 자국 월드컵 유일 우승. 해리 케인·벨링엄. 프리미어리그 종주국. 1872년 세계 최초 국제경기",
+        "en": "Only World Cup win in 1966 on home soil; Harry Kane, Bellingham; home of the Premier League"
+      }
+    },
+    {
+      "id": "UZB",
+      "svgPathId": "rUZB",
+      "names": {
+        "ko": "우즈베키스탄",
+        "en": "Uzbekistan"
+      },
+      "hints": {
+        "ko": "첫 월드컵 진출! 중앙아시아 신흥 축구 강국. 쇼무로도프(로마)·호자마토프. 역사적 데뷔",
+        "en": "First ever World Cup! Central Asian rising power; Shomurodov (Roma); historic debut"
+      }
+    },
+    {
+      "id": "URY",
+      "svgPathId": "rURY",
+      "names": {
+        "ko": "우루과이",
+        "en": "Uruguay"
+      },
+      "hints": {
+        "ko": "최초 월드컵 챔피언(1930·50 2회 우승). 누녜스(리버풀)·발베르데. 셀레스테. 작은 나라 큰 축구",
+        "en": "First and two-time World Cup champions (1930, 1950); Núñez and Valverde; Celeste"
+      }
+    },
+    {
+      "id": "USA",
+      "svgPathId": "rUSA",
+      "names": {
+        "ko": "미국",
+        "en": "USA"
+      },
+      "hints": {
+        "ko": "공동 개최국. MLS 성장. 풀리식·웨아·아라우호. 1930·94 WC 개최. 축구 성장 진행 중",
+        "en": "Co-host; MLS growing; Pulisic, Weah, Araújo; hosted 1994; US soccer on the rise"
+      }
+    },
+    {
+      "id": "TUR",
+      "svgPathId": "rTUR",
+      "names": {
+        "ko": "튀르키예",
+        "en": "Turkey"
+      },
+      "hints": {
+        "ko": "2002 월드컵 3위. 아르다 귈레르(레알 마드리드). 튀르키예 르네상스 시대",
+        "en": "3rd place 2002 World Cup; Arda Güler (Real Madrid); Turkish football renaissance"
+      }
+    },
+    {
+      "id": "TUN",
+      "svgPathId": "rTUN",
+      "names": {
+        "ko": "튀니지",
+        "en": "Tunisia"
+      },
+      "hints": {
+        "ko": "카르타고 독수리. 7회 WC 진출. 북아프리카 전통 강호. 마네스·브룸·드라게르",
+        "en": "Carthage Eagles; seven World Cups; North African stalwart; Msakni and Bronn generation"
+      }
+    },
+    {
+      "id": "CHE",
+      "svgPathId": "rCHE",
+      "names": {
+        "ko": "스위스",
+        "en": "Switzerland"
+      },
+      "hints": {
+        "ko": "자카·샤카 형제 배출. 유럽의 복병. 8회 연속 월드컵 진출. 16강 단골손님",
+        "en": "Produced Xhaka and Shaqiri; consistent European dark horse; eight consecutive World Cups"
+      }
+    },
+    {
+      "id": "SWE",
+      "svgPathId": "rSWE",
+      "names": {
+        "ko": "스웨덴",
+        "en": "Sweden"
+      },
+      "hints": {
+        "ko": "이브라히모비치의 나라(은퇴). 1994 3위. 이사크·포르스베리. 스칸디나비아 대표",
+        "en": "Ibrahimović era over; 1994 third place; Isak and Forsberg era; Scandinavian football"
+      }
+    },
+    {
+      "id": "ESP",
+      "svgPathId": "rESP",
+      "names": {
+        "ko": "스페인",
+        "en": "Spain"
+      },
+      "hints": {
+        "ko": "2010 챔피언. 티키타카 창시자. 라민 야말(역대 최연소 유로 득점). 바르셀로나·레알 왕국",
+        "en": "2010 champions; tiki-taka creators; Lamine Yamal (youngest Euro scorer ever); LaLiga powers"
+      }
+    },
+    {
+      "id": "KOR",
+      "svgPathId": "rKOR",
+      "names": {
+        "ko": "한국",
+        "en": "South Korea"
+      },
+      "hints": {
+        "ko": "태극전사. 2002 4강 신화(아시아 역대 최고). 손흥민(토트넘)·이강인(PSG). 아시아 최다 WC 출전(공동)",
+        "en": "Taeguk Warriors; 2002 semi-finals (Asia's best ever); Son Heung-min (Spurs), Lee Kang-in (PSG)"
+      }
+    },
+    {
+      "id": "ZAF",
+      "svgPathId": "rZAF",
+      "names": {
+        "ko": "남아프리카공화국",
+        "en": "South Africa"
+      },
+      "hints": {
+        "ko": "바파나 바파나. 2010 WC 개최국. 아프리카 최초 WC 개최. 스피코 음부아·파르코",
+        "en": "Bafana Bafana; hosted 2010 World Cup (Africa's first); Sphiko Mbua; rainbow nation football"
+      }
+    },
+    {
+      "id": "SEN",
+      "svgPathId": "rSEN",
+      "names": {
+        "ko": "세네갈",
+        "en": "Senegal"
+      },
+      "hints": {
+        "ko": "2021·2022 아프리카 챔피언. 사디오 마네·이드리사 게이에·파티 디아. 테랑가 라이온즈",
+        "en": "2021 and 2022 Africa Cup champions; Sadio Mané, Idrissa Gueye; Lions of Teranga"
+      }
+    },
+    {
+      "id": "SAU",
+      "svgPathId": "rSAU",
+      "names": {
+        "ko": "사우디아라비아",
+        "en": "Saudi Arabia"
+      },
+      "hints": {
+        "ko": "2022 아르헨티나 격파 대이변. 살레크·알다우사리. 사우디 프로리그 세계적 선수 영입 붐",
+        "en": "Shocked Argentina in 2022; Salem Al-Dawsari; Saudi Pro League global signing spree"
+      }
+    },
+    {
+      "id": "QAT",
+      "svgPathId": "rQAT",
+      "names": {
+        "ko": "카타르",
+        "en": "Qatar"
+      },
+      "hints": {
+        "ko": "2022 개최국 조별리그 탈락. 재도전. 알모에즈 알리. 소국 축구 투자 모델. 아스파이어 아카데미",
+        "en": "2022 host eliminated in group stage; redemption quest; Al-Moez Ali; Aspire Academy model"
+      }
+    },
+    {
+      "id": "PRT",
+      "svgPathId": "rPRT",
+      "names": {
+        "ko": "포르투갈",
+        "en": "Portugal"
+      },
+      "hints": {
+        "ko": "호날두 시대에서 주앙 펠릭스 세대로. 2016 유로 챔피언. 황금세대·2022 8강",
+        "en": "Transition from Ronaldo era to new generation; 2016 European champions; 2022 quarter-finals"
+      }
+    },
+    {
+      "id": "PRY",
+      "svgPathId": "rPRY",
+      "names": {
+        "ko": "파라과이",
+        "en": "Paraguay"
+      },
+      "hints": {
+        "ko": "남미의 수문장. 수비 전술 강호. 2010 8강. 과라니 문화. 라틴아메리카 축구 복병",
+        "en": "South America's defensive powerhouse; 2010 quarter-finalists; Guaraní football culture"
+      }
+    },
+    {
+      "id": "PAN",
+      "svgPathId": "rPAN",
+      "names": {
+        "ko": "파나마",
+        "en": "Panama"
+      },
+      "hints": {
+        "ko": "2018 첫 월드컵 이후 2회 연속 진출. 에릭 데이비스·아데마르 가리도. 중미 신흥 강호",
+        "en": "Two consecutive World Cups after debut in 2018; Éric Davis; rising Central American force"
+      }
+    },
+    {
+      "id": "NOR",
+      "svgPathId": "rNOR",
+      "names": {
+        "ko": "노르웨이",
+        "en": "Norway"
+      },
+      "hints": {
+        "ko": "얼링 홀란드(역대 EPL 최다 득점). 홀란드 세대 덕분에 처음으로 월드컵 본선 진출",
+        "en": "Home of Erling Haaland (Premier League all-time top scorer); first World Cup in modern era"
+      }
+    },
+    {
+      "id": "NZL",
+      "svgPathId": "rNZL",
+      "names": {
+        "ko": "뉴질랜드",
+        "en": "New Zealand"
+      },
+      "hints": {
+        "ko": "올 화이츠. 오세아니아 대표. 크리스 우드(뉴캐슬). 플레이오프 통해 본선 진출. 럭비의 나라",
+        "en": "All Whites; Oceania representative; Chris Wood (Newcastle); qualified via playoff; rugby nation"
+      }
+    },
+    {
+      "id": "NLD",
+      "svgPathId": "rNLD",
+      "names": {
+        "ko": "네덜란드",
+        "en": "Netherlands"
+      },
+      "hints": {
+        "ko": "토탈 풋볼의 나라(요한 크루이프). 반다이크·뎁시·가크포. 3회 준우승. 오렌지 군단",
+        "en": "Birthplace of Total Football (Johan Cruyff); Van Dijk; three-time runners-up; Oranje"
+      }
+    },
+    {
+      "id": "CUW",
+      "svgPathId": "rCUW",
+      "names": {
+        "ko": "퀴라소",
+        "en": "Curaçao"
+      },
+      "hints": {
+        "ko": "첫 월드컵 진출! 네덜란드령 카리브 섬(인구 15만). 역대 최소국 WC 데뷔 중 하나",
+        "en": "First ever World Cup! Dutch Caribbean island (population 150,000); historic debut"
+      }
+    },
+    {
+      "id": "MAR",
+      "svgPathId": "rMAR",
+      "names": {
+        "ko": "모로코",
+        "en": "Morocco"
+      },
+      "hints": {
+        "ko": "2022 4강(아프리카 역대 최고). 아틀라스 라이언스. 지야슈·엔 네시리. 북아프리카 대표",
+        "en": "2022 semi-finalists (Africa's best ever); Atlas Lions; Ziyech, En-Nesyri; North African kings"
+      }
+    },
+    {
+      "id": "MEX",
+      "svgPathId": "rMEX",
+      "names": {
+        "ko": "멕시코",
+        "en": "Mexico"
+      },
+      "hints": {
+        "ko": "공동 개최국. 7회 연속 16강(1994-2018) 이후 부진. 엘 트리. 아스테카 스타디움의 전설",
+        "en": "Co-host; 7 straight round of 16 (1994-2018); El Tri; legendary Azteca Stadium history"
+      }
+    },
+    {
+      "id": "JOR",
+      "svgPathId": "rJOR",
+      "names": {
+        "ko": "요르단",
+        "en": "Jordan"
+      },
+      "hints": {
+        "ko": "첫 월드컵 진출! 플레이오프 극복. 야잔 알 나이마트. 아랍 세계의 새 축구 강호",
+        "en": "First ever World Cup! Won via playoff; Yazan Al Naimat; new force in Arab football"
+      }
+    },
+    {
+      "id": "JPN",
+      "svgPathId": "rJPN",
+      "names": {
+        "ko": "일본",
+        "en": "Japan"
+      },
+      "hints": {
+        "ko": "사무라이 블루. 아시아 최다 WC 출전(8회). 도안 리츠·미토마 카오루. 2022 스페인·독일 격파",
+        "en": "Samurai Blue; most World Cups in Asia (8 times); Doan, Mitoma; shocked Spain and Germany 2022"
+      }
+    },
+    {
+      "id": "IRQ",
+      "svgPathId": "rIRQ",
+      "names": {
+        "ko": "이라크",
+        "en": "Iraq"
+      },
+      "hints": {
+        "ko": "대륙간 플레이오프 극복 진출. 아이멘 후세인. 2007 아시안컵 챔피언. 아랍권 전통 강호",
+        "en": "Qualified via intercontinental playoff; Aymen Hussein; 2007 Asian Cup champions"
+      }
+    },
+    {
+      "id": "IRN",
+      "svgPathId": "rIRN",
+      "names": {
+        "ko": "이란",
+        "en": "Iran"
+      },
+      "hints": {
+        "ko": "팀 멜리. 아시아 최다 WC 출전 공동. 메흐디 타레미(인터밀란). 중동 최강 전통 축구 강국",
+        "en": "Team Melli; joint most World Cups in Asia; Mehdi Taremi (Inter Milan); Middle East powerhouse"
+      }
+    },
+    {
+      "id": "HTI",
+      "svgPathId": "rHTI",
+      "names": {
+        "ko": "아이티",
+        "en": "Haiti"
+      },
+      "hints": {
+        "ko": "카리브해 축구 강호. 48팀 체제 확대 수혜. 나이젤 아바·귈라노 형제. 1974 WC 이후 52년 만",
+        "en": "Caribbean powerhouse; beneficiary of 48-team expansion; first World Cup since 1974"
+      }
+    },
+    {
+      "id": "GHA",
+      "svgPathId": "rGHA",
+      "names": {
+        "ko": "가나",
+        "en": "Ghana"
+      },
+      "hints": {
+        "ko": "블랙스타스. 2010 8강(아프리카 역대 최고 공동). 파르티(아스널)·쿠두스. 서아프리카 대표",
+        "en": "Black Stars; 2010 quarter-finalists (Africa record); Thomas Partey (Arsenal); West Africa"
+      }
+    },
+    {
+      "id": "DEU",
+      "svgPathId": "rDEU",
+      "names": {
+        "ko": "독일",
+        "en": "Germany"
+      },
+      "hints": {
+        "ko": "4회 월드컵 우승(1954·74·90·2014). 전차군단(Die Mannschaft). 무시알라·키미히",
+        "en": "Four-time World Cup winners (1954, 74, 90, 2014); Die Mannschaft; Musiala and Kimmich era"
+      }
+    },
+    {
+      "id": "FRA",
+      "svgPathId": "rFRA",
+      "names": {
+        "ko": "프랑스",
+        "en": "France"
+      },
+      "hints": {
+        "ko": "2018 챔피언. 음바페·그리즈만. 레 블뢰. 1998 자국 개최 첫 우승. 2회 월드컵 우승",
+        "en": "2018 champions; Mbappé, Griezmann; Les Bleus; two-time World Cup winners (1998, 2018)"
+      }
+    },
+    {
+      "id": "EGY",
+      "svgPathId": "rEGY",
+      "names": {
+        "ko": "이집트",
+        "en": "Egypt"
+      },
+      "hints": {
+        "ko": "모하메드 살라의 나라. 파라오. 아프리카 챔피언십 7회 우승(최다). 피라미드 FC 문화",
+        "en": "Mohamed Salah's country; The Pharaohs; seven Africa Cup of Nations titles (most ever)"
+      }
+    },
+    {
+      "id": "ECU",
+      "svgPathId": "rECU",
+      "names": {
+        "ko": "에콰도르",
+        "en": "Ecuador"
+      },
+      "hints": {
+        "ko": "에네르 발렌시아·이스라 플로레스. 안데스 산맥 홈 어드밴티지(고지대 훈련). 3회 연속 WC",
+        "en": "Enner Valencia; Andes altitude home advantage; three consecutive World Cups"
+      }
+    },
+    {
+      "id": "CZE",
+      "svgPathId": "rCZE",
+      "names": {
+        "ko": "체코",
+        "en": "Czech Republic"
+      },
+      "hints": {
+        "ko": "체코슬로바키아 시절 1934·62 준우승. 파티크 슈칙·콜라르. 중유럽 전통 강호",
+        "en": "As Czechoslovakia, runners-up 1934 and 1962; Patrik Schick; Central European stalwart"
+      }
+    },
+    {
+      "id": "HRV",
+      "svgPathId": "rHRV",
+      "names": {
+        "ko": "크로아티아",
+        "en": "Croatia"
+      },
+      "hints": {
+        "ko": "2018 준우승·2022 3위. 모드리치(발롱도르). 발칸 축구의 자존심. 체크무늬 유니폼",
+        "en": "2018 runners-up, 2022 third place; Luka Modrić (Ballon d'Or); iconic checkered jersey"
+      }
+    },
+    {
+      "id": "CIV",
+      "svgPathId": "rCIV",
+      "names": {
+        "ko": "코트디부아르",
+        "en": "Ivory Coast"
+      },
+      "hints": {
+        "ko": "코끼리. 드로그바 이후 재건. 세바스티앙 알레르·시모 피나우·포파나. 서아프리카 강호",
+        "en": "Les Éléphants; post-Drogba rebuilding; Sébastien Haller, Fofana; West African powerhouse"
+      }
+    },
+    {
+      "id": "COD",
+      "svgPathId": "rCOD",
+      "names": {
+        "ko": "콩고민주공화국",
+        "en": "DR Congo"
+      },
+      "hints": {
+        "ko": "아프리카 거인의 귀환. 대륙간 플레이오프 극복. 치아니·바카마부. 아프리카 2번째 큰 나라",
+        "en": "Africa's giant returns; won intercontinental playoff; Cuypers, Bakambu; 2nd largest African country"
+      }
+    },
+    {
+      "id": "COL",
+      "svgPathId": "rCOL",
+      "names": {
+        "ko": "콜롬비아",
+        "en": "Colombia"
+      },
+      "hints": {
+        "ko": "2024 코파아메리카 결승 진출. 루이스 디아스(리버풀)·하메스 로드리게스 이후 황금세대",
+        "en": "2024 Copa América finalists; Luis Díaz (Liverpool); new golden generation post-James Rodríguez"
+      }
+    },
+    {
+      "id": "CPV",
+      "svgPathId": "rCPV",
+      "names": {
+        "ko": "카보베르데",
+        "en": "Cape Verde"
+      },
+      "hints": {
+        "ko": "상어들. 소국의 기적(인구 56만). 아프리카 랭킹 상승 중. 주앙 필리페·조나스 군도",
+        "en": "The Sharks; miracle of a 560,000-population island nation; rising African ranking"
+      }
+    },
+    {
+      "id": "CAN",
+      "svgPathId": "rCAN",
+      "names": {
+        "ko": "캐나다",
+        "en": "Canada"
+      },
+      "hints": {
+        "ko": "공동 개최국. 역대 2번째 WC(1986 이후 40년). 알폰소 데이비스(바이에른)·조나단 데이비드",
+        "en": "Co-host; second World Cup ever (40 years after 1986); Alphonso Davies (Bayern), Jonathan David"
+      }
+    },
+    {
+      "id": "BRA",
+      "svgPathId": "rBRA",
+      "names": {
+        "ko": "브라질",
+        "en": "Brazil"
+      },
+      "hints": {
+        "ko": "5회 우승(역대 최다). 비니시우스 주니오르·엔드릭크. 셀레상. 삼바 축구. 역대 WC 최다 출전",
+        "en": "Five-time winners (most ever); Vinícius Júnior, Endrick; Seleção; samba football"
+      }
+    },
+    {
+      "id": "BIH",
+      "svgPathId": "rBIH",
+      "names": {
+        "ko": "보스니아 헤르체고비나",
+        "en": "Bosnia and Herzegovina"
+      },
+      "hints": {
+        "ko": "유럽 플레이오프 결승서 이탈리아 꺾고 진출. 코디치·콜라시나츠. 사라예보의 축구 열정",
+        "en": "Beat Italy in European playoff final; Kodić, Kolasinac; passionate football culture in Sarajevo"
+      }
+    },
+    {
+      "id": "BEL",
+      "svgPathId": "rBEL",
+      "names": {
+        "ko": "벨기에",
+        "en": "Belgium"
+      },
+      "hints": {
+        "ko": "황금세대(루카쿠·데브라위너·아자르) 마무리. 2018 3위. 피파 랭킹 오랫동안 1위",
+        "en": "Golden Generation (Lukaku, De Bruyne, Hazard); 3rd place 2018; long-time FIFA #1 ranked"
+      }
+    },
+    {
+      "id": "AUT",
+      "svgPathId": "rAUT",
+      "names": {
+        "ko": "오스트리아",
+        "en": "Austria"
+      },
+      "hints": {
+        "ko": "마르코 아르나우토비치. 그렉시·라이너 세대. 2024 유로 8강. 중유럽 다크호스",
+        "en": "Marko Arnautović; Gregoritsch-Laimer generation; Euro 2024 quarter-finalists; dark horse"
+      }
+    },
+    {
+      "id": "AUS",
+      "svgPathId": "rAUS",
+      "names": {
+        "ko": "호주",
+        "en": "Australia"
+      },
+      "hints": {
+        "ko": "사커루스. 2006 16강. 해리 사우터·마티 라이언. AFC 편입 후 아시아 강호 자리매김",
+        "en": "Socceroos; 2006 round of 16; Harry Souttar, Mat Ryan; dominant in AFC since joining"
+      }
+    },
+    {
+      "id": "ARG",
+      "svgPathId": "rARG",
+      "names": {
+        "ko": "아르헨티나",
+        "en": "Argentina"
+      },
+      "hints": {
+        "ko": "2022 챔피언(3회 우승). 메시 시대 이후 재건. 알바레스·파레데스·마르티네스. 라 알비셀레스테",
+        "en": "2022 champions (3 titles); post-Messi era rebuild; Álvarez, Martínez; La Albiceleste"
+      }
+    },
+    {
+      "id": "DZA",
+      "svgPathId": "rDZA",
+      "names": {
+        "ko": "알제리",
+        "en": "Algeria"
+      },
+      "hints": {
+        "ko": "2019 아프리카 챔피언. 여우들. 마나 베나우아·이스마일 베나세르(AC밀란). 북아프리카 강호",
+        "en": "2019 Africa Cup winners; Les Fennecs (The Foxes); Bennacer (AC Milan); North African force"
+      }
+    }
+  ]
+}

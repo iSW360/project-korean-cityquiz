@@ -158,11 +158,11 @@
       <div class="map-card__meta" id="mc-af">54개 지역 · 3레벨</div>
       <span class="map-card__badge badge-new">NEW</span>
     </div>
-    <div class="map-card disabled">
-      <div class="map-card__icon">🌐</div>
-      <div class="map-card__name" id="mn-wl">세계 나라</div>
-      <div class="map-card__meta">195개 지역</div>
-      <span class="map-card__badge badge-soon">준비 중</span>
+    <div class="map-card" onclick="goQuiz('worldcup2026')">
+      <div class="map-card__icon">🏆</div>
+      <div class="map-card__name" id="mn-wc">2026 월드컵</div>
+      <div class="map-card__meta" id="mc-wc">48개국 · 3레벨</div>
+      <span class="map-card__badge badge-gold" id="mb-wc">🔥 HOT</span>
     </div>
   </div>
 </div>
@@ -237,7 +237,9 @@ function goQuiz(mapId){
     document.getElementById('mc-eu').textContent='47 countries · 3 levels';
     document.getElementById('mn-af').textContent='African Countries';
     document.getElementById('mc-af').textContent='54 countries · 3 levels';
-    document.getElementById('mn-wl').textContent='World Countries';
+    document.getElementById('mn-wc').textContent='2026 World Cup';
+    document.getElementById('mc-wc').textContent='48 nations · 3 levels';
+    document.getElementById('mb-wc').textContent='🔥 HOT';
     document.querySelectorAll('.badge-soon').forEach(e=>e.textContent='Soon');
   }
 })();
