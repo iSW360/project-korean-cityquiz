@@ -134,17 +134,11 @@
       <div class="map-card__meta" id="mc-se">25개 지역 · 3레벨</div>
       <span class="map-card__badge badge-new" id="mb-se">NEW</span>
     </div>
-    <div class="map-card" onclick="goQuiz('korea-specialty')">
-      <div class="map-card__icon">🌾</div>
-      <div class="map-card__name" id="mn-sp">지역 특성</div>
-      <div class="map-card__meta" id="mc-sp">31개 지역 · 특산물·산업·문화</div>
-      <span class="map-card__badge badge-new" id="mb-sp">NEW</span>
-    </div>
   </div>
 </div>
 
 <!-- 세계 -->
-<div class="home-section" style="padding-bottom:32px;">
+<div class="home-section">
   <div class="home-section-label">🌍 <span id="sec-wl">세계</span></div>
   <div class="map-grid">
     <div class="map-card" onclick="goQuiz('us-states')">
@@ -169,6 +163,37 @@
       <div class="map-card__name" id="mn-wc">2026 월드컵</div>
       <div class="map-card__meta" id="mc-wc">48개국 · 3레벨</div>
       <span class="map-card__badge badge-gold" id="mb-wc">🔥 HOT</span>
+    </div>
+  </div>
+</div>
+
+<!-- 수능 -->
+<div class="home-section" style="padding-bottom:32px;">
+  <div class="home-section-label">📚 <span id="sec-su">수능</span></div>
+  <div class="map-grid">
+    <div class="map-card" onclick="goQuiz('korea-specialty')">
+      <div class="map-card__icon">🌾</div>
+      <div class="map-card__name" id="mn-sp">한국 지역 특성</div>
+      <div class="map-card__meta" id="mc-sp">31개 지역 · 특산물·산업·문화</div>
+      <span class="map-card__badge badge-new" id="mb-sp">NEW</span>
+    </div>
+    <div class="map-card disabled">
+      <div class="map-card__icon">🏛️</div>
+      <div class="map-card__name" id="mn-su2">조선 팔도</div>
+      <div class="map-card__meta">8개 지역 · 한국사</div>
+      <span class="map-card__badge badge-soon">준비 중</span>
+    </div>
+    <div class="map-card disabled">
+      <div class="map-card__icon">⚗️</div>
+      <div class="map-card__name" id="mn-su3">주기율표</div>
+      <div class="map-card__meta">118개 원소 · 화학</div>
+      <span class="map-card__badge badge-soon">준비 중</span>
+    </div>
+    <div class="map-card disabled">
+      <div class="map-card__icon">🗾</div>
+      <div class="map-card__name" id="mn-su4">삼국 판도</div>
+      <div class="map-card__meta">5개 국가 · 한국사</div>
+      <span class="map-card__badge badge-soon">준비 중</span>
     </div>
   </div>
 </div>
@@ -232,13 +257,17 @@ function goQuiz(mapId){
     document.getElementById('lv3n').textContent='Click Map';
     document.getElementById('sec-ko').textContent='Korea';
     document.getElementById('sec-wl').textContent='World';
+    document.getElementById('sec-su').textContent='CSAT Prep';
     document.getElementById('mn-ks').textContent='Korea Si/Gun';
     document.getElementById('mc-ks').textContent='161 regions · 3 levels';
     document.getElementById('mb-ks').textContent='Popular';
     document.getElementById('mn-se').textContent='Seoul Wards';
-    document.getElementById('mn-sp').textContent='Regional Features';
-    document.getElementById('mc-sp').textContent='31 regions · products·industry·culture';
     document.getElementById('mc-se').textContent='25 regions · 3 levels';
+    document.getElementById('mn-sp').textContent='Korean Regional Features';
+    document.getElementById('mc-sp').textContent='31 regions · products · industry · culture';
+    document.getElementById('mn-su2').textContent='Joseon 8 Provinces';
+    document.getElementById('mn-su3').textContent='Periodic Table';
+    document.getElementById('mn-su4').textContent='Three Kingdoms';
     document.getElementById('mn-us').textContent='US States';
     document.getElementById('mc-us').textContent='50 regions · 3 levels';
     document.getElementById('mn-eu').textContent='European Countries';
