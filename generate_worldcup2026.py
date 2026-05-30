@@ -197,35 +197,72 @@ def dp(pts, eps):
         return dp(pts[:idx+1],eps)[:-1]+dp(pts[idx:],eps)
     return [pts[0],pts[-1]]
 
-MIN_SZ = 6
+MIN_SZ = 7   # 소국 최소 표시 크기(px)
+SKIP_BG = 2  # 배경에서 이 크기 이하 링은 건너뜀
+SKIP_WC = 2  # WC 출전국에서 소도서 건너뜀 임계값
 
-def expand(pts):
-    if not pts: return pts
-    if len(pts)<3:
-        cx=sum(p[0] for p in pts)/len(pts); cy=sum(p[1] for p in pts)/len(pts)
-        r=MIN_SZ/2; return [(cx-r,cy-r),(cx+r,cy-r),(cx+r,cy+r),(cx-r,cy+r),(cx-r,cy-r)]
+def bbox_wh(pts):
+    if len(pts)<2: return 0,0
     xs=[p[0] for p in pts]; ys=[p[1] for p in pts]
-    if max(xs)-min(xs)>=MIN_SZ and max(ys)-min(ys)>=MIN_SZ: return pts
-    cx=sum(xs)/len(xs); cy=sum(ys)/len(ys); r=MIN_SZ/2
-    return [(cx-r,cy-r),(cx+r,cy-r),(cx+r,cy+r),(cx-r,cy+r),(cx-r,cy-r)]
+    return max(xs)-min(xs), max(ys)-min(ys)
 
 def ring_path(pts):
     if len(pts)<3: return ''
     return 'M'+' '.join(f'{x},{y}' for x,y in pts)+'Z'
 
-def geom_to_d(geom, eps=1.0):
+def get_polys(geom):
+    if geom['type']=='Polygon': return [geom['coordinates']]
+    if geom['type']=='MultiPolygon': return geom['coordinates']
+    return []
+
+def geom_to_bg(geom, eps=2.5):
+    """배경용: 작은 링은 그냥 건너뜀 (박스 없음)"""
     parts=[]
-    polys=([geom['coordinates']] if geom['type']=='Polygon'
-           else geom['coordinates'] if geom['type']=='MultiPolygon' else [])
-    for poly in polys:
-        raw=[]
-        for lon,lat,*_ in poly[0]:
-            if lon<LON0-20 or lon>LON1+20: continue
-            raw.append(proj(lon,lat))
+    for poly in get_polys(geom):
+        raw=[proj(lon,lat) for lon,lat,*_ in poly[0]
+             if LON0-20<=lon<=LON1+20]
         simp=dp(raw,eps)
-        exp=expand(simp)
-        p=ring_path(exp)
-        if p: parts.append(p)
+        if len(simp)<3: continue
+        w,h=bbox_wh(simp)
+        if w<SKIP_BG and h<SKIP_BG: continue  # 너무 작으면 그냥 건너뜀
+        parts.append(ring_path(simp))
+    return ' '.join(parts)
+
+def geom_to_wc(geom, eps=0.8):
+    """출전국용: 나라 전체가 작을 때만 확장, 소도서는 건너뜀"""
+    all_rings=[]
+    all_raw=[]   # DP 전 원본 좌표 (bbox 체크용)
+    for poly in get_polys(geom):
+        raw=[proj(lon,lat) for lon,lat,*_ in poly[0]
+             if LON0-20<=lon<=LON1+20]
+        if raw: all_raw.extend(raw)
+        simp=dp(raw,eps)
+        if len(simp)>=3:
+            all_rings.append(simp)
+    if not all_raw: return ''
+
+    # 나라 전체 bbox는 원본 좌표로 판단 (DP 후 점이 없어도 체크 가능)
+    w,h=bbox_wh(all_raw)
+    if w<MIN_SZ and h<MIN_SZ:
+        # 소국(퀴라소·카보베르데 등) → 전체를 작은 사각형으로
+        cx=sum(p[0] for p in all_raw)/len(all_raw)
+        cy=sum(p[1] for p in all_raw)/len(all_raw)
+        r=MIN_SZ/2
+        return ring_path([(cx-r,cy-r),(cx+r,cy-r),(cx+r,cy+r),(cx-r,cy+r),(cx-r,cy-r)])
+
+    # 큰 나라 → 링별로 작은 소도서는 건너뜀
+    parts=[]
+    for simp in all_rings:
+        rw,rh=bbox_wh(simp)
+        if rw<SKIP_WC and rh<SKIP_WC: continue
+        parts.append(ring_path(simp))
+
+    if not parts:
+        # 군도 국가(Cape Verde 등): 섬 개별론 너무 작지만 국가 중심에 사각형 표시
+        cx=sum(p[0] for p in all_raw)/len(all_raw)
+        cy=sum(p[1] for p in all_raw)/len(all_raw)
+        r=MIN_SZ/2
+        return ring_path([(cx-r,cy-r),(cx+r,cy-r),(cx+r,cy+r),(cx-r,cy+r),(cx-r,cy-r)])
     return ' '.join(parts)
 
 # ── Curaçao 수동 위치 (NE에 없을 경우 폴백) ──────────────────────────────────
@@ -251,7 +288,7 @@ bg_paths=[]
 for feat in countries_data['features']:
     g=feat.get('geometry');
     if not g: continue
-    d=geom_to_d(g,eps=1.8)
+    d=geom_to_bg(g)
     if d: bg_paths.append(f'<path d="{d}"/>')
 
 # ── 출전국 레이어 ─────────────────────────────────────────────────────────────
@@ -273,7 +310,7 @@ for feat in map_units_data['features']:
     if not tid or tid in found or tid not in WC_TEAMS: continue
     g=feat.get('geometry');
     if not g: continue
-    d=geom_to_d(g,eps=0.5)
+    d=geom_to_wc(g,eps=0.5)
     if not d: continue
     ko,en,conf,kh,eh=WC_TEAMS[tid]
     found.add(tid)
@@ -290,7 +327,7 @@ for feat in countries_data['features']:
     ko,en,conf,kh,eh=WC_TEAMS[iso]
     g=feat.get('geometry');
     if not g: continue
-    d=geom_to_d(g,eps=0.8)
+    d=geom_to_wc(g)
     if not d: continue
     found.add(iso)
     wc_paths.append(f'<path id="r{iso}" data-id="{iso}" data-ko="{ko}" data-en="{en}" data-grp="{conf}" d="{d}"/>')
