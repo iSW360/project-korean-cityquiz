@@ -66,7 +66,7 @@ input{font-family:inherit;}
 }
 
 /* ── 페이지 wrapper ── */
-.page{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;position:relative;}
+.page{max-width:520px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;position:relative;}
 
 /* ════════════════════════════
    HOME
