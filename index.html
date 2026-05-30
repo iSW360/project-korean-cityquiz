@@ -83,17 +83,17 @@
       <div class="map-card__name" id="mn-us">미국 주</div>
       <div class="map-card__meta" id="mc-us">50개 지역 · 3레벨</div>
     </div>
-    <div class="map-card disabled">
+    <div class="map-card" onclick="goQuiz('europe')">
       <div class="map-card__icon">🇪🇺</div>
-      <div class="map-card__name" id="mn-eu">유럽 국가</div>
-      <div class="map-card__meta">44개 지역</div>
-      <span class="map-card__badge badge-soon" id="mb-soon">준비 중</span>
+      <div class="map-card__name" id="mn-eu">유럽 나라</div>
+      <div class="map-card__meta" id="mc-eu">47개 지역 · 3레벨</div>
+      <span class="map-card__badge badge-new">NEW</span>
     </div>
-    <div class="map-card disabled">
+    <div class="map-card" onclick="goQuiz('africa')">
       <div class="map-card__icon">🌍</div>
-      <div class="map-card__name" id="mn-af">아프리카</div>
-      <div class="map-card__meta">54개 지역</div>
-      <span class="map-card__badge badge-soon">준비 중</span>
+      <div class="map-card__name" id="mn-af">아프리카 나라</div>
+      <div class="map-card__meta" id="mc-af">54개 지역 · 3레벨</div>
+      <span class="map-card__badge badge-new">NEW</span>
     </div>
     <div class="map-card disabled">
       <div class="map-card__icon">🌐</div>
@@ -161,7 +161,9 @@ function goQuiz(mapId){
     document.getElementById('mn-us').textContent='US States';
     document.getElementById('mc-us').textContent='50 regions · 3 levels';
     document.getElementById('mn-eu').textContent='European Countries';
+    document.getElementById('mc-eu').textContent='47 countries · 3 levels';
     document.getElementById('mn-af').textContent='African Countries';
+    document.getElementById('mc-af').textContent='54 countries · 3 levels';
     document.getElementById('mn-wl').textContent='World Countries';
     document.querySelectorAll('.badge-soon').forEach(e=>e.textContent='Soon');
   }

@@ -1,0 +1,658 @@
+{
+  "meta": {
+    "id": "africa",
+    "mapSvg": "/maps/world/africa.svg",
+    "defaultLang": "ko",
+    "totalRegions": 54
+  },
+  "regions": [
+    {
+      "id": "ZWE",
+      "svgPathId": "rZWE",
+      "names": {
+        "ko": "짐바브웨",
+        "en": "Zimbabwe"
+      },
+      "hints": {
+        "ko": "빅토리아 폭포(잠비아 공유). 그레이트 짐바브웨 유네스코 유적. 2008년 초인플레이션(100조 달러 지폐). 풍부한 야생동물",
+        "en": "Victoria Falls (shared with Zambia); Great Zimbabwe ruins UNESCO; 2008 hyperinflation (100-trillion dollar note); rich wildlife"
+      }
+    },
+    {
+      "id": "ZMB",
+      "svgPathId": "rZMB",
+      "names": {
+        "ko": "잠비아",
+        "en": "Zambia"
+      },
+      "hints": {
+        "ko": "빅토리아 폭포(세계 최대 폭포 면적). 카퍼벨트(구리 광산 지대). 잠베지강. 1964년 독립",
+        "en": "Victoria Falls (world's largest waterfall by area); Copperbelt copper mines; Zambezi River; independence in 1964"
+      }
+    },
+    {
+      "id": "UGA",
+      "svgPathId": "rUGA",
+      "names": {
+        "ko": "우간다",
+        "en": "Uganda"
+      },
+      "hints": {
+        "ko": "비룽가 마운틴 고릴라. 빅토리아 호수(세계 최대 열대 담수호). 진자(나일강 발원지). 처칠이 아프리카의 진주라 부름",
+        "en": "Mountain gorillas in Bwindi; Lake Victoria (world's largest tropical lake); Jinja: Source of the Nile; Churchill called it 'Pearl of Africa'"
+      }
+    },
+    {
+      "id": "TUN",
+      "svgPathId": "rTUN",
+      "names": {
+        "ko": "튀니지",
+        "en": "Tunisia"
+      },
+      "hints": {
+        "ko": "아프리카 최북단 국가. 카르타고 고대 문명 유적(유네스코). 2010년 아랍의 봄 발원지. 지중해 올리브·날짜 생산",
+        "en": "Africa's northernmost country; ancient Carthage ruins UNESCO; birthplace of the 2010 Arab Spring; Mediterranean olive and date production"
+      }
+    },
+    {
+      "id": "TGO",
+      "svgPathId": "rTGO",
+      "names": {
+        "ko": "토고",
+        "en": "Togo"
+      },
+      "hints": {
+        "ko": "베냉만 연안의 가늘고 긴 나라. 로메 부두교 시장. 아프리카 최대 인산염 수출국 중 하나",
+        "en": "Long thin Gulf of Benin country; Lomé's famous voodoo market; one of Africa's top phosphate exporters"
+      }
+    },
+    {
+      "id": "TZA",
+      "svgPathId": "rTZA",
+      "names": {
+        "ko": "탄자니아",
+        "en": "Tanzania"
+      },
+      "hints": {
+        "ko": "킬리만자로(아프리카 최고봉 5,895m). 세렝게티 동물 대이동. 잔지바르 향신료 섬. 세계 최대 다이아몬드 광산",
+        "en": "Kilimanjaro (Africa's highest peak, 5,895m); Serengeti migration; Zanzibar spice island; world's largest diamond mines"
+      }
+    },
+    {
+      "id": "SWZ",
+      "svgPathId": "rSWZ",
+      "names": {
+        "ko": "에스와티니",
+        "en": "Eswatini"
+      },
+      "hints": {
+        "ko": "아프리카 최소 내륙국 중 하나. 세계 마지막 절대 군주제(음스와티 3세). 세계 최고 HIV/AIDS 감염률",
+        "en": "One of Africa's smallest landlocked nations; world's last absolute monarchy; world's highest HIV/AIDS prevalence rate"
+      }
+    },
+    {
+      "id": "SSD",
+      "svgPathId": "rSSD",
+      "names": {
+        "ko": "남수단",
+        "en": "South Sudan"
+      },
+      "hints": {
+        "ko": "2011년 세계 최신 독립국. 석유 부국이나 내전·기근. 나일강 지류 인근. 세계 최대 난민 발생국 중 하나",
+        "en": "World's newest country (independence 2011); oil-rich but devastated by civil war and famine; one of world's largest refugee crises"
+      }
+    },
+    {
+      "id": "SDN",
+      "svgPathId": "rSDN",
+      "names": {
+        "ko": "수단",
+        "en": "Sudan"
+      },
+      "hints": {
+        "ko": "세계 최다 피라미드 보유국(200개 이상, 이집트보다 많음). 하르툼(청·백 나일강 합류점). 2011년 남수단 분리",
+        "en": "More pyramids than Egypt (200+); Khartoum at confluence of Blue and White Nile; South Sudan separated in 2011"
+      }
+    },
+    {
+      "id": "ZAF",
+      "svgPathId": "rZAF",
+      "names": {
+        "ko": "남아프리카공화국",
+        "en": "South Africa"
+      },
+      "hints": {
+        "ko": "넬슨 만델라와 아파르트헤이트 종식(1994). 세계 최대 금·백금 생산국. 희망봉. 2010 FIFA 월드컵 개최",
+        "en": "Nelson Mandela and end of apartheid (1994); world's top gold and platinum producer; Cape of Good Hope; hosted 2010 FIFA World Cup"
+      }
+    },
+    {
+      "id": "SOM",
+      "svgPathId": "rSOM",
+      "names": {
+        "ko": "소말리아",
+        "en": "Somalia"
+      },
+      "hints": {
+        "ko": "아프리카의 뿔 최동단. 2000년대 세계 해적 활동 중심지. 세계 최고 취약 국가 지수. 고대 유향 교역의 중심",
+        "en": "Horn of Africa's easternmost point; global piracy hub in 2000s; consistently top fragile state index; ancient frankincense trade"
+      }
+    },
+    {
+      "id": "SLE",
+      "svgPathId": "rSLE",
+      "names": {
+        "ko": "시에라리온",
+        "en": "Sierra Leone"
+      },
+      "hints": {
+        "ko": "세계 최대 다이아몬드 매장지 중 하나. 블러드 다이아몬드 내전 역사. 프리타운(아프리카 최초 영국 정착지)",
+        "en": "Major diamond deposits; Blood Diamond civil war history; Freetown (first British settlement in Africa)"
+      }
+    },
+    {
+      "id": "SYC",
+      "svgPathId": "rSYC",
+      "names": {
+        "ko": "세이셸",
+        "en": "Seychelles"
+      },
+      "hints": {
+        "ko": "인도양 115개 섬으로 이루어진 군도. 세계 최소 아프리카 국가(면적 455㎢). 코코드메르(세계 최대 씨앗) 유일 산지",
+        "en": "115-island Indian Ocean archipelago; Africa's smallest country by area; only habitat of the coco de mer (world's largest seed)"
+      }
+    },
+    {
+      "id": "SEN",
+      "svgPathId": "rSEN",
+      "names": {
+        "ko": "세네갈",
+        "en": "Senegal"
+      },
+      "hints": {
+        "ko": "다카르(아프리카 최서단 도시). 전통 레슬링(람브) 국민 스포츠. 테랑가(환대) 문화. 다카르 랠리 출발지",
+        "en": "Dakar (Africa's westernmost city); Laamb traditional wrestling as national sport; Teranga hospitality culture; former Dakar Rally start"
+      }
+    },
+    {
+      "id": "STP",
+      "svgPathId": "rSTP",
+      "names": {
+        "ko": "상투메 프린시페",
+        "en": "São Tomé and Príncipe"
+      },
+      "hints": {
+        "ko": "아프리카 두 번째로 작은 나라. 대서양 화산 군도. 코코아 생산. 포르투갈어 사용 도서 국가",
+        "en": "Africa's 2nd smallest country; Atlantic volcanic islands; historic cocoa production; Lusophone island nation"
+      }
+    },
+    {
+      "id": "RWA",
+      "svgPathId": "rRWA",
+      "names": {
+        "ko": "르완다",
+        "en": "Rwanda"
+      },
+      "hints": {
+        "ko": "1994년 르완다 대학살(100일간 80만 명). 키갈리(아프리카에서 가장 청결한 도시). 마운틴 고릴라 서식지. 아프리카 싱가포르",
+        "en": "1994 genocide (800,000 killed in 100 days); Kigali named Africa's cleanest city; mountain gorillas; 'Singapore of Africa' rapid rise"
+      }
+    },
+    {
+      "id": "NGA",
+      "svgPathId": "rNGA",
+      "names": {
+        "ko": "나이지리아",
+        "en": "Nigeria"
+      },
+      "hints": {
+        "ko": "아프리카 최다 인구(2억 2천만+). 아프리카 최대 경제 대국. 놀리우드(세계 2위 영화 산업). 석유 수출국",
+        "en": "Africa's most populous (220M+) and largest economy; 'Nollywood' film industry (world's 2nd largest); major oil exporter"
+      }
+    },
+    {
+      "id": "NER",
+      "svgPathId": "rNER",
+      "names": {
+        "ko": "니제르",
+        "en": "Niger"
+      },
+      "hints": {
+        "ko": "아프리카에서 가장 큰 나라(면적). 세계 최대 우라늄 생산국 중 하나. 니제르강 유역. 만성적 식량 위기",
+        "en": "Africa's largest country by area; one of world's top uranium producers; Niger River basin; recurring severe food crises"
+      }
+    },
+    {
+      "id": "NAM",
+      "svgPathId": "rNAM",
+      "names": {
+        "ko": "나미비아",
+        "en": "Namibia"
+      },
+      "hints": {
+        "ko": "세계에서 가장 오래된 사막(나미브 사막, 5500만년). 소수스블레이 붉은 사구. 야생동물 공동체 보전 선진국",
+        "en": "World's oldest desert (Namib, 55M years old); Sossusvlei red dunes; global leader in community-based wildlife conservation"
+      }
+    },
+    {
+      "id": "MOZ",
+      "svgPathId": "rMOZ",
+      "names": {
+        "ko": "모잠비크",
+        "en": "Mozambique"
+      },
+      "hints": {
+        "ko": "인도양 동부 해안. 1975년 포르투갈에서 독립. 세계 최대 루비 광산(근래 발견). 마푸토 항구 수도",
+        "en": "Indian Ocean coast; Portuguese colony until 1975; world's largest ruby mines recently discovered; Maputo coastal capital"
+      }
+    },
+    {
+      "id": "MAR",
+      "svgPathId": "rMAR",
+      "names": {
+        "ko": "모로코",
+        "en": "Morocco"
+      },
+      "hints": {
+        "ko": "아프리카에서 유럽과 가장 가까운 나라(지브롤터 해협 14km). 마라케시·페스 고대 도시(유네스코). 세계 최대 인산염 수출국",
+        "en": "14km from Europe at Strait of Gibraltar; Marrakesh and Fes UNESCO medinas; world's largest phosphate exporter"
+      }
+    },
+    {
+      "id": "MUS",
+      "svgPathId": "rMUS",
+      "names": {
+        "ko": "모리셔스",
+        "en": "Mauritius"
+      },
+      "hints": {
+        "ko": "인도양 화산섬. 멸종된 도도새의 고향. 아프리카에서 가장 높은 인간개발지수(HDI). 다문화·다언어 사회",
+        "en": "Indian Ocean volcanic island; former home of the extinct dodo bird; Africa's highest human development index; multicultural society"
+      }
+    },
+    {
+      "id": "MRT",
+      "svgPathId": "rMRT",
+      "names": {
+        "ko": "모리타니",
+        "en": "Mauritania"
+      },
+      "hints": {
+        "ko": "국토 절반 이상이 사하라 사막. 세계 최대 철광석 매장지 중 하나. 2007년까지 노예제 공식 유지",
+        "en": "Over half Sahara Desert; massive iron ore deposits; slavery officially criminalized only in 2007; ancient Chinguetti city"
+      }
+    },
+    {
+      "id": "MLI",
+      "svgPathId": "rMLI",
+      "names": {
+        "ko": "말리",
+        "en": "Mali"
+      },
+      "hints": {
+        "ko": "말리 제국(아프리카 최대 중세 왕국). 팀북투(이슬람 학문 중심지). 금 생산 아프리카 3위. 사하라 교역로",
+        "en": "Ancient Mali Empire (Africa's largest medieval kingdom); Timbuktu Islamic scholarship; 3rd largest gold producer in Africa"
+      }
+    },
+    {
+      "id": "MWI",
+      "svgPathId": "rMWI",
+      "names": {
+        "ko": "말라위",
+        "en": "Malawi"
+      },
+      "hints": {
+        "ko": "'아프리카의 따뜻한 심장'. 말라위 호수(세계 3번째 큰 아프리카 담수호). 최빈국이지만 평화로운 국가",
+        "en": "'The Warm Heart of Africa'; Lake Malawi (3rd largest in Africa); one of poorest but most peaceful African nations"
+      }
+    },
+    {
+      "id": "MDG",
+      "svgPathId": "rMDG",
+      "names": {
+        "ko": "마다가스카르",
+        "en": "Madagascar"
+      },
+      "hints": {
+        "ko": "세계 4번째 큰 섬. 동식물 90%가 지구 어디에도 없는 고유종. 바오밥 나무 가로수길",
+        "en": "World's 4th largest island; 90% of wildlife found nowhere else on Earth; iconic Avenue of the Baobabs"
+      }
+    },
+    {
+      "id": "LBY",
+      "svgPathId": "rLBY",
+      "names": {
+        "ko": "리비아",
+        "en": "Libya"
+      },
+      "hints": {
+        "ko": "세계 9위 원유 매장량. 국토의 90%가 사하라 사막. 2011년 카다피 정권 붕괴 후 내전 지속",
+        "en": "9th largest oil reserves globally; 90% Sahara Desert; ongoing civil war since Gaddafi's fall in 2011"
+      }
+    },
+    {
+      "id": "LBR",
+      "svgPathId": "rLBR",
+      "names": {
+        "ko": "라이베리아",
+        "en": "Liberia"
+      },
+      "hints": {
+        "ko": "미국 해방 노예들이 세운 나라(1847). 아프리카 최초 공화국. 세계 최대 선박 등록국(편의치적)",
+        "en": "Founded by freed American slaves (1847); Africa's first republic; world's largest ship registry (flag of convenience)"
+      }
+    },
+    {
+      "id": "LSO",
+      "svgPathId": "rLSO",
+      "names": {
+        "ko": "레소토",
+        "en": "Lesotho"
+      },
+      "hints": {
+        "ko": "남아공에 완전히 둘러싸인 내륙국. 세계에서 가장 높은 저점(해발 1,400m). 세계 최대 다이아몬드 중 하나 발견지",
+        "en": "Entirely enclosed within South Africa; world's highest lowest point (1,400m elevation); major diamond discoveries"
+      }
+    },
+    {
+      "id": "KEN",
+      "svgPathId": "rKEN",
+      "names": {
+        "ko": "케냐",
+        "en": "Kenya"
+      },
+      "hints": {
+        "ko": "마라톤·장거리 육상 강국. 마사이마라 국립보호구(연간 100만 마리 동물 대이동). 나이로비 실리콘 사바나(IT 허브)",
+        "en": "Marathon and long-distance running powerhouse; Maasai Mara wildebeest migration; Nairobi 'Silicon Savannah' tech hub"
+      }
+    },
+    {
+      "id": "GNB",
+      "svgPathId": "rGNB",
+      "names": {
+        "ko": "기니비사우",
+        "en": "Guinea-Bissau"
+      },
+      "hints": {
+        "ko": "세계 최대 캐슈넛 수출국 중 하나. 아프리카 최빈국. 비자구 군도(유네스코 생물권 보전지역)",
+        "en": "Among world's top cashew nut exporters; one of Africa's least developed nations; Bijagós Archipelago UNESCO biosphere reserve"
+      }
+    },
+    {
+      "id": "GIN",
+      "svgPathId": "rGIN",
+      "names": {
+        "ko": "기니",
+        "en": "Guinea"
+      },
+      "hints": {
+        "ko": "세계 최대 보크사이트(알루미늄 원료) 매장국. 서아프리카 음악·문화의 중심지. 포르투갈 최초 아프리카 거점",
+        "en": "World's largest bauxite reserves (key for aluminum); West African musical and cultural hub; first Portuguese African foothold"
+      }
+    },
+    {
+      "id": "GHA",
+      "svgPathId": "rGHA",
+      "names": {
+        "ko": "가나",
+        "en": "Ghana"
+      },
+      "hints": {
+        "ko": "아프리카 최초 독립국(1957, 과메 은크루마). 세계 코코아 2위 생산국. 황금해안(Gold Coast) 역사",
+        "en": "First sub-Saharan African nation to gain independence (1957, Kwame Nkrumah); world's 2nd largest cocoa producer; historic Gold Coast"
+      }
+    },
+    {
+      "id": "GMB",
+      "svgPathId": "rGMB",
+      "names": {
+        "ko": "감비아",
+        "en": "Gambia"
+      },
+      "hints": {
+        "ko": "아프리카 본토 최소 국가. 감비아 강을 따라 세네갈에 둘러싸인 지형. 서아프리카 최초 관광 명소 중 하나",
+        "en": "Africa's smallest mainland country; enclave within Senegal along the Gambia River; one of West Africa's earliest tourism destinations"
+      }
+    },
+    {
+      "id": "GAB",
+      "svgPathId": "rGAB",
+      "names": {
+        "ko": "가봉",
+        "en": "Gabon"
+      },
+      "hints": {
+        "ko": "국토의 88%가 열대우림(아프리카 최고). 석유 수출국. 알베르트 슈바이처 박사 람바레네 병원",
+        "en": "88% tropical forest cover (highest in Africa); oil exporter; Albert Schweitzer's famous hospital in Lambaréné"
+      }
+    },
+    {
+      "id": "ETH",
+      "svgPathId": "rETH",
+      "names": {
+        "ko": "에티오피아",
+        "en": "Ethiopia"
+      },
+      "hints": {
+        "ko": "아프리카 2위 인구 대국(1억 2천만+). 커피 발상지. 아프리카 연합(AU) 본부. 유럽 열강의 식민 지배를 막아낸 아프리카 유일 독립국(아도와 전투)",
+        "en": "Africa's 2nd most populous (120M+); birthplace of coffee; African Union HQ; only African nation to defeat European colonizers at Battle of Adwa"
+      }
+    },
+    {
+      "id": "ERI",
+      "svgPathId": "rERI",
+      "names": {
+        "ko": "에리트레아",
+        "en": "Eritrea"
+      },
+      "hints": {
+        "ko": "1993년 에티오피아에서 독립. 홍해 연안 전략적 위치. 극도로 폐쇄적인 독재 체제로 아프리카의 북한으로 불림",
+        "en": "Independent from Ethiopia in 1993; strategic Red Sea coastline; called 'Africa's North Korea' for authoritarian isolation"
+      }
+    },
+    {
+      "id": "GNQ",
+      "svgPathId": "rGNQ",
+      "names": {
+        "ko": "적도기니",
+        "en": "Equatorial Guinea"
+      },
+      "hints": {
+        "ko": "아프리카에서 유일한 스페인어 공용국. 석유 발견 후 1인당 GDP 아프리카 최고. 비오코 섬·본토로 구성",
+        "en": "Only Spanish-speaking country in Africa; highest GDP per capita in Africa after oil discovery; Bioko Island plus mainland"
+      }
+    },
+    {
+      "id": "EGY",
+      "svgPathId": "rEGY",
+      "names": {
+        "ko": "이집트",
+        "en": "Egypt"
+      },
+      "hints": {
+        "ko": "피라미드·스핑크스(고대 7대 불가사의). 수에즈 운하(세계 해상 무역 12% 담당). 나일강 문명 발상지",
+        "en": "Pyramids and Sphinx (ancient world wonder); Suez Canal (12% of global maritime trade); cradle of Nile civilization"
+      }
+    },
+    {
+      "id": "DJI",
+      "svgPathId": "rDJI",
+      "names": {
+        "ko": "지부티",
+        "en": "Djibouti"
+      },
+      "hints": {
+        "ko": "아프리카의 뿔 전략 요충지. 미국·프랑스·중국 군사기지 공존. 아살 호수(세계에서 가장 짠 호수 중 하나)",
+        "en": "Strategic Horn of Africa; hosts US, French and Chinese military bases simultaneously; Lake Assal among world's saltiest lakes"
+      }
+    },
+    {
+      "id": "CIV",
+      "svgPathId": "rCIV",
+      "names": {
+        "ko": "코트디부아르",
+        "en": "Ivory Coast"
+      },
+      "hints": {
+        "ko": "세계 최대 코코아 생산국(전 세계 40%). 야무수크루 대성당(세계 최대 규모 중 하나). 서아프리카 경제 중심지",
+        "en": "World's largest cocoa producer (40% of global supply); Yamoussoukro Basilica; West Africa's economic powerhouse"
+      }
+    },
+    {
+      "id": "COD",
+      "svgPathId": "rCOD",
+      "names": {
+        "ko": "콩고민주공화국",
+        "en": "DR Congo"
+      },
+      "hints": {
+        "ko": "아프리카 2번째 큰 나라. 콩고 분지 열대우림(세계 2위). 콜탄(스마트폰 필수 광물) 세계 최대 매장국",
+        "en": "Africa's 2nd largest country; Congo Basin rainforest (world's 2nd largest); world's largest coltan reserves for smartphones"
+      }
+    },
+    {
+      "id": "COG",
+      "svgPathId": "rCOG",
+      "names": {
+        "ko": "콩고공화국",
+        "en": "Republic of Congo"
+      },
+      "hints": {
+        "ko": "콩고강 서쪽 연안. 석유 수출 경제. 수도 브라자빌은 강 하나 사이로 킨샤사(DRC)와 마주보는 세계에서 가장 가까운 두 수도",
+        "en": "West bank of Congo River; oil economy; Brazzaville and Kinshasa face each other across the river — world's closest capital pair"
+      }
+    },
+    {
+      "id": "COM",
+      "svgPathId": "rCOM",
+      "names": {
+        "ko": "코모로",
+        "en": "Comoros"
+      },
+      "hints": {
+        "ko": "아프리카 연합 소속 섬나라(인도양). 세계 최대 바닐라·정향 수출국. 세계에서 쿠데타가 가장 잦은 나라",
+        "en": "Indian Ocean island nation; world's top vanilla and clove exporter; most coup attempts per capita in the world"
+      }
+    },
+    {
+      "id": "TCD",
+      "svgPathId": "rTCD",
+      "names": {
+        "ko": "차드",
+        "en": "Chad"
+      },
+      "hints": {
+        "ko": "아프리카 5번째 큰 나라. 차드 호수가 수십 년간 90% 감소(기후 위기). 사하라·사헬·수단 사바나 3개 기후대",
+        "en": "Africa's 5th largest country; Lake Chad shrank 90% due to climate change; three climate zones: Sahara, Sahel, savanna"
+      }
+    },
+    {
+      "id": "CAF",
+      "svgPathId": "rCAF",
+      "names": {
+        "ko": "중앙아프리카공화국",
+        "en": "Central African Republic"
+      },
+      "hints": {
+        "ko": "아프리카 대륙 지리적 중심부. 다이아몬드·금·우라늄 매장. 만성적 내전과 인도주의 위기",
+        "en": "Geographic heart of Africa; diamond, gold and uranium reserves; chronic civil war and humanitarian crisis"
+      }
+    },
+    {
+      "id": "CPV",
+      "svgPathId": "rCPV",
+      "names": {
+        "ko": "카보베르데",
+        "en": "Cabo Verde"
+      },
+      "hints": {
+        "ko": "대서양 화산 군도(15개 섬). 모르나 음악(세자리아 에보라)의 나라. 아프리카 최고 민주주의 안정 국가 중 하나",
+        "en": "Atlantic volcanic archipelago (15 islands); birthplace of morna music (Cesária Évora); one of Africa's most stable democracies"
+      }
+    },
+    {
+      "id": "CMR",
+      "svgPathId": "rCMR",
+      "names": {
+        "ko": "카메룬",
+        "en": "Cameroon"
+      },
+      "hints": {
+        "ko": "'아프리카의 축소판' — 열대우림·사바나·산악·해안 공존. 사무엘 에토'o 축구 스타 출신. 영어·프랑스어 공용",
+        "en": "'Africa in miniature' — rainforest, savanna, mountains and coast; Samuel Eto'o's birthplace; bilingual (English/French)"
+      }
+    },
+    {
+      "id": "BDI",
+      "svgPathId": "rBDI",
+      "names": {
+        "ko": "부룬디",
+        "en": "Burundi"
+      },
+      "hints": {
+        "ko": "아프리카 최빈국 중 하나. 탕가니카 호수 접경. 커피 수출 경제. 1994년 대학살 여파로 수십만 명 사망",
+        "en": "One of Africa's poorest nations; Lake Tanganyika shores; coffee economy; hundreds of thousands killed in 1990s ethnic conflict"
+      }
+    },
+    {
+      "id": "BFA",
+      "svgPathId": "rBFA",
+      "names": {
+        "ko": "부르키나파소",
+        "en": "Burkina Faso"
+      },
+      "hints": {
+        "ko": "'정직한 사람들의 땅' 뜻. 서아프리카 사헬 지역 위기 중심. 세계 최대 면화·가죽 수출국 중 하나",
+        "en": "Name means 'Land of Upright People'; Sahel region crisis zone; major cotton and livestock exporter"
+      }
+    },
+    {
+      "id": "BWA",
+      "svgPathId": "rBWA",
+      "names": {
+        "ko": "보츠와나",
+        "en": "Botswana"
+      },
+      "hints": {
+        "ko": "세계 최대 다이아몬드 생산국. 오카방고 삼각주 유네스코 세계유산. 아프리카에서 가장 꾸준한 경제 성장률",
+        "en": "World's top diamond producer; Okavango Delta UNESCO World Heritage; Africa's longest sustained economic growth"
+      }
+    },
+    {
+      "id": "BEN",
+      "svgPathId": "rBEN",
+      "names": {
+        "ko": "베냉",
+        "en": "Benin"
+      },
+      "hints": {
+        "ko": "부두교(Voodoo) 발상지. 아프리카 첫 민주주의 전환국(1990). 오요 왕국 역사 유적. 코토누 최대 도시",
+        "en": "Birthplace of Voodoo religion; Africa's pioneer of democratic transition (1990); ancient Oyo Kingdom heritage"
+      }
+    },
+    {
+      "id": "AGO",
+      "svgPathId": "rAGO",
+      "names": {
+        "ko": "앙골라",
+        "en": "Angola"
+      },
+      "hints": {
+        "ko": "아프리카 대표 석유 수출국. 커피·다이아몬드 산지. 1975년 포르투갈에서 독립 후 27년 내전",
+        "en": "Major African oil exporter; coffee and diamond production; 27-year civil war after independence from Portugal in 1975"
+      }
+    },
+    {
+      "id": "DZA",
+      "svgPathId": "rDZA",
+      "names": {
+        "ko": "알제리",
+        "en": "Algeria"
+      },
+      "hints": {
+        "ko": "아프리카 최대 면적 국가. 사하라 사막이 국토의 85%. 카스바(알제) 유네스코 세계유산. 지중해·사막 문화 공존",
+        "en": "Africa's largest country; 85% Sahara Desert; Kasbah of Algiers UNESCO; Mediterranean meets Saharan culture"
+      }
+    }
+  ]
+}

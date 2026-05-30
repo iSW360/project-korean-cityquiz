@@ -9,6 +9,7 @@ const QE = (() => {
     hintThis:false, answered:false,
     timer:null, timeLeft:15,
     autoNext:null, countInterval:null,
+    initViewBox:'0 0 680 800',
   };
   const $=id=>document.getElementById(id);
   const qs=sel=>document.querySelector(sel);
@@ -79,7 +80,7 @@ const QE = (() => {
     }
     cont.innerHTML=svg;
     const el=cont.querySelector('svg');
-    if(el){el.setAttribute('width','100%');el.setAttribute('height','100%');requestAnimationFrame(()=>el.classList.add('loaded'));}
+    if(el){el.setAttribute('width','100%');el.setAttribute('height','100%');S.initViewBox=el.getAttribute('viewBox')||'0 0 680 800';requestAnimationFrame(()=>el.classList.add('loaded'));}
     if(sk) sk.style.display='none';
     if(S.level===3) _bindMapClicks();
   }
@@ -310,7 +311,7 @@ const QE = (() => {
   }
   function _resetMapZoom(){
     const svg=qs('#map-container svg');
-    if(svg) _animateViewBox(svg,'0 0 680 800',280);
+    if(svg) _animateViewBox(svg,S.initViewBox,280);
   }
   function _zoomMap(pathId){
     const svg=qs('#map-container svg');

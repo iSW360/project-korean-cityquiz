@@ -1,0 +1,574 @@
+{
+  "meta": {
+    "id": "europe",
+    "mapSvg": "/maps/world/europe.svg",
+    "defaultLang": "ko",
+    "totalRegions": 47
+  },
+  "regions": [
+    {
+      "id": "VAT",
+      "svgPathId": "rVAT",
+      "names": {
+        "ko": "바티칸",
+        "en": "Vatican"
+      },
+      "hints": {
+        "ko": "세계 최소 국가(0.44㎢). 교황청. 성 베드로 대성당·시스티나 예배당. 전 세계 13억 가톨릭 신자의 중심",
+        "en": "World's smallest country (0.44 km²); Holy See; St. Peter's Basilica and Sistine Chapel; center for 1.3 billion Catholics"
+      }
+    },
+    {
+      "id": "GBR",
+      "svgPathId": "rGBR",
+      "names": {
+        "ko": "영국",
+        "en": "United Kingdom"
+      },
+      "hints": {
+        "ko": "셰익스피어·뉴턴·다윈의 나라. 산업혁명 발상지. 비틀즈·해리포터. 대영제국(역사상 최대 제국)",
+        "en": "Shakespeare, Newton, Darwin; Industrial Revolution birthplace; Beatles and Harry Potter; largest empire in history"
+      }
+    },
+    {
+      "id": "UKR",
+      "svgPathId": "rUKR",
+      "names": {
+        "ko": "우크라이나",
+        "en": "Ukraine"
+      },
+      "hints": {
+        "ko": "유럽 최대 영토국(러시아 제외). 체르노빌 원전 사고(1986). 유럽의 빵바구니(밀·해바라기). 2022년 러시아 침공",
+        "en": "Europe's largest country (excl. Russia); Chernobyl disaster (1986); 'Breadbasket of Europe'; Russian invasion 2022"
+      }
+    },
+    {
+      "id": "TUR",
+      "svgPathId": "rTUR",
+      "names": {
+        "ko": "튀르키예",
+        "en": "Turkey"
+      },
+      "hints": {
+        "ko": "유럽·아시아 교차점(보스포루스 해협). 이스탄불(1,200년간 세계 최대 도시). 카파도키아 열기구. 케밥·바클라바",
+        "en": "Straddles Europe and Asia (Bosphorus Strait); Istanbul world's largest city for 1,200 years; Cappadocia balloons; kebab and baklava"
+      }
+    },
+    {
+      "id": "CHE",
+      "svgPathId": "rCHE",
+      "names": {
+        "ko": "스위스",
+        "en": "Switzerland"
+      },
+      "hints": {
+        "ko": "알프스·시계·초콜릿·에멘탈 치즈. 1815년부터 영구 중립국. 유엔 유럽 본부·국제적십자 본부. 세계 최고 삶의 질",
+        "en": "Alps, watches, chocolate and Emmental cheese; permanent neutrality since 1815; UN European HQ and Red Cross HQ; highest quality of life"
+      }
+    },
+    {
+      "id": "SWE",
+      "svgPathId": "rSWE",
+      "names": {
+        "ko": "스웨덴",
+        "en": "Sweden"
+      },
+      "hints": {
+        "ko": "이케아·볼보·에릭슨·스포티파이 모두 이곳 탄생. 노벨상 제정국. 북유럽 복지 모델. 스칸디나비아 디자인",
+        "en": "IKEA, Volvo, Ericsson, Spotify all founded here; Nobel Prize established here; Nordic welfare model; Scandinavian design"
+      }
+    },
+    {
+      "id": "ESP",
+      "svgPathId": "rESP",
+      "names": {
+        "ko": "스페인",
+        "en": "Spain"
+      },
+      "hints": {
+        "ko": "가우디·피카소·살바도르 달리. 바르셀로나·마드리드. 플라멩코·투우. 세계 2위 와인·올리브유 생산국",
+        "en": "Gaudí, Picasso, Dalí; Barcelona and Madrid; flamenco and bullfighting; world's 2nd largest wine and olive oil producer"
+      }
+    },
+    {
+      "id": "SVK",
+      "svgPathId": "rSVK",
+      "names": {
+        "ko": "슬로바키아",
+        "en": "Slovakia"
+      },
+      "hints": {
+        "ko": "타트라 산맥 스키. 체코슬로바키아에서 평화 분리(1993, 벨벳 이혼). 1인당 성(城) 보유량 세계 최다. 브라티슬라바",
+        "en": "Tatra Mountains skiing; peaceful split from Czech Republic 1993 ('Velvet Divorce'); most castles per capita; Bratislava on Danube"
+      }
+    },
+    {
+      "id": "SVN",
+      "svgPathId": "rSVN",
+      "names": {
+        "ko": "슬로베니아",
+        "en": "Slovenia"
+      },
+      "hints": {
+        "ko": "알프스·지중해·판노니아 평원 모두 보유. 블레드 호수(동화 속 섬). 1991년 유고슬라비아 최초 독립. EU·NATO 회원",
+        "en": "Alps, Mediterranean coast and Pannonian Plain combined; Lake Bled fairy-tale island; first Yugoslav republic independent 1991"
+      }
+    },
+    {
+      "id": "SRB",
+      "svgPathId": "rSRB",
+      "names": {
+        "ko": "세르비아",
+        "en": "Serbia"
+      },
+      "hints": {
+        "ko": "베오그라드 요새 도시. 니콜라 테슬라 고향. 유고슬라비아 해체의 중심. 라키야(자두 브랜디) 문화",
+        "en": "Belgrade fortress capital; birthplace of Nikola Tesla; center of Yugoslavia's dissolution; rakija plum brandy culture"
+      }
+    },
+    {
+      "id": "SMR",
+      "svgPathId": "rSMR",
+      "names": {
+        "ko": "산마리노",
+        "en": "San Marino"
+      },
+      "hints": {
+        "ko": "세계에서 가장 오래된 공화국(서기 301년 건국). 이탈리아에 완전히 둘러싸인 내륙국. 티타노산 세 탑",
+        "en": "World's oldest republic (founded 301 AD); entirely enclave within Italy; three towers on Mount Titano; no national debt"
+      }
+    },
+    {
+      "id": "RUS",
+      "svgPathId": "rRUS",
+      "names": {
+        "ko": "러시아",
+        "en": "Russia"
+      },
+      "hints": {
+        "ko": "세계 최대 영토(지구 육지 11%). 모스크바 크렘린·붉은 광장. 발레·우주 개발·체스 강국. 바이칼 호수(세계 최심 담수호)",
+        "en": "World's largest country (11% of land); Kremlin and Red Square; ballet, space race, chess; Lake Baikal world's deepest lake"
+      }
+    },
+    {
+      "id": "ROU",
+      "svgPathId": "rROU",
+      "names": {
+        "ko": "루마니아",
+        "en": "Romania"
+      },
+      "hints": {
+        "ko": "드라큘라 전설(트란실바니아). 나디아 코마네치 체조(올림픽 최초 10점 만점). 카르파티아 불곰 최대 서식지. 부쿠레슈티",
+        "en": "Dracula legend in Transylvania; Nadia Comaneci gymnastics (first perfect 10); largest Carpathian brown bear population; Bucharest"
+      }
+    },
+    {
+      "id": "PRT",
+      "svgPathId": "rPRT",
+      "names": {
+        "ko": "포르투갈",
+        "en": "Portugal"
+      },
+      "hints": {
+        "ko": "세계 최초 대항해 시대 주도(바스코 다 가마). 파두 음악(유네스코 무형유산). 세계 최대 코르크 수출국. 리스본 전차",
+        "en": "Pioneer of Age of Discovery (Vasco da Gama); Fado music UNESCO; world's largest cork exporter; Lisbon's iconic trams"
+      }
+    },
+    {
+      "id": "POL",
+      "svgPathId": "rPOL",
+      "names": {
+        "ko": "폴란드",
+        "en": "Poland"
+      },
+      "hints": {
+        "ko": "바르샤바(2차 세계대전 90% 파괴 후 재건). 코페르니쿠스·퀴리 부인 고향. 아우슈비츠(유네스코). 쇼팽 고향",
+        "en": "Warsaw rebuilt after 90% WWII destruction; birthplace of Copernicus and Marie Curie; Auschwitz memorial UNESCO; Chopin's homeland"
+      }
+    },
+    {
+      "id": "NOR",
+      "svgPathId": "rNOR",
+      "names": {
+        "ko": "노르웨이",
+        "en": "Norway"
+      },
+      "hints": {
+        "ko": "피요르드(유네스코 세계유산). 세계 최대 국부 펀드(석유 기금). 노벨 평화상 수여국. 북극권 오로라·백야",
+        "en": "UNESCO fjords; world's largest sovereign wealth fund (oil fund); Nobel Peace Prize ceremony; Northern Lights and midnight sun"
+      }
+    },
+    {
+      "id": "NLD",
+      "svgPathId": "rNLD",
+      "names": {
+        "ko": "네덜란드",
+        "en": "Netherlands"
+      },
+      "hints": {
+        "ko": "풍차·튤립·고다 치즈. 세계 최고 자전거 이용 국가. 렘브란트·페르메이르 황금 시대 예술. 로테르담(유럽 최대 항구)",
+        "en": "Windmills, tulips and Gouda cheese; world's top cycling nation; Dutch Golden Age art (Rembrandt, Vermeer); Europe's largest port"
+      }
+    },
+    {
+      "id": "MNE",
+      "svgPathId": "rMNE",
+      "names": {
+        "ko": "몬테네그로",
+        "en": "Montenegro"
+      },
+      "hints": {
+        "ko": "'검은 산'의 나라. 아드리아해 마지막 비밀 명소. 코토르 만(유네스코). 2017년 NATO 가입",
+        "en": "'Black Mountain' meaning; Adriatic hidden gem; Kotor Bay UNESCO World Heritage; joined NATO in 2017"
+      }
+    },
+    {
+      "id": "MDA",
+      "svgPathId": "rMDA",
+      "names": {
+        "ko": "몰도바",
+        "en": "Moldova"
+      },
+      "hints": {
+        "ko": "유럽 최빈국. 세계 최대 와인 지하 동굴(밀레스티 미치, 200km). 트란스니스트리아 분리 지역",
+        "en": "Europe's poorest country; world's largest wine cellar Mileștii Mici (200km tunnels); unrecognized breakaway Transnistria region"
+      }
+    },
+    {
+      "id": "MCO",
+      "svgPathId": "rMCO",
+      "names": {
+        "ko": "모나코",
+        "en": "Monaco"
+      },
+      "hints": {
+        "ko": "세계 2번째 작은 나라(바티칸 다음). F1 모나코 그랑프리. 세계 최고 인구 밀도(1만 9천명/㎢). 카지노·부호의 나라",
+        "en": "2nd smallest country (after Vatican); Monaco F1 Grand Prix; world's highest population density; Monte Carlo casino"
+      }
+    },
+    {
+      "id": "MLT",
+      "svgPathId": "rMLT",
+      "names": {
+        "ko": "몰타",
+        "en": "Malta"
+      },
+      "hints": {
+        "ko": "지중해 중심부 군도. 몰타 기사단 역사. EU 최소 회원국(316㎢). 왕좌의 게임 촬영지",
+        "en": "Central Mediterranean islands; Knights of Malta history; smallest EU member state (316 km²); Game of Thrones filming location"
+      }
+    },
+    {
+      "id": "MKD",
+      "svgPathId": "rMKD",
+      "names": {
+        "ko": "북마케도니아",
+        "en": "North Macedonia"
+      },
+      "hints": {
+        "ko": "알렉산더 대왕 탄생지(스코페 근처). 그리스와 국명 분쟁(2019년 해결). 오흐리드 호수(유네스코). 마더 테레사 고향",
+        "en": "Near birthplace of Alexander the Great; name dispute with Greece resolved 2019; Lake Ohrid UNESCO; Mother Teresa's birthplace"
+      }
+    },
+    {
+      "id": "LUX",
+      "svgPathId": "rLUX",
+      "names": {
+        "ko": "룩셈부르크",
+        "en": "Luxembourg"
+      },
+      "hints": {
+        "ko": "세계 최고 1인당 GDP 국가 중 하나. EU 핵심 창설 멤버(1957). 은행·금융 허브. 3개 공용어(룩셈부르크·프랑스·독일어)",
+        "en": "One of world's highest GDP per capita; EU founding member (1957); banking and finance hub; trilingual nation"
+      }
+    },
+    {
+      "id": "LTU",
+      "svgPathId": "rLTU",
+      "names": {
+        "ko": "리투아니아",
+        "en": "Lithuania"
+      },
+      "hints": {
+        "ko": "발트 3국 중 가장 큰 나라. 1990년 소련 최초 독립 선언. 빌뉴스 구시가(유네스코). 농구 강국",
+        "en": "Largest Baltic state; first Soviet republic to declare independence (1990); Vilnius old town UNESCO; basketball powerhouse"
+      }
+    },
+    {
+      "id": "LIE",
+      "svgPathId": "rLIE",
+      "names": {
+        "ko": "리히텐슈타인",
+        "en": "Liechtenstein"
+      },
+      "hints": {
+        "ko": "세계 6번째 작은 나라. 라인강 연안. 1인당 GDP 세계 최고 수준. 성 전체가 계곡 하나에 들어가는 소국",
+        "en": "6th smallest country; Rhine River border; one of world's highest GDP per capita; entire country fits in one mountain valley"
+      }
+    },
+    {
+      "id": "LVA",
+      "svgPathId": "rLVA",
+      "names": {
+        "ko": "라트비아",
+        "en": "Latvia"
+      },
+      "hints": {
+        "ko": "발트 3국. 리가(유럽 최대 아르누보 건축물 밀집지). 노래 축제(노래하는 혁명). 호박(발트 황금) 주요 산지",
+        "en": "Baltic state; Riga has Europe's largest Art Nouveau architecture; Singing Revolution; amber ('Baltic gold') production"
+      }
+    },
+    {
+      "id": "XKX",
+      "svgPathId": "rXKX",
+      "names": {
+        "ko": "코소보",
+        "en": "Kosovo"
+      },
+      "hints": {
+        "ko": "2008년 독립 선언(세계 최신 나라 중 하나). 1999년 코소보 전쟁(NATO 개입). 세르비아가 주권 불인정. 유럽 최연소 인구",
+        "en": "Declared independence 2008; Kosovo War 1999 (NATO intervention); disputed by Serbia; youngest population in Europe"
+      }
+    },
+    {
+      "id": "ITA",
+      "svgPathId": "rITA",
+      "names": {
+        "ko": "이탈리아",
+        "en": "Italy"
+      },
+      "hints": {
+        "ko": "피자·파스타·에스프레소 발상지. 르네상스(레오나르도·미켈란젤로). 유네스코 세계유산 최다 보유국. 바티칸 포함",
+        "en": "Pizza, pasta and espresso birthplace; Renaissance (Leonardo, Michelangelo); most UNESCO World Heritage sites; hosts Vatican City"
+      }
+    },
+    {
+      "id": "IRL",
+      "svgPathId": "rIRL",
+      "names": {
+        "ko": "아일랜드",
+        "en": "Ireland"
+      },
+      "hints": {
+        "ko": "켈트 문화·아이리시 위스키. 1845~52년 대기근(인구 25% 감소). 조이스·베케트·예이츠 문학 강국. 성 패트릭의 날",
+        "en": "Celtic culture; Irish whiskey; Great Famine (1845-52); literary giants Joyce, Beckett, Yeats; St. Patrick's Day"
+      }
+    },
+    {
+      "id": "ISL",
+      "svgPathId": "rISL",
+      "names": {
+        "ko": "아이슬란드",
+        "en": "Iceland"
+      },
+      "hints": {
+        "ko": "세계 최대 지열 에너지 사용 비율. 간헐천·빙하·오로라. 세계 가장 평화로운 나라 1위. 북대서양 화산섬",
+        "en": "World's greenest geothermal energy; geysers, glaciers and Northern Lights; #1 most peaceful country; North Atlantic volcanic island"
+      }
+    },
+    {
+      "id": "HUN",
+      "svgPathId": "rHUN",
+      "names": {
+        "ko": "헝가리",
+        "en": "Hungary"
+      },
+      "hints": {
+        "ko": "부다페스트('다뉴브의 진주'). 루빅스 큐브 발명국. 오스트리아-헝가리 제국. 인구 대비 노벨상 수상자 세계 3위",
+        "en": "Budapest 'Pearl of the Danube'; invented Rubik's Cube; Austro-Hungarian Empire; 3rd highest Nobel laureates per capita"
+      }
+    },
+    {
+      "id": "GRC",
+      "svgPathId": "rGRC",
+      "names": {
+        "ko": "그리스",
+        "en": "Greece"
+      },
+      "hints": {
+        "ko": "서양 문명·민주주의 발상지. 올림픽 발상지. 아크로폴리스·파르테논(유네스코). 지중해 섬 6,000개 이상",
+        "en": "Cradle of Western civilization and democracy; birthplace of Olympics; Acropolis and Parthenon UNESCO; 6,000+ Mediterranean islands"
+      }
+    },
+    {
+      "id": "DEU",
+      "svgPathId": "rDEU",
+      "names": {
+        "ko": "독일",
+        "en": "Germany"
+      },
+      "hints": {
+        "ko": "BMW·벤츠·폭스바겐 자동차 강국. 옥토버페스트. 베를린 장벽 붕괴(1989). EU 최대 경제 대국",
+        "en": "BMW, Mercedes, Volkswagen automotive hub; Oktoberfest; Berlin Wall fall (1989); EU's largest economy"
+      }
+    },
+    {
+      "id": "FRA",
+      "svgPathId": "rFRA",
+      "names": {
+        "ko": "프랑스",
+        "en": "France"
+      },
+      "hints": {
+        "ko": "에펠탑·루브르. 세계 최다 관광객(연 9천만). 와인·치즈·패션. 프랑스혁명과 인권선언(1789)",
+        "en": "Eiffel Tower and Louvre; world's most visited country (90M tourists/year); wine, cheese, fashion; French Revolution 1789"
+      }
+    },
+    {
+      "id": "FIN",
+      "svgPathId": "rFIN",
+      "names": {
+        "ko": "핀란드",
+        "en": "Finland"
+      },
+      "hints": {
+        "ko": "산타클로스 공식 고향(로바니에미). 사우나 발상지(300만 개 이상). 세계 최고 교육 시스템. 북극광 관측 명소",
+        "en": "Official home of Santa Claus (Rovaniemi); birthplace of sauna (3M+ saunas); world's best education system; Northern Lights"
+      }
+    },
+    {
+      "id": "EST",
+      "svgPathId": "rEST",
+      "names": {
+        "ko": "에스토니아",
+        "en": "Estonia"
+      },
+      "hints": {
+        "ko": "e-에스토니아(세계 최선진 디지털 정부). 탈린 구시가지(유네스코). 스카이프 탄생지. '노래하는 혁명'으로 소련 독립",
+        "en": "'e-Estonia' digital governance pioneer; Tallinn medieval old town UNESCO; Skype invented here; 'Singing Revolution' from USSR"
+      }
+    },
+    {
+      "id": "DNK",
+      "svgPathId": "rDNK",
+      "names": {
+        "ko": "덴마크",
+        "en": "Denmark"
+      },
+      "hints": {
+        "ko": "레고의 나라. 세계 최고 행복 지수 상위권. 뉴 노르딕 요리(노마 레스토랑). 안데르센 동화 고향",
+        "en": "Birthplace of LEGO; consistently top global happiness rankings; New Nordic cuisine (Noma); Hans Christian Andersen's homeland"
+      }
+    },
+    {
+      "id": "CZE",
+      "svgPathId": "rCZE",
+      "names": {
+        "ko": "체코",
+        "en": "Czech Republic"
+      },
+      "hints": {
+        "ko": "프라하(유럽 가장 아름다운 구시가지 중 하나). 맥주 소비량 세계 1위(1인당). 보헤미아 크리스탈. 1989년 벨벳 혁명",
+        "en": "Prague's fairy-tale old town; world's #1 beer consumption per capita; Bohemian crystal; 1989 Velvet Revolution"
+      }
+    },
+    {
+      "id": "CYP",
+      "svgPathId": "rCYP",
+      "names": {
+        "ko": "키프로스",
+        "en": "Cyprus"
+      },
+      "hints": {
+        "ko": "지중해 3번째 큰 섬. 1974년 터키 침공으로 분단. 아프로디테 신화 발상지. EU 최동단 회원국",
+        "en": "3rd largest Mediterranean island; divided since 1974 Turkish invasion; mythical birthplace of Aphrodite; easternmost EU member"
+      }
+    },
+    {
+      "id": "HRV",
+      "svgPathId": "rHRV",
+      "names": {
+        "ko": "크로아티아",
+        "en": "Croatia"
+      },
+      "hints": {
+        "ko": "지중해 섬 1,200개(최다). 플리트비체 호수 국립공원(유네스코). 2018 FIFA 월드컵 준우승. 달마티아 해안",
+        "en": "1,200 islands (most in Mediterranean); Plitvice Lakes UNESCO; 2018 FIFA World Cup runners-up; Dalmatian coast"
+      }
+    },
+    {
+      "id": "BGR",
+      "svgPathId": "rBGR",
+      "names": {
+        "ko": "불가리아",
+        "en": "Bulgaria"
+      },
+      "hints": {
+        "ko": "장미 오일 세계 최대 생산지(장미 계곡). 키릴 문자 발상지. 흑해 연안 리조트. 트라키아 황금 유물",
+        "en": "World's largest rose oil producer (Valley of Roses); birthplace of Cyrillic alphabet; Black Sea resorts; Thracian gold treasures"
+      }
+    },
+    {
+      "id": "BIH",
+      "svgPathId": "rBIH",
+      "names": {
+        "ko": "보스니아 헤르체고비나",
+        "en": "Bosnia and Herzegovina"
+      },
+      "hints": {
+        "ko": "사라예보(1914 프란츠 페르디난트 암살, 1차 세계대전 도화선). 1992~95 보스니아 전쟁. 모스타르 스타리 모스트 다리(유네스코)",
+        "en": "Sarajevo: Franz Ferdinand assassination sparked WWI; Bosnian War 1992-95; Mostar's Stari Most bridge UNESCO"
+      }
+    },
+    {
+      "id": "BEL",
+      "svgPathId": "rBEL",
+      "names": {
+        "ko": "벨기에",
+        "en": "Belgium"
+      },
+      "hints": {
+        "ko": "세계 최고 초콜릿·맥주·와플. NATO·EU 본부 소재지(브뤼셀). 플라망어·왈롱어 언어 갈등의 나라",
+        "en": "World-class chocolate, beer and waffles; NATO and EU headquarters in Brussels; Flemish-Walloon linguistic divide"
+      }
+    },
+    {
+      "id": "BLR",
+      "svgPathId": "rBLR",
+      "names": {
+        "ko": "벨라루스",
+        "en": "Belarus"
+      },
+      "hints": {
+        "ko": "유럽의 마지막 독재자(루카셴코). 2020년 대규모 민주화 시위. 체르노빌 원전 최대 피해국. 소련 감성 보존",
+        "en": "'Europe's last dictator' (Lukashenko); massive democracy protests 2020; worst Chernobyl fallout zone; Soviet-era culture preserved"
+      }
+    },
+    {
+      "id": "AUT",
+      "svgPathId": "rAUT",
+      "names": {
+        "ko": "오스트리아",
+        "en": "Austria"
+      },
+      "hints": {
+        "ko": "모차르트·슈베르트·베토벤의 나라. 빈 오페라·왈츠. 알프스 스키. 합스부르크 제국 600년 중심지",
+        "en": "Birthplace of Mozart, Schubert; Vienna opera and waltz; Alpine skiing; 600-year center of the Habsburg Empire"
+      }
+    },
+    {
+      "id": "AND",
+      "svgPathId": "rAND",
+      "names": {
+        "ko": "안도라",
+        "en": "Andorra"
+      },
+      "hints": {
+        "ko": "피레네 산맥 소국(468㎢). 세계 최저 세율 중 하나(면세 쇼핑). 100% 수력 전기. 스키 리조트 천국",
+        "en": "Pyrenean microstate (468 km²); one of Europe's lowest tax rates (duty-free); 100% hydroelectric power; ski resort paradise"
+      }
+    },
+    {
+      "id": "ALB",
+      "svgPathId": "rALB",
+      "names": {
+        "ko": "알바니아",
+        "en": "Albania"
+      },
+      "hints": {
+        "ko": "독수리의 땅(알바니아어: Shqipëri). 아드리아해·이오니아해 연안. 1991년 공산주의 붕괴 후 급격한 변화. 스칸데르베그 민족 영웅",
+        "en": "'Land of Eagles'; Adriatic and Ionian coast; rapid transformation after 1991 communist collapse; national hero Skanderbeg"
+      }
+    }
+  ]
+}
