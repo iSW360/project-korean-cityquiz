@@ -474,6 +474,65 @@ body.lv3 #map-container path:hover{fill:rgba(232,184,75,.18);stroke:var(--gold);
 }
 .toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
 
+/* ════════════════════════════
+   CONTENT PAGES (about, privacy)
+════════════════════════════ */
+.content-nav{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 16px;background:var(--ink2);
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:20;
+}
+.content-nav__back{
+  font-size:13px;color:var(--teal);font-weight:600;
+  text-decoration:none;flex-shrink:0;
+}
+.content-nav__back:hover{opacity:.8;}
+.content-nav__title{font-size:13px;color:var(--muted);font-weight:500;}
+
+.content-wrap{padding:24px 20px 8px;flex:1;}
+
+.content-h1{
+  font-size:22px;font-weight:900;color:var(--text);
+  letter-spacing:-.5px;margin-bottom:6px;margin-top:8px;
+  padding-bottom:10px;border-bottom:1px solid var(--border);
+}
+.content-h1:not(:first-child){margin-top:32px;}
+.content-meta{font-size:11px;color:var(--hint);margin-bottom:20px;}
+
+.content-h2{
+  font-size:15px;font-weight:700;color:var(--gold);
+  margin-top:22px;margin-bottom:8px;
+}
+.content-p{
+  font-size:13px;color:rgba(237,242,247,.78);
+  line-height:1.75;margin-bottom:10px;
+}
+.content-p strong{color:var(--text);}
+.content-list{
+  padding-left:18px;margin-bottom:12px;
+}
+.content-list li{
+  font-size:13px;color:rgba(237,242,247,.78);
+  line-height:1.75;margin-bottom:4px;
+}
+.content-list li strong{color:var(--text);}
+.content-link{color:var(--teal);text-decoration:underline;text-underline-offset:3px;}
+.content-link:hover{color:var(--gold);}
+.content-divider{
+  height:1px;background:var(--border);margin:28px 0;
+}
+
+.content-footer{
+  text-align:center;padding:20px 16px 28px;
+  font-size:11px;color:var(--hint);
+  border-top:1px solid var(--border);
+  display:flex;flex-wrap:wrap;align-items:center;
+  justify-content:center;gap:6px;flex-direction:column;
+}
+.content-footer a{color:var(--teal);}
+.content-footer a:hover{color:var(--gold);}
+
 /* ── 반응형 ── */
 @media(max-width:360px){
   :root{font-size:15px;}
