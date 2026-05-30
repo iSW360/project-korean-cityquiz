@@ -4,7 +4,7 @@ const QE = (() => {
   const CACHE_VER = 6; // 올리면 SVG·JSON 캐시 전체 무효화
   let S = {
     mapId:'korea-sigungoo', lang:'ko', level:1,
-    regions:[], queue:[], idx:0,
+    regions:[], queue:[], idx:0, meta:null,
     score:0, correct:0, wrong:0, hintUsed:0,
     hintThis:false, answered:false,
     timer:null, timeLeft:15,
@@ -62,9 +62,9 @@ const QE = (() => {
 
   async function _loadData(){
     const key=`qd_${S.mapId}_v${CACHE_VER}`;
-    try{const c=sessionStorage.getItem(key);if(c){S.regions=JSON.parse(c).regions;return;}}catch{}
+    try{const c=sessionStorage.getItem(key);if(c){const p=JSON.parse(c);S.regions=p.regions;S.meta=p.meta||null;return;}}catch{}
     const d=await fetch(`/data/quiz-${S.mapId}.json`).then(r=>r.json());
-    S.regions=d.regions;
+    S.regions=d.regions; S.meta=d.meta||null;
     try{sessionStorage.setItem(key,JSON.stringify(d));}catch{}
   }
 
@@ -136,9 +136,11 @@ const QE = (() => {
           ?`<strong>${n}</strong>을(를) 지도에서 찾아 클릭하세요`
           :`Find <strong>${n}</strong> on the map`;
       } else {
-        qt.innerHTML=S.lang==='ko'
+        // meta.questionText가 있으면 커스텀 질문 사용
+        const customQ=S.meta?.questionText?.[S.lang];
+        qt.innerHTML=customQ||(S.lang==='ko'
           ?`<strong style="color:var(--gold)">강조된 지역</strong>의 이름은?`
-          :`What is the name of the <strong style="color:var(--gold)">highlighted region</strong>?`;
+          :`What is the name of the <strong style="color:var(--gold)">highlighted region</strong>?`);
       }
     }
 

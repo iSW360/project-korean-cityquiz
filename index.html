@@ -134,6 +134,12 @@
       <div class="map-card__meta" id="mc-se">25개 지역 · 3레벨</div>
       <span class="map-card__badge badge-new" id="mb-se">NEW</span>
     </div>
+    <div class="map-card" onclick="goQuiz('korea-specialty')">
+      <div class="map-card__icon">🌾</div>
+      <div class="map-card__name" id="mn-sp">지역 특성</div>
+      <div class="map-card__meta" id="mc-sp">31개 지역 · 특산물·산업·문화</div>
+      <span class="map-card__badge badge-new" id="mb-sp">NEW</span>
+    </div>
   </div>
 </div>
 
@@ -230,6 +236,8 @@ function goQuiz(mapId){
     document.getElementById('mc-ks').textContent='161 regions · 3 levels';
     document.getElementById('mb-ks').textContent='Popular';
     document.getElementById('mn-se').textContent='Seoul Wards';
+    document.getElementById('mn-sp').textContent='Regional Features';
+    document.getElementById('mc-sp').textContent='31 regions · products·industry·culture';
     document.getElementById('mc-se').textContent='25 regions · 3 levels';
     document.getElementById('mn-us').textContent='US States';
     document.getElementById('mc-us').textContent='50 regions · 3 levels';
