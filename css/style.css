@@ -33,7 +33,7 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{font-size:16px;-webkit-font-smoothing:antialiased;}
-body{font-family:var(--font);background:var(--ink);color:var(--text);min-height:100vh;overflow-x:hidden;}
+body{font-family:var(--font);background:var(--ink);color:var(--text);min-height:100dvh;overflow-x:hidden;}
 a{color:inherit;text-decoration:none;}
 button{font-family:inherit;cursor:pointer;border:none;background:none;}
 input{font-family:inherit;}
@@ -66,7 +66,7 @@ input{font-family:inherit;}
 }
 
 /* ── 페이지 wrapper ── */
-.page{max-width:520px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;position:relative;}
+.page{max-width:520px;margin:0 auto;min-height:100dvh;display:flex;flex-direction:column;position:relative;}
 /* 게임 화면만 더 넓게 (520 × 1.1 = 572px) */
 .quiz-page{max-width:570px !important;}
 .result-page{max-width:570px !important;}
@@ -209,7 +209,7 @@ input{font-family:inherit;}
 /* ════════════════════════════
    QUIZ
 ════════════════════════════ */
-.quiz-page{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;}
+.quiz-page{max-width:480px;margin:0 auto;min-height:100dvh;display:flex;flex-direction:column;}
 
 /* 헤더 */
 .quiz-header{
@@ -257,6 +257,9 @@ input{font-family:inherit;}
 #map-container{
   width:100%;height:44vw;max-height:300px;min-height:200px;
   position:relative;overflow:hidden;
+}
+@media(max-width:480px){
+  #map-container{height:clamp(220px,42vh,320px);}
 }
 #map-skeleton{position:absolute;inset:0;z-index:2;}
 #map-container svg{width:100%;height:100%;display:block;opacity:0;transition:opacity .4s;}
