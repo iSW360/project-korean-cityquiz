@@ -294,8 +294,8 @@ input{font-family:inherit;}
 #map-container path.correct{fill:#3ECFB2;stroke:#2BA890;stroke-width:1.2;animation:none;filter:none;}
 #map-container path.wrong  {fill:var(--coral);stroke:#cc4444;stroke-width:1.2;animation:none;filter:none;}
 #map-container path.solved {fill:rgba(62,207,178,.2);stroke:rgba(62,207,178,.3);animation:none;filter:none;}
-/* 세계 지도 path — 기본 fill을 살짝 더 밝게 */
-#map-container svg:not([viewBox="0 0 680 800"]) path{fill:rgba(255,255,255,.07);}
+/* 세계 지도 path — 기본 fill을 살짝 더 밝게 (상태 클래스가 있는 path는 제외) */
+#map-container svg:not([viewBox="0 0 680 800"]) path:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(255,255,255,.07);}
 
 /* ── 월드컵 지도 ── */
 /* 배경 국가 (비출전국) */
