@@ -124,8 +124,9 @@ const QE = (() => {
     const r=S.queue[S.idx];
 
     _clearMap();
-    // 정답 미리 표시 안 함 (문제 시작 시 정답이 보이는 것 방지)
     _zoomMap(r.svgPathId);
+    // 레벨 1·2: 지역 강조 표시 (레벨 3은 직접 찾아야 하므로 강조 없음)
+    if(S.level!==3) document.getElementById(r.svgPathId)?.classList.add('active');
 
     // 문제 텍스트
     const qt=$('question-text');
