@@ -67,6 +67,9 @@ input{font-family:inherit;}
 
 /* ── 페이지 wrapper ── */
 .page{max-width:520px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;position:relative;}
+/* 게임 화면만 더 넓게 (520 × 1.1 = 572px) */
+.quiz-page{max-width:570px !important;}
+.result-page{max-width:570px !important;}
 
 /* ════════════════════════════
    HOME
