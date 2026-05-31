@@ -297,8 +297,30 @@ input{font-family:inherit;}
 #map-container path.correct{fill:#3ECFB2;stroke:#2BA890;stroke-width:1.2;animation:none;filter:none;}
 #map-container path.wrong  {fill:var(--coral);stroke:#cc4444;stroke-width:1.2;animation:none;filter:none;}
 #map-container path.solved {fill:rgba(62,207,178,.2);stroke:rgba(62,207,178,.3);animation:none;filter:none;}
-/* 세계 지도 path — 기본 fill을 살짝 더 밝게 (상태 클래스가 있는 path는 제외) */
-#map-container svg:not([viewBox="0 0 680 800"]) path:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(255,255,255,.07);}
+/* 세계 지도 path — 기본 fill (상태 클래스·data-grp 없는 path만) */
+#map-container svg:not([viewBox="0 0 680 800"]) path:not(.active):not(.correct):not(.wrong):not(.solved):not([data-grp]){fill:rgba(255,255,255,.07);}
+
+/* ── 서울 구 ── */
+#map-container path[data-grp="서울"]{fill:rgba(224,96,144,.25);}
+
+/* ── 미국 Census 권역 ── */
+#map-container path[data-grp="US-NE"]{fill:rgba(74,144,217,.26);}   /* 북동부 */
+#map-container path[data-grp="US-MW"]{fill:rgba(87,168,107,.28);}   /* 중서부 */
+#map-container path[data-grp="US-SO"]{fill:rgba(212,160,48,.26);}   /* 남부   */
+#map-container path[data-grp="US-WE"]{fill:rgba(157,120,212,.26);}  /* 서부   */
+
+/* ── 유럽 소권역 ── */
+#map-container path[data-grp="EU-N"]{fill:rgba(74,144,217,.24);}    /* 북유럽 */
+#map-container path[data-grp="EU-W"]{fill:rgba(62,189,189,.24);}    /* 서유럽 */
+#map-container path[data-grp="EU-S"]{fill:rgba(212,160,48,.24);}    /* 남유럽 */
+#map-container path[data-grp="EU-E"]{fill:rgba(157,120,212,.24);}   /* 동유럽 */
+
+/* ── 아프리카 소권역 ── */
+#map-container path[data-grp="AF-N"]{fill:rgba(212,160,48,.24);}    /* 북아프리카 */
+#map-container path[data-grp="AF-W"]{fill:rgba(87,168,107,.24);}    /* 서아프리카 */
+#map-container path[data-grp="AF-C"]{fill:rgba(217,110,58,.24);}    /* 중앙아프리카 */
+#map-container path[data-grp="AF-E"]{fill:rgba(74,144,217,.24);}    /* 동아프리카 */
+#map-container path[data-grp="AF-S"]{fill:rgba(157,120,212,.24);}   /* 남아프리카 */
 
 /* ── 월드컵 지도 ── */
 /* 배경 국가 (비출전국) */

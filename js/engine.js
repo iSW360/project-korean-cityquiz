@@ -2,6 +2,40 @@
 const QE = (() => {
   const QUIZ_N = 10;   // 한 세션당 문제 수
   const CACHE_VER = 6; // 올리면 SVG·JSON 캐시 전체 무효화
+
+  /* ── 지도별 sub-region 그룹 (색상 배분용) ── */
+  const _GRP_MAP = {
+    'us-states': {
+      'US-NE':['CT','ME','MA','NH','RI','VT','NJ','NY','PA'],
+      'US-MW':['IL','IN','MI','OH','WI','IA','KS','MN','MO','NE','ND','SD'],
+      'US-SO':['DE','FL','GA','MD','NC','SC','VA','WV','AL','KY','MS','TN','AR','LA','OK','TX'],
+      'US-WE':['AZ','CO','ID','MT','NV','NM','UT','WY','AK','CA','HI','OR','WA'],
+    },
+    'europe': {
+      'EU-N':['ISL','NOR','SWE','FIN','DNK','EST','LVA','LTU'],
+      'EU-W':['GBR','IRL','FRA','BEL','NLD','LUX','CHE','AUT','DEU','LIE','MCO','AND'],
+      'EU-S':['PRT','ESP','ITA','GRC','MLT','CYP','SMR','VAT','MKD','ALB','MNE','BIH','HRV','SVN'],
+      'EU-E':['RUS','BLR','UKR','MDA','ROU','BGR','SRB','SVK','HUN','POL','CZE','XKX','TUR'],
+    },
+    'africa': {
+      'AF-N':['MAR','DZA','TUN','LBY','EGY','SDN','MRT'],
+      'AF-W':['SEN','GMB','GNB','GIN','SLE','LBR','CIV','GHA','TGO','BEN','NGA','NER','BFA','MLI','CPV','STP'],
+      'AF-C':['CMR','CAF','COG','COD','GAB','GNQ','TCD','RWA','BDI','AGO'],
+      'AF-E':['ETH','ERI','DJI','SOM','KEN','UGA','TZA','MOZ','MWI','ZMB','MDG','COM','SYC','MUS','SSD'],
+      'AF-S':['ZAF','LSO','SWZ','BWA','NAM','ZWE'],
+    },
+  };
+
+  function _applyRegionColors(){
+    const groups=_GRP_MAP[S.mapId];
+    if(!groups) return;
+    Object.entries(groups).forEach(([grp,ids])=>{
+      ids.forEach(id=>{
+        const el=document.getElementById('r'+id);
+        if(el) el.setAttribute('data-grp',grp);
+      });
+    });
+  }
   let S = {
     mapId:'korea-sigungoo', lang:'ko', level:1,
     regions:[], queue:[], idx:0, meta:null,
@@ -79,6 +113,7 @@ const QE = (() => {
       try{sessionStorage.setItem(key,svg);}catch{}
     }
     cont.innerHTML=svg;
+    _applyRegionColors();
     const el=cont.querySelector('svg');
     if(el){el.setAttribute('width','100%');el.setAttribute('height','100%');S.initViewBox=el.getAttribute('viewBox')||'0 0 680 800';requestAnimationFrame(()=>el.classList.add('loaded'));}
     if(sk) sk.style.display='none';
