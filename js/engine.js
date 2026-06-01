@@ -359,24 +359,27 @@ const QE = (() => {
       if(!path)return;
       const bb=path.getBBox();
       if(!bb.width&&!bb.height){_resetMapZoom();return;}
+      // 지도별 실제 viewBox 크기로 클램핑 (하드코딩 680×800 대신)
+      const [,, IVW, IVH]=S.initViewBox.split(' ').map(Number);
+      const aspect=IVH/IVW;
       const maxDim=Math.max(bb.width,bb.height);
       if(S.level===3){
         // 레벨3: 아주 작은 지역만 약하게 줌 (클릭할 수 있도록 넓은 시야 유지)
         if(maxDim>=70){_resetMapZoom();return;}
-        const VW=Math.min(maxDim/0.12,600), VH=Math.min(VW*(800/680),700);
+        const VW=Math.min(maxDim/0.12,IVW), VH=Math.min(VW*aspect,IVH);
         const cx=bb.x+bb.width/2, cy=bb.y+bb.height/2;
-        const vx=Math.max(0,Math.min(cx-VW/2,680-VW));
-        const vy=Math.max(0,Math.min(cy-VH/2,800-VH));
+        const vx=Math.max(0,Math.min(cx-VW/2,IVW-VW));
+        const vy=Math.max(0,Math.min(cy-VH/2,IVH-VH));
         _animateViewBox(svg,`${vx.toFixed(0)} ${vy.toFixed(0)} ${VW.toFixed(0)} ${VH.toFixed(0)}`);
         return;
       }
       // 레벨1·2: 지역 크기에 맞게 줌
-      if(maxDim>=130){_resetMapZoom();return;}
-      const target=Math.max(maxDim/0.28, 220);
-      const VW=Math.min(target,560), VH=Math.min(target*(800/680),660);
+      if(maxDim>=Math.min(IVW,IVH)*0.27){_resetMapZoom();return;}
+      const target=Math.max(maxDim/0.28, Math.min(IVW,IVH)*0.3);
+      const VW=Math.min(target,IVW*0.85), VH=Math.min(target*aspect,IVH*0.85);
       const cx=bb.x+bb.width/2, cy=bb.y+bb.height/2;
-      const vx=Math.max(0,Math.min(cx-VW/2,680-VW));
-      const vy=Math.max(0,Math.min(cy-VH/2,800-VH));
+      const vx=Math.max(0,Math.min(cx-VW/2,IVW-VW));
+      const vy=Math.max(0,Math.min(cy-VH/2,IVH-VH));
       _animateViewBox(svg,`${vx.toFixed(0)} ${vy.toFixed(0)} ${VW.toFixed(0)} ${VH.toFixed(0)}`);
     });
   }
