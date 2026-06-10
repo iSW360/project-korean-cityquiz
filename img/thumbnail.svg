@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C1220"/>
+      <stop offset="50%" stop-color="#112040"/>
+      <stop offset="100%" stop-color="#0A1830"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D078"/>
+      <stop offset="100%" stop-color="#E8A020"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3ECFB2"/>
+      <stop offset="100%" stop-color="#2BA890"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8B84B" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#E8B84B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3ECFB2" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#3ECFB2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Glow effects -->
+  <ellipse cx="512" cy="400" rx="480" ry="380" fill="url(#glow1)"/>
+  <ellipse cx="200" cy="700" rx="300" ry="280" fill="url(#glow2)"/>
+
+  <!-- Grid lines (subtle map grid) -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="256" x2="1024" y2="256"/>
+    <line x1="0" y1="512" x2="1024" y2="512"/>
+    <line x1="0" y1="768" x2="1024" y2="768"/>
+    <line x1="256" y1="0" x2="256" y2="1024"/>
+    <line x1="512" y1="0" x2="512" y2="1024"/>
+    <line x1="768" y1="0" x2="768" y2="1024"/>
+  </g>
+
+  <!-- Decorative map outline shape (stylized world) -->
+  <g opacity="0.10" fill="none" stroke="#3ECFB2" stroke-width="2">
+    <path d="M180,420 Q220,380 280,400 Q320,340 380,360 Q400,320 460,330 Q500,290 540,310 Q580,280 620,300 Q660,270 700,290 Q740,310 760,350 Q800,340 840,370 Q860,400 840,430 Q820,460 780,450 Q760,480 720,470 Q680,500 640,480 Q600,510 560,490 Q520,520 480,500 Q440,530 400,510 Q360,540 320,520 Q280,550 240,530 Q200,510 180,480 Z"/>
+    <path d="M300,500 Q340,520 360,560 Q380,590 340,610 Q300,620 280,590 Q260,560 280,530 Z"/>
+    <path d="M600,480 Q640,500 660,540 Q680,570 650,590 Q620,600 600,570 Q580,540 590,510 Z"/>
+  </g>
+
+  <!-- Continent dots -->
+  <circle cx="320" cy="420" r="6" fill="#3ECFB2" opacity="0.5"/>
+  <circle cx="520" cy="380" r="6" fill="#E8B84B" opacity="0.5"/>
+  <circle cx="680" cy="440" r="6" fill="#3ECFB2" opacity="0.5"/>
+  <circle cx="750" cy="520" r="5" fill="#60B4FF" opacity="0.5"/>
+  <circle cx="420" cy="520" r="5" fill="#E8B84B" opacity="0.4"/>
+
+  <!-- Connection lines -->
+  <line x1="320" y1="420" x2="520" y2="380" stroke="#E8B84B" stroke-width="1" opacity="0.15"/>
+  <line x1="520" y1="380" x2="680" y2="440" stroke="#3ECFB2" stroke-width="1" opacity="0.15"/>
+  <line x1="680" y1="440" x2="750" y2="520" stroke="#60B4FF" stroke-width="1" opacity="0.15"/>
+
+  <!-- Main card background -->
+  <rect x="112" y="310" width="800" height="380" rx="36"
+        fill="rgba(255,255,255,0.03)" stroke="rgba(232,184,75,0.2)" stroke-width="1.5"/>
+
+  <!-- GeoQ Logo -->
+  <text x="512" y="450" font-family="Georgia,'Times New Roman',serif"
+        font-size="200" font-weight="bold" text-anchor="middle"
+        fill="url(#gold)">GeoQ</text>
+
+  <!-- Tagline -->
+  <text x="512" y="530" font-family="'Apple SD Gothic Neo','Noto Sans KR',Arial,sans-serif"
+        font-size="44" text-anchor="middle" fill="#EDF2F7" opacity="0.85" letter-spacing="2">
+    지도로 배우는 지리 퀴즈
+  </text>
+
+  <!-- Feature badges -->
+  <g transform="translate(512, 610)">
+    <!-- Badge 1 -->
+    <rect x="-280" y="-22" width="160" height="44" rx="22"
+          fill="rgba(62,207,178,0.12)" stroke="rgba(62,207,178,0.35)" stroke-width="1.5"/>
+    <text x="-200" y="6" font-family="Arial,sans-serif" font-size="21"
+          text-anchor="middle" fill="#3ECFB2" font-weight="bold">🗺️ 6가지 지도</text>
+    <!-- Badge 2 -->
+    <rect x="-90" y="-22" width="160" height="44" rx="22"
+          fill="rgba(232,184,75,0.12)" stroke="rgba(232,184,75,0.35)" stroke-width="1.5"/>
+    <text x="-10" y="6" font-family="Arial,sans-serif" font-size="21"
+          text-anchor="middle" fill="#E8B84B" font-weight="bold">⭐ 3가지 레벨</text>
+    <!-- Badge 3 -->
+    <rect x="100" y="-22" width="160" height="44" rx="22"
+          fill="rgba(96,180,255,0.12)" stroke="rgba(96,180,255,0.35)" stroke-width="1.5"/>
+    <text x="180" y="6" font-family="Arial,sans-serif" font-size="21"
+          text-anchor="middle" fill="#60B4FF" font-weight="bold">🎓 수능 대비</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="512" y="720" font-family="Arial,sans-serif"
+        font-size="26" text-anchor="middle" fill="#EDF2F7" opacity="0.35">
+    전국 시군 · 서울 · 미국 · 유럽 · 아프리카 · 월드컵
+  </text>
+</svg>
