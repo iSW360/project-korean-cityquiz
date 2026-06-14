@@ -375,7 +375,8 @@ const QE = (() => {
       }
       // 레벨1·2: 지역 크기에 맞게 줌
       if(maxDim>=Math.min(IVW,IVH)*0.27){_resetMapZoom();return;}
-      const target=Math.max(maxDim/0.28, Math.min(IVW,IVH)*0.3);
+      // 최소 viewBox = 지도 너비의 30% (세계지도에서 주변 맥락 확보)
+      const target=Math.max(maxDim/0.20, IVW*0.30);
       const VW=Math.min(target,IVW*0.85), VH=Math.min(target*aspect,IVH*0.85);
       const cx=bb.x+bb.width/2, cy=bb.y+bb.height/2;
       const vx=Math.max(0,Math.min(cx-VW/2,IVW-VW));

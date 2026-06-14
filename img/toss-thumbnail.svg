@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0C1220"/>
+      <stop offset="50%" stop-color="#112040"/>
+      <stop offset="100%" stop-color="#0A1830"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F5D078"/>
+      <stop offset="100%" stop-color="#E8B84B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#E8B84B" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#E8B84B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3ECFB2" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#3ECFB2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <rect width="800" height="400" fill="url(#glow)"/>
+  <rect width="800" height="400" fill="url(#glow2)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.035" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+
+  <!-- Right side: simplified map visual -->
+  <g transform="translate(470, 40)" opacity="0.85">
+    <!-- Korea outline (stylized) -->
+    <path d="M80,30 L110,25 L130,40 L135,70 L120,90 L95,95 L70,85 L55,65 L60,42 Z"
+          fill="rgba(74,144,217,0.22)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <!-- Highlighted region -->
+    <path d="M70,85 L95,95 L100,125 L80,140 L55,130 L48,105 Z"
+          fill="#E8B84B" stroke="#F5D078" stroke-width="1.5"/>
+    <path d="M95,95 L120,90 L125,120 L108,138 L95,130 L100,110 Z"
+          fill="rgba(87,168,107,0.25)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <path d="M120,90 L145,88 L150,112 L135,128 L120,120 L125,100 Z"
+          fill="rgba(157,120,212,0.25)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <!-- Jeju -->
+    <ellipse cx="72" cy="168" rx="22" ry="13"
+             fill="rgba(96,180,255,0.28)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+    <!-- World map dots -->
+    <circle cx="220" cy="60" r="4" fill="#3ECFB2" opacity="0.6"/>
+    <circle cx="260" cy="90" r="4" fill="#E8B84B" opacity="0.6"/>
+    <circle cx="240" cy="130" r="3" fill="#60B4FF" opacity="0.5"/>
+    <circle cx="185" cy="100" r="3" fill="#3ECFB2" opacity="0.4"/>
+    <line x1="220" y1="60" x2="260" y2="90" stroke="#E8B84B" stroke-width="0.8" opacity="0.2"/>
+    <line x1="260" y1="90" x2="240" y2="130" stroke="#3ECFB2" stroke-width="0.8" opacity="0.2"/>
+  </g>
+
+  <!-- Left side: Text content -->
+  <!-- App icon placeholder -->
+  <rect x="50" y="80" width="64" height="64" rx="16" fill="rgba(232,184,75,0.15)" stroke="rgba(232,184,75,0.3)" stroke-width="1.5"/>
+  <text x="82" y="122" font-family="Arial" font-size="32" text-anchor="middle">📍</text>
+
+  <!-- App name -->
+  <text x="50" y="195" font-family="Georgia,'Times New Roman',serif"
+        font-size="62" font-weight="bold" fill="url(#gold)">GeoQ</text>
+
+  <!-- Korean subtitle -->
+  <text x="50" y="240" font-family="'Apple SD Gothic Neo','Noto Sans KR',Arial,sans-serif"
+        font-size="22" fill="#EDF2F7" opacity="0.85">지도로 배우는 지리 퀴즈 게임</text>
+
+  <!-- Feature list -->
+  <g transform="translate(50, 278)" font-family="Arial" font-size="15" fill="#EDF2F7" opacity="0.65">
+    <text>🗺️ 전국 시군 · 서울 · 미국 · 유럽 · 아프리카 · 월드컵</text>
+  </g>
+
+  <!-- Badges -->
+  <g transform="translate(50, 320)">
+    <rect x="0" y="0" width="100" height="32" rx="16"
+          fill="rgba(62,207,178,0.15)" stroke="rgba(62,207,178,0.35)" stroke-width="1"/>
+    <text x="50" y="22" font-family="Arial" font-size="13" font-weight="bold"
+          text-anchor="middle" fill="#3ECFB2">3가지 레벨</text>
+
+    <rect x="112" y="0" width="80" height="32" rx="16"
+          fill="rgba(232,184,75,0.15)" stroke="rgba(232,184,75,0.35)" stroke-width="1"/>
+    <text x="152" y="22" font-family="Arial" font-size="13" font-weight="bold"
+          text-anchor="middle" fill="#E8B84B">완전 무료</text>
+
+    <rect x="204" y="0" width="100" height="32" rx="16"
+          fill="rgba(96,180,255,0.15)" stroke="rgba(96,180,255,0.35)" stroke-width="1"/>
+    <text x="254" y="22" font-family="Arial" font-size="13" font-weight="bold"
+          text-anchor="middle" fill="#60B4FF">수능 대비</text>
+  </g>
+</svg>
