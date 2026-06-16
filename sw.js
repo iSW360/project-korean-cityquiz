@@ -1,8 +1,8 @@
-/* GeoQ Service Worker v4
+/* GeoQ Service Worker v5
    HTML·데이터: 네트워크 우선 (항상 최신)
    CSS·JS·이미지: 캐시 우선 (빠른 로딩)
 */
-const CACHE = 'geoq-v4';   // 버전 올리면 이전 캐시 전체 삭제
+const CACHE = 'geoq-v5';   // 버전 올리면 이전 캐시 전체 삭제
 const PRE_CACHE = [
   '/css/style.css',
   '/js/engine.js',

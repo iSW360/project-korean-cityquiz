@@ -26,6 +26,31 @@ const QE = (() => {
     },
   };
 
+  function _trimTinySubpaths(){
+    const svg=qs('#map-container svg');
+    if(!svg) return;
+    const ns='http://www.w3.org/2000/svg';
+    svg.querySelectorAll('path[data-id]').forEach(path=>{
+      const d=path.getAttribute('d');
+      if(!d) return;
+      // M 명령어 기준으로 sub-path 분리
+      const subs=d.trim().split(/(?=M[\s\d\-\.])/).filter(s=>s.trim().length>2);
+      if(subs.length<=1) return;
+      // 각 sub-path의 면적 측정
+      const measured=subs.map(sub=>{
+        const tmp=document.createElementNS(ns,'path');
+        tmp.setAttribute('d',sub);
+        svg.appendChild(tmp);
+        const bb=tmp.getBBox();
+        svg.removeChild(tmp);
+        return {sub, area:bb.width*bb.height};
+      });
+      const maxArea=Math.max(...measured.map(m=>m.area));
+      // 최대 sub-path의 2% 미만이면 제거 (군소 섬 제거, 독립국 소국은 유지)
+      const kept=measured.filter(m=>m.area>=maxArea*0.02).map(m=>m.sub);
+      if(kept.length<measured.length) path.setAttribute('d',kept.join(' '));
+    });
+  }
   function _applyRegionColors(){
     const groups=_GRP_MAP[S.mapId];
     if(!groups) return;
@@ -114,6 +139,7 @@ const QE = (() => {
     }
     cont.innerHTML=svg;
     _applyRegionColors();
+    _trimTinySubpaths();
     const el=cont.querySelector('svg');
     if(el){el.setAttribute('width','100%');el.setAttribute('height','100%');S.initViewBox=el.getAttribute('viewBox')||'0 0 680 800';requestAnimationFrame(()=>el.classList.add('loaded'));}
     if(sk) sk.style.display='none';
