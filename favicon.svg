@@ -1,5 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#1A2438"/>
-  <text x="16" y="24" font-size="21" font-family="serif" font-weight="bold"
-        text-anchor="middle" fill="#E8B84B">G</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1A2438"/>
+  <clipPath id="c"><circle cx="30" cy="33" r="17"/></clipPath>
+  <circle cx="30" cy="33" r="17" fill="#0d1e35"/>
+  <ellipse cx="30" cy="33" rx="10" ry="17" fill="none" stroke="#E8B84B" stroke-width="1.2" clip-path="url(#c)"/>
+  <ellipse cx="30" cy="33" rx="5" ry="17" fill="none" stroke="#E8B84B" stroke-width="0.9" clip-path="url(#c)"/>
+  <line x1="13" y1="26" x2="47" y2="26" stroke="#E8B84B" stroke-width="0.9" clip-path="url(#c)"/>
+  <line x1="13" y1="33" x2="47" y2="33" stroke="#E8B84B" stroke-width="1.2" clip-path="url(#c)"/>
+  <line x1="13" y1="40" x2="47" y2="40" stroke="#E8B84B" stroke-width="0.9" clip-path="url(#c)"/>
+  <circle cx="30" cy="33" r="17" fill="none" stroke="#E8B84B" stroke-width="2"/>
+  <circle cx="47" cy="17" r="10" fill="#E8B84B"/>
+  <text x="47" y="21.5" font-size="14" font-family="sans-serif" font-weight="800" text-anchor="middle" fill="#1A2438">?</text>
 </svg>
