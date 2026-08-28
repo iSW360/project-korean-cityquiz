@@ -25,6 +25,7 @@ const QE = (() => {
       'AF-S':['ZAF','LSO','SWZ','BWA','NAM','ZWE'],
     },
   };
+  // 일본 도도부현은 SVG에 data-grp(8개 지방)가 이미 baked-in 되어 있어 _GRP_MAP 불필요
 
   function _trimTinySubpaths(){
     const svg=qs('#map-container svg');

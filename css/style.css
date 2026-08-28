@@ -324,6 +324,16 @@ input{font-family:inherit;}
 #map-container path[data-grp="AF-E"]{fill:rgba(74,144,217,.24);}    /* 동아프리카 */
 #map-container path[data-grp="AF-S"]{fill:rgba(157,120,212,.24);}   /* 남아프리카 */
 
+/* ── 일본 8개 지방(地方) ── */
+#map-container path[data-grp="HOKKAIDO"]{fill:rgba(74,144,217,.30);}  /* 홋카이도 */
+#map-container path[data-grp="TOHOKU"]  {fill:rgba(87,168,107,.28);}  /* 도호쿠 */
+#map-container path[data-grp="KANTO"]   {fill:rgba(157,120,212,.28);} /* 간토 */
+#map-container path[data-grp="CHUBU"]   {fill:rgba(212,160,48,.28);}  /* 주부 */
+#map-container path[data-grp="KINKI"]   {fill:rgba(217,110,58,.28);}  /* 긴키(간사이) */
+#map-container path[data-grp="CHUGOKU"] {fill:rgba(62,189,189,.28);}  /* 주고쿠 */
+#map-container path[data-grp="SHIKOKU"] {fill:rgba(224,96,144,.28);}  /* 시코쿠 */
+#map-container path[data-grp="KYUSHU"]  {fill:rgba(176,120,64,.30);}  /* 규슈·오키나와 */
+
 /* ── 월드컵 지도 ── */
 /* 배경 국가 (비출전국) */
 #map-container #bg-countries path{
