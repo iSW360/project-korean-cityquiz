@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "id": "moon",
+    "mapSvg": "/maps/world/moon.svg",
+    "defaultLang": "ko",
+    "totalRegions": 20
+  },
+  "regions": [
+    {
+      "id": "IMBRIUM",
+      "svgPathId": "rIMBRIUM",
+      "names": {
+        "ko": "비의 바다",
+        "en": "Mare Imbrium"
+      },
+      "hints": {
+        "ko": "달에서 가장 큰 바다(지름 약 1,145km). 약 39억 년 전 거대 충돌로 형성된 분지",
+        "en": "Moon's largest mare (~1,145km across); formed by a giant impact ~3.9 billion years ago"
+      }
+    },
+    {
+      "id": "SERENITATIS",
+      "svgPathId": "rSERENITATIS",
+      "names": {
+        "ko": "청명의 바다",
+        "en": "Mare Serenitatis"
+      },
+      "hints": {
+        "ko": "아폴로 17호가 착륙한 곳 인근. 현무암 용암으로 채워진 원형 분지",
+        "en": "Near the Apollo 17 landing site; a circular basin filled with basalt lava"
+      }
+    },
+    {
+      "id": "TRANQUILLITATIS",
+      "svgPathId": "rTRANQUILLITATIS",
+      "names": {
+        "ko": "고요의 바다",
+        "en": "Mare Tranquillitatis"
+      },
+      "hints": {
+        "ko": "1969년 아폴로 11호가 인류 최초로 착륙한 곳",
+        "en": "Site of humanity's first Moon landing, Apollo 11 (1969)"
+      }
+    },
+    {
+      "id": "CRISIUM",
+      "svgPathId": "rCRISIUM",
+      "names": {
+        "ko": "위난의 바다",
+        "en": "Mare Crisium"
+      },
+      "hints": {
+        "ko": "달 동쪽 끝의 독립된 원형 바다. 지구에서 맨눈으로도 뚜렷이 보임",
+        "en": "An isolated round mare near the Moon's eastern limb; clearly visible to the naked eye from Earth"
+      }
+    },
+    {
+      "id": "FECUNDITATIS",
+      "svgPathId": "rFECUNDITATIS",
+      "names": {
+        "ko": "풍요의 바다",
+        "en": "Mare Fecunditatis"
+      },
+      "hints": {
+        "ko": "소련 루나 16호가 최초로 무인 샘플 채취에 성공한 곳",
+        "en": "Where the Soviet Luna 16 mission achieved the first robotic sample return"
+      }
+    },
+    {
+      "id": "NECTARIS",
+      "svgPathId": "rNECTARIS",
+      "names": {
+        "ko": "감로의 바다",
+        "en": "Mare Nectaris"
+      },
+      "hints": {
+        "ko": "아폴로 16호 착륙지 인근의 비교적 작은 원형 바다",
+        "en": "A relatively small circular mare near the Apollo 16 landing site"
+      }
+    },
+    {
+      "id": "FRIGORIS",
+      "svgPathId": "rFRIGORIS",
+      "names": {
+        "ko": "냉담의 바다",
+        "en": "Mare Frigoris"
+      },
+      "hints": {
+        "ko": "달 북쪽을 가로지르는 좁고 긴 띠 모양의 바다",
+        "en": "A long, narrow mare stretching across the Moon's northern region"
+      }
+    },
+    {
+      "id": "PROCELLARUM",
+      "svgPathId": "rPROCELLARUM",
+      "names": {
+        "ko": "폭풍의 대양",
+        "en": "Oceanus Procellarum"
+      },
+      "hints": {
+        "ko": "달에서 가장 넓은 용암 평원(대양). 아폴로 12호가 착륙한 곳",
+        "en": "The Moon's largest lava plain (ocean); site of the Apollo 12 landing"
+      }
+    },
+    {
+      "id": "HUMORUM",
+      "svgPathId": "rHUMORUM",
+      "names": {
+        "ko": "습기의 바다",
+        "en": "Mare Humorum"
+      },
+      "hints": {
+        "ko": "가상디 분화구와 인접한 원형 바다",
+        "en": "A circular mare adjacent to the Gassendi crater"
+      }
+    },
+    {
+      "id": "NUBIUM",
+      "svgPathId": "rNUBIUM",
+      "names": {
+        "ko": "구름의 바다",
+        "en": "Mare Nubium"
+      },
+      "hints": {
+        "ko": "서베이어 5호가 착륙했던 비교적 평탄한 용암 바다",
+        "en": "A relatively flat lava mare where Surveyor 5 landed"
+      }
+    },
+    {
+      "id": "VAPORUM",
+      "svgPathId": "rVAPORUM",
+      "names": {
+        "ko": "증기의 바다",
+        "en": "Mare Vaporum"
+      },
+      "hints": {
+        "ko": "달 중앙부에 위치한 작은 바다. 아폴로 착륙지들 사이에 위치",
+        "en": "A small mare near the Moon's center, situated among several Apollo landing sites"
+      }
+    },
+    {
+      "id": "IRIDUM",
+      "svgPathId": "rIRIDUM",
+      "names": {
+        "ko": "무지개의 만",
+        "en": "Sinus Iridum"
+      },
+      "hints": {
+        "ko": "비의 바다 북서쪽 가장자리에 있는 반원형 만. '무지개의 만'이라는 뜻",
+        "en": "A semicircular bay on Mare Imbrium's northwest rim, meaning 'Bay of Rainbows'"
+      }
+    },
+    {
+      "id": "TYCHO",
+      "svgPathId": "rTYCHO",
+      "names": {
+        "ko": "티코",
+        "en": "Tycho"
+      },
+      "hints": {
+        "ko": "약 1억 년 전 형성된 젊은 충돌구. 사방으로 뻗은 광조(光條)가 보름달에 뚜렷함",
+        "en": "A young ~100-million-year-old impact crater; its bright ray system is striking at full moon"
+      }
+    },
+    {
+      "id": "COPERNICUS",
+      "svgPathId": "rCOPERNICUS",
+      "names": {
+        "ko": "코페르니쿠스",
+        "en": "Copernicus"
+      },
+      "hints": {
+        "ko": "지름 93km의 뚜렷한 광조 분화구. '달의 제왕'이라는 별명",
+        "en": "A prominent 93km-wide ray crater nicknamed 'the Monarch of the Moon'"
+      }
+    },
+    {
+      "id": "KEPLER",
+      "svgPathId": "rKEPLER",
+      "names": {
+        "ko": "케플러",
+        "en": "Kepler"
+      },
+      "hints": {
+        "ko": "폭풍의 대양에 위치한 밝은 광조 분화구",
+        "en": "A bright ray crater located within Oceanus Procellarum"
+      }
+    },
+    {
+      "id": "ARISTARCHUS",
+      "svgPathId": "rARISTARCHUS",
+      "names": {
+        "ko": "아리스타르코스",
+        "en": "Aristarchus"
+      },
+      "hints": {
+        "ko": "달 표면에서 가장 밝은 분화구. 지구에서도 쉽게 식별 가능",
+        "en": "The brightest crater on the Moon's surface; easily identified from Earth"
+      }
+    },
+    {
+      "id": "PLATO",
+      "svgPathId": "rPLATO",
+      "names": {
+        "ko": "플라토",
+        "en": "Plato"
+      },
+      "hints": {
+        "ko": "비의 바다 북쪽 가장자리의 어두운 용암으로 채워진 분화구",
+        "en": "A dark lava-filled crater on the northern edge of Mare Imbrium"
+      }
+    },
+    {
+      "id": "CLAVIUS",
+      "svgPathId": "rCLAVIUS",
+      "names": {
+        "ko": "클라비우스",
+        "en": "Clavius"
+      },
+      "hints": {
+        "ko": "달에서 가장 큰 분화구 중 하나(지름 231km). 남쪽 고지대에 위치",
+        "en": "One of the Moon's largest craters (231km diameter), located in the southern highlands"
+      }
+    },
+    {
+      "id": "GRIMALDI",
+      "svgPathId": "rGRIMALDI",
+      "names": {
+        "ko": "그리말디",
+        "en": "Grimaldi"
+      },
+      "hints": {
+        "ko": "달의 서쪽 가장자리 부근의 매우 어두운 용암 바닥 분화구",
+        "en": "A very dark lava-floored crater near the Moon's western limb"
+      }
+    },
+    {
+      "id": "GASSENDI",
+      "svgPathId": "rGASSENDI",
+      "names": {
+        "ko": "가상디",
+        "en": "Gassendi"
+      },
+      "hints": {
+        "ko": "습기의 바다 북쪽 가장자리, 균열이 많은 분화구 바닥으로 유명",
+        "en": "On the northern rim of Mare Humorum, famous for its heavily fractured floor"
+      }
+    }
+  ]
+}

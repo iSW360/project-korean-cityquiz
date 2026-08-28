@@ -324,6 +324,17 @@ input{font-family:inherit;}
 #map-container path[data-grp="AF-E"]{fill:rgba(74,144,217,.24);}    /* 동아프리카 */
 #map-container path[data-grp="AF-S"]{fill:rgba(157,120,212,.24);}   /* 남아프리카 */
 
+/* ── 달 지도(실사 배경 + 위치 핀 마커) ── */
+/* 클릭 판정 영역: 평소 완전 투명, hover 시 살짝, 정답/오답은 .active/.correct/.wrong이 덮어씀 */
+#map-container path[data-grp="MARE"]:not(.active):not(.correct):not(.wrong):not(.solved),
+#map-container path[data-grp="CRATER"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:transparent;stroke:transparent;stroke-width:1;transition:fill .15s,stroke .15s;}
+#map-container path[data-grp="MARE"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(74,144,217,.18);stroke:rgba(74,144,217,.45);}
+#map-container path[data-grp="CRATER"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(232,184,75,.18);stroke:rgba(232,184,75,.5);}
+/* 항상 보이는 위치 핀(점) — 실제 위치를 은은하게 안내, 클릭엔 관여하지 않음(pointer-events:none) */
+#map-container .moon-pin{stroke:rgba(12,18,32,.6);stroke-width:1;}
+#map-container .moon-pin.MARE_DOT{fill:rgba(120,180,255,.85);}
+#map-container .moon-pin.CRATER_DOT{fill:rgba(255,208,110,.9);}
+
 /* ── 일본 8개 지방(地方) ── */
 #map-container path[data-grp="HOKKAIDO"]{fill:rgba(74,144,217,.30);}  /* 홋카이도 */
 #map-container path[data-grp="TOHOKU"]  {fill:rgba(87,168,107,.28);}  /* 도호쿠 */
