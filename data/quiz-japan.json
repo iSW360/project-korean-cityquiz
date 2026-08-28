@@ -1,0 +1,574 @@
+{
+  "meta": {
+    "id": "japan",
+    "mapSvg": "/maps/world/japan.svg",
+    "defaultLang": "ko",
+    "totalRegions": 47
+  },
+  "regions": [
+    {
+      "id": "HOK",
+      "svgPathId": "rHOK",
+      "names": {
+        "ko": "홋카이도",
+        "en": "Hokkaido"
+      },
+      "hints": {
+        "ko": "일본 최북단 섬 전체가 하나의 도(道). 삿포로 눈축제. 라멘·해산물·라벤더밭",
+        "en": "Japan's northernmost island; Sapporo Snow Festival; famous ramen, seafood, and lavender fields"
+      }
+    },
+    {
+      "id": "AOM",
+      "svgPathId": "rAOM",
+      "names": {
+        "ko": "아오모리현",
+        "en": "Aomori"
+      },
+      "hints": {
+        "ko": "혼슈 최북단. 네부타 마츠리(등불축제). 사과 생산 일본 1위",
+        "en": "Honshu's northernmost prefecture; Nebuta lantern festival; Japan's top apple producer"
+      }
+    },
+    {
+      "id": "IWT",
+      "svgPathId": "rIWT",
+      "names": {
+        "ko": "이와테현",
+        "en": "Iwate"
+      },
+      "hints": {
+        "ko": "혼슈에서 가장 넓은 현. 히라이즈미(세계유산). 잔소바 국수",
+        "en": "Honshu's largest prefecture by area; Hiraizumi World Heritage site; jajamen and wanko-soba noodles"
+      }
+    },
+    {
+      "id": "MYG",
+      "svgPathId": "rMYG",
+      "names": {
+        "ko": "미야기현",
+        "en": "Miyagi"
+      },
+      "hints": {
+        "ko": "도호쿠 지방 중심 도시 센다이. 마츠시마(일본 3경). 2011년 동일본대지진 피해지",
+        "en": "Home to Sendai, Tohoku's largest city; Matsushima, one of Japan's Three Views; hit hard by the 2011 earthquake/tsunami"
+      }
+    },
+    {
+      "id": "AKT",
+      "svgPathId": "rAKT",
+      "names": {
+        "ko": "아키타현",
+        "en": "Akita"
+      },
+      "hints": {
+        "ko": "나마하게 축제(도깨비 분장). 아키타견의 고향. 쌀·사케 산지",
+        "en": "Namahage demon festival; birthplace of the Akita dog breed; rice and sake region"
+      }
+    },
+    {
+      "id": "YMG",
+      "svgPathId": "rYMG",
+      "names": {
+        "ko": "야마가타현",
+        "en": "Yamagata"
+      },
+      "hints": {
+        "ko": "체리(사쿠란보) 생산 일본 1위. 자오 온천 스키장. 장기말(쇼기고마) 생산지",
+        "en": "Japan's top cherry producer; Zao hot spring ski resort; center of shogi piece production"
+      }
+    },
+    {
+      "id": "FKS",
+      "svgPathId": "rFKS",
+      "names": {
+        "ko": "후쿠시마현",
+        "en": "Fukushima"
+      },
+      "hints": {
+        "ko": "2011년 원전사고 지역. 아이즈와카마츠 사무라이 역사. 복숭아 생산 유명",
+        "en": "Site of the 2011 nuclear accident; Aizuwakamatsu samurai history; famous peach production"
+      }
+    },
+    {
+      "id": "IBR",
+      "svgPathId": "rIBR",
+      "names": {
+        "ko": "이바라키현",
+        "en": "Ibaraki"
+      },
+      "hints": {
+        "ko": "낫토의 고향(미토 낫토). 국화 쓰쿠바산. 우주항공연구개발기구(JAXA) 쓰쿠바 우주센터",
+        "en": "Home of Mito natto; Mt. Tsukuba; JAXA's Tsukuba Space Center"
+      }
+    },
+    {
+      "id": "TCG",
+      "svgPathId": "rTCG",
+      "names": {
+        "ko": "도치기현",
+        "en": "Tochigi"
+      },
+      "hints": {
+        "ko": "닛코 세계유산(도쇼구 신사). 딸기 생산 일본 1위",
+        "en": "Nikko World Heritage site (Toshogu Shrine); Japan's top strawberry producer"
+      }
+    },
+    {
+      "id": "GNM",
+      "svgPathId": "rGNM",
+      "names": {
+        "ko": "군마현",
+        "en": "Gunma"
+      },
+      "hints": {
+        "ko": "구사츠 온천. 도미오카 제사공장(세계유산, 근대 제사업). 다루마 인형 생산지",
+        "en": "Kusatsu hot springs; Tomioka Silk Mill World Heritage site; center of daruma doll production"
+      }
+    },
+    {
+      "id": "SIT",
+      "svgPathId": "rSIT",
+      "names": {
+        "ko": "사이타마현",
+        "en": "Saitama"
+      },
+      "hints": {
+        "ko": "도쿄 위성도시. 가와고에 '작은 에도' 거리. J리그 우라와 레즈 연고지",
+        "en": "Tokyo commuter suburb prefecture; Kawagoe's 'Little Edo' streets; home of J-League club Urawa Reds"
+      }
+    },
+    {
+      "id": "CHB",
+      "svgPathId": "rCHB",
+      "names": {
+        "ko": "지바현",
+        "en": "Chiba"
+      },
+      "hints": {
+        "ko": "도쿄 디즈니랜드·나리타 국제공항 소재지. 낙화생(땅콩) 생산 유명",
+        "en": "Home to Tokyo Disneyland and Narita International Airport; famous peanut production"
+      }
+    },
+    {
+      "id": "TKY",
+      "svgPathId": "rTKY",
+      "names": {
+        "ko": "도쿄도",
+        "en": "Tokyo"
+      },
+      "hints": {
+        "ko": "일본의 수도. 인구 최다 도시권. 시부야·아사쿠사·아키하바라",
+        "en": "Japan's capital; the world's most populous metropolitan area; Shibuya, Asakusa, Akihabara"
+      }
+    },
+    {
+      "id": "KNG",
+      "svgPathId": "rKNG",
+      "names": {
+        "ko": "가나가와현",
+        "en": "Kanagawa"
+      },
+      "hints": {
+        "ko": "요코하마·가마쿠라 소재. 대불(가마쿠라 다이부츠). 하코네 온천 관광지",
+        "en": "Home to Yokohama and Kamakura; the Great Buddha of Kamakura; Hakone hot spring resort"
+      }
+    },
+    {
+      "id": "NGT",
+      "svgPathId": "rNGT",
+      "names": {
+        "ko": "니가타현",
+        "en": "Niigata"
+      },
+      "hints": {
+        "ko": "쌀·사케 명산지(고시히카리). 폭설 지대. 사도가시마 섬(금광 유적)",
+        "en": "Famous rice (Koshihikari) and sake region; heavy snowfall area; Sado Island gold mine heritage site"
+      }
+    },
+    {
+      "id": "TYM",
+      "svgPathId": "rTYM",
+      "names": {
+        "ko": "도야마현",
+        "en": "Toyama"
+      },
+      "hints": {
+        "ko": "구로베 협곡·다테야마 쿠로베 알펜루트. 반다이지마 반딧불오징어",
+        "en": "Kurobe Gorge and the Tateyama Kurobe Alpine Route; famous firefly squid of Toyama Bay"
+      }
+    },
+    {
+      "id": "ISK",
+      "svgPathId": "rISK",
+      "names": {
+        "ko": "이시카와현",
+        "en": "Ishikawa"
+      },
+      "hints": {
+        "ko": "가나자와 겐로쿠엔(일본 3대 정원). 와지마 칠기 공예",
+        "en": "Kanazawa's Kenrokuen, one of Japan's Three Great Gardens; Wajima lacquerware craft"
+      }
+    },
+    {
+      "id": "FKI",
+      "svgPathId": "rFKI",
+      "names": {
+        "ko": "후쿠이현",
+        "en": "Fukui"
+      },
+      "hints": {
+        "ko": "공룡 화석 발굴지(가쓰야마). 안경테 생산 일본 1위(사바에시)",
+        "en": "Major dinosaur fossil site in Katsuyama; Japan's top eyeglass frame producer (Sabae)"
+      }
+    },
+    {
+      "id": "YNS",
+      "svgPathId": "rYNS",
+      "names": {
+        "ko": "야마나시현",
+        "en": "Yamanashi"
+      },
+      "hints": {
+        "ko": "후지산 북쪽 기슭. 포도·복숭아 생산 유명. 야마나카 호수",
+        "en": "Northern foot of Mt. Fuji; famous grape and peach production; Lake Yamanaka"
+      }
+    },
+    {
+      "id": "NGN",
+      "svgPathId": "rNGN",
+      "names": {
+        "ko": "나가노현",
+        "en": "Nagano"
+      },
+      "hints": {
+        "ko": "1998년 나가노 동계올림픽 개최지. 일본 알프스. 소바 명산지",
+        "en": "Host of the 1998 Nagano Winter Olympics; Japanese Alps; famous soba noodle region"
+      }
+    },
+    {
+      "id": "GIF",
+      "svgPathId": "rGIF",
+      "names": {
+        "ko": "기후현",
+        "en": "Gifu"
+      },
+      "hints": {
+        "ko": "시라카와고 갓쇼즈쿠리 마을(세계유산). 우카이 가마우지 낚시. 세키시 칼 제조",
+        "en": "Shirakawa-go gassho-style village, a World Heritage site; traditional cormorant fishing; Seki knife-making"
+      }
+    },
+    {
+      "id": "SZO",
+      "svgPathId": "rSZO",
+      "names": {
+        "ko": "시즈오카현",
+        "en": "Shizuoka"
+      },
+      "hints": {
+        "ko": "후지산 남쪽 기슭. 녹차 생산 일본 1위. 하마마츠 오토바이 산업(야마하·혼다)",
+        "en": "Southern foot of Mt. Fuji; Japan's top green tea producer; Hamamatsu motorcycle industry (Yamaha, Honda)"
+      }
+    },
+    {
+      "id": "AIC",
+      "svgPathId": "rAIC",
+      "names": {
+        "ko": "아이치현",
+        "en": "Aichi"
+      },
+      "hints": {
+        "ko": "나고야 소재. 도요타 자동차 본사. 일본 3대 도시권 중 하나",
+        "en": "Home to Nagoya; Toyota Motor headquarters; one of Japan's three major metropolitan areas"
+      }
+    },
+    {
+      "id": "MIE",
+      "svgPathId": "rMIE",
+      "names": {
+        "ko": "미에현",
+        "en": "Mie"
+      },
+      "hints": {
+        "ko": "이세신궁(일본 신도 총본산). 진주 양식의 발상지(미키모토)",
+        "en": "Ise Grand Shrine, Shinto's most sacred site; birthplace of cultured pearls (Mikimoto)"
+      }
+    },
+    {
+      "id": "SIG",
+      "svgPathId": "rSIG",
+      "names": {
+        "ko": "시가현",
+        "en": "Shiga"
+      },
+      "hints": {
+        "ko": "비와호(일본 최대 호수) 소재. 히코네 성",
+        "en": "Home to Lake Biwa, Japan's largest lake; Hikone Castle"
+      }
+    },
+    {
+      "id": "KYT",
+      "svgPathId": "rKYT",
+      "names": {
+        "ko": "교토부",
+        "en": "Kyoto"
+      },
+      "hints": {
+        "ko": "일본의 옛 수도(헤이안쿄). 기요미즈데라·후시미이나리·금각사",
+        "en": "Japan's ancient capital (Heian-kyo); Kiyomizu-dera, Fushimi Inari, Kinkaku-ji temples"
+      }
+    },
+    {
+      "id": "OSK",
+      "svgPathId": "rOSK",
+      "names": {
+        "ko": "오사카부",
+        "en": "Osaka"
+      },
+      "hints": {
+        "ko": "일본 2대 도시. 오사카성. 다코야키·오코노미야키의 본고장",
+        "en": "Japan's second-largest metropolis; Osaka Castle; birthplace of takoyaki and okonomiyaki"
+      }
+    },
+    {
+      "id": "HYG",
+      "svgPathId": "rHYG",
+      "names": {
+        "ko": "효고현",
+        "en": "Hyogo"
+      },
+      "hints": {
+        "ko": "고베 소재. 고베규(와규) 유명. 히메지성(세계유산)",
+        "en": "Home to Kobe; famous Kobe beef; Himeji Castle World Heritage site"
+      }
+    },
+    {
+      "id": "NAR",
+      "svgPathId": "rNAR",
+      "names": {
+        "ko": "나라현",
+        "en": "Nara"
+      },
+      "hints": {
+        "ko": "일본 최초의 수도(헤이조쿄). 도다이지 대불·사슴공원",
+        "en": "Japan's first capital (Heijo-kyo); Todai-ji Great Buddha and the deer park"
+      }
+    },
+    {
+      "id": "WKY",
+      "svgPathId": "rWKY",
+      "names": {
+        "ko": "와카야마현",
+        "en": "Wakayama"
+      },
+      "hints": {
+        "ko": "고야산(불교 성지, 세계유산). 판다 서식 아드벤처월드",
+        "en": "Mt. Koya Buddhist sanctuary, World Heritage site; Adventure World famous for its pandas"
+      }
+    },
+    {
+      "id": "TTR",
+      "svgPathId": "rTTR",
+      "names": {
+        "ko": "돗토리현",
+        "en": "Tottori"
+      },
+      "hints": {
+        "ko": "일본 인구 최소 현. 돗토리 사구(모래언덕)",
+        "en": "Japan's least populous prefecture; the famous Tottori Sand Dunes"
+      }
+    },
+    {
+      "id": "SMN",
+      "svgPathId": "rSMN",
+      "names": {
+        "ko": "시마네현",
+        "en": "Shimane"
+      },
+      "hints": {
+        "ko": "이즈모타이샤(일본 최고 신사 중 하나). 이와미 은광(세계유산)",
+        "en": "Izumo-taisha, one of Japan's most important shrines; Iwami Ginzan Silver Mine World Heritage site"
+      }
+    },
+    {
+      "id": "OKY",
+      "svgPathId": "rOKY",
+      "names": {
+        "ko": "오카야마현",
+        "en": "Okayama"
+      },
+      "hints": {
+        "ko": "모모타로(복숭아 동자) 전설의 고장. 구라시키 옛 거리",
+        "en": "Legendary home of Momotaro the Peach Boy; Kurashiki's historic canal district"
+      }
+    },
+    {
+      "id": "HRS",
+      "svgPathId": "rHRS",
+      "names": {
+        "ko": "히로시마현",
+        "en": "Hiroshima"
+      },
+      "hints": {
+        "ko": "1945년 원자폭탄 투하 도시. 원폭돔·미야지마 이쓰쿠시마신사(세계유산)",
+        "en": "City hit by the 1945 atomic bomb; Atomic Bomb Dome and Itsukushima Shrine on Miyajima, World Heritage sites"
+      }
+    },
+    {
+      "id": "YGC",
+      "svgPathId": "rYGC",
+      "names": {
+        "ko": "야마구치현",
+        "en": "Yamaguchi"
+      },
+      "hints": {
+        "ko": "혼슈 최서단. 메이지유신 주역들의 고향(조슈번). 후구(복어) 요리 명산지",
+        "en": "Westernmost tip of Honshu; birthplace of Meiji Restoration leaders (Choshu domain); famous fugu (pufferfish) cuisine"
+      }
+    },
+    {
+      "id": "TKS",
+      "svgPathId": "rTKS",
+      "names": {
+        "ko": "도쿠시마현",
+        "en": "Tokushima"
+      },
+      "hints": {
+        "ko": "아와오도리 춤 축제. 나루토 해협의 소용돌이",
+        "en": "Awa Odori dance festival; the famous Naruto whirlpools"
+      }
+    },
+    {
+      "id": "KGW",
+      "svgPathId": "rKGW",
+      "names": {
+        "ko": "가가와현",
+        "en": "Kagawa"
+      },
+      "hints": {
+        "ko": "일본에서 가장 작은 현. 사누키 우동의 본고장",
+        "en": "Japan's smallest prefecture by area; home of Sanuki udon noodles"
+      }
+    },
+    {
+      "id": "EHM",
+      "svgPathId": "rEHM",
+      "names": {
+        "ko": "에히메현",
+        "en": "Ehime"
+      },
+      "hints": {
+        "ko": "도고온천(일본에서 가장 오래된 온천 중 하나). 감귤 생산 유명",
+        "en": "Dogo Onsen, one of Japan's oldest hot springs; famous citrus (mikan) production"
+      }
+    },
+    {
+      "id": "KCH",
+      "svgPathId": "rKCH",
+      "names": {
+        "ko": "고치현",
+        "en": "Kochi"
+      },
+      "hints": {
+        "ko": "가다랑어(가츠오) 요리 유명. 사카모토 료마(메이지유신 지사)의 고향",
+        "en": "Famous bonito (katsuo) cuisine; birthplace of Meiji Restoration hero Sakamoto Ryoma"
+      }
+    },
+    {
+      "id": "FKO",
+      "svgPathId": "rFKO",
+      "names": {
+        "ko": "후쿠오카현",
+        "en": "Fukuoka"
+      },
+      "hints": {
+        "ko": "규슈 최대 도시(후쿠오카시·기타큐슈). 하카타 라멘·모츠나베",
+        "en": "Kyushu's largest city area (Fukuoka, Kitakyushu); famous Hakata ramen and motsunabe hot pot"
+      }
+    },
+    {
+      "id": "SAG",
+      "svgPathId": "rSAG",
+      "names": {
+        "ko": "사가현",
+        "en": "Saga"
+      },
+      "hints": {
+        "ko": "아리타 도자기(일본 최초의 자기) 산지. 요시노가리 유적",
+        "en": "Arita porcelain, Japan's first porcelain ware; Yoshinogari archaeological site"
+      }
+    },
+    {
+      "id": "NGS",
+      "svgPathId": "rNGS",
+      "names": {
+        "ko": "나가사키현",
+        "en": "Nagasaki"
+      },
+      "hints": {
+        "ko": "1945년 원자폭탄 투하 도시. 에도시대 유일한 서양 무역창구(데지마)",
+        "en": "City hit by the 1945 atomic bomb; Dejima, Japan's sole window to the West during the Edo period"
+      }
+    },
+    {
+      "id": "KMM",
+      "svgPathId": "rKMM",
+      "names": {
+        "ko": "구마모토현",
+        "en": "Kumamoto"
+      },
+      "hints": {
+        "ko": "구마모토성. 아소산(세계 최대급 칼데라) 활화산",
+        "en": "Kumamoto Castle; Mt. Aso, one of the world's largest calderas and an active volcano"
+      }
+    },
+    {
+      "id": "OIT",
+      "svgPathId": "rOIT",
+      "names": {
+        "ko": "오이타현",
+        "en": "Oita"
+      },
+      "hints": {
+        "ko": "벳푸·유후인 온천(일본 최대 온천지). 온천 용출량 일본 1위",
+        "en": "Beppu and Yufuin hot spring resorts; Japan's largest volume of hot spring water"
+      }
+    },
+    {
+      "id": "MYZ",
+      "svgPathId": "rMYZ",
+      "names": {
+        "ko": "미야자키현",
+        "en": "Miyazaki"
+      },
+      "hints": {
+        "ko": "일본 건국신화의 무대(다카치호). 프로야구·축구 스프링캠프 명소",
+        "en": "Setting of Japan's creation myths (Takachiho Gorge); popular spring training site for pro baseball and soccer"
+      }
+    },
+    {
+      "id": "KGS",
+      "svgPathId": "rKGS",
+      "names": {
+        "ko": "가고시마현",
+        "en": "Kagoshima"
+      },
+      "hints": {
+        "ko": "사쿠라지마 활화산. 사쓰마번(메이지유신 주역). 흑돼지 요리",
+        "en": "Active volcano Sakurajima; Satsuma domain, key player in the Meiji Restoration; famous black pork cuisine"
+      }
+    },
+    {
+      "id": "OKN",
+      "svgPathId": "rOKN",
+      "names": {
+        "ko": "오키나와현",
+        "en": "Okinawa"
+      },
+      "hints": {
+        "ko": "옛 류큐왕국. 일본 유일 아열대 기후. 슈리성(세계유산)·산호초 다이빙",
+        "en": "Former Ryukyu Kingdom; Japan's only subtropical prefecture; Shuri Castle World Heritage site and coral reef diving"
+      }
+    }
+  ]
+}

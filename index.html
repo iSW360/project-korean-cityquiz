@@ -97,7 +97,7 @@
     {
       "@type": "Question",
       "name": "어떤 지도 퀴즈가 있나요?",
-      "acceptedAnswer": {"@type":"Answer","text":"전국 161개 시군구, 서울 25개 자치구, 미국 50개 주, 유럽 47개국, 아프리카 54개국, 2026 FIFA 월드컵 48개국 퀴즈가 있습니다."}
+      "acceptedAnswer": {"@type":"Answer","text":"전국 161개 시군구, 서울 25개 자치구, 미국 50개 주, 유럽 47개국, 아프리카 54개국, 2026 FIFA 월드컵 48개국, 일본 47개 도도부현 퀴즈가 있습니다."}
     },
     {
       "@type": "Question",
@@ -202,9 +202,16 @@
     </div>
     <div class="map-card" onclick="goQuiz('worldcup2026')">
       <div class="map-card__icon">🏆</div>
-      <div class="map-card__name" id="mn-wc">2026 월드컵</div>
+      <div class="map-card__name" id="mn-wc">2026 월드컵 출전국</div>
       <div class="map-card__meta" id="mc-wc">48개국 · 3레벨</div>
-      <span class="map-card__badge badge-gold" id="mb-wc">🔥 HOT</span>
+    </div>
+    <div class="map-card" onclick="goQuiz('japan')">
+      <div class="map-card__icon" style="padding:3px;">
+        <img src="/img/icon-japan.svg" alt="일본 지도" style="width:100%;height:100%;object-fit:contain;">
+      </div>
+      <div class="map-card__name" id="mn-jp">일본 도도부현</div>
+      <div class="map-card__meta" id="mc-jp">47개 지역 · 3레벨</div>
+      <span class="map-card__badge badge-new" id="mb-jp">NEW</span>
     </div>
   </div>
 </div>
@@ -304,9 +311,10 @@ function goQuiz(mapId){
     document.getElementById('mc-eu').textContent='47 countries · 3 levels';
     document.getElementById('mn-af').textContent='African Countries';
     document.getElementById('mc-af').textContent='54 countries · 3 levels';
-    document.getElementById('mn-wc').textContent='2026 World Cup';
+    document.getElementById('mn-wc').textContent='2026 World Cup Nations';
     document.getElementById('mc-wc').textContent='48 nations · 3 levels';
-    document.getElementById('mb-wc').textContent='🔥 HOT';
+    document.getElementById('mn-jp').textContent='Japan Prefectures';
+    document.getElementById('mc-jp').textContent='47 regions · 3 levels';
     document.querySelectorAll('.badge-soon').forEach(e=>e.textContent='Soon');
   }
 })();
