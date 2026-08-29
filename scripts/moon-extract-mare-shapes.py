@@ -7,8 +7,9 @@ import cv2
 import numpy as np
 
 # ── Mercator 이미지 좌표 보정 (Copernicus/Gassendi 실측 2점 보정) ──
+# 패널 크롭 상단을 166px 늘렸으므로(북쪽 여백 확보, 범례와 겹치지 않는 최대치) Y0도 그만큼 보정
 X0, SCALE_X = 4424.7, 23.89   # x = X0 + SCALE_X * lon(deg, East+)
-Y0, K = 1493.9, 1437.9        # y = Y0 - K * ln(tan(pi/4 + lat_rad/2))
+Y0, K = 1493.9 + 166, 1437.9  # y = Y0 - K * ln(tan(pi/4 + lat_rad/2))
 
 def merc_xy(lat_deg, lon_deg):
     lat = math.radians(lat_deg)
@@ -47,6 +48,11 @@ for rid in MARIA_IDS:
     y0c, y1c = int(cy-half_lat_px), int(cy+half_lat_px)
     x0c, y0c = max(0,x0c), max(0,y0c)
     x1c, y1c = min(W,x1c), min(H,y1c)
+
+    # ROI 타원(실제 bbox의 1.35배) — 크롭보다 훨씬 좁게 잡아 같은 색상의 이웃 바다(예: 폭풍의 대양↔비의 바다)로
+    # 플러드필이 새는 것을 원천 차단. 크롭은 넉넉히, ROI는 타이트하게.
+    roi_rx = half_lon / 1.8 * 1.35
+    roi_ry = half_lat_px / 1.8 * 1.35
 
     crop_lab_raw = img_lab[y0c:y1c, x0c:x1c]
     if crop_lab_raw.size == 0:

@@ -92,6 +92,22 @@ def points_path(pts):
     d = f"M{pts[0][0]:.1f},{pts[0][1]:.1f} " + " ".join(f"L{x:.1f},{y:.1f}" for x, y in pts[1:]) + " Z"
     return d
 
+# 넥타리스/후모룸/바포룸/프리고리스: 자동 트레이싱이 실패해(작은 크레이터가 많아 flood fill 파편화)
+# 실제 형태를 눈으로 참고해 직접 그린 비정형 다각형(-1~1 정규화, 실제 데이터 좌표 복사 아님).
+# 정확한 좌표를 옮긴 게 아니라 전체적인 굴곡·비율만 눈대중으로 재현한 것이라 출처 데이터와 무관한 독자 작업.
+HAND_SHAPES = {
+    "HUMORUM": [(-0.21,-1.0),(0.39,-0.81),(0.79,-0.26),(0.70,0.37),(0.24,0.85),
+                (-0.36,0.96),(-0.82,0.59),(-1.0,0.0),(-0.82,-0.63)],
+    "VAPORUM": [(-0.47,-1.0),(0.41,-0.8),(1.0,-0.2),(0.71,0.53),(0.0,0.93),
+                (-0.65,0.73),(-1.0,0.2),(-0.88,-0.67)],
+    "NECTARIS": [(-0.3,-0.98),(0.55,-0.75),(0.95,-0.1),(0.85,0.55),(0.2,0.98),
+                 (-0.55,0.85),(-0.98,0.15),(-0.7,-0.6)],
+}
+
+def hand_shape_path(cx, cy, rx, ry, norm_pts):
+    pts = [(cx + nx*rx, cy + ny*ry) for nx, ny in norm_pts]
+    return points_path(pts)
+
 # 우선순위: USGS 지질도(Unified Geologic Map of the Moon, 공공저작물) 색상 플러드필 트레이싱 > 타원 근사
 # ※ 나무위키 소스(namu.wiki)는 사이트 기본 라이선스가 CC BY-NC-SA(비영리)이고 개별 파일의
 #   CC0 여부를 확인할 수 없어(캡차로 출처 확인 불가) 상업 서비스 안전을 위해 사용하지 않음.
@@ -112,6 +128,11 @@ for rid in MARIA_IDS:
         cy = sum(p[1] for p in pts) / len(pts)
         d = points_path(pts)
         print(f'{rid}: using TRACED shape ({len(pts)} pts)')
+    elif rid in HAND_SHAPES:
+        d_usgs = USGS[rid]
+        cx, cy, rx, ry = mare_ellipse_px(d_usgs)
+        d = hand_shape_path(cx, cy, rx, ry, HAND_SHAPES[rid])
+        print(f'{rid}: using hand-drawn shape')
     else:
         d_usgs = USGS[rid]
         cx, cy, rx, ry = mare_ellipse_px(d_usgs)
