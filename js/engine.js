@@ -412,15 +412,18 @@ const QE = (() => {
     });
   }
 
+  let _markMapTimer=null;
   function _clearMap(){
+    if(_markMapTimer){clearTimeout(_markMapTimer);_markMapTimer=null;}
     document.querySelectorAll('#map-container [data-id]').forEach(e=>e.classList.remove('active','correct','wrong','solved'));
   }
 
   function _markMap(id,ok){
+    if(_markMapTimer){clearTimeout(_markMapTimer);_markMapTimer=null;}
     const el=document.getElementById(id);
     el?.classList.remove('active');
     el?.classList.add(ok?'correct':'wrong');
-    setTimeout(()=>{el?.classList.remove('correct','wrong');el?.classList.add('solved');},2200);
+    _markMapTimer=setTimeout(()=>{el?.classList.remove('correct','wrong');el?.classList.add('solved');_markMapTimer=null;},2200);
   }
 
   function _showTip(path){
