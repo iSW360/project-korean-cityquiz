@@ -88,13 +88,35 @@ def ellipse_path(cx, cy, rx, ry, n=24):
     d = f"M{pts[0][0]:.1f},{pts[0][1]:.1f} " + " ".join(f"L{x:.1f},{y:.1f}" for x, y in pts[1:]) + " Z"
     return d
 
+def points_path(pts):
+    d = f"M{pts[0][0]:.1f},{pts[0][1]:.1f} " + " ".join(f"L{x:.1f},{y:.1f}" for x, y in pts[1:]) + " Z"
+    return d
+
+# 우선순위: USGS 지질도(Unified Geologic Map of the Moon, 공공저작물) 색상 플러드필 트레이싱 > 타원 근사
+# ※ 나무위키 소스(namu.wiki)는 사이트 기본 라이선스가 CC BY-NC-SA(비영리)이고 개별 파일의
+#   CC0 여부를 확인할 수 없어(캡차로 출처 확인 불가) 상업 서비스 안전을 위해 사용하지 않음.
+try:
+    with open('scripts/moon-mare-shapes.json', encoding='utf-8') as f:
+        TRACED = json.load(f)
+except FileNotFoundError:
+    TRACED = {}
+
 paths = []
 markers = []
 for rid in MARIA_IDS:
-    d_usgs = USGS[rid]
-    cx, cy, rx, ry = mare_ellipse_px(d_usgs)
     ko, en, hko, hen = HINTS[rid]
-    d = ellipse_path(cx, cy, rx, ry)
+    if rid in TRACED:
+        latlon_pts = TRACED[rid]['points']
+        pts = [project(la, lo) for la, lo in latlon_pts]
+        cx = sum(p[0] for p in pts) / len(pts)
+        cy = sum(p[1] for p in pts) / len(pts)
+        d = points_path(pts)
+        print(f'{rid}: using TRACED shape ({len(pts)} pts)')
+    else:
+        d_usgs = USGS[rid]
+        cx, cy, rx, ry = mare_ellipse_px(d_usgs)
+        d = ellipse_path(cx, cy, rx, ry)
+        print(f'{rid}: using ellipse fallback')
     paths.append(f'<path id="r{rid}" data-id="{rid}" data-ko="{ko}" data-en="{en}" data-grp="MARE" d="{d}"/>')
     markers.append((rid, "MARE", cx, cy))
 
@@ -112,12 +134,6 @@ for rid in CRATER_OVERRIDE:
     paths.append(f'<path id="r{rid}" data-id="{rid}" data-ko="{ko}" data-en="{en}" data-grp="CRATER" d="{d}"/>')
     markers.append((rid, "CRATER", cx, cy))
 
-# 항상 보이는 위치 핀(점) 마커 — 실제 천문 참고자료 스타일. 클릭 판정 영역(위 path)은 별도로 넓게 유지.
-marker_svgs = []
-for rid, grp, mx, my in markers:
-    color = "MARE_DOT" if grp == "MARE" else "CRATER_DOT"
-    marker_svgs.append(f'<circle class="moon-pin {color}" cx="{mx:.1f}" cy="{my:.1f}" r="3.2"/>')
-
 with open('scripts/moon-bg-b64.txt', encoding='ascii') as f:
     b64 = f.read().strip()
 
@@ -126,9 +142,6 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
 <image href="data:image/jpeg;base64,{b64}" x="0" y="0" width="640" height="640" preserveAspectRatio="xMidYMid slice"/>
 <g id="regions" clip-path="url(#moondisk)">
 {chr(10).join(paths)}
-</g>
-<g id="markers" clip-path="url(#moondisk)" pointer-events="none">
-{chr(10).join(marker_svgs)}
 </g>
 </svg>
 '''
