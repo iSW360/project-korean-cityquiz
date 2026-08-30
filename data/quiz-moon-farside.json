@@ -7,30 +7,6 @@
   },
   "regions": [
     {
-      "id": "CHANGE4",
-      "svgPathId": "rCHANGE4",
-      "names": {
-        "ko": "창어 4호 착륙지",
-        "en": "Chang'e 4 Site"
-      },
-      "hints": {
-        "ko": "2019년, 인류 최초로 달 뒷면에 연착륙한 탐사선(중국). 폰 카르만 분화구",
-        "en": "2019; the first spacecraft in history to soft-land on the Moon's far side (China); Von Kármán crater"
-      }
-    },
-    {
-      "id": "CHANGE6",
-      "svgPathId": "rCHANGE6",
-      "names": {
-        "ko": "창어 6호 착륙지",
-        "en": "Chang'e 6 Site"
-      },
-      "hints": {
-        "ko": "2024년, 인류 최초로 달 뒷면 샘플을 채취해 지구로 귀환시킨 임무(중국). 아폴로 분지",
-        "en": "2024; the first mission to collect samples from the Moon's far side and return them to Earth (China); Apollo basin"
-      }
-    },
-    {
       "id": "SPA",
       "svgPathId": "rSPA",
       "names": {
@@ -76,6 +52,30 @@
       "hints": {
         "ko": "소련 로켓공학자 세르게이 코롤료프의 이름을 딴 대형 분화구(지름 437km)",
         "en": "A large crater (437km diameter) named after Soviet rocket engineer Sergei Korolev"
+      }
+    },
+    {
+      "id": "APOLLOBASIN",
+      "svgPathId": "rAPOLLOBASIN",
+      "names": {
+        "ko": "아폴로 분지",
+        "en": "Apollo Basin"
+      },
+      "hints": {
+        "ko": "사우스폴-에이트켄 분지 안에 있는 대형 충돌구. 창어 6호가 이 안에서 샘플을 채취함",
+        "en": "A large impact basin within the South Pole–Aitken Basin; Chang'e 6 collected samples from within it"
+      }
+    },
+    {
+      "id": "HERTZSPRUNG",
+      "svgPathId": "rHERTZSPRUNG",
+      "names": {
+        "ko": "헤르츠스프룽 분화구",
+        "en": "Hertzsprung"
+      },
+      "hints": {
+        "ko": "뒷면에서 가장 큰 분화구 중 하나(지름 570km). 다중 고리 구조를 가진 충돌 분지",
+        "en": "One of the largest craters on the far side (570km diameter); a multi-ring impact basin"
       }
     }
   ]

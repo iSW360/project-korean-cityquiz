@@ -21,13 +21,8 @@ def project(lat_deg, lon_deg):
     return x, y
 
 # (id, 한글명, 영문명, 위도, 경도, 지름km, 힌트ko, 힌트en, grp)
+# ※ 착륙지(창어 4·6호)는 "달 탐사 착륙지" 퀴즈로 통합됨 — 여기는 순수 지형만
 ITEMS = [
-    ("CHANGE4","창어 4호 착륙지","Chang'e 4 Site", -45.5, 177.6, 20,
-     "2019년, 인류 최초로 달 뒷면에 연착륙한 탐사선(중국). 폰 카르만 분화구",
-     "2019; the first spacecraft in history to soft-land on the Moon's far side (China); Von Kármán crater", "SITE"),
-    ("CHANGE6","창어 6호 착륙지","Chang'e 6 Site", -41.64, 153.99, 20,
-     "2024년, 인류 최초로 달 뒷면 샘플을 채취해 지구로 귀환시킨 임무(중국). 아폴로 분지",
-     "2024; the first mission to collect samples from the Moon's far side and return them to Earth (China); Apollo basin", "SITE"),
     ("SPA","사우스폴-에이트켄 분지","South Pole–Aitken Basin", -53.0, 191.0, 2500,
      "태양계에서 가장 크고 오래된 충돌구 중 하나(지름 약 2,500km). 달 남극 부근에 위치",
      "One of the largest and oldest known impact basins in the Solar System (~2,500km across), near the Moon's south pole", "MARE"),
@@ -40,14 +35,17 @@ ITEMS = [
     ("KOROLEV","코롤료프 분화구","Korolev", 4.4, -164.5, 437,
      "소련 로켓공학자 세르게이 코롤료프의 이름을 딴 대형 분화구(지름 437km)",
      "A large crater (437km diameter) named after Soviet rocket engineer Sergei Korolev", "CRATER"),
+    ("APOLLOBASIN","아폴로 분지","Apollo Basin", -36.1, 208.3, 505,
+     "사우스폴-에이트켄 분지 안에 있는 대형 충돌구. 창어 6호가 이 안에서 샘플을 채취함",
+     "A large impact basin within the South Pole–Aitken Basin; Chang'e 6 collected samples from within it", "CRATER"),
+    ("HERTZSPRUNG","헤르츠스프룽 분화구","Hertzsprung", 1.4, -128.9, 570,
+     "뒷면에서 가장 큰 분화구 중 하나(지름 570km). 다중 고리 구조를 가진 충돌 분지",
+     "One of the largest craters on the far side (570km diameter); a multi-ring impact basin", "CRATER"),
 ]
 
 paths = []
 for rid, ko, en, lat, lon, diam, hko, hen, grp in ITEMS:
-    if rid.startswith("CHANGE"):
-        rad = max(radius_px(diam), 16)
-    else:
-        rad = min(radius_px(diam), 100)  # 너무 크게 화면을 덮지 않도록 상한
+    rad = min(radius_px(diam), 100)  # 너무 크게 화면을 덮지 않도록 상한
     cx, cy = project(lat, lon)
     d = f"M{cx-rad:.1f},{cy:.1f} A{rad},{rad} 0 1,0 {cx+rad:.1f},{cy:.1f} A{rad},{rad} 0 1,0 {cx-rad:.1f},{cy:.1f} Z"
     paths.append(f'<path id="r{rid}" data-id="{rid}" data-ko="{ko}" data-en="{en}" data-grp="{grp}" d="{d}"/>')

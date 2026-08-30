@@ -379,6 +379,7 @@ const QE = (() => {
     if(svg) _animateViewBox(svg,S.initViewBox,280);
   }
   function _zoomMap(pathId){
+    if(S.meta&&S.meta.noZoom) return;
     const svg=qs('#map-container svg');
     if(!svg)return;
     requestAnimationFrame(()=>{

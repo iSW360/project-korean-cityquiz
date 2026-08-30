@@ -3,7 +3,8 @@
     "id": "moon-landing",
     "mapSvg": "/maps/world/moon-landing.svg",
     "defaultLang": "ko",
-    "totalRegions": 14
+    "totalRegions": 16,
+    "noZoom": true
   },
   "regions": [
     {
@@ -172,6 +173,30 @@
       "hints": {
         "ko": "2019년 이스라엘의 민간 달 착륙 시도. 착륙 직전 통신 두절로 충돌",
         "en": "2019 Israeli private lunar lander attempt; lost contact and crashed just before touchdown"
+      }
+    },
+    {
+      "id": "CHANGE4",
+      "svgPathId": "rCHANGE4",
+      "names": {
+        "ko": "창어 4호",
+        "en": "Chang'e 4"
+      },
+      "hints": {
+        "ko": "2019년, 인류 최초로 달 뒷면에 연착륙(중국). 폰 카르만 분화구(뒷면)",
+        "en": "2019; the first spacecraft to soft-land on the Moon's far side (China); Von Kármán crater (far side)"
+      }
+    },
+    {
+      "id": "CHANGE6",
+      "svgPathId": "rCHANGE6",
+      "names": {
+        "ko": "창어 6호",
+        "en": "Chang'e 6"
+      },
+      "hints": {
+        "ko": "2024년, 인류 최초로 달 뒷면 샘플을 채취해 귀환(중국). 아폴로 분지(뒷면)",
+        "en": "2024; the first mission to return samples from the Moon's far side (China); Apollo basin (far side)"
       }
     }
   ]
