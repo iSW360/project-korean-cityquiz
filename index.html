@@ -236,14 +236,6 @@
       <div class="map-card__meta" id="mc-ml">16개 지역 · 3레벨</div>
       <span class="map-card__badge badge-new" id="mb-ml">NEW</span>
     </div>
-    <div class="map-card" onclick="goQuiz('moon-farside')">
-      <div class="map-card__icon" style="padding:3px;">
-        <img src="/img/icon-moon.svg" alt="달 뒷면" style="width:100%;height:100%;object-fit:contain;">
-      </div>
-      <div class="map-card__name" id="mn-mf">달의 뒷면</div>
-      <div class="map-card__meta" id="mc-mf">6개 지역 · 3레벨</div>
-      <span class="map-card__badge badge-new" id="mb-mf">NEW</span>
-    </div>
   </div>
 </div>
 
@@ -351,8 +343,6 @@ function goQuiz(mapId){
     document.getElementById('mc-mo').textContent='20 regions · 3 levels';
     document.getElementById('mn-ml').textContent='Moon Landing Sites';
     document.getElementById('mc-ml').textContent='16 sites · 3 levels';
-    document.getElementById('mn-mf').textContent='Moon Far Side';
-    document.getElementById('mc-mf').textContent='6 regions · 3 levels';
     document.querySelectorAll('.badge-soon').forEach(e=>e.textContent='Soon');
   }
 })();
