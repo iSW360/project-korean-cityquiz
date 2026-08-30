@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "id": "moon-farside",
+    "mapSvg": "/maps/world/moon-farside.svg",
+    "defaultLang": "ko",
+    "totalRegions": 6
+  },
+  "regions": [
+    {
+      "id": "CHANGE4",
+      "svgPathId": "rCHANGE4",
+      "names": {
+        "ko": "창어 4호 착륙지",
+        "en": "Chang'e 4 Site"
+      },
+      "hints": {
+        "ko": "2019년, 인류 최초로 달 뒷면에 연착륙한 탐사선(중국). 폰 카르만 분화구",
+        "en": "2019; the first spacecraft in history to soft-land on the Moon's far side (China); Von Kármán crater"
+      }
+    },
+    {
+      "id": "CHANGE6",
+      "svgPathId": "rCHANGE6",
+      "names": {
+        "ko": "창어 6호 착륙지",
+        "en": "Chang'e 6 Site"
+      },
+      "hints": {
+        "ko": "2024년, 인류 최초로 달 뒷면 샘플을 채취해 지구로 귀환시킨 임무(중국). 아폴로 분지",
+        "en": "2024; the first mission to collect samples from the Moon's far side and return them to Earth (China); Apollo basin"
+      }
+    },
+    {
+      "id": "SPA",
+      "svgPathId": "rSPA",
+      "names": {
+        "ko": "사우스폴-에이트켄 분지",
+        "en": "South Pole–Aitken Basin"
+      },
+      "hints": {
+        "ko": "태양계에서 가장 크고 오래된 충돌구 중 하나(지름 약 2,500km). 달 남극 부근에 위치",
+        "en": "One of the largest and oldest known impact basins in the Solar System (~2,500km across), near the Moon's south pole"
+      }
+    },
+    {
+      "id": "MOSCOVIENSE",
+      "svgPathId": "rMOSCOVIENSE",
+      "names": {
+        "ko": "모스크바의 바다",
+        "en": "Mare Moscoviense"
+      },
+      "hints": {
+        "ko": "뒷면에 드물게 존재하는 용암 바다 중 하나. 1959년 소련 루나 3호가 처음 촬영해 명명",
+        "en": "One of the few lava maria on the far side; first photographed and named by the Soviet Luna 3 in 1959"
+      }
+    },
+    {
+      "id": "TSIOLKOVSKIY",
+      "svgPathId": "rTSIOLKOVSKIY",
+      "names": {
+        "ko": "치올코프스키 분화구",
+        "en": "Tsiolkovskiy"
+      },
+      "hints": {
+        "ko": "뒷면에서 가장 눈에 띄는 분화구 중 하나. 어두운 용암 바닥과 중앙 봉우리가 특징",
+        "en": "One of the most conspicuous far-side craters, notable for its dark lava floor and central peak"
+      }
+    },
+    {
+      "id": "KOROLEV",
+      "svgPathId": "rKOROLEV",
+      "names": {
+        "ko": "코롤료프 분화구",
+        "en": "Korolev"
+      },
+      "hints": {
+        "ko": "소련 로켓공학자 세르게이 코롤료프의 이름을 딴 대형 분화구(지름 437km)",
+        "en": "A large crater (437km diameter) named after Soviet rocket engineer Sergei Korolev"
+      }
+    }
+  ]
+}
