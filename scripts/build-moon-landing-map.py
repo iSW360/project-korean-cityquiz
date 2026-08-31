@@ -126,9 +126,13 @@ for rid, ko, en, lat, lon, country, rover, hko, hen, side in SITES:
 
 far_inset_deco = (
     f'<circle cx="{FX}" cy="{FY}" r="{FR}" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.5" stroke-dasharray="3,2"/>'
-    f'<text x="{FX-FR}" y="{FY-FR-8}" font-size="12" font-weight="700" fill="rgba(255,255,255,.65)">달 뒷면</text>'
+    f'<text x="{FX}" y="{FY-FR+16}" font-size="12" font-weight="700" text-anchor="middle" '
+    f'fill="rgba(255,255,255,.85)" stroke="rgba(0,0,0,.7)" stroke-width="2.5" paint-order="stroke">달 뒷면</text>'
 )
-near_label = f'<text x="{CX-R+10}" y="{CY-R+22}" font-size="13" font-weight="700" fill="rgba(255,255,255,.55)">달 앞면</text>'
+near_label = (
+    f'<text x="{CX-R+18}" y="{CY-R+26}" font-size="13" font-weight="700" '
+    f'fill="rgba(255,255,255,.85)" stroke="rgba(0,0,0,.7)" stroke-width="2.5" paint-order="stroke">달 앞면</text>'
+)
 
 # 주요 바다 이름(너무 많으면 복잡해지니 잘 알려진 6개만) — 클릭에 영향 없도록 pointer-events:none
 MAJOR_MARIA = [
