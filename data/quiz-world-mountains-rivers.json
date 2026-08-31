@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "id": "world-mountains-rivers",
+    "mapSvg": "/maps/world/world-mountains-rivers.svg",
+    "defaultLang": "ko",
+    "totalRegions": 32,
+    "mildZoom": true
+  },
+  "regions": [
+    {
+      "id": "HIMALAYAS",
+      "svgPathId": "rHIMALAYAS",
+      "names": {
+        "ko": "히말라야산맥",
+        "en": "Himalayas"
+      },
+      "hints": {
+        "ko": "세계에서 가장 높은 산맥. 에베레스트를 포함한 8000m급 봉우리가 여럿 있음",
+        "en": "The world's highest range, home to Everest and several 8,000m peaks"
+      }
+    },
+    {
+      "id": "KARAKORAM",
+      "svgPathId": "rKARAKORAM",
+      "names": {
+        "ko": "카라코람산맥",
+        "en": "Karakoram"
+      },
+      "hints": {
+        "ko": "세계 2위 고봉 K2가 있는 산맥. 파키스탄·중국·인도 접경지대",
+        "en": "Home to K2, the world's second-highest peak, on the Pakistan-China-India border"
+      }
+    },
+    {
+      "id": "TIANSHAN",
+      "svgPathId": "rTIANSHAN",
+      "names": {
+        "ko": "톈산산맥",
+        "en": "Tian Shan"
+      },
+      "hints": {
+        "ko": "'하늘의 산'이라는 뜻. 중앙아시아를 가로지르는 산맥",
+        "en": "Name means 'Mountains of Heaven'; crosses Central Asia"
+      }
+    },
+    {
+      "id": "ANDES",
+      "svgPathId": "rANDES",
+      "names": {
+        "ko": "안데스산맥",
+        "en": "Andes"
+      },
+      "hints": {
+        "ko": "세계에서 가장 긴 산맥(약 7,000km). 남미 서부를 따라 뻗음",
+        "en": "The world's longest range (~7,000km), running along South America's west coast"
+      }
+    },
+    {
+      "id": "ROCKY",
+      "svgPathId": "rROCKY",
+      "names": {
+        "ko": "로키산맥",
+        "en": "Rocky Mountains"
+      },
+      "hints": {
+        "ko": "북미 서부를 남북으로 가로지르는 대산맥",
+        "en": "A major range running north-south through western North America"
+      }
+    },
+    {
+      "id": "SIERRAMADRE",
+      "svgPathId": "rSIERRAMADRE",
+      "names": {
+        "ko": "시에라마드레",
+        "en": "Sierra Madre"
+      },
+      "hints": {
+        "ko": "멕시코를 남북으로 가로지르는 산맥",
+        "en": "A mountain system running through Mexico"
+      }
+    },
+    {
+      "id": "ALPS",
+      "svgPathId": "rALPS",
+      "names": {
+        "ko": "알프스산맥",
+        "en": "Alps"
+      },
+      "hints": {
+        "ko": "유럽에서 가장 높은 산맥. 몽블랑이 최고봉",
+        "en": "Europe's highest range; Mont Blanc is its tallest peak"
+      }
+    },
+    {
+      "id": "SCANDINAVIAN",
+      "svgPathId": "rSCANDINAVIAN",
+      "names": {
+        "ko": "스칸디나비아산맥",
+        "en": "Scandinavian Mountains"
+      },
+      "hints": {
+        "ko": "노르웨이와 스웨덴 사이를 가르는 산맥",
+        "en": "Range dividing Norway and Sweden"
+      }
+    },
+    {
+      "id": "URAL",
+      "svgPathId": "rURAL",
+      "names": {
+        "ko": "우랄산맥",
+        "en": "Ural Mountains"
+      },
+      "hints": {
+        "ko": "전통적으로 유럽과 아시아의 경계로 여겨지는 산맥",
+        "en": "Traditionally regarded as the boundary between Europe and Asia"
+      }
+    },
+    {
+      "id": "CAUCASUS",
+      "svgPathId": "rCAUCASUS",
+      "names": {
+        "ko": "코카서스산맥",
+        "en": "Caucasus Mountains"
+      },
+      "hints": {
+        "ko": "흑해와 카스피해 사이. 유럽 최고봉 엘브루스산이 있음",
+        "en": "Between the Black and Caspian Seas; home to Europe's highest peak, Mount Elbrus"
+      }
+    },
+    {
+      "id": "ATLAS",
+      "svgPathId": "rATLAS",
+      "names": {
+        "ko": "애틀러스산맥",
+        "en": "Atlas Mountains"
+      },
+      "hints": {
+        "ko": "북아프리카를 가로지르는 산맥",
+        "en": "A mountain range crossing North Africa"
+      }
+    },
+    {
+      "id": "ETHIOPIAN",
+      "svgPathId": "rETHIOPIAN",
+      "names": {
+        "ko": "에티오피아고원",
+        "en": "Ethiopian Highlands"
+      },
+      "hints": {
+        "ko": "'아프리카의 지붕'이라 불리는 고원지대",
+        "en": "A highland region often called 'the Roof of Africa'"
+      }
+    },
+    {
+      "id": "DRAKENSBERG",
+      "svgPathId": "rDRAKENSBERG",
+      "names": {
+        "ko": "드라켄즈버그산맥",
+        "en": "Drakensberg"
+      },
+      "hints": {
+        "ko": "남아프리카공화국 동부의 대규모 절벽 산맥",
+        "en": "A dramatic escarpment range in eastern South Africa"
+      }
+    },
+    {
+      "id": "ZAGROS",
+      "svgPathId": "rZAGROS",
+      "names": {
+        "ko": "자그로스산맥",
+        "en": "Zagros Mountains"
+      },
+      "hints": {
+        "ko": "이란과 이라크에 걸친 산맥",
+        "en": "A mountain range spanning Iran and Iraq"
+      }
+    },
+    {
+      "id": "GREATDIVIDING",
+      "svgPathId": "rGREATDIVIDING",
+      "names": {
+        "ko": "그레이트디바이딩산맥",
+        "en": "Great Dividing Range"
+      },
+      "hints": {
+        "ko": "호주 동부 해안을 따라 남북으로 뻗은 산맥",
+        "en": "Range running along Australia's eastern coast"
+      }
+    },
+    {
+      "id": "APPALACHIAN",
+      "svgPathId": "rAPPALACHIAN",
+      "names": {
+        "ko": "애팔래치아산맥",
+        "en": "Appalachian Mountains"
+      },
+      "hints": {
+        "ko": "북미 동부의 오래된 산맥",
+        "en": "An ancient mountain range in eastern North America"
+      }
+    },
+    {
+      "id": "NILE",
+      "svgPathId": "rNILE",
+      "names": {
+        "ko": "나일강",
+        "en": "Nile"
+      },
+      "hints": {
+        "ko": "세계에서 손꼽히는 최장 하천(약 6,650km). 아프리카 동북부를 흘러 지중해로",
+        "en": "One of the world's longest rivers (~6,650km), flowing through northeast Africa to the Mediterranean"
+      }
+    },
+    {
+      "id": "AMAZON",
+      "svgPathId": "rAMAZON",
+      "names": {
+        "ko": "아마존강",
+        "en": "Amazon"
+      },
+      "hints": {
+        "ko": "유량 기준 세계 최대의 강. 남미를 가로질러 대서양으로",
+        "en": "The world's largest river by discharge, crossing South America to the Atlantic"
+      }
+    },
+    {
+      "id": "YANGTZE",
+      "svgPathId": "rYANGTZE",
+      "names": {
+        "ko": "양쯔강",
+        "en": "Yangtze"
+      },
+      "hints": {
+        "ko": "아시아에서 가장 긴 강. 중국을 가로질러 동중국해로",
+        "en": "Asia's longest river, flowing across China to the East China Sea"
+      }
+    },
+    {
+      "id": "YELLOWRIVER",
+      "svgPathId": "rYELLOWRIVER",
+      "names": {
+        "ko": "황허강",
+        "en": "Yellow River"
+      },
+      "hints": {
+        "ko": "'중국 문명의 발상지'로 불리는 강",
+        "en": "Often called the cradle of Chinese civilization"
+      }
+    },
+    {
+      "id": "MISSISSIPPI",
+      "svgPathId": "rMISSISSIPPI",
+      "names": {
+        "ko": "미시시피강",
+        "en": "Mississippi"
+      },
+      "hints": {
+        "ko": "북미에서 손꼽히는 긴 강. 멕시코만으로 흘러듦",
+        "en": "One of North America's longest rivers, emptying into the Gulf of Mexico"
+      }
+    },
+    {
+      "id": "OB",
+      "svgPathId": "rOB",
+      "names": {
+        "ko": "오브강",
+        "en": "Ob"
+      },
+      "hints": {
+        "ko": "시베리아 서부를 흘러 북극해로 향하는 강",
+        "en": "Flows through western Siberia to the Arctic Ocean"
+      }
+    },
+    {
+      "id": "YENISEI",
+      "svgPathId": "rYENISEI",
+      "names": {
+        "ko": "예니세이강",
+        "en": "Yenisei"
+      },
+      "hints": {
+        "ko": "시베리아 중부를 남북으로 가로지르는 강",
+        "en": "Flows north to south through central Siberia"
+      }
+    },
+    {
+      "id": "LENA",
+      "svgPathId": "rLENA",
+      "names": {
+        "ko": "레나강",
+        "en": "Lena"
+      },
+      "hints": {
+        "ko": "시베리아 동부의 대하천. 북극해로 흘러듦",
+        "en": "A major river in eastern Siberia, flowing to the Arctic Ocean"
+      }
+    },
+    {
+      "id": "AMUR",
+      "svgPathId": "rAMUR",
+      "names": {
+        "ko": "아무르강",
+        "en": "Amur"
+      },
+      "hints": {
+        "ko": "러시아와 중국의 국경 일부를 이루는 강",
+        "en": "Forms part of the border between Russia and China"
+      }
+    },
+    {
+      "id": "CONGO",
+      "svgPathId": "rCONGO",
+      "names": {
+        "ko": "콩고강",
+        "en": "Congo"
+      },
+      "hints": {
+        "ko": "아프리카에서 가장 깊은 강. 유량 기준 세계 2위",
+        "en": "Africa's deepest river; second in the world by discharge"
+      }
+    },
+    {
+      "id": "MEKONG",
+      "svgPathId": "rMEKONG",
+      "names": {
+        "ko": "메콩강",
+        "en": "Mekong"
+      },
+      "hints": {
+        "ko": "동남아시아 여러 나라를 흐르는 강",
+        "en": "Flows through multiple Southeast Asian countries"
+      }
+    },
+    {
+      "id": "VOLGA",
+      "svgPathId": "rVOLGA",
+      "names": {
+        "ko": "볼가강",
+        "en": "Volga"
+      },
+      "hints": {
+        "ko": "유럽에서 가장 긴 강. 러시아를 흐름",
+        "en": "Europe's longest river, flowing through Russia"
+      }
+    },
+    {
+      "id": "DANUBE",
+      "svgPathId": "rDANUBE",
+      "names": {
+        "ko": "다뉴브강",
+        "en": "Danube"
+      },
+      "hints": {
+        "ko": "여러 유럽 국가를 거쳐 흑해로 흘러드는 강",
+        "en": "Flows through many European countries to the Black Sea"
+      }
+    },
+    {
+      "id": "GANGES",
+      "svgPathId": "rGANGES",
+      "names": {
+        "ko": "갠지스강",
+        "en": "Ganges"
+      },
+      "hints": {
+        "ko": "인도에서 신성시되는 강",
+        "en": "A river considered sacred in India"
+      }
+    },
+    {
+      "id": "INDUS",
+      "svgPathId": "rINDUS",
+      "names": {
+        "ko": "인더스강",
+        "en": "Indus"
+      },
+      "hints": {
+        "ko": "인더스 문명이 발원한 강",
+        "en": "The river that gave rise to the Indus Valley Civilization"
+      }
+    },
+    {
+      "id": "MURRAYDARLING",
+      "svgPathId": "rMURRAYDARLING",
+      "names": {
+        "ko": "머리달링강",
+        "en": "Murray-Darling"
+      },
+      "hints": {
+        "ko": "호주 최대의 강 유역계",
+        "en": "Australia's largest river system"
+      }
+    }
+  ]
+}
