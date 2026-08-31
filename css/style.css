@@ -263,6 +263,8 @@ input{font-family:inherit;}
 @media(max-width:480px){
   #map-container{height:clamp(220px,42vh,320px);}
 }
+/* 달 착륙지: 정사각형 실사 지도라 더 크게 보여줘도 여백이 남음 */
+body.map-moon-landing #map-container{height:min(90vw,60vh,440px);max-height:440px;}
 #map-skeleton{position:absolute;inset:0;z-index:2;}
 #map-container svg{width:100%;height:100%;display:block;opacity:0;transition:opacity .4s;}
 /* viewBox animated via JS requestAnimationFrame */

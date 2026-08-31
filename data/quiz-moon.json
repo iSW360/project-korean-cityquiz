@@ -3,7 +3,8 @@
     "id": "moon",
     "mapSvg": "/maps/world/moon.svg",
     "defaultLang": "ko",
-    "totalRegions": 20
+    "totalRegions": 20,
+    "noZoom": true
   },
   "regions": [
     {

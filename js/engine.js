@@ -82,6 +82,7 @@ const QE = (() => {
     S.level=parseInt(p.get('level')||'1');
 
     if(S.level===3) document.body.classList.add('lv3');
+    document.body.classList.add('map-'+S.mapId);
 
     // 헤더
     const mapEl=$('hd-map'); if(mapEl) mapEl.textContent=I18n.get(`maps.${S.mapId}`);

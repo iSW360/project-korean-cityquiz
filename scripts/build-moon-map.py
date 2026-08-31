@@ -178,7 +178,7 @@ for rid in MARIA_IDS + list(CRATER_OVERRIDE.keys()):
     regions.append({"id": rid, "svgPathId": f"r{rid}", "names": {"ko": ko, "en": en}, "hints": {"ko": hko, "en": hen}})
 
 out = {
-    "meta": {"id": "moon", "mapSvg": "/maps/world/moon.svg", "defaultLang": "ko", "totalRegions": len(regions)},
+    "meta": {"id": "moon", "mapSvg": "/maps/world/moon.svg", "defaultLang": "ko", "totalRegions": len(regions), "noZoom": True},
     "regions": regions
 }
 with open('data/quiz-moon.json', 'w', encoding='utf-8') as f:
