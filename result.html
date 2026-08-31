@@ -12,7 +12,7 @@
 </script>
 <meta name="google-adsense-account" content="ca-pub-9931225061186683">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>결과 — GeoQ</title>
+<title>결과 — 지도퀴즈</title>
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#E8B84B">
 <link rel="manifest" href="/manifest.json">
@@ -207,8 +207,8 @@ function showToast(msg,ms=2200){const el=document.getElementById('toast');el.tex
   window.doShare=async()=>{
     const mn=mapNames[mapId]||mapId;
     const txt=isKo
-      ?`🗺️ GeoQ ${mn} Level${level}\n${score}/${total}점 (${Math.round(pct*100)}%)\nhttps://korean-cityquiz01.pages.dev`
-      :`🗺️ GeoQ ${mn} Level${level}\n${score}/${total} pts (${Math.round(pct*100)}%)\nhttps://korean-cityquiz01.pages.dev`;
+      ?`🗺️ 지도퀴즈 ${mn} Level${level}\n${score}/${total}점 (${Math.round(pct*100)}%)\nhttps://korean-cityquiz01.pages.dev`
+      :`🗺️ 지도퀴즈 ${mn} Level${level}\n${score}/${total} pts (${Math.round(pct*100)}%)\nhttps://korean-cityquiz01.pages.dev`;
     if(navigator.share){try{await navigator.share({text:txt});return;}catch{}}
     try{await navigator.clipboard.writeText(txt);showToast(isKo?'📋 복사됐어요!':'📋 Copied!');}
     catch{showToast(isKo?'공유 실패':'Share failed');}

@@ -1,4 +1,4 @@
-/* quiz-engine.js — GeoQ 통합 엔진 */
+/* quiz-engine.js — 지도퀴즈 통합 엔진 */
 const QE = (() => {
   const QUIZ_N = 10;   // 한 세션당 문제 수
   const CACHE_VER = 6; // 올리면 SVG·JSON 캐시 전체 무효화

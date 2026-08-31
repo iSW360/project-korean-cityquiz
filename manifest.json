@@ -1,6 +1,6 @@
 {
   "name": "지도퀴즈",
-  "short_name": "GeoQ",
+  "short_name": "지도퀴즈",
   "description": "지도를 보며 배우는 무료 지리 퀴즈. 전국 시군·서울·미국·유럽·아프리카를 3가지 레벨로 도전하세요.",
   "start_url": "/",
   "scope": "/",
@@ -35,7 +35,7 @@
       "src": "/img/og.svg",
       "sizes": "1200x630",
       "type": "image/svg+xml",
-      "label": "GeoQ 지리 퀴즈 홈 화면"
+      "label": "지도퀴즈 지리 퀴즈 홈 화면"
     }
   ],
   "shortcuts": [
