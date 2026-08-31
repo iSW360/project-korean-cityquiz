@@ -392,6 +392,16 @@ const QE = (() => {
       const [,, IVW, IVH]=S.initViewBox.split(' ').map(Number);
       const aspect=IVH/IVW;
       const maxDim=Math.max(bb.width,bb.height);
+      if(S.meta&&S.meta.mildZoom){
+        // 완전 끄기 대신 크기와 무관하게 항상 같은 정도로 살짝만 확대(1단계 줌)
+        if(maxDim>=70){_resetMapZoom();return;}
+        const VW=IVW*0.62, VH=Math.min(VW*aspect,IVH);
+        const cx=bb.x+bb.width/2, cy=bb.y+bb.height/2;
+        const vx=Math.max(0,Math.min(cx-VW/2,IVW-VW));
+        const vy=Math.max(0,Math.min(cy-VH/2,IVH-VH));
+        _animateViewBox(svg,`${vx.toFixed(0)} ${vy.toFixed(0)} ${VW.toFixed(0)} ${VH.toFixed(0)}`);
+        return;
+      }
       if(S.level===3){
         // 레벨3: 아주 작은 지역만 약하게 줌 (클릭할 수 있도록 넓은 시야 유지)
         if(maxDim>=70){_resetMapZoom();return;}

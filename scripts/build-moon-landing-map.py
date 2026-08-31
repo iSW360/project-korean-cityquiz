@@ -183,7 +183,7 @@ for rid, ko, en, lat, lon, country, rover, hko, hen, side in SITES:
 out = {
     "meta": {
         "id": "moon-landing", "mapSvg": "/maps/world/moon-landing.svg", "defaultLang": "ko",
-        "totalRegions": len(regions), "noZoom": True,
+        "totalRegions": len(regions), "mildZoom": True,
         "questionText": {
             "ko": '<strong style="color:var(--gold)">이 지점</strong>에 착륙한 탐사선은?',
             "en": 'Which spacecraft landed <strong style="color:var(--gold)">at this site</strong>?'

@@ -4,7 +4,7 @@
     "mapSvg": "/maps/world/moon-landing.svg",
     "defaultLang": "ko",
     "totalRegions": 16,
-    "noZoom": true,
+    "mildZoom": true,
     "questionText": {
       "ko": "<strong style=\"color:var(--gold)\">이 지점</strong>에 착륙한 탐사선은?",
       "en": "Which spacecraft landed <strong style=\"color:var(--gold)\">at this site</strong>?"
