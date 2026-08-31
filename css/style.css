@@ -299,6 +299,7 @@ input{font-family:inherit;}
 #map-container path.correct{fill:#3ECFB2;stroke:#2BA890;stroke-width:1.2;animation:none;filter:none;}
 #map-container path.wrong  {fill:var(--coral);stroke:#cc4444;stroke-width:1.2;animation:none;filter:none;}
 #map-container path.solved {fill:rgba(62,207,178,.2);stroke:rgba(62,207,178,.3);animation:none;filter:none;}
+#map-container path[data-grp="SITE"].solved{stroke-width:2.5;filter:drop-shadow(0 0 4px rgba(62,207,178,.7));}
 /* 세계 지도 path — 기본 fill (상태 클래스·data-grp 없는 path만) */
 #map-container svg:not([viewBox="0 0 680 800"]) path:not(.active):not(.correct):not(.wrong):not(.solved):not([data-grp]){fill:rgba(255,255,255,.07);}
 
@@ -338,14 +339,25 @@ body.lv3 #map-container path[data-grp="CRATER"]:not(.active):not(.correct):not(.
 body.lv3 #map-container path[data-grp="SITE"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(224,96,144,.35);stroke:rgba(255,150,190,.95);}
 /* 정답/오답 강조도 사진이 비치도록 반투명(다른 지도는 불투명 벡터라 상관없지만 달은 실사라 가려짐) */
 #map-container path[data-grp="MARE"].active,
-#map-container path[data-grp="CRATER"].active,
-#map-container path[data-grp="SITE"].active{fill:rgba(232,184,75,.32)!important;stroke:var(--gold2);stroke-width:1.5;}
+#map-container path[data-grp="CRATER"].active{fill:rgba(232,184,75,.32)!important;stroke:var(--gold2);stroke-width:1.5;}
 #map-container path[data-grp="MARE"].correct,
-#map-container path[data-grp="CRATER"].correct,
-#map-container path[data-grp="SITE"].correct{fill:rgba(62,207,178,.32)!important;stroke:#2BA890;}
+#map-container path[data-grp="CRATER"].correct{fill:rgba(62,207,178,.32)!important;stroke:#2BA890;}
 #map-container path[data-grp="MARE"].wrong,
-#map-container path[data-grp="CRATER"].wrong,
-#map-container path[data-grp="SITE"].wrong{fill:rgba(255,107,107,.32)!important;stroke:#cc4444;}
+#map-container path[data-grp="CRATER"].wrong{fill:rgba(255,107,107,.32)!important;stroke:#cc4444;}
+/* SITE(착륙지)는 아이콘이 클릭영역 위를 덮어버려 fill 강조가 거의 안 보이므로,
+   두꺼운 테두리 + 발광 효과로 아이콘 바깥쪽에서도 뚜렷하게 강조되도록 함 */
+#map-container path[data-grp="SITE"].active{
+  fill:rgba(232,184,75,.45)!important;stroke:var(--gold2);stroke-width:4;
+  filter:drop-shadow(0 0 5px var(--gold2)) drop-shadow(0 0 9px rgba(232,184,75,.9));
+}
+#map-container path[data-grp="SITE"].correct{
+  fill:rgba(62,207,178,.45)!important;stroke:#2BA890;stroke-width:4;
+  filter:drop-shadow(0 0 5px #2BA890) drop-shadow(0 0 9px rgba(62,207,178,.9));
+}
+#map-container path[data-grp="SITE"].wrong{
+  fill:rgba(255,107,107,.45)!important;stroke:#cc4444;stroke-width:4;
+  filter:drop-shadow(0 0 5px #cc4444) drop-shadow(0 0 9px rgba(255,107,107,.9));
+}
 
 /* ── 일본 8개 지방(地方) ── */
 #map-container path[data-grp="HOKKAIDO"]{fill:rgba(74,144,217,.30);}  /* 홋카이도 */
