@@ -20,7 +20,7 @@
   <text x="195" y="80" font-family="Arial" font-size="12" text-anchor="middle"
         fill="#E8B84B" opacity="0.8" letter-spacing="2">Geography Quiz</text>
   <text x="195" y="120" font-family="Georgia,serif" font-size="40" font-weight="bold"
-        text-anchor="middle" fill="url(#gold)">GeoQ</text>
+        text-anchor="middle" fill="url(#gold)">지도퀴즈</text>
   <text x="195" y="150" font-family="Arial" font-size="14" text-anchor="middle"
         fill="#EDF2F7" opacity="0.6">전국 시군 · 서울 구 · 미국 주</text>
 

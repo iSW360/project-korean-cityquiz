@@ -15,10 +15,10 @@
   <circle cx="120" cy="315" r="220" fill="rgba(62,207,178,0.04)"/>
   <circle cx="1080" cy="315" r="220" fill="rgba(232,184,75,0.05)"/>
   <circle cx="600" cy="80" r="300" fill="rgba(96,180,255,0.03)"/>
-  <!-- GeoQ wordmark -->
+  <!-- 지도퀴즈 wordmark -->
   <text x="600" y="255" font-family="Georgia,'Times New Roman',serif"
         font-size="148" font-weight="bold" text-anchor="middle"
-        fill="url(#gold)">GeoQ</text>
+        fill="url(#gold)">지도퀴즈</text>
   <!-- Tagline KO -->
   <text x="600" y="335" font-family="'Apple SD Gothic Neo','Noto Sans KR',sans-serif"
         font-size="38" text-anchor="middle" fill="#EDF2F7" opacity="0.9">

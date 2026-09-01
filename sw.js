@@ -1,8 +1,8 @@
-/* GeoQ Service Worker v6
+/* 지도퀴즈 Service Worker v7
    HTML·데이터: 네트워크 우선 (항상 최신)
    CSS·JS·이미지: 캐시 우선 (빠른 로딩)
 */
-const CACHE = 'geoq-v6';   // 버전 올리면 이전 캐시 전체 삭제(아이콘 갱신용)
+const CACHE = 'geoq-v7';   // 버전 올리면 이전 캐시 전체 삭제(아이콘 갱신용)
 const PRE_CACHE = [
   '/css/style.css',
   '/js/engine.js',
