@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "id": "asia",
+    "mapSvg": "/maps/world/asia.svg",
+    "defaultLang": "ko",
+    "totalRegions": 46
+  },
+  "regions": [
+    {
+      "id": "YEM",
+      "svgPathId": "rYEM",
+      "names": {
+        "ko": "예멘",
+        "en": "Yemen"
+      },
+      "hints": {
+        "ko": "아라비아반도 남단의 나라. 오랜 내전을 겪는 중",
+        "en": "At the southern tip of the Arabian Peninsula; enduring prolonged conflict"
+      }
+    },
+    {
+      "id": "VNM",
+      "svgPathId": "rVNM",
+      "names": {
+        "ko": "베트남",
+        "en": "Vietnam"
+      },
+      "hints": {
+        "ko": "S자 모양의 국토. 프랑스 식민지·베트남 전쟁의 역사",
+        "en": "S-shaped territory; history of French colonization and the Vietnam War"
+      }
+    },
+    {
+      "id": "UZB",
+      "svgPathId": "rUZB",
+      "names": {
+        "ko": "우즈베키스탄",
+        "en": "Uzbekistan"
+      },
+      "hints": {
+        "ko": "실크로드의 중심 도시 사마르칸트가 있는 나라",
+        "en": "Home to Samarkand, a legendary Silk Road city"
+      }
+    },
+    {
+      "id": "ARE",
+      "svgPathId": "rARE",
+      "names": {
+        "ko": "아랍에미리트",
+        "en": "United Arab Emirates"
+      },
+      "hints": {
+        "ko": "두바이·아부다비가 있는 연방국가. 부르즈 할리파",
+        "en": "A federation including Dubai and Abu Dhabi; home to the Burj Khalifa"
+      }
+    },
+    {
+      "id": "TKM",
+      "svgPathId": "rTKM",
+      "names": {
+        "ko": "투르크메니스탄",
+        "en": "Turkmenistan"
+      },
+      "hints": {
+        "ko": "투르크메니스탄 사막의 '지옥의 문'(다르바자 가스 분화구)",
+        "en": "Home to the 'Door to Hell' gas crater at Darvaza"
+      }
+    },
+    {
+      "id": "TUR",
+      "svgPathId": "rTUR",
+      "names": {
+        "ko": "튀르키예",
+        "en": "Turkey"
+      },
+      "hints": {
+        "ko": "유럽과 아시아에 걸친 나라. 이스탄불(보스포루스 해협)",
+        "en": "Straddles Europe and Asia; Istanbul sits on the Bosphorus Strait"
+      }
+    },
+    {
+      "id": "TLS",
+      "svgPathId": "rTLS",
+      "names": {
+        "ko": "동티모르",
+        "en": "Timor-Leste"
+      },
+      "hints": {
+        "ko": "21세기 최초의 신생 독립국(2002년 독립). 동남아시아 최연소 국가",
+        "en": "The first new nation of the 21st century, independent since 2002"
+      }
+    },
+    {
+      "id": "THA",
+      "svgPathId": "rTHA",
+      "names": {
+        "ko": "태국",
+        "en": "Thailand"
+      },
+      "hints": {
+        "ko": "동남아시아에서 유일하게 식민지배를 받지 않은 나라. 방콕·사원 문화",
+        "en": "The only Southeast Asian nation never colonized; Bangkok and Buddhist temples"
+      }
+    },
+    {
+      "id": "TJK",
+      "svgPathId": "rTJK",
+      "names": {
+        "ko": "타지키스탄",
+        "en": "Tajikistan"
+      },
+      "hints": {
+        "ko": "파미르고원('세계의 지붕')이 있는 중앙아시아 산악국",
+        "en": "A mountainous Central Asian nation home to the Pamir 'Roof of the World'"
+      }
+    },
+    {
+      "id": "TWN",
+      "svgPathId": "rTWN",
+      "names": {
+        "ko": "대만",
+        "en": "Taiwan"
+      },
+      "hints": {
+        "ko": "반도체 파운드리 세계 1위(TSMC). 타이베이 101. 중국과 양안 관계",
+        "en": "World-leading semiconductor foundries (TSMC); Taipei 101"
+      }
+    },
+    {
+      "id": "SYR",
+      "svgPathId": "rSYR",
+      "names": {
+        "ko": "시리아",
+        "en": "Syria"
+      },
+      "hints": {
+        "ko": "고대 도시 다마스쿠스가 있는 나라. 오랜 내전을 겪음",
+        "en": "Home to ancient Damascus; a country marked by prolonged civil war"
+      }
+    },
+    {
+      "id": "LKA",
+      "svgPathId": "rLKA",
+      "names": {
+        "ko": "스리랑카",
+        "en": "Sri Lanka"
+      },
+      "hints": {
+        "ko": "실론티 산지. 인도양의 눈물이라 불리는 섬나라",
+        "en": "Famous for Ceylon tea; an island nation called the 'Teardrop of the Indian Ocean'"
+      }
+    },
+    {
+      "id": "KOR",
+      "svgPathId": "rKOR",
+      "names": {
+        "ko": "대한민국",
+        "en": "South Korea"
+      },
+      "hints": {
+        "ko": "한강의 기적. K-pop·반도체 강국. 서울이 수도",
+        "en": "Rapid postwar growth known as the 'Miracle on the Han River'; K-pop and semiconductors"
+      }
+    },
+    {
+      "id": "SAU",
+      "svgPathId": "rSAU",
+      "names": {
+        "ko": "사우디아라비아",
+        "en": "Saudi Arabia"
+      },
+      "hints": {
+        "ko": "이슬람 성지 메카·메디나가 있는 나라. 세계 최대 석유 수출국",
+        "en": "Home to the Islamic holy cities of Mecca and Medina; the top oil exporter"
+      }
+    },
+    {
+      "id": "QAT",
+      "svgPathId": "rQAT",
+      "names": {
+        "ko": "카타르",
+        "en": "Qatar"
+      },
+      "hints": {
+        "ko": "천연가스 부국. 2022 FIFA 월드컵 개최국",
+        "en": "A gas-rich nation; hosted the 2022 FIFA World Cup"
+      }
+    },
+    {
+      "id": "PHL",
+      "svgPathId": "rPHL",
+      "names": {
+        "ko": "필리핀",
+        "en": "Philippines"
+      },
+      "hints": {
+        "ko": "7천여 개 섬으로 이루어진 나라. 스페인·미국의 식민 지배 역사",
+        "en": "An archipelago of over 7,000 islands with a Spanish and American colonial past"
+      }
+    },
+    {
+      "id": "PAK",
+      "svgPathId": "rPAK",
+      "names": {
+        "ko": "파키스탄",
+        "en": "Pakistan"
+      },
+      "hints": {
+        "ko": "인더스 문명 발상지. 카라코람 하이웨이. 이슬라마바드가 수도",
+        "en": "Cradle of the Indus Valley Civilization; capital Islamabad"
+      }
+    },
+    {
+      "id": "OMN",
+      "svgPathId": "rOMN",
+      "names": {
+        "ko": "오만",
+        "en": "Oman"
+      },
+      "hints": {
+        "ko": "아라비아반도 동남단의 술탄국",
+        "en": "A sultanate on the southeastern tip of the Arabian Peninsula"
+      }
+    },
+    {
+      "id": "PRK",
+      "svgPathId": "rPRK",
+      "names": {
+        "ko": "북한",
+        "en": "North Korea"
+      },
+      "hints": {
+        "ko": "한반도 북부. 평양이 수도. 세계에서 가장 폐쇄적인 나라 중 하나",
+        "en": "Occupies the northern Korean peninsula; capital Pyongyang"
+      }
+    },
+    {
+      "id": "NPL",
+      "svgPathId": "rNPL",
+      "names": {
+        "ko": "네팔",
+        "en": "Nepal"
+      },
+      "hints": {
+        "ko": "에베레스트가 있는 나라. 히말라야 등반의 중심지",
+        "en": "Home to Mount Everest; a hub for Himalayan mountaineering"
+      }
+    },
+    {
+      "id": "MNG",
+      "svgPathId": "rMNG",
+      "names": {
+        "ko": "몽골",
+        "en": "Mongolia"
+      },
+      "hints": {
+        "ko": "칭기즈칸의 나라. 세계에서 인구밀도가 가장 낮은 나라 중 하나. 광활한 초원",
+        "en": "Homeland of Genghis Khan; one of the world's least densely populated countries"
+      }
+    },
+    {
+      "id": "MYS",
+      "svgPathId": "rMYS",
+      "names": {
+        "ko": "말레이시아",
+        "en": "Malaysia"
+      },
+      "hints": {
+        "ko": "페트로나스 트윈타워. 말레이반도와 보르네오섬에 걸친 나라",
+        "en": "Home to the Petronas Twin Towers; spans the Malay Peninsula and Borneo"
+      }
+    },
+    {
+      "id": "LBN",
+      "svgPathId": "rLBN",
+      "names": {
+        "ko": "레바논",
+        "en": "Lebanon"
+      },
+      "hints": {
+        "ko": "지중해 동안의 작은 나라. 베이루트('중동의 파리')",
+        "en": "A small Mediterranean nation; Beirut once called the 'Paris of the Middle East'"
+      }
+    },
+    {
+      "id": "LAO",
+      "svgPathId": "rLAO",
+      "names": {
+        "ko": "라오스",
+        "en": "Laos"
+      },
+      "hints": {
+        "ko": "동남아시아 유일의 내륙국. 메콩강이 국토를 관통",
+        "en": "Southeast Asia's only landlocked country; the Mekong River runs through it"
+      }
+    },
+    {
+      "id": "KGZ",
+      "svgPathId": "rKGZ",
+      "names": {
+        "ko": "키르기스스탄",
+        "en": "Kyrgyzstan"
+      },
+      "hints": {
+        "ko": "톈산산맥의 나라. 유목 문화가 남아있는 중앙아시아 국가",
+        "en": "A Tian Shan mountain nation with strong nomadic traditions"
+      }
+    },
+    {
+      "id": "KWT",
+      "svgPathId": "rKWT",
+      "names": {
+        "ko": "쿠웨이트",
+        "en": "Kuwait"
+      },
+      "hints": {
+        "ko": "페르시아만 연안의 석유 부국",
+        "en": "An oil-rich nation on the Persian Gulf"
+      }
+    },
+    {
+      "id": "KAZ",
+      "svgPathId": "rKAZ",
+      "names": {
+        "ko": "카자흐스탄",
+        "en": "Kazakhstan"
+      },
+      "hints": {
+        "ko": "중앙아시아 최대 영토국. 세계 최대 내륙국. 초원지대(스텝)",
+        "en": "Central Asia's largest and the world's largest landlocked country; vast steppe"
+      }
+    },
+    {
+      "id": "JOR",
+      "svgPathId": "rJOR",
+      "names": {
+        "ko": "요르단",
+        "en": "Jordan"
+      },
+      "hints": {
+        "ko": "고대 도시 페트라가 있는 나라. 사해가 위치",
+        "en": "Home to the ancient city of Petra and the Dead Sea"
+      }
+    },
+    {
+      "id": "JPN",
+      "svgPathId": "rJPN",
+      "names": {
+        "ko": "일본",
+        "en": "Japan"
+      },
+      "hints": {
+        "ko": "후지산·벚꽃·스시. 세계 3위 경제 대국. 섬나라(4개 주요 섬)",
+        "en": "Mount Fuji, cherry blossoms, sushi; the world's third-largest economy"
+      }
+    },
+    {
+      "id": "ISR",
+      "svgPathId": "rISR",
+      "names": {
+        "ko": "이스라엘",
+        "en": "Israel"
+      },
+      "hints": {
+        "ko": "예루살렘이 있는 나라. 사해·갈릴리 호수",
+        "en": "Home to Jerusalem, the Dead Sea, and the Sea of Galilee"
+      }
+    },
+    {
+      "id": "PSX",
+      "svgPathId": "rPSX",
+      "names": {
+        "ko": "팔레스타인",
+        "en": "Palestine"
+      },
+      "hints": {
+        "ko": "가자지구·요르단강 서안으로 이루어진 지역",
+        "en": "Comprises the Gaza Strip and the West Bank"
+      }
+    },
+    {
+      "id": "IRQ",
+      "svgPathId": "rIRQ",
+      "names": {
+        "ko": "이라크",
+        "en": "Iraq"
+      },
+      "hints": {
+        "ko": "메소포타미아 문명 발상지(티그리스·유프라테스강)",
+        "en": "Cradle of Mesopotamian civilization between the Tigris and Euphrates"
+      }
+    },
+    {
+      "id": "IRN",
+      "svgPathId": "rIRN",
+      "names": {
+        "ko": "이란",
+        "en": "Iran"
+      },
+      "hints": {
+        "ko": "페르시아 문명의 후예. 세계 최대 천연가스 매장량 중 하나",
+        "en": "Heir to Persian civilization; among the world's largest natural gas reserves"
+      }
+    },
+    {
+      "id": "IDN",
+      "svgPathId": "rIDN",
+      "names": {
+        "ko": "인도네시아",
+        "en": "Indonesia"
+      },
+      "hints": {
+        "ko": "세계 최대 도서국(1만 7천여 개 섬). 세계 최대 무슬림 인구국",
+        "en": "The world's largest archipelago nation (~17,000 islands); most populous Muslim-majority country"
+      }
+    },
+    {
+      "id": "IND",
+      "svgPathId": "rIND",
+      "names": {
+        "ko": "인도",
+        "en": "India"
+      },
+      "hints": {
+        "ko": "세계 최대 인구국. 타지마할. IT·영화산업(발리우드) 강국",
+        "en": "The world's most populous country; the Taj Mahal; a major IT and film (Bollywood) hub"
+      }
+    },
+    {
+      "id": "GEO",
+      "svgPathId": "rGEO",
+      "names": {
+        "ko": "조지아",
+        "en": "Georgia"
+      },
+      "hints": {
+        "ko": "코카서스산맥의 나라. 와인 발상지 중 하나로 꼽힘",
+        "en": "A Caucasus nation often cited as one of the birthplaces of wine"
+      }
+    },
+    {
+      "id": "CYP",
+      "svgPathId": "rCYP",
+      "names": {
+        "ko": "키프로스",
+        "en": "Cyprus"
+      },
+      "hints": {
+        "ko": "지중해의 섬나라. 아프로디테 신화의 배경",
+        "en": "A Mediterranean island nation linked to the myth of Aphrodite"
+      }
+    },
+    {
+      "id": "CHN",
+      "svgPathId": "rCHN",
+      "names": {
+        "ko": "중국",
+        "en": "China"
+      },
+      "hints": {
+        "ko": "세계 최대 인구 대국 중 하나. 만리장성·자금성. 세계 2위 경제 대국",
+        "en": "One of the world's most populous nations; the Great Wall and Forbidden City"
+      }
+    },
+    {
+      "id": "KHM",
+      "svgPathId": "rKHM",
+      "names": {
+        "ko": "캄보디아",
+        "en": "Cambodia"
+      },
+      "hints": {
+        "ko": "앙코르와트 유적의 나라. 크메르 제국의 후예",
+        "en": "Home to the Angkor Wat temple complex; heir to the Khmer Empire"
+      }
+    },
+    {
+      "id": "MMR",
+      "svgPathId": "rMMR",
+      "names": {
+        "ko": "미얀마",
+        "en": "Myanmar"
+      },
+      "hints": {
+        "ko": "이라와디강 유역. 파고다(불탑)의 나라",
+        "en": "Along the Irrawaddy River; known as the 'Land of Pagodas'"
+      }
+    },
+    {
+      "id": "BRN",
+      "svgPathId": "rBRN",
+      "names": {
+        "ko": "브루나이",
+        "en": "Brunei"
+      },
+      "hints": {
+        "ko": "보르네오섬 북부의 소국. 석유·천연가스로 부유한 나라",
+        "en": "A small, oil- and gas-rich nation on the island of Borneo"
+      }
+    },
+    {
+      "id": "BTN",
+      "svgPathId": "rBTN",
+      "names": {
+        "ko": "부탄",
+        "en": "Bhutan"
+      },
+      "hints": {
+        "ko": "국민총행복지수(GNH)를 국가 정책으로 삼는 나라. 히말라야 소국",
+        "en": "A Himalayan kingdom known for measuring 'Gross National Happiness'"
+      }
+    },
+    {
+      "id": "BGD",
+      "svgPathId": "rBGD",
+      "names": {
+        "ko": "방글라데시",
+        "en": "Bangladesh"
+      },
+      "hints": {
+        "ko": "세계에서 인구밀도가 가장 높은 나라 중 하나. 벵골만 삼각주",
+        "en": "One of the world's most densely populated countries; delta of the Bay of Bengal"
+      }
+    },
+    {
+      "id": "AZE",
+      "svgPathId": "rAZE",
+      "names": {
+        "ko": "아제르바이잔",
+        "en": "Azerbaijan"
+      },
+      "hints": {
+        "ko": "카스피해 연안의 석유 산업국. 불의 나라라는 별칭",
+        "en": "An oil-rich nation on the Caspian Sea, nicknamed the 'Land of Fire'"
+      }
+    },
+    {
+      "id": "ARM",
+      "svgPathId": "rARM",
+      "names": {
+        "ko": "아르메니아",
+        "en": "Armenia"
+      },
+      "hints": {
+        "ko": "코카서스산맥 남쪽의 기독교 최초 국교화 국가",
+        "en": "South of the Caucasus; the first nation to adopt Christianity as a state religion"
+      }
+    },
+    {
+      "id": "AFG",
+      "svgPathId": "rAFG",
+      "names": {
+        "ko": "아프가니스탄",
+        "en": "Afghanistan"
+      },
+      "hints": {
+        "ko": "힌두쿠시 산맥. 중앙아시아와 남아시아를 잇는 교차로",
+        "en": "Crossroads between Central and South Asia; the Hindu Kush mountains"
+      }
+    }
+  ]
+}
