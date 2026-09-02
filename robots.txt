@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://korean-cityquiz01.pages.dev/sitemap.xml
+Sitemap: https://mapquiz.co.kr/sitemap.xml
