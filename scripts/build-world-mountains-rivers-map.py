@@ -171,6 +171,11 @@ svg.append('</g>')
 
 regions = []
 
+# 클릭 판정 영역(hit region)은 기존처럼 넉넉한 크기를 유지하되 기본 상태에서는
+# 거의 투명하게 두고, 그 위에 얇은 시각적 능선/리본을 별도로 그린다.
+# → 평소엔 얇은 선만 보이고, 정답/오답 시 넉넉한 히트 영역이 밝게 빛나며
+#   두꺼운 하이라이트로 나타나 클릭 가능 여부와 위치가 오히려 더 잘 보인다.
+mountain_visuals = []
 svg.append('<g>')
 for rid, ko, en, path, hko, hen in MOUNTAINS:
     raw = [geo(la, lo) for la, lo in path]
@@ -181,39 +186,60 @@ for rid, ko, en, path, hko, hen in MOUNTAINS:
     hs = ridge_heights(n, seed)
     avg_ny = sum(-tyn for txn, tyn in tg) / n
     flip = avg_ny > 0
-    top = []
-    for i, (x, y) in enumerate(pts):
-        txn, tyn = tg[i]
-        nx, ny = -tyn, txn
-        if flip:
-            nx, ny = -nx, -ny
-        top.append((x + nx*hs[i], y + ny*hs[i]))
-    d = ('M' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in top) +
-         ' L' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in reversed(pts)) + ' Z')
-    svg.append(f'<path id="r{rid}" data-id="{rid}" data-ko="{ko}" data-en="{en}" data-grp="MOUNTAIN" d="{d}" '
+
+    def ridge_path(heights):
+        top = []
+        for i, (x, y) in enumerate(pts):
+            txn, tyn = tg[i]
+            nx, ny = -tyn, txn
+            if flip:
+                nx, ny = -nx, -ny
+            top.append((x + nx*heights[i], y + ny*heights[i]))
+        return ('M' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in top) +
+                ' L' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in reversed(pts)) + ' Z')
+
+    hit_d = ridge_path(hs)
+    visual_d = ridge_path([h/3 for h in hs])  # 실제 보이는 능선은 1/3 두께(참고 이미지와 동일 비율)
+    svg.append(f'<path id="r{rid}" data-id="{rid}" data-ko="{ko}" data-en="{en}" data-grp="MOUNTAIN" d="{hit_d}" '
                 f'stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>')
+    mountain_visuals.append(visual_d)
     regions.append({"id": rid, "svgPathId": f"r{rid}", "names": {"ko": ko, "en": en}, "hints": {"ko": hko, "en": hen}})
 svg.append('</g>')
+svg.append('<g fill="#E8B84B" fill-opacity="0.85" stroke="#F5DFA8" stroke-width="0.4" stroke-linejoin="round" pointer-events="none">')
+for d in mountain_visuals:
+    svg.append(f'<path d="{d}"/>')
+svg.append('</g>')
 
+river_visuals = []
 svg.append('<g>')
 for rid, ko, en, path, hko, hen in RIVERS:
     raw = [geo(la, lo) for la, lo in path]
     pts = catmull_rom(raw, samples=14)
     tg = tangents(pts)
     n = len(pts)
-    left, right = [], []
-    for i, (x, y) in enumerate(pts):
-        t = i / (n - 1)
-        w = 2.2 + t * 4.2  # 클릭 가능하도록 참고용 이미지보다 다소 두껍게(발원지→하구)
-        txn, tyn = tg[i]
-        nx, ny = -tyn, txn
-        left.append((x + nx*w, y + ny*w))
-        right.append((x - nx*w, y - ny*w))
-    d = ('M' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in left) +
-         ' L' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in reversed(right)) + ' Z')
-    svg.append(f'<path id="r{rid}" data-id="{rid}" data-ko="{ko}" data-en="{en}" data-grp="RIVER" d="{d}" '
+
+    def ribbon_path(w0, w1):
+        left, right = [], []
+        for i, (x, y) in enumerate(pts):
+            t = i / (n - 1)
+            w = w0 + t * (w1 - w0)
+            txn, tyn = tg[i]
+            nx, ny = -tyn, txn
+            left.append((x + nx*w, y + ny*w))
+            right.append((x - nx*w, y - ny*w))
+        return ('M' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in left) +
+                ' L' + ' L'.join(f'{x:.1f},{y:.1f}' for x, y in reversed(right)) + ' Z')
+
+    hit_d = ribbon_path(2.2, 6.4)     # 클릭 가능하도록 넉넉한 히트 영역(발원지→하구)
+    visual_d = ribbon_path(0.17, 1.03)  # 실제 보이는 리본은 1/3 두께(참고 이미지와 동일 비율)
+    svg.append(f'<path id="r{rid}" data-id="{rid}" data-ko="{ko}" data-en="{en}" data-grp="RIVER" d="{hit_d}" '
                 f'stroke-width="0.8" stroke-linejoin="round"/>')
+    river_visuals.append(visual_d)
     regions.append({"id": rid, "svgPathId": f"r{rid}", "names": {"ko": ko, "en": en}, "hints": {"ko": hko, "en": hen}})
+svg.append('</g>')
+svg.append('<g fill="#3ECFB2" fill-opacity="0.9" stroke="#3ECFB2" stroke-width="0.3" stroke-linejoin="round" pointer-events="none">')
+for d in river_visuals:
+    svg.append(f'<path d="{d}"/>')
 svg.append('</g>')
 svg.append('</svg>')
 

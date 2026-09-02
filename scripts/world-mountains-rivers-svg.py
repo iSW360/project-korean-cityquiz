@@ -131,7 +131,7 @@ def ridge_heights(n, seed):
         x += rnd.randint(3, 7)
         x = min(x, n - 1)
         is_valley = rnd.rand() < 0.32
-        h = rnd.uniform(2.5, 5.5) if is_valley else rnd.uniform(7, 13)
+        h = rnd.uniform(2.5, 5.5)/3 if is_valley else rnd.uniform(7, 13)/3
         ctrl_x.append(x); ctrl_h.append(h)
     if ctrl_x[-1] != n - 1:
         ctrl_x.append(n - 1); ctrl_h.append(0)
@@ -185,7 +185,7 @@ for ko, en, path in RIVERS:
     left, right = [], []
     for i, (x, y) in enumerate(pts):
         t = i / (n - 1)
-        w = 0.5 + t * 2.6  # 발원지 0.5px → 하구 3.1px 반폭
+        w = (0.5 + t * 2.6) / 3  # 발원지 0.5px → 하구 3.1px 반폭
         txn, tyn = tg[i]
         nx, ny = -tyn, txn
         left.append((x + nx*w, y + ny*w))

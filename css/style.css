@@ -362,10 +362,12 @@ body.lv3 #map-container path[data-grp="SITE"]:not(.active):not(.correct):not(.wr
 }
 
 /* ── 세계 산맥·강 ── */
-#map-container path[data-grp="MOUNTAIN"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(232,184,75,.55);stroke:rgba(245,223,168,.7);}
-#map-container path[data-grp="RIVER"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(62,207,178,.5);stroke:rgba(158,230,214,.7);}
-body.lv3 #map-container path[data-grp="MOUNTAIN"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(232,184,75,.8);}
-body.lv3 #map-container path[data-grp="RIVER"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(62,207,178,.75);}
+/* 기본 상태에선 히트 영역을 거의 투명하게 둬서 위에 그려진 얇은 시각적
+   능선/리본만 보이게 하고, 클릭 판정 영역 자체는 넉넉하게 유지 */
+#map-container path[data-grp="MOUNTAIN"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(232,184,75,.1);stroke:none;}
+#map-container path[data-grp="RIVER"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(62,207,178,.1);stroke:none;}
+body.lv3 #map-container path[data-grp="MOUNTAIN"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(232,184,75,.35);}
+body.lv3 #map-container path[data-grp="RIVER"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(62,207,178,.32);}
 
 /* ── 일본 8개 지방(地方) ── */
 /* :not() 가드: 이 규칙들이 .active/.correct/.wrong보다 파일상 뒤에 있어서
