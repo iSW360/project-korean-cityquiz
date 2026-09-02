@@ -307,23 +307,25 @@ input{font-family:inherit;}
 #map-container path[data-grp="서울"]{fill:rgba(224,96,144,.25);}
 
 /* ── 미국 Census 권역 ── */
-#map-container path[data-grp="US-NE"]{fill:rgba(74,144,217,.26);}   /* 북동부 */
-#map-container path[data-grp="US-MW"]{fill:rgba(87,168,107,.28);}   /* 중서부 */
-#map-container path[data-grp="US-SO"]{fill:rgba(212,160,48,.26);}   /* 남부   */
-#map-container path[data-grp="US-WE"]{fill:rgba(157,120,212,.26);}  /* 서부   */
+/* (아래 :not() 가드: 이 규칙들이 .active/.correct/.wrong보다 파일상 뒤에 있어서
+   가드가 없으면 동일 우선순위 규칙 중 나중 규칙이 이겨 정답 강조색을 덮어버림) */
+#map-container path[data-grp="US-NE"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(74,144,217,.26);}   /* 북동부 */
+#map-container path[data-grp="US-MW"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(87,168,107,.28);}   /* 중서부 */
+#map-container path[data-grp="US-SO"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(212,160,48,.26);}   /* 남부   */
+#map-container path[data-grp="US-WE"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(157,120,212,.26);}  /* 서부   */
 
 /* ── 유럽 소권역 ── */
-#map-container path[data-grp="EU-N"]{fill:rgba(74,144,217,.24);}    /* 북유럽 */
-#map-container path[data-grp="EU-W"]{fill:rgba(62,189,189,.24);}    /* 서유럽 */
-#map-container path[data-grp="EU-S"]{fill:rgba(212,160,48,.24);}    /* 남유럽 */
-#map-container path[data-grp="EU-E"]{fill:rgba(157,120,212,.24);}   /* 동유럽 */
+#map-container path[data-grp="EU-N"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(74,144,217,.24);}    /* 북유럽 */
+#map-container path[data-grp="EU-W"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(62,189,189,.24);}    /* 서유럽 */
+#map-container path[data-grp="EU-S"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(212,160,48,.24);}    /* 남유럽 */
+#map-container path[data-grp="EU-E"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(157,120,212,.24);}   /* 동유럽 */
 
 /* ── 아프리카 소권역 ── */
-#map-container path[data-grp="AF-N"]{fill:rgba(212,160,48,.24);}    /* 북아프리카 */
-#map-container path[data-grp="AF-W"]{fill:rgba(87,168,107,.24);}    /* 서아프리카 */
-#map-container path[data-grp="AF-C"]{fill:rgba(217,110,58,.24);}    /* 중앙아프리카 */
-#map-container path[data-grp="AF-E"]{fill:rgba(74,144,217,.24);}    /* 동아프리카 */
-#map-container path[data-grp="AF-S"]{fill:rgba(157,120,212,.24);}   /* 남아프리카 */
+#map-container path[data-grp="AF-N"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(212,160,48,.24);}    /* 북아프리카 */
+#map-container path[data-grp="AF-W"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(87,168,107,.24);}    /* 서아프리카 */
+#map-container path[data-grp="AF-C"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(217,110,58,.24);}    /* 중앙아프리카 */
+#map-container path[data-grp="AF-E"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(74,144,217,.24);}    /* 동아프리카 */
+#map-container path[data-grp="AF-S"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(157,120,212,.24);}   /* 남아프리카 */
 
 /* ── 달 지도(실사 배경) ── */
 /* Level 1·2(객관식): 평소엔 아주 옅게 전체 윤곽만, 정답은 .active로 강조 */
@@ -366,27 +368,29 @@ body.lv3 #map-container path[data-grp="MOUNTAIN"]:not(.active):not(.correct):not
 body.lv3 #map-container path[data-grp="RIVER"]:not(.active):not(.correct):not(.wrong):not(.solved):hover{fill:rgba(62,207,178,.75);}
 
 /* ── 일본 8개 지방(地方) ── */
-#map-container path[data-grp="HOKKAIDO"]{fill:rgba(74,144,217,.30);}  /* 홋카이도 */
-#map-container path[data-grp="TOHOKU"]  {fill:rgba(87,168,107,.28);}  /* 도호쿠 */
-#map-container path[data-grp="KANTO"]   {fill:rgba(157,120,212,.28);} /* 간토 */
-#map-container path[data-grp="CHUBU"]   {fill:rgba(212,160,48,.28);}  /* 주부 */
-#map-container path[data-grp="KINKI"]   {fill:rgba(217,110,58,.28);}  /* 긴키(간사이) */
-#map-container path[data-grp="CHUGOKU"] {fill:rgba(62,189,189,.28);}  /* 주고쿠 */
-#map-container path[data-grp="SHIKOKU"] {fill:rgba(224,96,144,.28);}  /* 시코쿠 */
-#map-container path[data-grp="KYUSHU"]  {fill:rgba(176,120,64,.30);}  /* 규슈·오키나와 */
+/* :not() 가드: 이 규칙들이 .active/.correct/.wrong보다 파일상 뒤에 있어서
+   가드가 없으면 동일 우선순위 규칙 중 나중 규칙이 이겨 정답 강조색을 덮어버림 */
+#map-container path[data-grp="HOKKAIDO"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(74,144,217,.30);}  /* 홋카이도 */
+#map-container path[data-grp="TOHOKU"]:not(.active):not(.correct):not(.wrong):not(.solved)  {fill:rgba(87,168,107,.28);}  /* 도호쿠 */
+#map-container path[data-grp="KANTO"]:not(.active):not(.correct):not(.wrong):not(.solved)   {fill:rgba(157,120,212,.28);} /* 간토 */
+#map-container path[data-grp="CHUBU"]:not(.active):not(.correct):not(.wrong):not(.solved)   {fill:rgba(212,160,48,.28);}  /* 주부 */
+#map-container path[data-grp="KINKI"]:not(.active):not(.correct):not(.wrong):not(.solved)   {fill:rgba(217,110,58,.28);}  /* 긴키(간사이) */
+#map-container path[data-grp="CHUGOKU"]:not(.active):not(.correct):not(.wrong):not(.solved) {fill:rgba(62,189,189,.28);}  /* 주고쿠 */
+#map-container path[data-grp="SHIKOKU"]:not(.active):not(.correct):not(.wrong):not(.solved) {fill:rgba(224,96,144,.28);}  /* 시코쿠 */
+#map-container path[data-grp="KYUSHU"]:not(.active):not(.correct):not(.wrong):not(.solved)  {fill:rgba(176,120,64,.30);}  /* 규슈·오키나와 */
 
 /* ── 월드컵 지도 ── */
 /* 배경 국가 (비출전국) */
 #map-container #bg-countries path{
   fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.07);stroke-width:.4;
 }
-/* 대륙별 출전국 색상 */
-#map-container path[data-grp="UEFA"]    {fill:rgba(96,180,255,.22);}   /* 유럽 */
-#map-container path[data-grp="CONMEBOL"]{fill:rgba(62,189,189,.24);}   /* 남미 */
-#map-container path[data-grp="CONCACAF"]{fill:rgba(123,176,80,.24);}   /* 북중미 */
-#map-container path[data-grp="CAF"]     {fill:rgba(217,110,58,.24);}   /* 아프리카 */
-#map-container path[data-grp="AFC"]     {fill:rgba(212,160,48,.26);}   /* 아시아 */
-#map-container path[data-grp="OFC"]     {fill:rgba(157,120,212,.24);}  /* 오세아니아 */
+/* 대륙별 출전국 색상 (마찬가지로 :not() 가드 필요) */
+#map-container path[data-grp="UEFA"]:not(.active):not(.correct):not(.wrong):not(.solved)    {fill:rgba(96,180,255,.22);}   /* 유럽 */
+#map-container path[data-grp="CONMEBOL"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(62,189,189,.24);}   /* 남미 */
+#map-container path[data-grp="CONCACAF"]:not(.active):not(.correct):not(.wrong):not(.solved){fill:rgba(123,176,80,.24);}   /* 북중미 */
+#map-container path[data-grp="CAF"]:not(.active):not(.correct):not(.wrong):not(.solved)     {fill:rgba(217,110,58,.24);}   /* 아프리카 */
+#map-container path[data-grp="AFC"]:not(.active):not(.correct):not(.wrong):not(.solved)     {fill:rgba(212,160,48,.26);}   /* 아시아 */
+#map-container path[data-grp="OFC"]:not(.active):not(.correct):not(.wrong):not(.solved)     {fill:rgba(157,120,212,.24);}  /* 오세아니아 */
 
 /* Level3 */
 body.lv3 #map-container path{cursor:crosshair;}
