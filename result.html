@@ -108,15 +108,40 @@
       <span class="next-card__name" id="nc-af">아프리카</span>
       <span class="next-card__sub">54개 나라</span>
     </button>
+    <button class="next-card" onclick="go('asia')">
+      <span class="next-card__icon">🌏</span>
+      <span class="next-card__name" id="nc-as">아시아 나라</span>
+      <span class="next-card__sub">46개 나라</span>
+    </button>
     <button class="next-card" onclick="go('worldcup2026')">
       <span class="next-card__icon">🏆</span>
       <span class="next-card__name" id="nc-wc">2026 월드컵</span>
       <span class="next-card__sub">48개국</span>
     </button>
+    <button class="next-card" onclick="go('japan')">
+      <span class="next-card__icon">🗾</span>
+      <span class="next-card__name" id="nc-jp">일본 도도부현</span>
+      <span class="next-card__sub">47개 지역</span>
+    </button>
+    <button class="next-card" onclick="go('moon')">
+      <span class="next-card__icon">🌙</span>
+      <span class="next-card__name" id="nc-mo">달의 바다·분화구</span>
+      <span class="next-card__sub">20개 지역</span>
+    </button>
+    <button class="next-card" onclick="go('moon-landing')">
+      <span class="next-card__icon">🚀</span>
+      <span class="next-card__name" id="nc-ml">달 탐사 착륙지</span>
+      <span class="next-card__sub">16개 지역</span>
+    </button>
     <button class="next-card" onclick="go('korea-specialty')">
       <span class="next-card__icon">🌾</span>
       <span class="next-card__name" id="nc-sp">지역 특성</span>
       <span class="next-card__sub">31개 지역</span>
+    </button>
+    <button class="next-card" onclick="go('world-mountains-rivers')">
+      <span class="next-card__icon">⛰️</span>
+      <span class="next-card__name" id="nc-mr">세계 산맥·강</span>
+      <span class="next-card__sub">32개 지역</span>
     </button>
   </div>
 </div>
@@ -162,6 +187,11 @@ function showToast(msg,ms=2200){const el=document.getElementById('toast');el.tex
     'africa':isKo?'아프리카 나라':'African Countries',
     'worldcup2026':isKo?'2026 월드컵':'2026 World Cup',
     'korea-specialty':isKo?'한국 지역 특성':'Korean Regional Features',
+    'japan':isKo?'일본 도도부현':'Japan Prefectures',
+    'moon':isKo?'달의 바다·분화구':'Moon Seas & Craters',
+    'moon-landing':isKo?'달 탐사 착륙지':'Moon Landing Sites',
+    'world-mountains-rivers':isKo?'세계 산맥·강':'World Mountains & Rivers',
+    'asia':isKo?'아시아 나라':'Asian Countries',
   };
   document.getElementById('res-sub').textContent=(mapNames[mapId]||mapId)+` · Level ${level}`;
 
@@ -197,6 +227,11 @@ function showToast(msg,ms=2200){const el=document.getElementById('toast');el.tex
     document.getElementById('nc-af').textContent='Africa';
     document.getElementById('nc-wc').textContent='2026 World Cup';
     document.getElementById('nc-sp').textContent='Regional Features';
+    document.getElementById('nc-as').textContent='Asia';
+    document.getElementById('nc-jp').textContent='Japan';
+    document.getElementById('nc-mo').textContent='Moon Seas & Craters';
+    document.getElementById('nc-ml').textContent='Moon Landing Sites';
+    document.getElementById('nc-mr').textContent='World Mountains & Rivers';
   }
   if(level>=3) document.getElementById('btn-lvup').style.display='none';
 
